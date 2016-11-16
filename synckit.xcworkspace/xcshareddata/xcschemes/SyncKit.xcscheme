@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0730"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "42B50E151B1F3E3E00A9FCF0"
+               BuildableName = "AsyncSocket.framework"
+               BlueprintName = "AsyncSocket"
+               ReferencedContainer = "container:AsyncSocket/AsyncSocket/AsyncSocket.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "42896F701D88415A0053D34E"
+               BuildableName = "AudioPlayerEngine.framework"
+               BlueprintName = "AudioPlayerEngine"
+               ReferencedContainer = "container:AudioPlayer/AudioPlayerEngine/AudioPlayerEngine.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "42702CD01B28485500DBA4BE"
+               BuildableName = "CIIProtocolClient.framework"
+               BlueprintName = "CIIProtocolClient"
+               ReferencedContainer = "container:CIIProtocolClient/CIIProtocolClient.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4278C1801CF2E8F20003E302"
+               BuildableName = "CSASynchroniser.framework"
+               BlueprintName = "CSASynchroniser"
+               ReferencedContainer = "container:MediaSynchroniser/CSASynchroniser/CSASynchroniser.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "42492C9F1AC9573900E39BD4"
+               BuildableName = "ClockTimelines.framework"
+               BlueprintName = "ClockTimelines"
+               ReferencedContainer = "container:ClockTimelines/ClockTimelines.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4268B3451B2081A500781C20"
+               BuildableName = "DIALDeviceDiscovery.framework"
+               BlueprintName = "DIALDeviceDiscovery"
+               ReferencedContainer = "container:DIALDeviceDiscovery/DIALDeviceDiscovery/DIALDeviceDiscovery.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4268B4A81B22E75A00781C20"
+               BuildableName = "DIALTVSelectionUIViews.framework"
+               BlueprintName = "DIALTVSelectionUIViews"
+               ReferencedContainer = "container:DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "421BF98A1B25F9A90029FE1C"
+               BuildableName = "DIALTV_UI_ResourceBundle.bundle"
+               BlueprintName = "DIALTV_UI_ResourceBundle"
+               ReferencedContainer = "container:DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "42702D6C1B28562F00DBA4BE"
+               BuildableName = "JSONModelFramework.framework"
+               BlueprintName = "JSONModelFramework"
+               ReferencedContainer = "container:JSONModelFramework/JSONModelFramework.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4268B3C21B21B89100781C20"
+               BuildableName = "SimpleLogger.framework"
+               BlueprintName = "SimpleLogger"
+               ReferencedContainer = "container:SimpleLogger/SimpleLogger.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "426EBBA71B1CAA6800B49D9A"
+               BuildableName = "libSocketRocket.a"
+               BlueprintName = "SocketRocket"
+               ReferencedContainer = "container:WebSocket/SocketRocket/SocketRocket.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "426EBBD51B1CAF6100B49D9A"
+               BuildableName = "SocketRocketiOS.framework"
+               BlueprintName = "SocketRocketiOS"
+               ReferencedContainer = "container:WebSocket/SocketRocket/SocketRocket.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4270AEBA1CE9C703006F6084"
+               BuildableName = "SyncController.framework"
+               BlueprintName = "SyncController"
+               ReferencedContainer = "container:SyncController/SyncController/SyncController.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4268B41D1B21C32800781C20"
+               BuildableName = "SyncKitCollections.framework"
+               BlueprintName = "SyncKitCollections"
+               ReferencedContainer = "container:SyncKitCollections/SyncKitCollections.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4268B3901B21A2E100781C20"
+               BuildableName = "SyncKitConfiguration.framework"
+               BlueprintName = "SyncKitConfiguration"
+               ReferencedContainer = "container:SyncKitConfiguration/SyncKitConfiguration.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4268B5531B243EF500781C20"
+               BuildableName = "SyncKitDelegate.framework"
+               BlueprintName = "SyncKitDelegate"
+               ReferencedContainer = "container:SyncKitDelegate/SyncKitDelegate.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "424348351CC4CEF200DAFF79"
+               BuildableName = "TimelineSync.framework"
+               BlueprintName = "TimelineSync"
+               ReferencedContainer = "container:TimelineSync/TimelineSync/TimelineSync.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4268B62D1B257CD800781C20"
+               BuildableName = "UDPMessaging.framework"
+               BlueprintName = "UDPMessaging"
+               ReferencedContainer = "container:UDPMessaging/UDPMessaging.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "42B15AD01CB6ADB300F1D0DE"
+               BuildableName = "VideoPlayer.framework"
+               BlueprintName = "VideoPlayer"
+               ReferencedContainer = "container:VideoPlayer/VideoPlayer/VideoPlayer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "427E4AA91B29DE870006F7E1"
+               BuildableName = "WallClockClient.framework"
+               BlueprintName = "WallClockClient"
+               ReferencedContainer = "container:WallClockSync/WallClockClient/WallClockClient.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "42B50E151B1F3E3E00A9FCF0"
+            BuildableName = "AsyncSocket.framework"
+            BlueprintName = "AsyncSocket"
+            ReferencedContainer = "container:AsyncSocket/AsyncSocket/AsyncSocket.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "42B50E151B1F3E3E00A9FCF0"
+            BuildableName = "AsyncSocket.framework"
+            BlueprintName = "AsyncSocket"
+            ReferencedContainer = "container:AsyncSocket/AsyncSocket/AsyncSocket.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "42B50E151B1F3E3E00A9FCF0"
+            BuildableName = "AsyncSocket.framework"
+            BlueprintName = "AsyncSocket"
+            ReferencedContainer = "container:AsyncSocket/AsyncSocket/AsyncSocket.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

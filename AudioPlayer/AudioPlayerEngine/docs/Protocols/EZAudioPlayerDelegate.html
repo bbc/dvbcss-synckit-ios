@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EZAudioPlayerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Protocol/EZAudioPlayerDelegate" class="dashAnchor"></a>
+
+    <a title="EZAudioPlayerDelegate Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          AudioPlayerEngine Docs
+        </a>
+         (68% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/src/AudioPlayerEngine">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">AudioPlayerEngine Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      EZAudioPlayerDelegate Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AudioPlayer.html">AudioPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AudioPlayerViewController.html">AudioPlayerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AudioStreamPlayer.html">AudioStreamPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudio.html">EZAudio</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioDevice.html">EZAudioDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioDisplayLink.html">EZAudioDisplayLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFFT.html">EZAudioFFT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFFTRolling.html">EZAudioFFTRolling</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFile.html">EZAudioFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFloatConverter.html">EZAudioFloatConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFloatData.html">EZAudioFloatData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioPlayer.html">EZAudioPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioPlot.html">EZAudioPlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioPlotGL.html">EZAudioPlotGL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes.html#/c:objc(cs)EZAudioPlotWaveformLayer">EZAudioPlotWaveformLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioUtilities.html">EZAudioUtilities</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZMicrophone.html">EZMicrophone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZOutput.html">EZOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZPlot.html">EZPlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZRecorder.html">EZRecorder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@ASStatusChangedNotification">ASStatusChangedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangeAudioFileNotification">AudioPlayerDidChangeAudioFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangeOutputDeviceNotification">AudioPlayerDidChangeOutputDeviceNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangePanNotification">AudioPlayerDidChangePanNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangePlayStateNotification">AudioPlayerDidChangePlayStateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangeVolumeNotification">AudioPlayerDidChangeVolumeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidReachEndOfFileNotification">AudioPlayerDidReachEndOfFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidSeekNotification">AudioPlayerDidSeekNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioFloatConverterDefaultPacketSize">EZAudioFloatConverterDefaultPacketSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangeAudioFileNotification">EZAudioPlayerDidChangeAudioFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangeOutputDeviceNotification">EZAudioPlayerDidChangeOutputDeviceNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangePanNotification">EZAudioPlayerDidChangePanNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangePlayStateNotification">EZAudioPlayerDidChangePlayStateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangeVolumeNotification">EZAudioPlayerDidChangeVolumeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidReachEndOfFileNotification">EZAudioPlayerDidReachEndOfFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidSeekNotification">EZAudioPlayerDidSeekNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlotDefaultHistoryBufferLength">EZAudioPlotDefaultHistoryBufferLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlotDefaultMaxHistoryBufferLength">EZAudioPlotDefaultMaxHistoryBufferLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioVersionNumber">EZAudioVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioVersionString">EZAudioVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZOutputDefaultSampleRate">EZOutputDefaultSampleRate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZOutputMaximumFramesPerSlice">EZOutputMaximumFramesPerSlice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kEZAudioPlotDefaultHistoryBufferLength">kEZAudioPlotDefaultHistoryBufferLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kEZAudioPlotMaxHistoryBufferLength">kEZAudioPlotMaxHistoryBufferLength</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioPlayerState.html">AudioPlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioStreamPlayerErrorCode.html">AudioStreamPlayerErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioStreamPlayerState.html">AudioStreamPlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioStreamPlayerStopReason.html">AudioStreamPlayerStopReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/EZAudioPlayerState.html">EZAudioPlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/EZPlotType.html">EZPlotType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/EZRecorderFileType.html">EZRecorderFileType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AudioPlayerDelegate.html">AudioPlayerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AudioPlayerVCDelegate.html">AudioPlayerVCDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioDisplayLinkDelegate.html">EZAudioDisplayLinkDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioFFTDelegate.html">EZAudioFFTDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioFileDelegate.html">EZAudioFileDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioPlayerDelegate.html">EZAudioPlayerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZMicrophoneDelegate.html">EZMicrophoneDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZOutputDataSource.html">EZOutputDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZOutputDelegate.html">EZOutputDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZRecorderDelegate.html">EZRecorderDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/EZAudioNodeInfo.html">EZAudioNodeInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/EZAudioPlotGLPoint.html">EZAudioPlotGLPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions.html#/c:EZAudioFile.h@T@EZAudioWaveformDataCompletionBlock">EZAudioWaveformDataCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/EZPlotHistoryInfo.html">EZPlotHistoryInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions.html#/c:EZAudioUtilities.h@T@EZRect">EZRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/TPCircularBuffer.html">TPCircularBuffer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@TPCircularBufferCleanup">TPCircularBufferCleanup</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@TPCircularBufferClear">TPCircularBufferClear</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferConsume">TPCircularBufferConsume</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferConsumeNoBarrier">TPCircularBufferConsumeNoBarrier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferHead">TPCircularBufferHead</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferProduce">TPCircularBufferProduce</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferProduceBytes">TPCircularBufferProduceBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferProduceNoBarrier">TPCircularBufferProduceNoBarrier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@TPCircularBufferSetAtomic">TPCircularBufferSetAtomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferTail">TPCircularBufferTail</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@_TPCircularBufferInit">_TPCircularBufferInit</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>EZAudioPlayerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">EZAudioPlayerDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>The EZAudioPlayerDelegate provides event callbacks for the EZAudioPlayer. Since 0.5.0 the EZAudioPlayerDelegate provides a smaller set of delegate methods in favor of notifications to allow multiple receivers of the EZAudioPlayer event callbacks since only one player is typically used in an application. Specifically, these methods are provided for high frequency callbacks that wrap the EZAudioPlayer&rsquo;s internal EZAudioFile and EZOutput instances.
+- warning: These callbacks don&rsquo;t necessarily occur on the main thread so make sure you wrap any UI code in a GCD block like: dispatch_async(dispatch_get_main_queue(), ^{ // Update UI });</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EZAudioPlayerDelegate(im)audioPlayer:playedAudio:withBufferSize:withNumberOfChannels:inAudioFile:"></a>
+                    <a name="//apple_ref/objc/Method/-audioPlayer:playedAudio:withBufferSize:withNumberOfChannels:inAudioFile:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EZAudioPlayerDelegate(im)audioPlayer:playedAudio:withBufferSize:withNumberOfChannels:inAudioFile:">-audioPlayer:playedAudio:withBufferSize:withNumberOfChannels:inAudioFile:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Triggered by the EZAudioPlayer&rsquo;s internal EZAudioFile&rsquo;s EZAudioFileDelegate callback and notifies the delegate of the read audio data as a float array instead of a buffer list. Common use case of this would be to visualize the float data using an audio plot or audio data dependent OpenGL sketch.
+- parameter: audioPlayer The instance of the EZAudioPlayer that triggered the event
+- parameter: buffer           A float array of float arrays holding the audio data. buffer[0] would be the left channel&rsquo;s float array while buffer[1] would be the right channel&rsquo;s float array in a stereo file.
+- parameter: bufferSize       The length of the buffers float arrays
+- parameter: numberOfChannels The number of channels. 2 for stereo, 1 for mono.
+- parameter: audioFile   The instance of the EZAudioFile that the event was triggered from</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">audioPlayer</span><span class="p">:(</span><span class="n"><a href="../Classes/EZAudioPlayer.html">EZAudioPlayer</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">audioPlayer</span>
+             <span class="nf">playedAudio</span><span class="p">:(</span><span class="kt">float</span> <span class="o">**</span><span class="p">)</span><span class="nv">buffer</span>
+          <span class="nf">withBufferSize</span><span class="p">:(</span><span class="n">UInt32</span><span class="p">)</span><span class="nv">bufferSize</span>
+    <span class="nf">withNumberOfChannels</span><span class="p">:(</span><span class="n">UInt32</span><span class="p">)</span><span class="nv">numberOfChannels</span>
+             <span class="nf">inAudioFile</span><span class="p">:(</span><span class="n"><a href="../Classes/EZAudioFile.html">EZAudioFile</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">audioFile</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">audioPlayer</span><span class="p">(</span><span class="nv">audioPlayer</span><span class="p">:</span> <span class="kt"><a href="../Classes/EZAudioPlayer.html">EZAudioPlayer</a></span><span class="o">!</span><span class="p">,</span> <span class="n">playedAudio</span> <span class="nv">buffer</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioPlayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The instance of the EZAudioPlayer that triggered the event</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A float array of float arrays holding the audio data. buffer[0] would be the left channel&rsquo;s float array while buffer[1] would be the right channel&rsquo;s float array in a stereo file.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bufferSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The length of the buffers float arrays</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>numberOfChannels</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of channels. 2 for stereo, 1 for mono.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioFile</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The instance of the EZAudioFile that the event was triggered from</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EZAudioPlayerDelegate(im)audioPlayer:updatedPosition:inAudioFile:"></a>
+                    <a name="//apple_ref/objc/Method/-audioPlayer:updatedPosition:inAudioFile:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EZAudioPlayerDelegate(im)audioPlayer:updatedPosition:inAudioFile:">-audioPlayer:updatedPosition:inAudioFile:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Triggered by EZAudioPlayer&rsquo;s internal EZAudioFile&rsquo;s EZAudioFileDelegate callback and notifies the delegate of the current playback position. The framePosition provides the current frame position and can be calculated against the EZAudioPlayer&rsquo;s total frames using the <code>totalFrames</code> function from the EZAudioPlayer.
+- parameter: audioPlayer The instance of the EZAudioPlayer that triggered the event
+- parameter: framePosition The new frame index as a 64-bit signed integer
+- parameter: audioFile   The instance of the EZAudioFile that the event was triggered from</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">audioPlayer</span><span class="p">:(</span><span class="n"><a href="../Classes/EZAudioPlayer.html">EZAudioPlayer</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">audioPlayer</span>
+    <span class="nf">updatedPosition</span><span class="p">:(</span><span class="n">SInt64</span><span class="p">)</span><span class="nv">framePosition</span>
+        <span class="nf">inAudioFile</span><span class="p">:(</span><span class="n"><a href="../Classes/EZAudioFile.html">EZAudioFile</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">audioFile</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">audioPlayer</span><span class="p">(</span><span class="nv">audioPlayer</span><span class="p">:</span> <span class="kt"><a href="../Classes/EZAudioPlayer.html">EZAudioPlayer</a></span><span class="o">!</span><span class="p">,</span> <span class="n">updatedPosition</span> <span class="nv">framePosition</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">,</span> <span class="n">inAudioFile</span> <span class="nv">audioFile</span><span class="p">:</span> <span class="kt"><a href="../Classes/EZAudioFile.html">EZAudioFile</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioPlayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The instance of the EZAudioPlayer that triggered the event</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>framePosition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The new frame index as a 64-bit signed integer</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioFile</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The instance of the EZAudioFile that the event was triggered from</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EZAudioPlayerDelegate(im)audioPlayer:reachedEndOfAudioFile:"></a>
+                    <a name="//apple_ref/objc/Method/-audioPlayer:reachedEndOfAudioFile:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EZAudioPlayerDelegate(im)audioPlayer:reachedEndOfAudioFile:">-audioPlayer:reachedEndOfAudioFile:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Triggered by EZAudioPlayer&rsquo;s internal EZAudioFile&rsquo;s EZAudioFileDelegate callback and notifies the delegate that the end of the file has been reached. 
+- parameter: audioPlayer The instance of the EZAudioPlayer that triggered the event
+- parameter: audioFile   The instance of the EZAudioFile that the event was triggered from</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">audioPlayer</span><span class="p">:(</span><span class="n"><a href="../Classes/EZAudioPlayer.html">EZAudioPlayer</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">audioPlayer</span>
+    <span class="nf">reachedEndOfAudioFile</span><span class="p">:(</span><span class="n"><a href="../Classes/EZAudioFile.html">EZAudioFile</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">audioFile</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">audioPlayer</span><span class="p">(</span><span class="nv">audioPlayer</span><span class="p">:</span> <span class="kt"><a href="../Classes/EZAudioPlayer.html">EZAudioPlayer</a></span><span class="o">!</span><span class="p">,</span> <span class="n">reachedEndOfAudioFile</span> <span class="nv">audioFile</span><span class="p">:</span> <span class="kt"><a href="../Classes/EZAudioFile.html">EZAudioFile</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioPlayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The instance of the EZAudioPlayer that triggered the event</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioFile</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The instance of the EZAudioFile that the event was triggered from</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://bbc.co.uk/rd" target="_blank" rel="external">Rajiv_Ramdhany</a>. All rights reserved. (Last updated: 2016-09-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

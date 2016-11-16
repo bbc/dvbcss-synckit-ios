@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AudioSyncController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/AudioSyncController" class="dashAnchor"></a>
+
+    <a title="AudioSyncController Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          SyncController Docs
+        </a>
+         (63% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/src/SyncController">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">SyncController Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      AudioSyncController Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AudioSyncController.html">AudioSyncController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SyncControllerError.html">SyncControllerError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/VideoPlayerSyncController.html">VideoPlayerSyncController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WebViewProxy.html">WebViewProxy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WebViewSyncController.html">WebViewSyncController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SyncControllerErrorDomain">SyncControllerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SyncControllerVersionNumber">SyncControllerVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@SyncControllerVersionString">SyncControllerVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kAudioSyncControllerResyncNotification">kAudioSyncControllerResyncNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kSyncControllerMediaNotSeekable">kSyncControllerMediaNotSeekable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kSyncControllerNoSyncTimeline">kSyncControllerNoSyncTimeline</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kSyncControllerPlayerRateError">kSyncControllerPlayerRateError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kSyncControllerSyncTimelineUnavailable">kSyncControllerSyncTimelineUnavailable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kVideoSyncControllerResyncNotification">kVideoSyncControllerResyncNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kWebSyncControllerResyncNotification">kWebSyncControllerResyncNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioSyncControllerState.html">AudioSyncControllerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/VideoSyncControllerState.html">VideoSyncControllerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/WebSyncControllerState.html">WebSyncControllerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/kSyncControllerErrorTypes.html">kSyncControllerErrorTypes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/InvocationProcessor.html">InvocationProcessor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/SyncControllerDelegate.html">SyncControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>AudioSyncController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">AudioSyncController</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>@brief A class to synchronise the playback of an audio player (AudioPlayer or AudioPlayerViewController)
+  to a timeline representing the desired playback progress of the media object.</p>
+
+<p>@discussion It needs a reference to an audio player (AudioPlayer or AudioPlayerViewController instance) and a CorrelatedClock
+  representing the expected timeline of the audio object. This controller reads
+  the actual and expected timeline positions of the audio item and determines the discrepancy
+  between both readings. Based on the size of the discrepancy, it applies a simple strategy to adapt the
+  playback of the audio player to achieve the expected playback position.</p>
+
+<p>The resync process happens every &lsquo;syncInterval&rsquo; seconds or when changes to the expectedTimeline
+  are observed.</p>
+
+<p>Ideas for future iterations of this component:
+  1. Allow for different playback adaptation algorithms e.g. QoE-aware algo to be plugged in at configuration time
+  2. Generalise component to synchronise media player timelines instead of actual players. Players will respond to changes in their timelines.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(py)syncTimeline"></a>
+                    <a name="//apple_ref/objc/Property/syncTimeline" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(py)syncTimeline">syncTimeline</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A media timeline to synchronise to.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">)</span> <span class="n">CorrelatedClock</span> <span class="o">*</span><span class="n">syncTimeline</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(py)mediaObjectTimeline"></a>
+                    <a name="//apple_ref/objc/Property/mediaObjectTimeline" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(py)mediaObjectTimeline">mediaObjectTimeline</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The expected timeline of the media object. Set using correlation timestamp supplied at initialisation time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">int</span> <span class="o">*</span><span class="n">mediaObjectTimeline</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">mediaObjectTimeline</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(py)audioPlayer"></a>
+                    <a name="//apple_ref/objc/Property/audioPlayer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(py)audioPlayer">audioPlayer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An audio player to synchronise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">weak</span><span class="p">)</span> <span class="n">AudioPlayer</span> <span class="o">*</span><span class="n">audioPlayer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(py)syncInterval"></a>
+                    <a name="//apple_ref/objc/Property/syncInterval" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(py)syncInterval">syncInterval</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Synchronisation interval</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSTimeInterval</span> <span class="n">syncInterval</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">syncInterval</span><span class="p">:</span> <span class="kt">NSTimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(py)state"></a>
+                    <a name="//apple_ref/objc/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(py)state">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This sync controller&rsquo;s state</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/AudioSyncControllerState.html">AudioSyncControllerState</a></span> <span class="n">state</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/AudioSyncControllerState.html">AudioSyncControllerState</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(py)delegate"></a>
+                    <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A delegate to report resynchronisation status.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SyncControllerDelegate.html">SyncControllerDelegate</a></span><span class="o">&gt;</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SyncControllerDelegate.html">SyncControllerDelegate</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(py)syncJitter"></a>
+                    <a name="//apple_ref/objc/Property/syncJitter" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(py)syncJitter">syncJitter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The jitter in media playback when resynchronising</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSTimeInterval</span> <span class="n">syncJitter</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">syncJitter</span><span class="p">:</span> <span class="kt">NSTimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(py)reSyncJitterThreshold"></a>
+                    <a name="//apple_ref/objc/Property/reSyncJitterThreshold" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(py)reSyncJitterThreshold">reSyncJitterThreshold</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The threshold on the difference between expected and actual playback position, for which
+to trigger a resynchronisation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSTimeInterval</span> <span class="n">reSyncJitterThreshold</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">reSyncJitterThreshold</span><span class="p">:</span> <span class="kt">NSTimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(py)rateAdaptationJitterThreshold"></a>
+                    <a name="//apple_ref/objc/Property/rateAdaptationJitterThreshold" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(py)rateAdaptationJitterThreshold">rateAdaptationJitterThreshold</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A threshold for doing playback rate adaptation (increase/decrease speed) to allow the
+player to catchup/slow down. For a jitter value less than this threshold, a rate increase
+of 0.5 is applied to enable the player to be in sync.
+For a jitter value greater than this threshold, it is assumed that the discrepancy is too
+large for catchup by playback rate adjustment. A seek operation is performed on the player.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">NSTimeInterval</span> <span class="n">rateAdaptationJitterThreshold</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">rateAdaptationJitterThreshold</span><span class="p">:</span> <span class="kt">NSTimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialisers"></a>
+                <a name="//apple_ref/objc/Section/Initialisers" class="dashAnchor"></a>
+                <a href="#/Initialisers">
+                  <h3 class="section-name">Initialisers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">AudioSyncController</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(im)initWithAudioPlayer:Timeline:CorrelationTimestamp:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithAudioPlayer:Timeline:CorrelationTimestamp:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(im)initWithAudioPlayer:Timeline:CorrelationTimestamp:">-initWithAudioPlayer:Timeline:CorrelationTimestamp:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialises an AudioSyncController with a audioplayer and a timeline to synchronise
+  to.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithAudioPlayer</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">audioplayer</span>
+                           <span class="nf">Timeline</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sync_timeline</span>
+               <span class="nf">CorrelationTimestamp</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">correlation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)audioPlayer">audioPlayer</a></span> <span class="nv">audioplayer</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">timeline</span> <span class="nv">sync_timeline</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">correlationTimestamp</span> <span class="nv">correlation</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>an AudioPlayer instance</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeline</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a CorrelatedClock instance modelling a particular timeline</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>initialised AudioSyncController instance</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(im)initWithAudioPlayer:Timeline:CorrelationTimestamp:ReSyncInterval:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithAudioPlayer:Timeline:CorrelationTimestamp:ReSyncInterval:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(im)initWithAudioPlayer:Timeline:CorrelationTimestamp:ReSyncInterval:">-initWithAudioPlayer:Timeline:CorrelationTimestamp:ReSyncInterval:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialises an AudioSyncController with a audioplayer and a timeline to synchronise
+  to.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithAudioPlayer</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">audioplayer</span>
+                           <span class="nf">Timeline</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sync_timeline</span>
+               <span class="nf">CorrelationTimestamp</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">correlation</span>
+                     <span class="nf">ReSyncInterval</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">interval_secs</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)audioPlayer">audioPlayer</a></span> <span class="nv">audioplayer</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">timeline</span> <span class="nv">sync_timeline</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">correlationTimestamp</span> <span class="nv">correlation</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">reSyncInterval</span> <span class="nv">interval_secs</span><span class="p">:</span> <span class="kt">NSTimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>an AudioPlayer instance</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeline</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a CorrelatedClock instance modelling a particular timeline</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interval_secs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>resynchronisation interval in seconds (as a double value)</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>initialised AudioSyncController instance</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(im)initWithAudioPlayer:Timeline:CorrelationTimestamp:ReSyncInterval:Delegate:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithAudioPlayer:Timeline:CorrelationTimestamp:ReSyncInterval:Delegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(im)initWithAudioPlayer:Timeline:CorrelationTimestamp:ReSyncInterval:Delegate:">-initWithAudioPlayer:Timeline:CorrelationTimestamp:ReSyncInterval:Delegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialises an AudioSyncController with a audioplayer and a timeline to synchronise
+  to.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithAudioPlayer</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">audioplayer</span>
+                           <span class="nf">Timeline</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sync_timeline</span>
+               <span class="nf">CorrelationTimestamp</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">correlation</span>
+                     <span class="nf">ReSyncInterval</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">interval_secs</span>
+                           <span class="nf">Delegate</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SyncControllerDelegate.html">SyncControllerDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)audioPlayer">audioPlayer</a></span> <span class="nv">audioplayer</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">timeline</span> <span class="nv">sync_timeline</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">correlationTimestamp</span> <span class="nv">correlation</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">reSyncInterval</span> <span class="nv">interval_secs</span><span class="p">:</span> <span class="kt">NSTimeInterval</span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SyncControllerDelegate.html">SyncControllerDelegate</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>an AudioPlayer instance</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeline</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a CorrelatedClock instance modelling a particular timeline</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interval_secs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>resynchronisation interval in seconds (as a double value)</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a delegate object (conforming to AudioSyncControllerDelegate protocol)
+                 to receive callbacks</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>initialised AudioSyncController instance</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Class%20Factory%20Methods"></a>
+                <a name="//apple_ref/objc/Section/Class Factory Methods" class="dashAnchor"></a>
+                <a href="#/Class%20Factory%20Methods">
+                  <h3 class="section-name">Class Factory Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(cm)syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:"></a>
+                    <a name="//apple_ref/objc/Method/+syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(cm)syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:">+syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an instance of AudioSyncController initialised with an audio player and
+  a synchronisation timelime (the timeline to synchronise to).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">syncControllerWithAudioPlayer</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">audioplayer</span>
+                                 <span class="nf">SyncTimeline</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sync_timeline</span>
+                         <span class="nf">CorrelationTimestamp</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">correlation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">convenience</span> <span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)audioPlayer">audioPlayer</a></span> <span class="nv">audioplayer</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)syncTimeline">syncTimeline</a></span> <span class="nv">sync_timeline</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">correlationTimestamp</span> <span class="nv">correlation</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a AudioPlayer object</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sync_timeline</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a CorrelatedClock object representing a synchronisation timeline</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>correlation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a pair of timestamps mapping the synchronisation timeline to the 
+                      audio object timeline</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>initialised AudioSyncController instance</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(cm)syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:AndDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/+syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:AndDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(cm)syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:AndDelegate:">+syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:AndDelegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Creates an instance of AudioSyncController initialised with an audio player and</li>
+<li>a synchronisation timelime (the timeline to synchronise to) and a delegate to</li>
+<li>receive callbacks.
+*</li>
+<li>- parameter: audioplayer   a AudioPlayer object</li>
+<li>- parameter: sync_timeline a CorrelatedClock object representing a synchronisation timeline</li>
+<li>- parameter: correlation   a pair of timestamps mapping the synchronisation timeline to the
+audio object timeline</li>
+<li>- parameter: delegate      an object conforming to the AudioSyncControllerDelegate protocol
+*</li>
+<li>- returns: initialised AudioSyncController instance</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">syncControllerWithAudioPlayer</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">audioplayer</span>
+                                 <span class="nf">SyncTimeline</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sync_timeline</span>
+                         <span class="nf">CorrelationTimestamp</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">correlation</span>
+                                  <span class="nf">AndDelegate</span><span class="p">:</span>
+                                      <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SyncControllerDelegate.html">SyncControllerDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">convenience</span> <span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)audioPlayer">audioPlayer</a></span> <span class="nv">audioplayer</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)syncTimeline">syncTimeline</a></span> <span class="nv">sync_timeline</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">correlationTimestamp</span> <span class="nv">correlation</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">andDelegate</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SyncControllerDelegate.html">SyncControllerDelegate</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a AudioPlayer object</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sync_timeline</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a CorrelatedClock object representing a synchronisation timeline</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>correlation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a pair of timestamps mapping the synchronisation timeline to the
+audio object timeline</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>an object conforming to the AudioSyncControllerDelegate protocol</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>initialised AudioSyncController instance</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(cm)syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:AndSyncInterval:"></a>
+                    <a name="//apple_ref/objc/Method/+syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:AndSyncInterval:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(cm)syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:AndSyncInterval:">+syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:AndSyncInterval:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Creates an instance of AudioSyncController initialised with an audio player and</li>
+<li>a synchronisation timelime (the timeline to synchronise to).  Resynchronisation of the</li>
+<li>player occurs every &lsquo;resync_interval&rsquo; seconds.
+*</li>
+<li>- parameter: audioplayer   a AudioPlayer object</li>
+<li>- parameter: sync_timeline a CorrelatedClock object representing a synchronisation timeline</li>
+<li>- parameter: correlation   a pair of timestamps mapping the synchronisation timeline to the
+audio object timeline</li>
+<li>- parameter: resync_interval resynchronisation interval in seconds
+*</li>
+<li>- returns: initialised AudioSyncController instance</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">syncControllerWithAudioPlayer</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">audioplayer</span>
+                                 <span class="nf">SyncTimeline</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sync_timeline</span>
+                         <span class="nf">CorrelationTimestamp</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">correlation</span>
+                              <span class="nf">AndSyncInterval</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">resync_interval</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">convenience</span> <span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)audioPlayer">audioPlayer</a></span> <span class="nv">audioplayer</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)syncTimeline">syncTimeline</a></span> <span class="nv">sync_timeline</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">correlationTimestamp</span> <span class="nv">correlation</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">andSyncInterval</span> <span class="nv">resync_interval</span><span class="p">:</span> <span class="kt">NSTimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a AudioPlayer object</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sync_timeline</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a CorrelatedClock object representing a synchronisation timeline</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>correlation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a pair of timestamps mapping the synchronisation timeline to the
+audio object timeline</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resync_interval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>resynchronisation interval in seconds</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>initialised AudioSyncController instance</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(cm)syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:SyncInterval:AndDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/+syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:SyncInterval:AndDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(cm)syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:SyncInterval:AndDelegate:">+syncControllerWithAudioPlayer:SyncTimeline:CorrelationTimestamp:SyncInterval:AndDelegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Creates an instance of AudioSyncController initialised with an audio player and</li>
+<li>a synchronisation timelime (the timeline to synchronise to).  Resynchronisation of the</li>
+<li>player occurs every &lsquo;resync_interval&rsquo; seconds.
+*</li>
+<li>- parameter: audioplayer   a AudioPlayer object</li>
+<li>- parameter: sync_timeline a CorrelatedClock object representing a synchronisation timeline</li>
+<li>- parameter: correlation   a pair of timestamps mapping the synchronisation timeline to the
+audio object timeline</li>
+<li>- parameter: resync_interval resynchronisation interval in seconds</li>
+<li>- parameter: delegate      an object conforming to the AudioSyncControllerDelegate protocol
+*</li>
+<li>- returns: initialised AudioSyncController instance</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">syncControllerWithAudioPlayer</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">audioplayer</span>
+                                 <span class="nf">SyncTimeline</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">sync_timeline</span>
+                         <span class="nf">CorrelationTimestamp</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">correlation</span>
+                                 <span class="nf">SyncInterval</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">resync_interval</span>
+                                  <span class="nf">AndDelegate</span><span class="p">:</span>
+                                      <span class="p">(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SyncControllerDelegate.html">SyncControllerDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">convenience</span> <span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)audioPlayer">audioPlayer</a></span> <span class="nv">audioplayer</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)syncTimeline">syncTimeline</a></span> <span class="nv">sync_timeline</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n">correlationTimestamp</span> <span class="nv">correlation</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="o">!</span><span class="p">,</span> <span class="n"><a href="../Classes/AudioSyncController.html#/c:objc(cs)AudioSyncController(py)syncInterval">syncInterval</a></span> <span class="nv">resync_interval</span><span class="p">:</span> <span class="kt">NSTimeInterval</span><span class="p">,</span> <span class="n">andDelegate</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SyncControllerDelegate.html">SyncControllerDelegate</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a AudioPlayer object</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sync_timeline</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a CorrelatedClock object representing a synchronisation timeline</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>correlation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a pair of timestamps mapping the synchronisation timeline to the
+audio object timeline</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resync_interval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>resynchronisation interval in seconds</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>an object conforming to the AudioSyncControllerDelegate protocol</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>initialised AudioSyncController instance</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Actions"></a>
+                <a name="//apple_ref/objc/Section/Actions" class="dashAnchor"></a>
+                <a href="#/Actions">
+                  <h3 class="section-name">Actions</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(im)start"></a>
+                    <a name="//apple_ref/objc/Method/-start" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(im)start">-start</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start the synchronisation process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">start</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">start</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AudioSyncController(im)stop"></a>
+                    <a name="//apple_ref/objc/Method/-stop" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AudioSyncController(im)stop">-stop</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop the synchronisation process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">stop</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">stop</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://bbc.co.uk/rd" target="_blank" rel="external">Rajiv_Ramdhany</a>. All rights reserved. (Last updated: 2016-10-03)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

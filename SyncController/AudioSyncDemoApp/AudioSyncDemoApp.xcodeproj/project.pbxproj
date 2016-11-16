@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42054FE11CEA6C4300037EE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42054FE01CEA6C4300037EE3 /* main.m */; };
+		42054FE41CEA6C4300037EE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42054FE31CEA6C4300037EE3 /* AppDelegate.m */; };
+		42054FE71CEA6C4300037EE3 /* AudioSyncDemoAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42054FE61CEA6C4300037EE3 /* AudioSyncDemoAppViewController.m */; };
+		42054FEA1CEA6C4300037EE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42054FE81CEA6C4300037EE3 /* Main.storyboard */; };
+		42054FED1CEA6C4300037EE3 /* AudioSyncDemoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42054FEB1CEA6C4300037EE3 /* AudioSyncDemoApp.xcdatamodeld */; };
+		42054FEF1CEA6C4300037EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42054FEE1CEA6C4300037EE3 /* Assets.xcassets */; };
+		42054FF21CEA6C4300037EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42054FF01CEA6C4300037EE3 /* LaunchScreen.storyboard */; };
+		42054FFD1CEA6C4300037EE3 /* AudioSyncDemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42054FFC1CEA6C4300037EE3 /* AudioSyncDemoAppTests.m */; };
+		420550081CEA6C4300037EE3 /* AudioSyncDemoAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 420550071CEA6C4300037EE3 /* AudioSyncDemoAppUITests.m */; };
+		42395C3B1DC393F4009A6E4E /* WallClockClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C3A1DC393F4009A6E4E /* WallClockClient.framework */; };
+		42395C3C1DC393F4009A6E4E /* WallClockClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C3A1DC393F4009A6E4E /* WallClockClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C3E1DC393F4009A6E4E /* JSONModelFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C3D1DC393F4009A6E4E /* JSONModelFramework.framework */; };
+		42395C3F1DC393F4009A6E4E /* JSONModelFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C3D1DC393F4009A6E4E /* JSONModelFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C411DC393F4009A6E4E /* AudioPlayerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C401DC393F4009A6E4E /* AudioPlayerEngine.framework */; };
+		42395C421DC393F4009A6E4E /* AudioPlayerEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C401DC393F4009A6E4E /* AudioPlayerEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C441DC393F4009A6E4E /* SyncController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C431DC393F4009A6E4E /* SyncController.framework */; };
+		42395C451DC393F4009A6E4E /* SyncController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C431DC393F4009A6E4E /* SyncController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C471DC393F4009A6E4E /* AsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C461DC393F4009A6E4E /* AsyncSocket.framework */; };
+		42395C481DC393F4009A6E4E /* AsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C461DC393F4009A6E4E /* AsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C4A1DC393F4009A6E4E /* ClockTimelines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C491DC393F4009A6E4E /* ClockTimelines.framework */; };
+		42395C4B1DC393F4009A6E4E /* ClockTimelines.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C491DC393F4009A6E4E /* ClockTimelines.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C4D1DC393F4009A6E4E /* SimpleLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C4C1DC393F4009A6E4E /* SimpleLogger.framework */; };
+		42395C4E1DC393F4009A6E4E /* SimpleLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C4C1DC393F4009A6E4E /* SimpleLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C501DC393F4009A6E4E /* SocketRocketiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C4F1DC393F4009A6E4E /* SocketRocketiOS.framework */; };
+		42395C511DC393F4009A6E4E /* SocketRocketiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C4F1DC393F4009A6E4E /* SocketRocketiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C531DC393F4009A6E4E /* SyncKitCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C521DC393F4009A6E4E /* SyncKitCollections.framework */; };
+		42395C541DC393F4009A6E4E /* SyncKitCollections.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C521DC393F4009A6E4E /* SyncKitCollections.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C561DC393F4009A6E4E /* SyncKitConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C551DC393F4009A6E4E /* SyncKitConfiguration.framework */; };
+		42395C571DC393F4009A6E4E /* SyncKitConfiguration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C551DC393F4009A6E4E /* SyncKitConfiguration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C591DC393F4009A6E4E /* TimelineSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C581DC393F4009A6E4E /* TimelineSync.framework */; };
+		42395C5A1DC393F4009A6E4E /* TimelineSync.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C581DC393F4009A6E4E /* TimelineSync.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C5C1DC393F4009A6E4E /* UDPMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C5B1DC393F4009A6E4E /* UDPMessaging.framework */; };
+		42395C5D1DC393F4009A6E4E /* UDPMessaging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C5B1DC393F4009A6E4E /* UDPMessaging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		423BB1931CEC81AF00DA1D29 /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 423BB1901CEC81AF00DA1D29 /* HUD.m */; };
+		423BB1941CEC81AF00DA1D29 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 423BB1921CEC81AF00DA1D29 /* MBProgressHUD.m */; };
+		428328091DA418870010473A /* audio.aac in Resources */ = {isa = PBXBuildFile; fileRef = 428328081DA418870010473A /* audio.aac */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42054FF91CEA6C4300037EE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42054FD41CEA6C4300037EE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42054FDB1CEA6C4300037EE3;
+			remoteInfo = AudioSyncDemoApp;
+		};
+		420550041CEA6C4300037EE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42054FD41CEA6C4300037EE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42054FDB1CEA6C4300037EE3;
+			remoteInfo = AudioSyncDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42395C5E1DC393F4009A6E4E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42395C421DC393F4009A6E4E /* AudioPlayerEngine.framework in Embed Frameworks */,
+				42395C511DC393F4009A6E4E /* SocketRocketiOS.framework in Embed Frameworks */,
+				42395C541DC393F4009A6E4E /* SyncKitCollections.framework in Embed Frameworks */,
+				42395C451DC393F4009A6E4E /* SyncController.framework in Embed Frameworks */,
+				42395C4B1DC393F4009A6E4E /* ClockTimelines.framework in Embed Frameworks */,
+				42395C4E1DC393F4009A6E4E /* SimpleLogger.framework in Embed Frameworks */,
+				42395C481DC393F4009A6E4E /* AsyncSocket.framework in Embed Frameworks */,
+				42395C571DC393F4009A6E4E /* SyncKitConfiguration.framework in Embed Frameworks */,
+				42395C3C1DC393F4009A6E4E /* WallClockClient.framework in Embed Frameworks */,
+				42395C5D1DC393F4009A6E4E /* UDPMessaging.framework in Embed Frameworks */,
+				42395C3F1DC393F4009A6E4E /* JSONModelFramework.framework in Embed Frameworks */,
+				42395C5A1DC393F4009A6E4E /* TimelineSync.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		42054FDC1CEA6C4300037EE3 /* AudioSyncDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioSyncDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42054FE01CEA6C4300037EE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42054FE21CEA6C4300037EE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42054FE31CEA6C4300037EE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42054FE51CEA6C4300037EE3 /* AudioSyncDemoAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioSyncDemoAppViewController.h; sourceTree = "<group>"; };
+		42054FE61CEA6C4300037EE3 /* AudioSyncDemoAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioSyncDemoAppViewController.m; sourceTree = "<group>"; };
+		42054FE91CEA6C4300037EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42054FEC1CEA6C4300037EE3 /* AudioSyncDemoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AudioSyncDemoApp.xcdatamodel; sourceTree = "<group>"; };
+		42054FEE1CEA6C4300037EE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42054FF11CEA6C4300037EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42054FF31CEA6C4300037EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42054FF81CEA6C4300037EE3 /* AudioSyncDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioSyncDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42054FFC1CEA6C4300037EE3 /* AudioSyncDemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioSyncDemoAppTests.m; sourceTree = "<group>"; };
+		42054FFE1CEA6C4300037EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		420550031CEA6C4300037EE3 /* AudioSyncDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioSyncDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		420550071CEA6C4300037EE3 /* AudioSyncDemoAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioSyncDemoAppUITests.m; sourceTree = "<group>"; };
+		420550091CEA6C4300037EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42395C3A1DC393F4009A6E4E /* WallClockClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = WallClockClient.framework; path = "WallClockClient.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C3D1DC393F4009A6E4E /* JSONModelFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = JSONModelFramework.framework; path = "JSONModelFramework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C401DC393F4009A6E4E /* AudioPlayerEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = AudioPlayerEngine.framework; path = "AudioPlayerEngine.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C431DC393F4009A6E4E /* SyncController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SyncController.framework; path = "SyncController.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C461DC393F4009A6E4E /* AsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = AsyncSocket.framework; path = "AsyncSocket.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C491DC393F4009A6E4E /* ClockTimelines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = ClockTimelines.framework; path = "ClockTimelines.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C4C1DC393F4009A6E4E /* SimpleLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SimpleLogger.framework; path = "SimpleLogger.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C4F1DC393F4009A6E4E /* SocketRocketiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SocketRocketiOS.framework; path = "SocketRocketiOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C521DC393F4009A6E4E /* SyncKitCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SyncKitCollections.framework; path = "SyncKitCollections.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C551DC393F4009A6E4E /* SyncKitConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SyncKitConfiguration.framework; path = "SyncKitConfiguration.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C581DC393F4009A6E4E /* TimelineSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = TimelineSync.framework; path = "TimelineSync.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C5B1DC393F4009A6E4E /* UDPMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = UDPMessaging.framework; path = "UDPMessaging.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		423BB18F1CEC81AF00DA1D29 /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		423BB1901CEC81AF00DA1D29 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
+		423BB1911CEC81AF00DA1D29 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		423BB1921CEC81AF00DA1D29 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		428328081DA418870010473A /* audio.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio.aac; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42054FD91CEA6C4300037EE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42395C411DC393F4009A6E4E /* AudioPlayerEngine.framework in Frameworks */,
+				42395C501DC393F4009A6E4E /* SocketRocketiOS.framework in Frameworks */,
+				42395C531DC393F4009A6E4E /* SyncKitCollections.framework in Frameworks */,
+				42395C441DC393F4009A6E4E /* SyncController.framework in Frameworks */,
+				42395C4A1DC393F4009A6E4E /* ClockTimelines.framework in Frameworks */,
+				42395C4D1DC393F4009A6E4E /* SimpleLogger.framework in Frameworks */,
+				42395C471DC393F4009A6E4E /* AsyncSocket.framework in Frameworks */,
+				42395C561DC393F4009A6E4E /* SyncKitConfiguration.framework in Frameworks */,
+				42395C3B1DC393F4009A6E4E /* WallClockClient.framework in Frameworks */,
+				42395C5C1DC393F4009A6E4E /* UDPMessaging.framework in Frameworks */,
+				42395C3E1DC393F4009A6E4E /* JSONModelFramework.framework in Frameworks */,
+				42395C591DC393F4009A6E4E /* TimelineSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42054FF51CEA6C4300037EE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420550001CEA6C4300037EE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42054FD31CEA6C4300037EE3 = {
+			isa = PBXGroup;
+			children = (
+				42395C5B1DC393F4009A6E4E /* UDPMessaging.framework */,
+				42395C581DC393F4009A6E4E /* TimelineSync.framework */,
+				42395C551DC393F4009A6E4E /* SyncKitConfiguration.framework */,
+				42395C521DC393F4009A6E4E /* SyncKitCollections.framework */,
+				42395C4F1DC393F4009A6E4E /* SocketRocketiOS.framework */,
+				42395C4C1DC393F4009A6E4E /* SimpleLogger.framework */,
+				42395C491DC393F4009A6E4E /* ClockTimelines.framework */,
+				42395C461DC393F4009A6E4E /* AsyncSocket.framework */,
+				42395C431DC393F4009A6E4E /* SyncController.framework */,
+				42395C401DC393F4009A6E4E /* AudioPlayerEngine.framework */,
+				42395C3D1DC393F4009A6E4E /* JSONModelFramework.framework */,
+				42395C3A1DC393F4009A6E4E /* WallClockClient.framework */,
+				42D5C2141CFF83B100F73A63 /* Frameworks */,
+				42054FDE1CEA6C4300037EE3 /* AudioSyncDemoApp */,
+				42054FFB1CEA6C4300037EE3 /* AudioSyncDemoAppTests */,
+				420550061CEA6C4300037EE3 /* AudioSyncDemoAppUITests */,
+				42054FDD1CEA6C4300037EE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42054FDD1CEA6C4300037EE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42054FDC1CEA6C4300037EE3 /* AudioSyncDemoApp.app */,
+				42054FF81CEA6C4300037EE3 /* AudioSyncDemoAppTests.xctest */,
+				420550031CEA6C4300037EE3 /* AudioSyncDemoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42054FDE1CEA6C4300037EE3 /* AudioSyncDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				423BB18F1CEC81AF00DA1D29 /* HUD.h */,
+				423BB1901CEC81AF00DA1D29 /* HUD.m */,
+				423BB1911CEC81AF00DA1D29 /* MBProgressHUD.h */,
+				423BB1921CEC81AF00DA1D29 /* MBProgressHUD.m */,
+				42054FE21CEA6C4300037EE3 /* AppDelegate.h */,
+				42054FE31CEA6C4300037EE3 /* AppDelegate.m */,
+				42054FE51CEA6C4300037EE3 /* AudioSyncDemoAppViewController.h */,
+				42054FE61CEA6C4300037EE3 /* AudioSyncDemoAppViewController.m */,
+				42054FE81CEA6C4300037EE3 /* Main.storyboard */,
+				42054FEE1CEA6C4300037EE3 /* Assets.xcassets */,
+				42054FF01CEA6C4300037EE3 /* LaunchScreen.storyboard */,
+				42054FF31CEA6C4300037EE3 /* Info.plist */,
+				42054FEB1CEA6C4300037EE3 /* AudioSyncDemoApp.xcdatamodeld */,
+				42054FDF1CEA6C4300037EE3 /* Supporting Files */,
+			);
+			path = AudioSyncDemoApp;
+			sourceTree = "<group>";
+		};
+		42054FDF1CEA6C4300037EE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				428328081DA418870010473A /* audio.aac */,
+				42054FE01CEA6C4300037EE3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42054FFB1CEA6C4300037EE3 /* AudioSyncDemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				42054FFC1CEA6C4300037EE3 /* AudioSyncDemoAppTests.m */,
+				42054FFE1CEA6C4300037EE3 /* Info.plist */,
+			);
+			path = AudioSyncDemoAppTests;
+			sourceTree = "<group>";
+		};
+		420550061CEA6C4300037EE3 /* AudioSyncDemoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				420550071CEA6C4300037EE3 /* AudioSyncDemoAppUITests.m */,
+				420550091CEA6C4300037EE3 /* Info.plist */,
+			);
+			path = AudioSyncDemoAppUITests;
+			sourceTree = "<group>";
+		};
+		42D5C2141CFF83B100F73A63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42054FDB1CEA6C4300037EE3 /* AudioSyncDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4205500C1CEA6C4300037EE3 /* Build configuration list for PBXNativeTarget "AudioSyncDemoApp" */;
+			buildPhases = (
+				42054FD81CEA6C4300037EE3 /* Sources */,
+				42054FD91CEA6C4300037EE3 /* Frameworks */,
+				42054FDA1CEA6C4300037EE3 /* Resources */,
+				42395C5E1DC393F4009A6E4E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioSyncDemoApp;
+			productName = AudioSyncDemoApp;
+			productReference = 42054FDC1CEA6C4300037EE3 /* AudioSyncDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42054FF71CEA6C4300037EE3 /* AudioSyncDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4205500F1CEA6C4300037EE3 /* Build configuration list for PBXNativeTarget "AudioSyncDemoAppTests" */;
+			buildPhases = (
+				42054FF41CEA6C4300037EE3 /* Sources */,
+				42054FF51CEA6C4300037EE3 /* Frameworks */,
+				42054FF61CEA6C4300037EE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42054FFA1CEA6C4300037EE3 /* PBXTargetDependency */,
+			);
+			name = AudioSyncDemoAppTests;
+			productName = AudioSyncDemoAppTests;
+			productReference = 42054FF81CEA6C4300037EE3 /* AudioSyncDemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		420550021CEA6C4300037EE3 /* AudioSyncDemoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420550121CEA6C4300037EE3 /* Build configuration list for PBXNativeTarget "AudioSyncDemoAppUITests" */;
+			buildPhases = (
+				42054FFF1CEA6C4300037EE3 /* Sources */,
+				420550001CEA6C4300037EE3 /* Frameworks */,
+				420550011CEA6C4300037EE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				420550051CEA6C4300037EE3 /* PBXTargetDependency */,
+			);
+			name = AudioSyncDemoAppUITests;
+			productName = AudioSyncDemoAppUITests;
+			productReference = 420550031CEA6C4300037EE3 /* AudioSyncDemoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42054FD41CEA6C4300037EE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "BBC RD";
+				TargetAttributes = {
+					42054FDB1CEA6C4300037EE3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 869YXPEF4W;
+					};
+					42054FF71CEA6C4300037EE3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 42054FDB1CEA6C4300037EE3;
+					};
+					420550021CEA6C4300037EE3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 42054FDB1CEA6C4300037EE3;
+					};
+				};
+			};
+			buildConfigurationList = 42054FD71CEA6C4300037EE3 /* Build configuration list for PBXProject "AudioSyncDemoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42054FD31CEA6C4300037EE3;
+			productRefGroup = 42054FDD1CEA6C4300037EE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42054FDB1CEA6C4300037EE3 /* AudioSyncDemoApp */,
+				42054FF71CEA6C4300037EE3 /* AudioSyncDemoAppTests */,
+				420550021CEA6C4300037EE3 /* AudioSyncDemoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42054FDA1CEA6C4300037EE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42054FF21CEA6C4300037EE3 /* LaunchScreen.storyboard in Resources */,
+				42054FEF1CEA6C4300037EE3 /* Assets.xcassets in Resources */,
+				428328091DA418870010473A /* audio.aac in Resources */,
+				42054FEA1CEA6C4300037EE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42054FF61CEA6C4300037EE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420550011CEA6C4300037EE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42054FD81CEA6C4300037EE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				423BB1931CEC81AF00DA1D29 /* HUD.m in Sources */,
+				423BB1941CEC81AF00DA1D29 /* MBProgressHUD.m in Sources */,
+				42054FE71CEA6C4300037EE3 /* AudioSyncDemoAppViewController.m in Sources */,
+				42054FE41CEA6C4300037EE3 /* AppDelegate.m in Sources */,
+				42054FED1CEA6C4300037EE3 /* AudioSyncDemoApp.xcdatamodeld in Sources */,
+				42054FE11CEA6C4300037EE3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42054FF41CEA6C4300037EE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42054FFD1CEA6C4300037EE3 /* AudioSyncDemoAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42054FFF1CEA6C4300037EE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420550081CEA6C4300037EE3 /* AudioSyncDemoAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42054FFA1CEA6C4300037EE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42054FDB1CEA6C4300037EE3 /* AudioSyncDemoApp */;
+			targetProxy = 42054FF91CEA6C4300037EE3 /* PBXContainerItemProxy */;
+		};
+		420550051CEA6C4300037EE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42054FDB1CEA6C4300037EE3 /* AudioSyncDemoApp */;
+			targetProxy = 420550041CEA6C4300037EE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42054FE81CEA6C4300037EE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42054FE91CEA6C4300037EE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42054FF01CEA6C4300037EE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42054FF11CEA6C4300037EE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4205500A1CEA6C4300037EE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4205500B1CEA6C4300037EE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4205500D1CEA6C4300037EE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = AudioSyncDemoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.rd.AudioSyncDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4205500E1CEA6C4300037EE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = AudioSyncDemoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.rd.AudioSyncDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		420550101CEA6C4300037EE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AudioSyncDemoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.rd.AudioSyncDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioSyncDemoApp.app/AudioSyncDemoApp";
+			};
+			name = Debug;
+		};
+		420550111CEA6C4300037EE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AudioSyncDemoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.rd.AudioSyncDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioSyncDemoApp.app/AudioSyncDemoApp";
+			};
+			name = Release;
+		};
+		420550131CEA6C4300037EE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AudioSyncDemoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.rd.AudioSyncDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AudioSyncDemoApp;
+			};
+			name = Debug;
+		};
+		420550141CEA6C4300037EE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AudioSyncDemoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.rd.AudioSyncDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AudioSyncDemoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42054FD71CEA6C4300037EE3 /* Build configuration list for PBXProject "AudioSyncDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4205500A1CEA6C4300037EE3 /* Debug */,
+				4205500B1CEA6C4300037EE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4205500C1CEA6C4300037EE3 /* Build configuration list for PBXNativeTarget "AudioSyncDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4205500D1CEA6C4300037EE3 /* Debug */,
+				4205500E1CEA6C4300037EE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4205500F1CEA6C4300037EE3 /* Build configuration list for PBXNativeTarget "AudioSyncDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420550101CEA6C4300037EE3 /* Debug */,
+				420550111CEA6C4300037EE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		420550121CEA6C4300037EE3 /* Build configuration list for PBXNativeTarget "AudioSyncDemoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420550131CEA6C4300037EE3 /* Debug */,
+				420550141CEA6C4300037EE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		42054FEB1CEA6C4300037EE3 /* AudioSyncDemoApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42054FEC1CEA6C4300037EE3 /* AudioSyncDemoApp.xcdatamodel */,
+			);
+			currentVersion = 42054FEC1CEA6C4300037EE3 /* AudioSyncDemoApp.xcdatamodel */;
+			path = AudioSyncDemoApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 42054FD41CEA6C4300037EE3 /* Project object */;
+}

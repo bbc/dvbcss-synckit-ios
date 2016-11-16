@@ -1,0 +1,6 @@
+framework module SocketRocketiOS {
+  umbrella header "SocketRocketiOS.h"
+
+  export *
+  module * { export * }
+}

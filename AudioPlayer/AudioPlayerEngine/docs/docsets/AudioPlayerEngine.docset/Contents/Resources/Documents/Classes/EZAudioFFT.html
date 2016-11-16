@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EZAudioFFT Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/EZAudioFFT" class="dashAnchor"></a>
+
+    <a title="EZAudioFFT Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          AudioPlayerEngine Docs
+        </a>
+         (68% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/src/AudioPlayerEngine">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">AudioPlayerEngine Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      EZAudioFFT Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AudioPlayer.html">AudioPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AudioPlayerViewController.html">AudioPlayerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AudioStreamPlayer.html">AudioStreamPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudio.html">EZAudio</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioDevice.html">EZAudioDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioDisplayLink.html">EZAudioDisplayLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFFT.html">EZAudioFFT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFFTRolling.html">EZAudioFFTRolling</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFile.html">EZAudioFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFloatConverter.html">EZAudioFloatConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFloatData.html">EZAudioFloatData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioPlayer.html">EZAudioPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioPlot.html">EZAudioPlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioPlotGL.html">EZAudioPlotGL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes.html#/c:objc(cs)EZAudioPlotWaveformLayer">EZAudioPlotWaveformLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioUtilities.html">EZAudioUtilities</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZMicrophone.html">EZMicrophone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZOutput.html">EZOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZPlot.html">EZPlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZRecorder.html">EZRecorder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@ASStatusChangedNotification">ASStatusChangedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangeAudioFileNotification">AudioPlayerDidChangeAudioFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangeOutputDeviceNotification">AudioPlayerDidChangeOutputDeviceNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangePanNotification">AudioPlayerDidChangePanNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangePlayStateNotification">AudioPlayerDidChangePlayStateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangeVolumeNotification">AudioPlayerDidChangeVolumeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidReachEndOfFileNotification">AudioPlayerDidReachEndOfFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidSeekNotification">AudioPlayerDidSeekNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioFloatConverterDefaultPacketSize">EZAudioFloatConverterDefaultPacketSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangeAudioFileNotification">EZAudioPlayerDidChangeAudioFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangeOutputDeviceNotification">EZAudioPlayerDidChangeOutputDeviceNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangePanNotification">EZAudioPlayerDidChangePanNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangePlayStateNotification">EZAudioPlayerDidChangePlayStateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangeVolumeNotification">EZAudioPlayerDidChangeVolumeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidReachEndOfFileNotification">EZAudioPlayerDidReachEndOfFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidSeekNotification">EZAudioPlayerDidSeekNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlotDefaultHistoryBufferLength">EZAudioPlotDefaultHistoryBufferLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlotDefaultMaxHistoryBufferLength">EZAudioPlotDefaultMaxHistoryBufferLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioVersionNumber">EZAudioVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioVersionString">EZAudioVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZOutputDefaultSampleRate">EZOutputDefaultSampleRate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZOutputMaximumFramesPerSlice">EZOutputMaximumFramesPerSlice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kEZAudioPlotDefaultHistoryBufferLength">kEZAudioPlotDefaultHistoryBufferLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kEZAudioPlotMaxHistoryBufferLength">kEZAudioPlotMaxHistoryBufferLength</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioPlayerState.html">AudioPlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioStreamPlayerErrorCode.html">AudioStreamPlayerErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioStreamPlayerState.html">AudioStreamPlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioStreamPlayerStopReason.html">AudioStreamPlayerStopReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/EZAudioPlayerState.html">EZAudioPlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/EZPlotType.html">EZPlotType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/EZRecorderFileType.html">EZRecorderFileType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AudioPlayerDelegate.html">AudioPlayerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AudioPlayerVCDelegate.html">AudioPlayerVCDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioDisplayLinkDelegate.html">EZAudioDisplayLinkDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioFFTDelegate.html">EZAudioFFTDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioFileDelegate.html">EZAudioFileDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioPlayerDelegate.html">EZAudioPlayerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZMicrophoneDelegate.html">EZMicrophoneDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZOutputDataSource.html">EZOutputDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZOutputDelegate.html">EZOutputDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZRecorderDelegate.html">EZRecorderDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/EZAudioNodeInfo.html">EZAudioNodeInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/EZAudioPlotGLPoint.html">EZAudioPlotGLPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions.html#/c:EZAudioFile.h@T@EZAudioWaveformDataCompletionBlock">EZAudioWaveformDataCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/EZPlotHistoryInfo.html">EZPlotHistoryInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions.html#/c:EZAudioUtilities.h@T@EZRect">EZRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/TPCircularBuffer.html">TPCircularBuffer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@TPCircularBufferCleanup">TPCircularBufferCleanup</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@TPCircularBufferClear">TPCircularBufferClear</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferConsume">TPCircularBufferConsume</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferConsumeNoBarrier">TPCircularBufferConsumeNoBarrier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferHead">TPCircularBufferHead</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferProduce">TPCircularBufferProduce</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferProduceBytes">TPCircularBufferProduceBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferProduceNoBarrier">TPCircularBufferProduceNoBarrier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@TPCircularBufferSetAtomic">TPCircularBufferSetAtomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferTail">TPCircularBufferTail</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@_TPCircularBufferInit">_TPCircularBufferInit</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>EZAudioFFT</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">EZAudioFFT</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>The EZAudioFFT provides a base class to quickly calculate the FFT of incoming audio data using the Accelerate framework. In addition, the EZAudioFFT contains an EZAudioFFTDelegate to receive an event anytime an FFT is computed.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/objc/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(im)initWithMaximumBufferSize:sampleRate:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithMaximumBufferSize:sampleRate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(im)initWithMaximumBufferSize:sampleRate:">-initWithMaximumBufferSize:sampleRate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes an EZAudioFFT (or subclass) instance with a maximum buffer size and sample rate. The sample rate is used specifically to calculate the <code><a href="../Classes/EZAudioFFT.html#/c:objc(cs)EZAudioFFT(py)maxFrequency">maxFrequency</a></code> property. If you don&rsquo;t care about the <code><a href="../Classes/EZAudioFFT.html#/c:objc(cs)EZAudioFFT(py)maxFrequency">maxFrequency</a></code> property then you can set the sample rate to 0.
+- parameter: maximumBufferSize A vDSP_Length (unsigned long) representing the maximum length of the incoming audio data.
+- parameter: sampleRate        A float representing the sample rate of the incoming audio data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithMaximumBufferSize</span><span class="p">:(</span><span class="n">vDSP_Length</span><span class="p">)</span><span class="nv">maximumBufferSize</span>
+                               <span class="nf">sampleRate</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">sampleRate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">maximumBufferSize</span><span class="p">:</span> <span class="n">vDSP_Length</span><span class="p">,</span> <span class="nv">sampleRate</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maximumBufferSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A vDSP_Length (unsigned long) representing the maximum length of the incoming audio data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleRate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A float representing the sample rate of the incoming audio data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A newly created EZAudioFFT (or subclass) instance.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(im)initWithMaximumBufferSize:sampleRate:delegate:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithMaximumBufferSize:sampleRate:delegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(im)initWithMaximumBufferSize:sampleRate:delegate:">-initWithMaximumBufferSize:sampleRate:delegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes an EZAudioFFT (or subclass) instance with a maximum buffer size, sample rate, and EZAudioFFTDelegate. The sample rate is used specifically to calculate the <code><a href="../Classes/EZAudioFFT.html#/c:objc(cs)EZAudioFFT(py)maxFrequency">maxFrequency</a></code> property. If you don&rsquo;t care about the <code><a href="../Classes/EZAudioFFT.html#/c:objc(cs)EZAudioFFT(py)maxFrequency">maxFrequency</a></code> property then you can set the sample rate to 0. The EZAudioFFTDelegate will act as a receive to get an event whenever the FFT is calculated.
+- parameter: maximumBufferSize A vDSP_Length (unsigned long) representing the maximum length of the incoming audio data.
+- parameter: sampleRate        A float representing the sample rate of the incoming audio data.
+- parameter: delegate          An EZAudioFFTDelegate to receive an event whenever the FFT is calculated.
+- returns: A newly created EZAudioFFT (or subclass) instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithMaximumBufferSize</span><span class="p">:(</span><span class="n">vDSP_Length</span><span class="p">)</span><span class="nv">maximumBufferSize</span>
+                               <span class="nf">sampleRate</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">sampleRate</span>
+                                 <span class="nf">delegate</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/EZAudioFFTDelegate.html">EZAudioFFTDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">maximumBufferSize</span><span class="p">:</span> <span class="n">vDSP_Length</span><span class="p">,</span> <span class="nv">sampleRate</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/EZAudioFFTDelegate.html">EZAudioFFTDelegate</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maximumBufferSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A vDSP_Length (unsigned long) representing the maximum length of the incoming audio data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleRate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A float representing the sample rate of the incoming audio data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An EZAudioFFTDelegate to receive an event whenever the FFT is calculated.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A newly created EZAudioFFT (or subclass) instance.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Class%20Initializers"></a>
+                <a name="//apple_ref/objc/Section/Class Initializers" class="dashAnchor"></a>
+                <a href="#/Class%20Initializers">
+                  <h3 class="section-name">Class Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(cm)fftWithMaximumBufferSize:sampleRate:"></a>
+                    <a name="//apple_ref/objc/Method/+fftWithMaximumBufferSize:sampleRate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(cm)fftWithMaximumBufferSize:sampleRate:">+fftWithMaximumBufferSize:sampleRate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Class method to initialize an EZAudioFFT (or subclass) instance with a maximum buffer size and sample rate. The sample rate is used specifically to calculate the <code><a href="../Classes/EZAudioFFT.html#/c:objc(cs)EZAudioFFT(py)maxFrequency">maxFrequency</a></code> property. If you don&rsquo;t care about the <code><a href="../Classes/EZAudioFFT.html#/c:objc(cs)EZAudioFFT(py)maxFrequency">maxFrequency</a></code> property then you can set the sample rate to 0.
+- parameter: maximumBufferSize A vDSP_Length (unsigned long) representing the maximum length of the incoming audio data.
+- parameter: sampleRate        A float representing the sample rate of the incoming audio data.
+- returns: A newly created EZAudioFFT (or subclass) instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">fftWithMaximumBufferSize</span><span class="p">:(</span><span class="n">vDSP_Length</span><span class="p">)</span><span class="nv">maximumBufferSize</span>
+                              <span class="nf">sampleRate</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">sampleRate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">fftWithMaximumBufferSize</span><span class="p">(</span><span class="nv">maximumBufferSize</span><span class="p">:</span> <span class="n">vDSP_Length</span><span class="p">,</span> <span class="nv">sampleRate</span><span class="p">:</span> <span class="kt">Float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maximumBufferSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A vDSP_Length (unsigned long) representing the maximum length of the incoming audio data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleRate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A float representing the sample rate of the incoming audio data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A newly created EZAudioFFT (or subclass) instance.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(cm)fftWithMaximumBufferSize:sampleRate:delegate:"></a>
+                    <a name="//apple_ref/objc/Method/+fftWithMaximumBufferSize:sampleRate:delegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(cm)fftWithMaximumBufferSize:sampleRate:delegate:">+fftWithMaximumBufferSize:sampleRate:delegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Class method to initialize an EZAudioFFT (or subclass) instance with a maximum buffer size, sample rate, and EZAudioFFTDelegate. The sample rate is used specifically to calculate the <code><a href="../Classes/EZAudioFFT.html#/c:objc(cs)EZAudioFFT(py)maxFrequency">maxFrequency</a></code> property. If you don&rsquo;t care about the <code><a href="../Classes/EZAudioFFT.html#/c:objc(cs)EZAudioFFT(py)maxFrequency">maxFrequency</a></code> property then you can set the sample rate to 0. The EZAudioFFTDelegate will act as a receive to get an event whenever the FFT is calculated.
+- parameter: maximumBufferSize A vDSP_Length (unsigned long) representing the maximum length of the incoming audio data.
+- parameter: sampleRate        A float representing the sample rate of the incoming audio data.
+- parameter: delegate          An EZAudioFFTDelegate to receive an event whenever the FFT is calculated.
+- returns: A newly created EZAudioFFT (or subclass) instance.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">fftWithMaximumBufferSize</span><span class="p">:(</span><span class="n">vDSP_Length</span><span class="p">)</span><span class="nv">maximumBufferSize</span>
+                              <span class="nf">sampleRate</span><span class="p">:(</span><span class="kt">float</span><span class="p">)</span><span class="nv">sampleRate</span>
+                                <span class="nf">delegate</span><span class="p">:(</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/EZAudioFFTDelegate.html">EZAudioFFTDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">fftWithMaximumBufferSize</span><span class="p">(</span><span class="nv">maximumBufferSize</span><span class="p">:</span> <span class="n">vDSP_Length</span><span class="p">,</span> <span class="nv">sampleRate</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/EZAudioFFTDelegate.html">EZAudioFFTDelegate</a></span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maximumBufferSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A vDSP_Length (unsigned long) representing the maximum length of the incoming audio data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sampleRate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A float representing the sample rate of the incoming audio data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An EZAudioFFTDelegate to receive an event whenever the FFT is calculated.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A newly created EZAudioFFT (or subclass) instance.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(py)delegate"></a>
+                    <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An EZAudioFFTDelegate to receive an event whenever the FFT is calculated.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/EZAudioFFTDelegate.html">EZAudioFFTDelegate</a></span><span class="o">&gt;</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/EZAudioFFTDelegate.html">EZAudioFFTDelegate</a></span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(py)complexSplit"></a>
+                    <a name="//apple_ref/objc/Property/complexSplit" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(py)complexSplit">complexSplit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A COMPLEX_SPLIT data structure used to hold the FFT&rsquo;s imaginary and real components.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">COMPLEX_SPLIT</span> <span class="n">complexSplit</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">complexSplit</span><span class="p">:</span> <span class="kt">COMPLEX_SPLIT</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(py)fftData"></a>
+                    <a name="//apple_ref/objc/Property/fftData" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(py)fftData">fftData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A float array containing the last calculated FFT data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="o">*</span><span class="n">fftData</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">fftData</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(py)fftSetup"></a>
+                    <a name="//apple_ref/objc/Property/fftSetup" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(py)fftSetup">fftSetup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An FFTSetup data structure used to internally calculate the FFT using Accelerate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">FFTSetup</span> <span class="n">fftSetup</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">fftSetup</span><span class="p">:</span> <span class="kt">FFTSetup</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(py)inversedFFTData"></a>
+                    <a name="//apple_ref/objc/Property/inversedFFTData" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(py)inversedFFTData">inversedFFTData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A float array containing the last calculated inverse FFT data (the time domain signal).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="o">*</span><span class="n">inversedFFTData</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">inversedFFTData</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(py)maxFrequency"></a>
+                    <a name="//apple_ref/objc/Property/maxFrequency" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(py)maxFrequency">maxFrequency</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A float representing the frequency with the highest energy is the last FFT calculation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">maxFrequency</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">maxFrequency</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(py)maxFrequencyIndex"></a>
+                    <a name="//apple_ref/objc/Property/maxFrequencyIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(py)maxFrequencyIndex">maxFrequencyIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A vDSP_Length (unsigned long) representing the index of the frequency with the highest energy is the last FFT calculation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">vDSP_Length</span> <span class="n">maxFrequencyIndex</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">maxFrequencyIndex</span><span class="p">:</span> <span class="n">vDSP_Length</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(py)maxFrequencyMagnitude"></a>
+                    <a name="//apple_ref/objc/Property/maxFrequencyMagnitude" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(py)maxFrequencyMagnitude">maxFrequencyMagnitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A float representing the magnitude of the frequency with the highest energy is the last FFT calculation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">maxFrequencyMagnitude</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">maxFrequencyMagnitude</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(py)maximumBufferSize"></a>
+                    <a name="//apple_ref/objc/Property/maximumBufferSize" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(py)maximumBufferSize">maximumBufferSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A vDSP_Length (unsigned long) representing the maximum buffer size. This is the maximum length the incoming audio data in the <code>computeFFTWithBuffer:withBufferSize</code> method can be.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">vDSP_Length</span> <span class="n">maximumBufferSize</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">maximumBufferSize</span><span class="p">:</span> <span class="n">vDSP_Length</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(py)sampleRate"></a>
+                    <a name="//apple_ref/objc/Property/sampleRate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(py)sampleRate">sampleRate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A float representing the sample rate of the incoming audio data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">float</span> <span class="n">sampleRate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">sampleRate</span><span class="p">:</span> <span class="kt">Float</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Computing%20The%20FFT"></a>
+                <a name="//apple_ref/objc/Section/Computing The FFT" class="dashAnchor"></a>
+                <a href="#/Computing%20The%20FFT">
+                  <h3 class="section-name">Computing The FFT</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(im)computeFFTWithBuffer:withBufferSize:"></a>
+                    <a name="//apple_ref/objc/Method/-computeFFTWithBuffer:withBufferSize:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(im)computeFFTWithBuffer:withBufferSize:">-computeFFTWithBuffer:withBufferSize:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Computes the FFT for a float array representing an incoming audio signal. This will trigger the EZAudioFFTDelegate method <code>fft:updatedWithFFTData:bufferSize:</code>.
+- parameter: buffer     A float array representing the audio data.
+- parameter: bufferSize The length of the float array of audio data.
+- returns: A float array containing the computed FFT data. The length of the output will be half the incoming buffer (half the <code>bufferSize</code> argument).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">float</span> <span class="o">*</span><span class="p">)</span><span class="nf">computeFFTWithBuffer</span><span class="p">:(</span><span class="kt">float</span> <span class="o">*</span><span class="p">)</span><span class="nv">buffer</span>
+                 <span class="nf">withBufferSize</span><span class="p">:(</span><span class="n">UInt32</span><span class="p">)</span><span class="nv">bufferSize</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">computeFFTWithBuffer</span><span class="p">(</span><span class="nv">buffer</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A float array representing the audio data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bufferSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The length of the float array of audio data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A float array containing the computed FFT data. The length of the output will be half the incoming buffer (half the <code>bufferSize</code> argument).</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(im)frequencyAtIndex:"></a>
+                    <a name="//apple_ref/objc/Method/-frequencyAtIndex:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(im)frequencyAtIndex:">-frequencyAtIndex:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides the frequency corresponding to an index in the last computed FFT data.
+- parameter: index A vDSP_Length (unsigned integer) representing the index of the frequency bin value you&rsquo;d like to get
+- returns: A float representing the frequency value at that index.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="nf">frequencyAtIndex</span><span class="p">:(</span><span class="n">vDSP_Length</span><span class="p">)</span><span class="nv">index</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">frequencyAtIndex</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="n">vDSP_Length</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A vDSP_Length (unsigned integer) representing the index of the frequency bin value you&rsquo;d like to get</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A float representing the frequency value at that index.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)EZAudioFFT(im)frequencyMagnitudeAtIndex:"></a>
+                    <a name="//apple_ref/objc/Method/-frequencyMagnitudeAtIndex:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)EZAudioFFT(im)frequencyMagnitudeAtIndex:">-frequencyMagnitudeAtIndex:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides the magnitude of the frequenecy corresponding to an index in the last computed FFT data.
+- parameter: index A vDSP_Length (unsigned integer) representing the index of the frequency bin value you&rsquo;d like to get
+- returns: A float representing the frequency magnitude value at that index.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="nf">frequencyMagnitudeAtIndex</span><span class="p">:(</span><span class="n">vDSP_Length</span><span class="p">)</span><span class="nv">index</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">frequencyMagnitudeAtIndex</span><span class="p">(</span><span class="nv">index</span><span class="p">:</span> <span class="n">vDSP_Length</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A vDSP_Length (unsigned integer) representing the index of the frequency bin value you&rsquo;d like to get</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A float representing the frequency magnitude value at that index.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://bbc.co.uk/rd" target="_blank" rel="external">Rajiv_Ramdhany</a>. All rights reserved. (Last updated: 2016-09-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

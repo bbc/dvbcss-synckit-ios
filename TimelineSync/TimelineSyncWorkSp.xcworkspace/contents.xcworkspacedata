@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../JSONModelFramework/JSONModelFramework.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../WallClockSync/WallClockClient/WallClockClient.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TimelineSyncDemoApp/TimelineSyncDemoApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../UDPMessaging/UDPMessaging.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SyncKitCollections/SyncKitCollections.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../WebSocket/SocketRocket/SocketRocket.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SimpleLogger/SimpleLogger.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../ClockTimelines/ClockTimelines.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SyncKitConfiguration/SyncKitConfiguration.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TimelineSync/TimelineSync.xcodeproj">
+   </FileRef>
+</Workspace>

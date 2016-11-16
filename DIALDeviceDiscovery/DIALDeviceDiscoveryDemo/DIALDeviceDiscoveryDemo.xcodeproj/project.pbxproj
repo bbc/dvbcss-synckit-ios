@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4222293F1CDCB1E600EE56ED /* CollectionViewFlowLargeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 422229331CDCB1E600EE56ED /* CollectionViewFlowLargeLayout.m */; };
+		422229401CDCB1E600EE56ED /* CollectionViewFlowSmallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 422229351CDCB1E600EE56ED /* CollectionViewFlowSmallLayout.m */; };
+		422229411CDCB1E600EE56ED /* DeviceCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 422229371CDCB1E600EE56ED /* DeviceCollectionViewCell.m */; };
+		422229421CDCB1E600EE56ED /* DIALDeviceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422229391CDCB1E600EE56ED /* DIALDeviceCollectionViewController.m */; };
+		422229431CDCB1E600EE56ED /* DIALDeviceSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4222293B1CDCB1E600EE56ED /* DIALDeviceSelectorViewController.m */; };
+		422229441CDCB1E600EE56ED /* DIALDeviceViewConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4222293D1CDCB1E600EE56ED /* DIALDeviceViewConstants.m */; };
+		42395C051DC38F52009A6E4E /* DIALTV_UI_ResourceBundle.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 42395C041DC38F52009A6E4E /* DIALTV_UI_ResourceBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C071DC38F52009A6E4E /* SyncKitCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C061DC38F52009A6E4E /* SyncKitCollections.framework */; };
+		42395C081DC38F52009A6E4E /* SyncKitCollections.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C061DC38F52009A6E4E /* SyncKitCollections.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C0A1DC38F52009A6E4E /* DIALDeviceDiscovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C091DC38F52009A6E4E /* DIALDeviceDiscovery.framework */; };
+		42395C0B1DC38F52009A6E4E /* DIALDeviceDiscovery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C091DC38F52009A6E4E /* DIALDeviceDiscovery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C0D1DC38F52009A6E4E /* SimpleLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C0C1DC38F52009A6E4E /* SimpleLogger.framework */; };
+		42395C0E1DC38F52009A6E4E /* SimpleLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C0C1DC38F52009A6E4E /* SimpleLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C101DC38F52009A6E4E /* SyncKitConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C0F1DC38F52009A6E4E /* SyncKitConfiguration.framework */; };
+		42395C111DC38F52009A6E4E /* SyncKitConfiguration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C0F1DC38F52009A6E4E /* SyncKitConfiguration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395C131DC38F52009A6E4E /* AsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C121DC38F52009A6E4E /* AsyncSocket.framework */; };
+		42395C141DC38F52009A6E4E /* AsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395C121DC38F52009A6E4E /* AsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4268B4791B22E52000781C20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268B4781B22E52000781C20 /* main.m */; };
+		4268B47C1B22E52000781C20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268B47B1B22E52000781C20 /* AppDelegate.m */; };
+		4268B47F1B22E52000781C20 /* DIALDeviceDiscoveryDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4268B47D1B22E52000781C20 /* DIALDeviceDiscoveryDemo.xcdatamodeld */; };
+		4268B4851B22E52000781C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4268B4831B22E52000781C20 /* Main.storyboard */; };
+		4268B4871B22E52000781C20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4268B4861B22E52000781C20 /* Images.xcassets */; };
+		4268B48A1B22E52000781C20 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4268B4881B22E52000781C20 /* LaunchScreen.xib */; };
+		4268B4961B22E52000781C20 /* DIALDeviceDiscoveryDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268B4951B22E52000781C20 /* DIALDeviceDiscoveryDemoTests.m */; };
+		42B938811CDBB062001D4368 /* DIALTV_UI_ResourceBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42197DDB1CDB9EDC007A346E /* DIALTV_UI_ResourceBundle.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4268B4901B22E52000781C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4268B46B1B22E52000781C20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4268B4721B22E52000781C20;
+			remoteInfo = DIALDeviceDiscoveryDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42395C151DC38F52009A6E4E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42395C0E1DC38F52009A6E4E /* SimpleLogger.framework in Embed Frameworks */,
+				42395C0B1DC38F52009A6E4E /* DIALDeviceDiscovery.framework in Embed Frameworks */,
+				42395C111DC38F52009A6E4E /* SyncKitConfiguration.framework in Embed Frameworks */,
+				42395C081DC38F52009A6E4E /* SyncKitCollections.framework in Embed Frameworks */,
+				42395C141DC38F52009A6E4E /* AsyncSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42395C161DC38F52009A6E4E /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				42395C051DC38F52009A6E4E /* DIALTV_UI_ResourceBundle.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		42197DDB1CDB9EDC007A346E /* DIALTV_UI_ResourceBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; name = DIALTV_UI_ResourceBundle.bundle; path = "/Users/rajivr/Library/Developer/Xcode/DerivedData/DeviceDiscovery-eotvssrtfwutructohzkiqqefzbs/Build/Products/Debug-iphoneos/DIALTV_UI_ResourceBundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		422229321CDCB1E600EE56ED /* CollectionViewFlowLargeLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewFlowLargeLayout.h; sourceTree = "<group>"; };
+		422229331CDCB1E600EE56ED /* CollectionViewFlowLargeLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewFlowLargeLayout.m; sourceTree = "<group>"; };
+		422229341CDCB1E600EE56ED /* CollectionViewFlowSmallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewFlowSmallLayout.h; sourceTree = "<group>"; };
+		422229351CDCB1E600EE56ED /* CollectionViewFlowSmallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewFlowSmallLayout.m; sourceTree = "<group>"; };
+		422229361CDCB1E600EE56ED /* DeviceCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceCollectionViewCell.h; sourceTree = "<group>"; };
+		422229371CDCB1E600EE56ED /* DeviceCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceCollectionViewCell.m; sourceTree = "<group>"; };
+		422229381CDCB1E600EE56ED /* DIALDeviceCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIALDeviceCollectionViewController.h; sourceTree = "<group>"; };
+		422229391CDCB1E600EE56ED /* DIALDeviceCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIALDeviceCollectionViewController.m; sourceTree = "<group>"; };
+		4222293A1CDCB1E600EE56ED /* DIALDeviceSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIALDeviceSelectorViewController.h; sourceTree = "<group>"; };
+		4222293B1CDCB1E600EE56ED /* DIALDeviceSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIALDeviceSelectorViewController.m; sourceTree = "<group>"; };
+		4222293C1CDCB1E600EE56ED /* DIALDeviceViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIALDeviceViewConstants.h; sourceTree = "<group>"; };
+		4222293D1CDCB1E600EE56ED /* DIALDeviceViewConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIALDeviceViewConstants.m; sourceTree = "<group>"; };
+		4222293E1CDCB1E600EE56ED /* DIALTVSelectionUIViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIALTVSelectionUIViews.h; sourceTree = "<group>"; };
+		42395C041DC38F52009A6E4E /* DIALTV_UI_ResourceBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; name = DIALTV_UI_ResourceBundle.bundle; path = "DIALTV_UI_ResourceBundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C061DC38F52009A6E4E /* SyncKitCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SyncKitCollections.framework; path = "SyncKitCollections.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C091DC38F52009A6E4E /* DIALDeviceDiscovery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = DIALDeviceDiscovery.framework; path = "DIALDeviceDiscovery.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C0C1DC38F52009A6E4E /* SimpleLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SimpleLogger.framework; path = "SimpleLogger.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C0F1DC38F52009A6E4E /* SyncKitConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SyncKitConfiguration.framework; path = "SyncKitConfiguration.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42395C121DC38F52009A6E4E /* AsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = AsyncSocket.framework; path = "AsyncSocket.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4268B4731B22E52000781C20 /* DIALDeviceDiscoveryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DIALDeviceDiscoveryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4268B4771B22E52000781C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4268B4781B22E52000781C20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4268B47A1B22E52000781C20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4268B47B1B22E52000781C20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4268B47E1B22E52000781C20 /* DIALDeviceDiscoveryDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DIALDeviceDiscoveryDemo.xcdatamodel; sourceTree = "<group>"; };
+		4268B4841B22E52000781C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4268B4861B22E52000781C20 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4268B4891B22E52000781C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4268B48F1B22E52000781C20 /* DIALDeviceDiscoveryDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DIALDeviceDiscoveryDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4268B4941B22E52000781C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4268B4951B22E52000781C20 /* DIALDeviceDiscoveryDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIALDeviceDiscoveryDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4268B4701B22E52000781C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42395C0D1DC38F52009A6E4E /* SimpleLogger.framework in Frameworks */,
+				42395C0A1DC38F52009A6E4E /* DIALDeviceDiscovery.framework in Frameworks */,
+				42395C101DC38F52009A6E4E /* SyncKitConfiguration.framework in Frameworks */,
+				42395C071DC38F52009A6E4E /* SyncKitCollections.framework in Frameworks */,
+				42395C131DC38F52009A6E4E /* AsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4268B48C1B22E52000781C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		422229451CDCB1EE00EE56ED /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				422229321CDCB1E600EE56ED /* CollectionViewFlowLargeLayout.h */,
+				422229331CDCB1E600EE56ED /* CollectionViewFlowLargeLayout.m */,
+				422229341CDCB1E600EE56ED /* CollectionViewFlowSmallLayout.h */,
+				422229351CDCB1E600EE56ED /* CollectionViewFlowSmallLayout.m */,
+				422229361CDCB1E600EE56ED /* DeviceCollectionViewCell.h */,
+				422229371CDCB1E600EE56ED /* DeviceCollectionViewCell.m */,
+				422229381CDCB1E600EE56ED /* DIALDeviceCollectionViewController.h */,
+				422229391CDCB1E600EE56ED /* DIALDeviceCollectionViewController.m */,
+				4222293A1CDCB1E600EE56ED /* DIALDeviceSelectorViewController.h */,
+				4222293B1CDCB1E600EE56ED /* DIALDeviceSelectorViewController.m */,
+				4222293C1CDCB1E600EE56ED /* DIALDeviceViewConstants.h */,
+				4222293D1CDCB1E600EE56ED /* DIALDeviceViewConstants.m */,
+				4222293E1CDCB1E600EE56ED /* DIALTVSelectionUIViews.h */,
+			);
+			name = UIViews;
+			sourceTree = "<group>";
+		};
+		4268B46A1B22E52000781C20 = {
+			isa = PBXGroup;
+			children = (
+				42395C121DC38F52009A6E4E /* AsyncSocket.framework */,
+				42395C0F1DC38F52009A6E4E /* SyncKitConfiguration.framework */,
+				42395C0C1DC38F52009A6E4E /* SimpleLogger.framework */,
+				42395C091DC38F52009A6E4E /* DIALDeviceDiscovery.framework */,
+				42395C061DC38F52009A6E4E /* SyncKitCollections.framework */,
+				42395C041DC38F52009A6E4E /* DIALTV_UI_ResourceBundle.bundle */,
+				4268B4751B22E52000781C20 /* DIALDeviceDiscoveryDemo */,
+				4268B4921B22E52000781C20 /* DIALDeviceDiscoveryDemoTests */,
+				4268B4741B22E52000781C20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4268B4741B22E52000781C20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4268B4731B22E52000781C20 /* DIALDeviceDiscoveryDemo.app */,
+				4268B48F1B22E52000781C20 /* DIALDeviceDiscoveryDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4268B4751B22E52000781C20 /* DIALDeviceDiscoveryDemo */ = {
+			isa = PBXGroup;
+			children = (
+				422229451CDCB1EE00EE56ED /* UIViews */,
+				4268B47A1B22E52000781C20 /* AppDelegate.h */,
+				4268B47B1B22E52000781C20 /* AppDelegate.m */,
+				4268B4831B22E52000781C20 /* Main.storyboard */,
+				4268B4861B22E52000781C20 /* Images.xcassets */,
+				4268B4881B22E52000781C20 /* LaunchScreen.xib */,
+				4268B47D1B22E52000781C20 /* DIALDeviceDiscoveryDemo.xcdatamodeld */,
+				4268B4761B22E52000781C20 /* Supporting Files */,
+			);
+			path = DIALDeviceDiscoveryDemo;
+			sourceTree = "<group>";
+		};
+		4268B4761B22E52000781C20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4268B4771B22E52000781C20 /* Info.plist */,
+				4268B4781B22E52000781C20 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4268B4921B22E52000781C20 /* DIALDeviceDiscoveryDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4268B4951B22E52000781C20 /* DIALDeviceDiscoveryDemoTests.m */,
+				4268B4931B22E52000781C20 /* Supporting Files */,
+			);
+			path = DIALDeviceDiscoveryDemoTests;
+			sourceTree = "<group>";
+		};
+		4268B4931B22E52000781C20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4268B4941B22E52000781C20 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4268B4721B22E52000781C20 /* DIALDeviceDiscoveryDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4268B4991B22E52000781C20 /* Build configuration list for PBXNativeTarget "DIALDeviceDiscoveryDemo" */;
+			buildPhases = (
+				4268B46F1B22E52000781C20 /* Sources */,
+				4268B4701B22E52000781C20 /* Frameworks */,
+				4268B4711B22E52000781C20 /* Resources */,
+				42395C151DC38F52009A6E4E /* Embed Frameworks */,
+				42395C161DC38F52009A6E4E /* Embed PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DIALDeviceDiscoveryDemo;
+			productName = DIALDeviceDiscoveryDemo;
+			productReference = 4268B4731B22E52000781C20 /* DIALDeviceDiscoveryDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4268B48E1B22E52000781C20 /* DIALDeviceDiscoveryDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4268B49C1B22E52000781C20 /* Build configuration list for PBXNativeTarget "DIALDeviceDiscoveryDemoTests" */;
+			buildPhases = (
+				4268B48B1B22E52000781C20 /* Sources */,
+				4268B48C1B22E52000781C20 /* Frameworks */,
+				4268B48D1B22E52000781C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4268B4911B22E52000781C20 /* PBXTargetDependency */,
+			);
+			name = DIALDeviceDiscoveryDemoTests;
+			productName = DIALDeviceDiscoveryDemoTests;
+			productReference = 4268B48F1B22E52000781C20 /* DIALDeviceDiscoveryDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4268B46B1B22E52000781C20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "BBC RD";
+				TargetAttributes = {
+					4268B4721B22E52000781C20 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 869YXPEF4W;
+					};
+					4268B48E1B22E52000781C20 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 869YXPEF4W;
+						TestTargetID = 4268B4721B22E52000781C20;
+					};
+				};
+			};
+			buildConfigurationList = 4268B46E1B22E52000781C20 /* Build configuration list for PBXProject "DIALDeviceDiscoveryDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4268B46A1B22E52000781C20;
+			productRefGroup = 4268B4741B22E52000781C20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4268B4721B22E52000781C20 /* DIALDeviceDiscoveryDemo */,
+				4268B48E1B22E52000781C20 /* DIALDeviceDiscoveryDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4268B4711B22E52000781C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B938811CDBB062001D4368 /* DIALTV_UI_ResourceBundle.bundle in Resources */,
+				4268B4851B22E52000781C20 /* Main.storyboard in Resources */,
+				4268B48A1B22E52000781C20 /* LaunchScreen.xib in Resources */,
+				4268B4871B22E52000781C20 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4268B48D1B22E52000781C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4268B46F1B22E52000781C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422229421CDCB1E600EE56ED /* DIALDeviceCollectionViewController.m in Sources */,
+				4268B47F1B22E52000781C20 /* DIALDeviceDiscoveryDemo.xcdatamodeld in Sources */,
+				4268B47C1B22E52000781C20 /* AppDelegate.m in Sources */,
+				4222293F1CDCB1E600EE56ED /* CollectionViewFlowLargeLayout.m in Sources */,
+				422229401CDCB1E600EE56ED /* CollectionViewFlowSmallLayout.m in Sources */,
+				422229441CDCB1E600EE56ED /* DIALDeviceViewConstants.m in Sources */,
+				422229411CDCB1E600EE56ED /* DeviceCollectionViewCell.m in Sources */,
+				422229431CDCB1E600EE56ED /* DIALDeviceSelectorViewController.m in Sources */,
+				4268B4791B22E52000781C20 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4268B48B1B22E52000781C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4268B4961B22E52000781C20 /* DIALDeviceDiscoveryDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4268B4911B22E52000781C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4268B4721B22E52000781C20 /* DIALDeviceDiscoveryDemo */;
+			targetProxy = 4268B4901B22E52000781C20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4268B4831B22E52000781C20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4268B4841B22E52000781C20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4268B4881B22E52000781C20 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4268B4891B22E52000781C20 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4268B4971B22E52000781C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4268B4981B22E52000781C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4268B49A1B22E52000781C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DeviceDiscovery-eotvssrtfwutructohzkiqqefzbs/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = DIALDeviceDiscoveryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		4268B49B1B22E52000781C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DeviceDiscovery-eotvssrtfwutructohzkiqqefzbs/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = DIALDeviceDiscoveryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		4268B49D1B22E52000781C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DIALDeviceDiscoveryDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIALDeviceDiscoveryDemo.app/DIALDeviceDiscoveryDemo";
+			};
+			name = Debug;
+		};
+		4268B49E1B22E52000781C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DIALDeviceDiscoveryDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DIALDeviceDiscoveryDemo.app/DIALDeviceDiscoveryDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4268B46E1B22E52000781C20 /* Build configuration list for PBXProject "DIALDeviceDiscoveryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4268B4971B22E52000781C20 /* Debug */,
+				4268B4981B22E52000781C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4268B4991B22E52000781C20 /* Build configuration list for PBXNativeTarget "DIALDeviceDiscoveryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4268B49A1B22E52000781C20 /* Debug */,
+				4268B49B1B22E52000781C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4268B49C1B22E52000781C20 /* Build configuration list for PBXNativeTarget "DIALDeviceDiscoveryDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4268B49D1B22E52000781C20 /* Debug */,
+				4268B49E1B22E52000781C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4268B47D1B22E52000781C20 /* DIALDeviceDiscoveryDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4268B47E1B22E52000781C20 /* DIALDeviceDiscoveryDemo.xcdatamodel */,
+			);
+			currentVersion = 4268B47E1B22E52000781C20 /* DIALDeviceDiscoveryDemo.xcdatamodel */;
+			path = DIALDeviceDiscoveryDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4268B46B1B22E52000781C20 /* Project object */;
+}

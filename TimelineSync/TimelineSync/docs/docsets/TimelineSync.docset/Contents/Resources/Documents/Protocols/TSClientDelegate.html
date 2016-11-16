@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TSClientDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Protocol/TSClientDelegate" class="dashAnchor"></a>
+
+    <a title="TSClientDelegate Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          TimelineSync Docs
+        </a>
+         (93% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/src/TimelineSync">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">TimelineSync Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      TSClientDelegate Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ControlTimestamp.html">ControlTimestamp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TSClient.html">TSClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TSSetupMsg.html">TSSetupMsg</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TimelineSynchroniser.html">TimelineSynchroniser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@TimelineSyncVersionNumber">TimelineSyncVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@TimelineSyncVersionString">TimelineSyncVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kCrtlTimestampContentTime">kCrtlTimestampContentTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kCrtlTimestampTimelineSpeedMultiplier">kCrtlTimestampTimelineSpeedMultiplier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kCrtlTimestampWallClockTime">kCrtlTimestampWallClockTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kTSClientStateChangeNotification">kTSClientStateChangeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kTSNewCRTLTimestampNotification">kTSNewCRTLTimestampNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kTSStateChangeNotification">kTSStateChangeNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TSClientState.html">TSClientState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/TSState.html">TSState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/TSClientDelegate.html">TSClientDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/TimelineSynchroniserDelegate.html">TimelineSynchroniserDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>TSClientDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">TSClientDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>A protocol to be implemented by a TSClient&rsquo;s delegate.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TSClientDelegate(im)didReceiveNewControlTimetamp:"></a>
+                    <a name="//apple_ref/objc/Method/-didReceiveNewControlTimetamp:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TSClientDelegate(im)didReceiveNewControlTimetamp:">-didReceiveNewControlTimetamp:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback method to report received control timestamps</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didReceiveNewControlTimetamp</span><span class="p">:(</span><span class="n"><a href="../Classes/ControlTimestamp.html">ControlTimestamp</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">ctimetamp</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">didReceiveNewControlTimetamp</span><span class="p">(</span><span class="nv">ctimetamp</span><span class="p">:</span> <span class="kt"><a href="../Classes/ControlTimestamp.html">ControlTimestamp</a></span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ctimetamp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a ControlTimestamp object (de-serialised from received JSON message)</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TSClientDelegate(im)tsClient:StateChanged:"></a>
+                    <a name="//apple_ref/objc/Method/-tsClient:StateChanged:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TSClientDelegate(im)tsClient:StateChanged:">-tsClient:StateChanged:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback method to report a broken TS protocol connection</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">tsClient</span><span class="p">:(</span><span class="n"><a href="../Classes/TSClient.html">TSClient</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">ts_client</span> <span class="nf">StateChanged</span><span class="p">:(</span><span class="n"><a href="../Enums/TSClientState.html">TSClientState</a></span><span class="p">)</span><span class="nv">state</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">tsClient</span><span class="p">(</span><span class="nv">ts_client</span><span class="p">:</span> <span class="kt"><a href="../Classes/TSClient.html">TSClient</a></span><span class="o">!</span><span class="p">,</span> <span class="n">stateChanged</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/TSClientState.html">TSClientState</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tsEndpointURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the URL of TS protocol server endpoint to which this client is connected to</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://bbc.co.uk/rd" target="_blank" rel="external">Rajiv_Ramdhany</a>. All rights reserved. (Last updated: 2016-09-25)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

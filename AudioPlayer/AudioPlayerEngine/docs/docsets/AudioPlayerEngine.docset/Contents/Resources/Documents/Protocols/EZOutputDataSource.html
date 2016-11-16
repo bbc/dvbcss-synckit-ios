@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EZOutputDataSource Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Protocol/EZOutputDataSource" class="dashAnchor"></a>
+
+    <a title="EZOutputDataSource Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          AudioPlayerEngine Docs
+        </a>
+         (68% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/src/AudioPlayerEngine">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">AudioPlayerEngine Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      EZOutputDataSource Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AudioPlayer.html">AudioPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AudioPlayerViewController.html">AudioPlayerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/AudioStreamPlayer.html">AudioStreamPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudio.html">EZAudio</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioDevice.html">EZAudioDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioDisplayLink.html">EZAudioDisplayLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFFT.html">EZAudioFFT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFFTRolling.html">EZAudioFFTRolling</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFile.html">EZAudioFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFloatConverter.html">EZAudioFloatConverter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioFloatData.html">EZAudioFloatData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioPlayer.html">EZAudioPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioPlot.html">EZAudioPlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioPlotGL.html">EZAudioPlotGL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes.html#/c:objc(cs)EZAudioPlotWaveformLayer">EZAudioPlotWaveformLayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZAudioUtilities.html">EZAudioUtilities</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZMicrophone.html">EZMicrophone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZOutput.html">EZOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZPlot.html">EZPlot</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/EZRecorder.html">EZRecorder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@ASStatusChangedNotification">ASStatusChangedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangeAudioFileNotification">AudioPlayerDidChangeAudioFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangeOutputDeviceNotification">AudioPlayerDidChangeOutputDeviceNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangePanNotification">AudioPlayerDidChangePanNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangePlayStateNotification">AudioPlayerDidChangePlayStateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidChangeVolumeNotification">AudioPlayerDidChangeVolumeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidReachEndOfFileNotification">AudioPlayerDidReachEndOfFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AudioPlayerDidSeekNotification">AudioPlayerDidSeekNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioFloatConverterDefaultPacketSize">EZAudioFloatConverterDefaultPacketSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangeAudioFileNotification">EZAudioPlayerDidChangeAudioFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangeOutputDeviceNotification">EZAudioPlayerDidChangeOutputDeviceNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangePanNotification">EZAudioPlayerDidChangePanNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangePlayStateNotification">EZAudioPlayerDidChangePlayStateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidChangeVolumeNotification">EZAudioPlayerDidChangeVolumeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidReachEndOfFileNotification">EZAudioPlayerDidReachEndOfFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlayerDidSeekNotification">EZAudioPlayerDidSeekNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlotDefaultHistoryBufferLength">EZAudioPlotDefaultHistoryBufferLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioPlotDefaultMaxHistoryBufferLength">EZAudioPlotDefaultMaxHistoryBufferLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioVersionNumber">EZAudioVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZAudioVersionString">EZAudioVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZOutputDefaultSampleRate">EZOutputDefaultSampleRate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@EZOutputMaximumFramesPerSlice">EZOutputMaximumFramesPerSlice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kEZAudioPlotDefaultHistoryBufferLength">kEZAudioPlotDefaultHistoryBufferLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kEZAudioPlotMaxHistoryBufferLength">kEZAudioPlotMaxHistoryBufferLength</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioPlayerState.html">AudioPlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioStreamPlayerErrorCode.html">AudioStreamPlayerErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioStreamPlayerState.html">AudioStreamPlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AudioStreamPlayerStopReason.html">AudioStreamPlayerStopReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/EZAudioPlayerState.html">EZAudioPlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/EZPlotType.html">EZPlotType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/EZRecorderFileType.html">EZRecorderFileType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AudioPlayerDelegate.html">AudioPlayerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/AudioPlayerVCDelegate.html">AudioPlayerVCDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioDisplayLinkDelegate.html">EZAudioDisplayLinkDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioFFTDelegate.html">EZAudioFFTDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioFileDelegate.html">EZAudioFileDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZAudioPlayerDelegate.html">EZAudioPlayerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZMicrophoneDelegate.html">EZMicrophoneDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZOutputDataSource.html">EZOutputDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZOutputDelegate.html">EZOutputDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/EZRecorderDelegate.html">EZRecorderDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/EZAudioNodeInfo.html">EZAudioNodeInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/EZAudioPlotGLPoint.html">EZAudioPlotGLPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions.html#/c:EZAudioFile.h@T@EZAudioWaveformDataCompletionBlock">EZAudioWaveformDataCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/EZPlotHistoryInfo.html">EZPlotHistoryInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions.html#/c:EZAudioUtilities.h@T@EZRect">EZRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/TPCircularBuffer.html">TPCircularBuffer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@TPCircularBufferCleanup">TPCircularBufferCleanup</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@TPCircularBufferClear">TPCircularBufferClear</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferConsume">TPCircularBufferConsume</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferConsumeNoBarrier">TPCircularBufferConsumeNoBarrier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferHead">TPCircularBufferHead</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferProduce">TPCircularBufferProduce</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferProduceBytes">TPCircularBufferProduceBytes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferProduceNoBarrier">TPCircularBufferProduceNoBarrier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@TPCircularBufferSetAtomic">TPCircularBufferSetAtomic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:TPCircularBuffer.h@F@TPCircularBufferTail">TPCircularBufferTail</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/c:@F@_TPCircularBufferInit">_TPCircularBufferInit</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>EZOutputDataSource</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">EZOutputDataSource</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>The EZOutputDataSource specifies a receiver to provide audio data when the EZOutput is started. Since the 0.4.0 release this has been simplified to only one data source method.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Providing%20Audio%20Data"></a>
+                <a name="//apple_ref/objc/Section/Providing Audio Data" class="dashAnchor"></a>
+                <a href="#/Providing%20Audio%20Data">
+                  <h3 class="section-name">Providing Audio Data</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)EZOutputDataSource(im)output:shouldFillAudioBufferList:withNumberOfFrames:timestamp:"></a>
+                    <a name="//apple_ref/objc/Method/-output:shouldFillAudioBufferList:withNumberOfFrames:timestamp:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)EZOutputDataSource(im)output:shouldFillAudioBufferList:withNumberOfFrames:timestamp:">-output:shouldFillAudioBufferList:withNumberOfFrames:timestamp:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides a way to provide output with data anytime the EZOutput needs audio data to play. This function provides an already allocated AudioBufferList to use for providing audio data into the output buffer. The expected format of the audio data provided here is specified by the EZOutput <code>inputFormat</code> property. This audio data will be converted into the client format specified by the EZOutput <code>clientFormat</code> property.
+- parameter: output The instance of the EZOutput that asked for the data.
+- parameter: audioBufferList The AudioBufferList structure pointer that needs to be filled with audio data
+- parameter: frames The amount of frames as a UInt32 that output will need to properly fill its output buffer.
+- parameter: timestamp A AudioTimeStamp pointer to use if you need the current host time.
+- returns: An OSStatus code. If there was no error then use the noErr status code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">OSStatus</span><span class="p">)</span><span class="nf">output</span><span class="p">:(</span><span class="n"><a href="../Classes/EZOutput.html">EZOutput</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">output</span>
+    <span class="nf">shouldFillAudioBufferList</span><span class="p">:(</span><span class="n">AudioBufferList</span> <span class="o">*</span><span class="p">)</span><span class="nv">audioBufferList</span>
+           <span class="nf">withNumberOfFrames</span><span class="p">:(</span><span class="n">UInt32</span><span class="p">)</span><span class="nv">frames</span>
+                    <span class="nf">timestamp</span><span class="p">:(</span><span class="k">const</span> <span class="n">AudioTimeStamp</span> <span class="o">*</span><span class="p">)</span><span class="nv">timestamp</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">output</span><span class="p">(</span><span class="nv">output</span><span class="p">:</span> <span class="kt"><a href="../Classes/EZOutput.html">EZOutput</a></span><span class="o">!</span><span class="p">,</span> <span class="n">shouldFillAudioBufferList</span> <span class="nv">audioBufferList</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>output</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The instance of the EZOutput that asked for the data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>audioBufferList</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The AudioBufferList structure pointer that needs to be filled with audio data</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frames</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The amount of frames as a UInt32 that output will need to properly fill its output buffer.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timestamp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A AudioTimeStamp pointer to use if you need the current host time.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An OSStatus code. If there was no error then use the noErr status code.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://bbc.co.uk/rd" target="_blank" rel="external">Rajiv_Ramdhany</a>. All rights reserved. (Last updated: 2016-09-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

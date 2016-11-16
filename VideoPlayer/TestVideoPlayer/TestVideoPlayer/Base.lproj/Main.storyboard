@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a4k-wF-YUD">
+                                <rect key="frame" x="30" y="524" width="540" height="3"/>
+                                <color key="progressTintColor" red="0.92106613010000005" green="0.0" blue="0.40401165989999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spu-Op-bI3" userLabel="ButtonView">
+                                <rect key="frame" x="150" y="534" width="300" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhg-gp-vB8">
+                                        <rect key="frame" x="20" y="5" width="51" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Video 1">
+                                            <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Video1ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jW-dY-OGS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ka-i7-7XI" userLabel="Pause">
+                                        <rect key="frame" x="91" y="5" width="42" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Pause">
+                                            <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="PauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RxF-kY-yQ8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTZ-6C-6hL" userLabel="Test">
+                                        <rect key="frame" x="147" y="5" width="60" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Run Test">
+                                            <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="RunTestButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fsB-XH-Nqv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2h-WF-tom">
+                                        <rect key="frame" x="227" y="5" width="53" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Video 2">
+                                            <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Video2ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hdX-hG-c82"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0ka-i7-7XI" firstAttribute="centerY" secondItem="spu-Op-bI3" secondAttribute="centerY" id="1GB-sU-3hy"/>
+                                    <constraint firstItem="mhg-gp-vB8" firstAttribute="centerY" secondItem="spu-Op-bI3" secondAttribute="centerY" id="7hi-Df-gzX"/>
+                                    <constraint firstItem="eTZ-6C-6hL" firstAttribute="centerY" secondItem="spu-Op-bI3" secondAttribute="centerY" id="APC-gk-tPp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q2h-WF-tom" secondAttribute="trailing" constant="20" id="LSf-Ya-PuP"/>
+                                    <constraint firstAttribute="height" constant="40" id="Wx6-ab-hDg"/>
+                                    <constraint firstItem="mhg-gp-vB8" firstAttribute="leading" secondItem="spu-Op-bI3" secondAttribute="leading" constant="20" id="X1V-9c-2lZ"/>
+                                    <constraint firstItem="Q2h-WF-tom" firstAttribute="centerY" secondItem="spu-Op-bI3" secondAttribute="centerY" id="hVE-lY-VRa"/>
+                                    <constraint firstItem="eTZ-6C-6hL" firstAttribute="trailing" secondItem="Q2h-WF-tom" secondAttribute="leading" constant="-20" id="vAq-FM-Poc"/>
+                                    <constraint firstItem="0ka-i7-7XI" firstAttribute="leading" secondItem="mhg-gp-vB8" secondAttribute="trailing" constant="20" id="y88-Z5-Jfx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbM-rb-60U">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.23743292299999999" green="0.23743292299999999" blue="0.23743292299999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="spu-Op-bI3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="4Yz-w9-58K"/>
+                            <constraint firstItem="XbM-rb-60U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="HiR-ge-6Oh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="spu-Op-bI3" secondAttribute="bottom" constant="26" id="NAU-Sg-l63"/>
+                            <constraint firstItem="spu-Op-bI3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RMG-se-RUQ"/>
+                            <constraint firstItem="a4k-wF-YUD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="UZE-wy-1Eg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XbM-rb-60U" secondAttribute="bottom" id="dSv-2S-lad"/>
+                            <constraint firstItem="spu-Op-bI3" firstAttribute="top" secondItem="a4k-wF-YUD" secondAttribute="top" constant="10" id="dge-Z2-xzp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XbM-rb-60U" secondAttribute="trailing" constant="-20" id="iXZ-Dl-nxf"/>
+                            <constraint firstItem="XbM-rb-60U" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="jiW-yl-oPx"/>
+                            <constraint firstItem="a4k-wF-YUD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q8j-pm-RfR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PauseButton" destination="0ka-i7-7XI" id="sJa-dJ-pwS"/>
+                        <outlet property="VideoView" destination="XbM-rb-60U" id="hZr-yc-wcx"/>
+                        <outlet property="buttonBarView" destination="spu-Op-bI3" id="QBd-5z-lSs"/>
+                        <outlet property="progressBarView" destination="a4k-wF-YUD" id="gUa-bD-tci"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="525"/>
+        </scene>
+    </scenes>
+</document>

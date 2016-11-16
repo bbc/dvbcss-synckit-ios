@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++9490",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++9490" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++9490" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D8656566-C179-4096-A32A-135182E9BDE5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++9490" : "ClockTimelines"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ClockTimelines",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ClockTimelines.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/repo.dev.bbc.co.uk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++9490"
+    }
+  ]
+}

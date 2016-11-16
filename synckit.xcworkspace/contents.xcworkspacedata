@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SyncKitVideoSyncTutorial/SyncKitVideoSyncTutorial.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AsyncSocket/AsyncSocket/AsyncSocket.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AudioPlayer/AudioPlayerEngine/AudioPlayerEngine.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CIIProtocolClient/CIIProtocolClient.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ClockTimelines/ClockTimelines.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MediaSynchroniser/CSASynchroniser/CSASynchroniser.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DIALDeviceDiscovery/DIALDeviceDiscovery/DIALDeviceDiscovery.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:JSONModelFramework/JSONModelFramework.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SimpleLogger/SimpleLogger.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WebSocket/SocketRocket/SocketRocket.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SyncController/SyncController/SyncController.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SyncKitCollections/SyncKitCollections.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SyncKitConfiguration/SyncKitConfiguration.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SyncKitDelegate/SyncKitDelegate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SyncKitVideoSyncDemoApp/SyncKitVideoSyncDemoApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TimelineSync/TimelineSync/TimelineSync.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TimelineSync/TimelineSyncDemoApp/TimelineSyncDemoApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UDPMessaging/UDPMessaging.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:VideoPlayer/VideoPlayer/VideoPlayer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WallClockSync/WallClockClient/WallClockClient.xcodeproj">
+   </FileRef>
+</Workspace>

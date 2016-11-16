@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_WC_FREQ_ERROR</key>
+	<integer>500</integer>
+	<key>CLIENT_WC_PRECISION</key>
+	<integer>5000</integer>
+	<key>SOCK_SELECT_TIMEOUT_US</key>
+	<real>10000</real>
+	<key>CACHED_WC_REQ_TIMEOUT_US</key>
+	<real>1000000</real>
+	<key>CACHED_WC_RESP_TIMEOUT_US</key>
+	<real>1000000</real>
+	<key>WC_REQ_SEND_PERIOD_US</key>
+	<integer>1000000</integer>
+	<key>SYNC_ACCURACY_TARGET_MS</key>
+	<integer>30</integer>
+	<key>CII_URL</key>
+	<string>ws://192.168.2.105:7681</string>
+	<key>MRS_URL</key>
+	<string>http://bbc.co.uk/MRS</string>
+	<key>WC_URL</key>
+	<string>udp://192.168.3.100:6677</string>
+	<key>TS_URL</key>
+	<string>ws://192.168.3.100:7682</string>
+	<key>TE_URL</key>
+	<string></string>
+	<key>TWEET_URL</key>
+	<string>http://demo.mobile.kw.bbc.co.uk/tweetdemo/index_ios.html</string>
+	<key>SERVICE_CACHE_REFRESH_INTERVAL_SECS</key>
+	<integer>5</integer>
+	<key>DIAL_APP_DISCOVERY_TIMEOUT_SECS</key>
+	<integer>500</integer>
+	<key>SERVICE_EXPIRY_TIMEOUT_SECS</key>
+	<real>100000</real>
+	<key>SSDP_SEARCH_INTERVAL_SECS</key>
+	<integer>5</integer>
+	<key>WCPROTO_RTT_THRESH_MS</key>
+	<integer>200</integer>
+</dict>
+</plist>

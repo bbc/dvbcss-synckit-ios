@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		422AC16819811556001C5A19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422AC16719811556001C5A19 /* Foundation.framework */; };
+		422AC16A19811556001C5A19 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422AC16919811556001C5A19 /* CoreGraphics.framework */; };
+		422AC16C19811556001C5A19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422AC16B19811556001C5A19 /* UIKit.framework */; };
+		422AC17219811556001C5A19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 422AC17019811556001C5A19 /* InfoPlist.strings */; };
+		422AC17419811556001C5A19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AC17319811556001C5A19 /* main.m */; };
+		422AC17819811556001C5A19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AC17719811556001C5A19 /* AppDelegate.m */; };
+		422AC17B19811556001C5A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422AC17919811556001C5A19 /* Main.storyboard */; };
+		422AC17E19811556001C5A19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AC17D19811556001C5A19 /* ViewController.m */; };
+		422AC18019811556001C5A19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422AC17F19811556001C5A19 /* Images.xcassets */; };
+		422AC18719811556001C5A19 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422AC18619811556001C5A19 /* XCTest.framework */; };
+		422AC18819811556001C5A19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422AC16719811556001C5A19 /* Foundation.framework */; };
+		422AC18919811556001C5A19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 422AC16B19811556001C5A19 /* UIKit.framework */; };
+		422AC19119811556001C5A19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 422AC18F19811556001C5A19 /* InfoPlist.strings */; };
+		426F20711B25D31F003A408E /* UDPMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426F20701B25D31F003A408E /* UDPMessaging.framework */; };
+		426F20731B25D519003A408E /* SimpleLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426F20721B25D519003A408E /* SimpleLogger.framework */; };
+		426F20741B25DA10003A408E /* SimpleLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426F20721B25D519003A408E /* SimpleLogger.framework */; };
+		426F20751B25DA11003A408E /* SimpleLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 426F20721B25D519003A408E /* SimpleLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		426F20771B25DA18003A408E /* UDPMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426F20701B25D31F003A408E /* UDPMessaging.framework */; };
+		426F20781B25DA18003A408E /* UDPMessaging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 426F20701B25D31F003A408E /* UDPMessaging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		422AC18A19811556001C5A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 422AC15C19811555001C5A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 422AC16319811555001C5A19;
+			remoteInfo = WallClockSyncProtoClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		426F20761B25DA11003A408E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				426F20751B25DA11003A408E /* SimpleLogger.framework in Embed Frameworks */,
+				426F20781B25DA18003A408E /* UDPMessaging.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		422AC16419811556001C5A19 /* UDPMessagingClientDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UDPMessagingClientDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		422AC16719811556001C5A19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		422AC16919811556001C5A19 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		422AC16B19811556001C5A19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		422AC16F19811556001C5A19 /* UDPMessagingClientDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UDPMessagingClientDemo-Info.plist"; sourceTree = "<group>"; };
+		422AC17119811556001C5A19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		422AC17319811556001C5A19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		422AC17519811556001C5A19 /* UDPMessagingClientDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UDPMessagingClientDemo-Prefix.pch"; sourceTree = "<group>"; };
+		422AC17619811556001C5A19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		422AC17719811556001C5A19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		422AC17A19811556001C5A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		422AC17C19811556001C5A19 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		422AC17D19811556001C5A19 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		422AC17F19811556001C5A19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		422AC18519811556001C5A19 /* UDPMessagingClientDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UDPMessagingClientDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		422AC18619811556001C5A19 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		422AC18E19811556001C5A19 /* UDPMessagingClientDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UDPMessagingClientDemoTests-Info.plist"; sourceTree = "<group>"; };
+		422AC19019811556001C5A19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		426F20701B25D31F003A408E /* UDPMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UDPMessaging.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/UDPMessagingDemo-dfocfboocmrfexaeeslndbrmpmnw/Build/Products/Debug-iphoneos/UDPMessaging.framework"; sourceTree = "<group>"; };
+		426F20721B25D519003A408E /* SimpleLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleLogger.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/UDPMessagingDemo-dfocfboocmrfexaeeslndbrmpmnw/Build/Products/Debug-iphoneos/SimpleLogger.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		422AC16119811555001C5A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426F20731B25D519003A408E /* SimpleLogger.framework in Frameworks */,
+				426F20711B25D31F003A408E /* UDPMessaging.framework in Frameworks */,
+				426F20741B25DA10003A408E /* SimpleLogger.framework in Frameworks */,
+				426F20771B25DA18003A408E /* UDPMessaging.framework in Frameworks */,
+				422AC16A19811556001C5A19 /* CoreGraphics.framework in Frameworks */,
+				422AC16C19811556001C5A19 /* UIKit.framework in Frameworks */,
+				422AC16819811556001C5A19 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422AC18219811556001C5A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422AC18719811556001C5A19 /* XCTest.framework in Frameworks */,
+				422AC18919811556001C5A19 /* UIKit.framework in Frameworks */,
+				422AC18819811556001C5A19 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		422AC15B19811555001C5A19 = {
+			isa = PBXGroup;
+			children = (
+				422AC16D19811556001C5A19 /* UDPClient */,
+				422AC18C19811556001C5A19 /* UDPMessagingClientDemoTests */,
+				422AC16619811556001C5A19 /* Frameworks */,
+				422AC16519811556001C5A19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		422AC16519811556001C5A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				422AC16419811556001C5A19 /* UDPMessagingClientDemo.app */,
+				422AC18519811556001C5A19 /* UDPMessagingClientDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		422AC16619811556001C5A19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				426F20721B25D519003A408E /* SimpleLogger.framework */,
+				426F20701B25D31F003A408E /* UDPMessaging.framework */,
+				422AC16719811556001C5A19 /* Foundation.framework */,
+				422AC16919811556001C5A19 /* CoreGraphics.framework */,
+				422AC16B19811556001C5A19 /* UIKit.framework */,
+				422AC18619811556001C5A19 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		422AC16D19811556001C5A19 /* UDPClient */ = {
+			isa = PBXGroup;
+			children = (
+				422AC17619811556001C5A19 /* AppDelegate.h */,
+				422AC17719811556001C5A19 /* AppDelegate.m */,
+				422AC17919811556001C5A19 /* Main.storyboard */,
+				422AC17C19811556001C5A19 /* ViewController.h */,
+				422AC17D19811556001C5A19 /* ViewController.m */,
+				422AC17F19811556001C5A19 /* Images.xcassets */,
+				422AC16E19811556001C5A19 /* Supporting Files */,
+			);
+			name = UDPClient;
+			path = WallClockSyncProtoClient;
+			sourceTree = "<group>";
+		};
+		422AC16E19811556001C5A19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				422AC16F19811556001C5A19 /* UDPMessagingClientDemo-Info.plist */,
+				422AC17019811556001C5A19 /* InfoPlist.strings */,
+				422AC17319811556001C5A19 /* main.m */,
+				422AC17519811556001C5A19 /* UDPMessagingClientDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		422AC18C19811556001C5A19 /* UDPMessagingClientDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				422AC18D19811556001C5A19 /* Supporting Files */,
+			);
+			name = UDPMessagingClientDemoTests;
+			path = WallClockSyncProtoClientTests;
+			sourceTree = "<group>";
+		};
+		422AC18D19811556001C5A19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				422AC18E19811556001C5A19 /* UDPMessagingClientDemoTests-Info.plist */,
+				422AC18F19811556001C5A19 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		422AC16319811555001C5A19 /* UDPMessagingClientDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 422AC19619811556001C5A19 /* Build configuration list for PBXNativeTarget "UDPMessagingClientDemo" */;
+			buildPhases = (
+				422AC16019811555001C5A19 /* Sources */,
+				422AC16119811555001C5A19 /* Frameworks */,
+				422AC16219811555001C5A19 /* Resources */,
+				426F20761B25DA11003A408E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UDPMessagingClientDemo;
+			productName = WallClockSyncProtoClient;
+			productReference = 422AC16419811556001C5A19 /* UDPMessagingClientDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		422AC18419811556001C5A19 /* UDPMessagingClientDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 422AC19919811556001C5A19 /* Build configuration list for PBXNativeTarget "UDPMessagingClientDemoTests" */;
+			buildPhases = (
+				422AC18119811556001C5A19 /* Sources */,
+				422AC18219811556001C5A19 /* Frameworks */,
+				422AC18319811556001C5A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				422AC18B19811556001C5A19 /* PBXTargetDependency */,
+			);
+			name = UDPMessagingClientDemoTests;
+			productName = WallClockSyncProtoClientTests;
+			productReference = 422AC18519811556001C5A19 /* UDPMessagingClientDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		422AC15C19811555001C5A19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "BBC R&D";
+				TargetAttributes = {
+					422AC16319811555001C5A19 = {
+						DevelopmentTeam = 869YXPEF4W;
+					};
+					422AC18419811556001C5A19 = {
+						TestTargetID = 422AC16319811555001C5A19;
+					};
+				};
+			};
+			buildConfigurationList = 422AC15F19811555001C5A19 /* Build configuration list for PBXProject "UDPMessagingClientDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 422AC15B19811555001C5A19;
+			productRefGroup = 422AC16519811556001C5A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				422AC16319811555001C5A19 /* UDPMessagingClientDemo */,
+				422AC18419811556001C5A19 /* UDPMessagingClientDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		422AC16219811555001C5A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422AC18019811556001C5A19 /* Images.xcassets in Resources */,
+				422AC17219811556001C5A19 /* InfoPlist.strings in Resources */,
+				422AC17B19811556001C5A19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422AC18319811556001C5A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422AC19119811556001C5A19 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		422AC16019811555001C5A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422AC17E19811556001C5A19 /* ViewController.m in Sources */,
+				422AC17819811556001C5A19 /* AppDelegate.m in Sources */,
+				422AC17419811556001C5A19 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422AC18119811556001C5A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		422AC18B19811556001C5A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 422AC16319811555001C5A19 /* UDPMessagingClientDemo */;
+			targetProxy = 422AC18A19811556001C5A19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		422AC17019811556001C5A19 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				422AC17119811556001C5A19 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		422AC17919811556001C5A19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				422AC17A19811556001C5A19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		422AC18F19811556001C5A19 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				422AC19019811556001C5A19 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		422AC19419811556001C5A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		422AC19519811556001C5A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		422AC19719811556001C5A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UDPMessagingDemo-dfocfboocmrfexaeeslndbrmpmnw/Build/Products/Debug-iphoneos",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WallClockSyncProtoClient/UDPMessagingClientDemo-Prefix.pch";
+				INFOPLIST_FILE = "WallClockSyncProtoClient/UDPMessagingClientDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = UDPMessagingClientDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		422AC19819811556001C5A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/UDPMessagingDemo-dfocfboocmrfexaeeslndbrmpmnw/Build/Products/Debug-iphoneos",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WallClockSyncProtoClient/UDPMessagingClientDemo-Prefix.pch";
+				INFOPLIST_FILE = "WallClockSyncProtoClient/UDPMessagingClientDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = UDPMessagingClientDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		422AC19A19811556001C5A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WallClockSyncProtoClient.app/WallClockSyncProtoClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WallClockSyncProtoClient/WallClockSyncProtoClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WallClockSyncProtoClientTests/UDPMessagingClientDemoTests-Info.plist";
+				PRODUCT_NAME = UDPMessagingClientDemoTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		422AC19B19811556001C5A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WallClockSyncProtoClient.app/WallClockSyncProtoClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WallClockSyncProtoClient/WallClockSyncProtoClient-Prefix.pch";
+				INFOPLIST_FILE = "WallClockSyncProtoClientTests/UDPMessagingClientDemoTests-Info.plist";
+				PRODUCT_NAME = UDPMessagingClientDemoTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		422AC15F19811555001C5A19 /* Build configuration list for PBXProject "UDPMessagingClientDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				422AC19419811556001C5A19 /* Debug */,
+				422AC19519811556001C5A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		422AC19619811556001C5A19 /* Build configuration list for PBXNativeTarget "UDPMessagingClientDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				422AC19719811556001C5A19 /* Debug */,
+				422AC19819811556001C5A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		422AC19919811556001C5A19 /* Build configuration list for PBXNativeTarget "UDPMessagingClientDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				422AC19A19811556001C5A19 /* Debug */,
+				422AC19B19811556001C5A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 422AC15C19811555001C5A19 /* Project object */;
+}

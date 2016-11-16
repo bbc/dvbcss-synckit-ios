@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:WallClockClientDemoApp/WallClockClientDemoApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WallClockClient/WallClockClient.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../DIALDeviceDiscovery/DIALDeviceDiscovery/DIALDeviceDiscovery.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../UDPMessaging/UDPMessaging.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SyncKitDelegate/SyncKitDelegate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SyncKitConfiguration/SyncKitConfiguration.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../ClockTimelines/ClockTimelines.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../AsyncSocket/AsyncSocket/AsyncSocket.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SyncKitCollections/SyncKitCollections.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SimpleLogger/SimpleLogger.xcodeproj">
+   </FileRef>
+</Workspace>

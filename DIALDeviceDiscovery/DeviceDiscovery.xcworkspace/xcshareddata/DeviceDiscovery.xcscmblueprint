@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "A816FC4ADFC89DA18F558381A469612D3EC0F344" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99" : 0,
+    "A816FC4ADFC89DA18F558381A469612D3EC0F344" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2A0BA0FC-A166-4126-BA40-D5FF79BD5612",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99" : "dvbcss-synckit-ios\/",
+    "A816FC4ADFC89DA18F558381A469612D3EC0F344" : "synckit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DeviceDiscovery",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DIALDeviceDiscovery\/DeviceDiscovery.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/repo.dev.bbc.co.uk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A816FC4ADFC89DA18F558381A469612D3EC0F344"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bbc\/dvbcss-synckit-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99"
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CorrelatedClock Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/CorrelatedClock" class="dashAnchor"></a>
+
+    <a title="CorrelatedClock Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          ClockTimelines Docs
+        </a>
+         (83% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/src/ClockTimelines">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">ClockTimelines Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      CorrelatedClock Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ClockBase.html">ClockBase</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CorrelatedClock.html">CorrelatedClock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/CorrelationFactory.html">CorrelationFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/MonotonicTime.html">MonotonicTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/SystemClock.html">SystemClock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/TunableClock.html">TunableClock</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@ClockErrorDomain">ClockErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@ClockTimelinesVersionNumber">ClockTimelinesVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@ClockTimelinesVersionString">ClockTimelinesVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kAvailableKey">kAvailableKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kCorrelationKey">kCorrelationKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kSpeedKey">kSpeedKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kStartTicksKey">kStartTicksKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kTickRateKey">kTickRateKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ClockError.html">ClockError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ClockProtocol.html">ClockProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions/Correlation.html">Correlation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/_correlation.html">_correlation</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>CorrelatedClock</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CorrelatedClock</span> <span class="p">:</span> <span class="nc">ClockBase</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>CorrelatedClock</code> is a clock locked to the tick count of the parent clock by a correlation and frequency setting. Correlation is a tuple (parentTicks, selfTicks). When the parent clock ticks property has the value <code>parentTicks</code>, the ticks property of this clock shall have the value <code>selfTicks</code>.</p>
+
+<p>@discussion You can alter the correlation and tickRate and speed of this clock dynamically. Changes to tickRate and speed
+will not shift the point of correlation. This means that a change in tickRate or speed will probably cause the
+current tick value of the clock to jump. The amount it jumps by will be proportional to the distance the current
+time is from the point of correlation.</p>
+
+<p>If you want a speed change to only affect the ticks from a particular point (e.g. the current tick value) onwards
+then you must re-base the correlation. </p>
+
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    The maths to calculate and convert tick values will be performed, by default, as integer maths
+unless the parameters controlling the clock (tickRate etc) are floating point, or the ticks property
+of the parent clock supplies floating point values.
+
+</div>
+
+<p>There is a function provided to do that in some circumstances:</p>
+
+<p>@code  c = CorrelatedClock(parentClock=parent, tickRate=1000, correlation=(50,78))</p>
+
+<pre class="highlight plaintext"><code>    ... time passes ...
+
+    // now freeze the clock AT ITS CURRENT TICK VALUE
+
+    c.rebaseCorrelationAtTicks(c.ticks)
+    c.speed = 0
+
+    // now resume the clock but at half speed, but again without the tick value jumping
+    c.correlation = ( parent.ticks, c.ticks )
+    c.speed = 0.5;
+</code></pre>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/properties"></a>
+                <a name="//apple_ref/objc/Section/properties" class="dashAnchor"></a>
+                <a href="#/properties">
+                  <h3 class="section-name">properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CorrelatedClock(py)correlation"></a>
+                    <a name="//apple_ref/objc/Property/correlation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CorrelatedClock(py)correlation">correlation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The underlying correlation for the timeline represented by this clock with respect to its parent timeline (clock)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Type Definitions/Correlation.html">Correlation</a></span> <span class="n">correlation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">correlation</span><span class="p">:</span> <span class="kt"><a href="../Type Definitions/Correlation.html">Correlation</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/objc/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CorrelatedClock(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CorrelatedClock(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default-value init method disallowed. Use initWithTickRate() method instead.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CorrelatedClock(im)initWithParentClock:TickRate:Correlation:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithParentClock:TickRate:Correlation:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CorrelatedClock(im)initWithParentClock:TickRate:Correlation:">-initWithParentClock:TickRate:Correlation:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>initialise a CorrelatedClock instance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithParentClock</span><span class="p">:(</span><span class="n"><a href="../Classes/ClockBase.html">ClockBase</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">parentClock</span>
+                           <span class="nf">TickRate</span><span class="p">:(</span><span class="kt">uint64_t</span><span class="p">)</span><span class="nv">tickRate</span>
+                        <span class="nf">Correlation</span><span class="p">:(</span><span class="n"><a href="../Type Definitions/Correlation.html">Correlation</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">correl</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="o">!</span><span class="p">(</span><span class="nv">parentClock</span><span class="p">:</span> <span class="kt"><a href="../Classes/ClockBase.html">ClockBase</a></span><span class="o">!</span><span class="p">,</span> <span class="nv">tickRate</span><span class="p">:</span> <span class="kt">UInt64</span><span class="p">,</span> <span class="n"><a href="../Classes/CorrelatedClock.html#/c:objc(cs)CorrelatedClock(py)correlation">correlation</a></span> <span class="nv">correl</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parentClock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>this clock&rsquo;s immediate parent</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tickRate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>tickrate/frequency for this clock</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>correl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>correlation tuple (parent_tick_value)</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>CorrelatedClock instance</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Actions"></a>
+                <a name="//apple_ref/objc/Section/Actions" class="dashAnchor"></a>
+                <a href="#/Actions">
+                  <h3 class="section-name">Actions</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CorrelatedClock(im)description"></a>
+                    <a name="//apple_ref/objc/Method/-description" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CorrelatedClock(im)description">-description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a string representation of this object</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">description</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">description</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>string representation of this object</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CorrelatedClock(im)rebaseCorrelationAtTicks:"></a>
+                    <a name="//apple_ref/objc/Method/-rebaseCorrelationAtTicks:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CorrelatedClock(im)rebaseCorrelationAtTicks:">-rebaseCorrelationAtTicks:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Changes the <code><a href="../Classes/CorrelatedClock.html#/c:objc(cs)CorrelatedClock(py)correlation">correlation</a></code> property to an equivalent correlation (that does not change the timing relationship between parent clock and this clock) where the tick value for this clock is the provided tick value.</li>
+<li>@discussion If you want a change (e.g. speed change) to only affect the ticks from a particular point (e.g. the current tick value) onwards then you must re-base the correlation.
+*</li>
+<li>- parameter: newTicks tickvalue of this clock from which the new correlation applies</li>
+<li>@code CorrelatedClock *c = [CorrelatedClock alloc] initWithParentClock:parent 
+                                                             TickRate: tickRate, 
+                                                           correlation=(50,78))</li>
+</ul>
+
+<p>&hellip; time passes &hellip;</p>
+
+<p><a href='#now-freeze-the-clock-at-its-current-tick-value' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='now-freeze-the-clock-at-its-current-tick-value'>now freeze the clock AT ITS CURRENT TICK VALUE</h1></p>
+
+<p>c.rebaseCorrelationAtTicks(c.ticks)
+c.speed = 0</p>
+
+<p><a href='#now-resume-the-clock-but-at-half-speed-but-again-without-the-tick-value-jumping' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='now-resume-the-clock-but-at-half-speed-but-again-without-the-tick-value-jumping'>now resume the clock but at half speed, but again without the tick value jumping</h1></p>
+
+<p>c.correlation = ( parent.ticks, c.ticks )
+c.speed = 0.5</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">rebaseCorrelationAtTicks</span><span class="p">:(</span><span class="kt">int64_t</span><span class="p">)</span><span class="nv">newTicks</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">rebaseCorrelationAtTicks</span><span class="p">(</span><span class="nv">newTicks</span><span class="p">:</span> <span class="kt">Int64</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newTicks</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>tickvalue of this clock from which the new correlation applies</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://bbc.co.uk/rd" target="_blank" rel="external">Rajiv_Ramdhany</a>. All rights reserved. (Last updated: 2016-09-19)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

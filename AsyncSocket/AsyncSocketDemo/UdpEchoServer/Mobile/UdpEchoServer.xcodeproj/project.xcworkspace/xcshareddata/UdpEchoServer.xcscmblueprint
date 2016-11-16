@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++4181" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99" : 0,
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++4181" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DC7C8E1A-280A-417C-9137-7864B9C41159",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99" : "dvbcss-synckit-ios\/",
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++4181" : "synckit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "UdpEchoServer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AsyncSocket\/AsyncSocketDemo\/UdpEchoServer\/Mobile\/UdpEchoServer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/repo.dev.bbc.co.uk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++4181"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bbc\/dvbcss-synckit-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99"
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VideoPlayerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Protocol/VideoPlayerDelegate" class="dashAnchor"></a>
+
+    <a title="VideoPlayerDelegate Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          VideoPlayer Docs
+        </a>
+         (89% documented)
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/ramdhany/synckit">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">VideoPlayer Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      VideoPlayerDelegate Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/VideoPlayerError.html">VideoPlayerError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/VideoPlayerView.html">VideoPlayerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/VideoPlayerViewController.html">VideoPlayerViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@VideoPlayerCurrentTimeNotification">VideoPlayerCurrentTimeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@VideoPlayerDidChangeAVAssetNotification">VideoPlayerDidChangeAVAssetNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@VideoPlayerDidChangePlayStateNotification">VideoPlayerDidChangePlayStateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@VideoPlayerDidReachEndOfFileNotification">VideoPlayerDidReachEndOfFileNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@VideoPlayerDidSeekNotification">VideoPlayerDidSeekNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@VideoPlayerDurationNotification">VideoPlayerDurationNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@VideoPlayerErrorDomain">VideoPlayerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@VideoPlayerLoadedTimeRangesNotification">VideoPlayerLoadedTimeRangesNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@VideoPlayerVersionNumber">VideoPlayerVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@VideoPlayerVersionString">VideoPlayerVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kVideoPlayerBadFormat">kVideoPlayerBadFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kVideoPlayerBadServerResponse">kVideoPlayerBadServerResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kVideoPlayerInvalidAsset">kVideoPlayerInvalidAsset</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kVideoPlayerMediaKeysNotLoaded">kVideoPlayerMediaKeysNotLoaded</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/VideoPlayerState.html">VideoPlayerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/kVideoPlayerErrorTypes.html">kVideoPlayerErrorTypes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/VideoPlayerDelegate.html">VideoPlayerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>VideoPlayerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@protocol</span> <span class="nc">VideoPlayerDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>The VideoPlayerDelegate provides event callbacks for the VideoPlayer. VideoPlayerDelegate provides a small set of delegate methods in favor of notifications to allow multiple receivers of the VideoPlayer event callbacks since only one player is typically used in an application.  - warning: These callbacks don&rsquo;t necessarily occur on the main thread so make sure you wrap any UI code in a GCD block:
+@code dispatch_async(dispatch_get_main_queue(), ^{ // Update UI });</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:State:"></a>
+                    <a name="//apple_ref/objc/Method/-VideoPlayer:State:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:State:">-VideoPlayer:State:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback triggered by this component to notify delegate about the state of the AVPlayer e.g. loading and
+  priming its buffers for video playback, seeking, paused, reached end of file.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">VideoPlayer</span><span class="p">:(</span><span class="n"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">videoplayer</span>
+              <span class="nf">State</span><span class="p">:(</span><span class="n"><a href="../Enums/VideoPlayerState.html">VideoPlayerState</a></span><span class="p">)</span><span class="nv">state</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="kt">VideoPlayer</span><span class="p">(</span><span class="nv">videoplayer</span><span class="p">:</span> <span class="kt"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span><span class="o">!</span><span class="p">,</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/VideoPlayerState.html">VideoPlayerState</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the AVPlayer instance whose state is being reported</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>state</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a state from the VideoPlayerState enumeration</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:updatedPosition:"></a>
+                    <a name="//apple_ref/objc/Method/-VideoPlayer:updatedPosition:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:updatedPosition:">-VideoPlayer:updatedPosition:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback to inform delegate about current play time. This is called every 250 milliseconds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">VideoPlayer</span><span class="p">:(</span><span class="n"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">videoplayer</span>
+    <span class="nf">updatedPosition</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">time</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="kt">VideoPlayer</span><span class="p">(</span><span class="nv">videoplayer</span><span class="p">:</span> <span class="kt"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span><span class="o">!</span><span class="p">,</span> <span class="n">updatedPosition</span> <span class="nv">time</span><span class="p">:</span> <span class="kt">NSTimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>AVPlayer instance</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>time</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>current time in the form of a CMTime</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:reachedEndOfVideoFile:"></a>
+                    <a name="//apple_ref/objc/Method/-VideoPlayer:reachedEndOfVideoFile:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:reachedEndOfVideoFile:">-VideoPlayer:reachedEndOfVideoFile:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback to inform delegate that the video player has reached the end of file</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">VideoPlayer</span><span class="p">:(</span><span class="n"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">videoplayer</span>
+    <span class="nf">reachedEndOfVideoFile</span><span class="p">:(</span><span class="n">AVPlayerItem</span> <span class="o">*</span><span class="p">)</span><span class="nv">videoAsset</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="kt">VideoPlayer</span><span class="p">(</span><span class="nv">videoplayer</span><span class="p">:</span> <span class="kt"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span><span class="o">!</span><span class="p">,</span> <span class="n">reachedEndOfVideoFile</span> <span class="nv">videoAsset</span><span class="p">:</span> <span class="kt">AVPlayerItem</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>AVPlayer instance</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoAsset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>video item</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:DurationAvailable:"></a>
+                    <a name="//apple_ref/objc/Method/-VideoPlayer:DurationAvailable:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:DurationAvailable:">-VideoPlayer:DurationAvailable:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback to inform that duration information is available. Duration is given in seconds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">VideoPlayer</span><span class="p">:(</span><span class="n"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">videoplayer</span>
+  <span class="nf">DurationAvailable</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">duration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="kt">VideoPlayer</span><span class="p">(</span><span class="nv">videoplayer</span><span class="p">:</span> <span class="kt"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span><span class="o">!</span><span class="p">,</span> <span class="n">durationAvailable</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">NSTimeInterval</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>AVPlayer instance playing the video</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>duration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>duration in seconds.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:TrackInfoAvailable:"></a>
+                    <a name="//apple_ref/objc/Method/-VideoPlayer:TrackInfoAvailable:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:TrackInfoAvailable:">-VideoPlayer:TrackInfoAvailable:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback to inform that track information in the asset loaded for playback is available.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">VideoPlayer</span><span class="p">:(</span><span class="n"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">videoplayer</span>
+ <span class="nf">TrackInfoAvailable</span><span class="p">:(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n">AVPlayerItemTrack</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">tracks</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="kt">VideoPlayer</span><span class="p">(</span><span class="nv">videoplayer</span><span class="p">:</span> <span class="kt"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span><span class="o">!</span><span class="p">,</span> <span class="n">trackInfoAvailable</span> <span class="nv">tracks</span><span class="p">:</span> <span class="p">[</span><span class="kt">AVPlayerItemTrack</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>AVPlayer instance playing the video</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>track</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>duration in seconds.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:LoadedTimeRanges:"></a>
+                    <a name="//apple_ref/objc/Method/-VideoPlayer:LoadedTimeRanges:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)VideoPlayerDelegate(im)VideoPlayer:LoadedTimeRanges:">-VideoPlayer:LoadedTimeRanges:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Callback to inform that loaded video time ranges are available. This can be used to calculate current playable duration</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">VideoPlayer</span><span class="p">:(</span><span class="n"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">videoplayer</span>
+   <span class="nf">LoadedTimeRanges</span><span class="p">:(</span><span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="nv">ranges</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="kt">VideoPlayer</span><span class="p">(</span><span class="nv">videoplayer</span><span class="p">:</span> <span class="kt"><a href="../Classes/VideoPlayerView.html">VideoPlayerView</a></span><span class="o">!</span><span class="p">,</span> <span class="n">loadedTimeRanges</span> <span class="nv">ranges</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>videoplayer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>AVPlayer instance playing the video</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ranges</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A list of loaded time ranges.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="http://bbc.co.uk/rd" target="_blank" rel="external">Rajiv</a>. All rights reserved. (Last updated: 2016-09-08)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

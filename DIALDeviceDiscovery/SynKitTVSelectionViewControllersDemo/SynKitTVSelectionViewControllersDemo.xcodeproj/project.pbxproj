@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42395BE71DC38DD0009A6E4E /* SyncKitDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BE61DC38DD0009A6E4E /* SyncKitDelegate.framework */; };
+		42395BE81DC38DD0009A6E4E /* SyncKitDelegate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BE61DC38DD0009A6E4E /* SyncKitDelegate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395BEA1DC38DD0009A6E4E /* DIALTVSelectionUIViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BE91DC38DD0009A6E4E /* DIALTVSelectionUIViews.framework */; };
+		42395BEB1DC38DD0009A6E4E /* DIALTVSelectionUIViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BE91DC38DD0009A6E4E /* DIALTVSelectionUIViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395BED1DC38DD0009A6E4E /* DIALTV_UI_ResourceBundle.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 42395BEC1DC38DD0009A6E4E /* DIALTV_UI_ResourceBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395BEF1DC38DD0009A6E4E /* SyncKitCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BEE1DC38DD0009A6E4E /* SyncKitCollections.framework */; };
+		42395BF01DC38DD0009A6E4E /* SyncKitCollections.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BEE1DC38DD0009A6E4E /* SyncKitCollections.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395BF21DC38DD0009A6E4E /* DIALDeviceDiscovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BF11DC38DD0009A6E4E /* DIALDeviceDiscovery.framework */; };
+		42395BF31DC38DD0009A6E4E /* DIALDeviceDiscovery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BF11DC38DD0009A6E4E /* DIALDeviceDiscovery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395BF51DC38DD0009A6E4E /* SimpleLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BF41DC38DD0009A6E4E /* SimpleLogger.framework */; };
+		42395BF61DC38DD0009A6E4E /* SimpleLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BF41DC38DD0009A6E4E /* SimpleLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395BF81DC38DD0009A6E4E /* SyncKitConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BF71DC38DD0009A6E4E /* SyncKitConfiguration.framework */; };
+		42395BF91DC38DD0009A6E4E /* SyncKitConfiguration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BF71DC38DD0009A6E4E /* SyncKitConfiguration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395BFB1DC38DD0009A6E4E /* AsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BFA1DC38DD0009A6E4E /* AsyncSocket.framework */; };
+		42395BFC1DC38DD0009A6E4E /* AsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42395BFA1DC38DD0009A6E4E /* AsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42395BFF1DC38E48009A6E4E /* DIALTV_UI_ResourceBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42395BEC1DC38DD0009A6E4E /* DIALTV_UI_ResourceBundle.bundle */; };
+		4268B58E1B24541200781C20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268B58D1B24541200781C20 /* main.m */; };
+		4268B5911B24541200781C20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268B5901B24541200781C20 /* AppDelegate.m */; };
+		4268B5941B24541200781C20 /* SynKitTVSelectionViewControllersDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4268B5921B24541200781C20 /* SynKitTVSelectionViewControllersDemo.xcdatamodeld */; };
+		4268B59A1B24541200781C20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4268B5981B24541200781C20 /* Main.storyboard */; };
+		4268B59C1B24541200781C20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4268B59B1B24541200781C20 /* Images.xcassets */; };
+		4268B59F1B24541200781C20 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4268B59D1B24541200781C20 /* LaunchScreen.xib */; };
+		4268B5AB1B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268B5AA1B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4268B5A51B24541200781C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4268B5801B24541200781C20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4268B5871B24541200781C20;
+			remoteInfo = SynKitTVSelectionViewControllersDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42395BFD1DC38DD1009A6E4E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42395BEB1DC38DD0009A6E4E /* DIALTVSelectionUIViews.framework in Embed Frameworks */,
+				42395BF61DC38DD0009A6E4E /* SimpleLogger.framework in Embed Frameworks */,
+				42395BE81DC38DD0009A6E4E /* SyncKitDelegate.framework in Embed Frameworks */,
+				42395BF01DC38DD0009A6E4E /* SyncKitCollections.framework in Embed Frameworks */,
+				42395BF31DC38DD0009A6E4E /* DIALDeviceDiscovery.framework in Embed Frameworks */,
+				42395BF91DC38DD0009A6E4E /* SyncKitConfiguration.framework in Embed Frameworks */,
+				42395BFC1DC38DD0009A6E4E /* AsyncSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42395BFE1DC38DD1009A6E4E /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				42395BED1DC38DD0009A6E4E /* DIALTV_UI_ResourceBundle.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		42395BE61DC38DD0009A6E4E /* SyncKitDelegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SyncKitDelegate.framework; path = "/Users/rajivr/Workspaces/sync_workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DerivedData/DeviceDiscovery/Build/Products/Debug-iphoneos/SyncKitDelegate.framework"; sourceTree = "<absolute>"; };
+		42395BE91DC38DD0009A6E4E /* DIALTVSelectionUIViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = DIALTVSelectionUIViews.framework; path = "/Users/rajivr/Workspaces/sync_workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DerivedData/DeviceDiscovery/Build/Products/Debug-iphoneos/DIALTVSelectionUIViews.framework"; sourceTree = "<absolute>"; };
+		42395BEC1DC38DD0009A6E4E /* DIALTV_UI_ResourceBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; name = DIALTV_UI_ResourceBundle.bundle; path = "/Users/rajivr/Workspaces/sync_workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DerivedData/DeviceDiscovery/Build/Products/Debug-iphoneos/DIALTV_UI_ResourceBundle.bundle"; sourceTree = "<absolute>"; };
+		42395BEE1DC38DD0009A6E4E /* SyncKitCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SyncKitCollections.framework; path = "/Users/rajivr/Workspaces/sync_workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DerivedData/DeviceDiscovery/Build/Products/Debug-iphoneos/SyncKitCollections.framework"; sourceTree = "<absolute>"; };
+		42395BF11DC38DD0009A6E4E /* DIALDeviceDiscovery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = DIALDeviceDiscovery.framework; path = "/Users/rajivr/Workspaces/sync_workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DerivedData/DeviceDiscovery/Build/Products/Debug-iphoneos/DIALDeviceDiscovery.framework"; sourceTree = "<absolute>"; };
+		42395BF41DC38DD0009A6E4E /* SimpleLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SimpleLogger.framework; path = "/Users/rajivr/Workspaces/sync_workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DerivedData/DeviceDiscovery/Build/Products/Debug-iphoneos/SimpleLogger.framework"; sourceTree = "<absolute>"; };
+		42395BF71DC38DD0009A6E4E /* SyncKitConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SyncKitConfiguration.framework; path = "/Users/rajivr/Workspaces/sync_workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DerivedData/DeviceDiscovery/Build/Products/Debug-iphoneos/SyncKitConfiguration.framework"; sourceTree = "<absolute>"; };
+		42395BFA1DC38DD0009A6E4E /* AsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = AsyncSocket.framework; path = "/Users/rajivr/Workspaces/sync_workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DerivedData/DeviceDiscovery/Build/Products/Debug-iphoneos/AsyncSocket.framework"; sourceTree = "<absolute>"; };
+		4268B5881B24541200781C20 /* SynKitTVSelectionViewControllersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SynKitTVSelectionViewControllersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4268B58C1B24541200781C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4268B58D1B24541200781C20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4268B58F1B24541200781C20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4268B5901B24541200781C20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4268B5931B24541200781C20 /* SynKitTVSelectionViewControllersDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SynKitTVSelectionViewControllersDemo.xcdatamodel; sourceTree = "<group>"; };
+		4268B5991B24541200781C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4268B59B1B24541200781C20 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4268B59E1B24541200781C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4268B5A41B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynKitTVSelectionViewControllersDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4268B5A91B24541200781C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4268B5AA1B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynKitTVSelectionViewControllersDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4268B5851B24541200781C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42395BEA1DC38DD0009A6E4E /* DIALTVSelectionUIViews.framework in Frameworks */,
+				42395BF51DC38DD0009A6E4E /* SimpleLogger.framework in Frameworks */,
+				42395BE71DC38DD0009A6E4E /* SyncKitDelegate.framework in Frameworks */,
+				42395BEF1DC38DD0009A6E4E /* SyncKitCollections.framework in Frameworks */,
+				42395BF21DC38DD0009A6E4E /* DIALDeviceDiscovery.framework in Frameworks */,
+				42395BF81DC38DD0009A6E4E /* SyncKitConfiguration.framework in Frameworks */,
+				42395BFB1DC38DD0009A6E4E /* AsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4268B5A11B24541200781C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4268B57F1B24541200781C20 = {
+			isa = PBXGroup;
+			children = (
+				42395BFA1DC38DD0009A6E4E /* AsyncSocket.framework */,
+				42395BF71DC38DD0009A6E4E /* SyncKitConfiguration.framework */,
+				42395BF41DC38DD0009A6E4E /* SimpleLogger.framework */,
+				42395BF11DC38DD0009A6E4E /* DIALDeviceDiscovery.framework */,
+				42395BEE1DC38DD0009A6E4E /* SyncKitCollections.framework */,
+				42395BEC1DC38DD0009A6E4E /* DIALTV_UI_ResourceBundle.bundle */,
+				42395BE91DC38DD0009A6E4E /* DIALTVSelectionUIViews.framework */,
+				42395BE61DC38DD0009A6E4E /* SyncKitDelegate.framework */,
+				4268B5891B24541200781C20 /* Products */,
+				4268B58A1B24541200781C20 /* SynKitTVSelectionViewControllersDemo */,
+				4268B5A71B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests */,
+			);
+			sourceTree = "<group>";
+		};
+		4268B5891B24541200781C20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4268B5881B24541200781C20 /* SynKitTVSelectionViewControllersDemo.app */,
+				4268B5A41B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4268B58A1B24541200781C20 /* SynKitTVSelectionViewControllersDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4268B58F1B24541200781C20 /* AppDelegate.h */,
+				4268B5901B24541200781C20 /* AppDelegate.m */,
+				4268B5981B24541200781C20 /* Main.storyboard */,
+				4268B59B1B24541200781C20 /* Images.xcassets */,
+				4268B59D1B24541200781C20 /* LaunchScreen.xib */,
+				4268B5921B24541200781C20 /* SynKitTVSelectionViewControllersDemo.xcdatamodeld */,
+				4268B58B1B24541200781C20 /* Supporting Files */,
+			);
+			path = SynKitTVSelectionViewControllersDemo;
+			sourceTree = "<group>";
+		};
+		4268B58B1B24541200781C20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4268B58C1B24541200781C20 /* Info.plist */,
+				4268B58D1B24541200781C20 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4268B5A71B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4268B5AA1B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests.m */,
+				4268B5A81B24541200781C20 /* Supporting Files */,
+			);
+			path = SynKitTVSelectionViewControllersDemoTests;
+			sourceTree = "<group>";
+		};
+		4268B5A81B24541200781C20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4268B5A91B24541200781C20 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4268B5871B24541200781C20 /* SynKitTVSelectionViewControllersDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4268B5AE1B24541200781C20 /* Build configuration list for PBXNativeTarget "SynKitTVSelectionViewControllersDemo" */;
+			buildPhases = (
+				4268B5841B24541200781C20 /* Sources */,
+				4268B5851B24541200781C20 /* Frameworks */,
+				4268B5861B24541200781C20 /* Resources */,
+				42395BFD1DC38DD1009A6E4E /* Embed Frameworks */,
+				42395BFE1DC38DD1009A6E4E /* Embed PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SynKitTVSelectionViewControllersDemo;
+			productName = SynKitTVSelectionViewControllersDemo;
+			productReference = 4268B5881B24541200781C20 /* SynKitTVSelectionViewControllersDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4268B5A31B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4268B5B11B24541200781C20 /* Build configuration list for PBXNativeTarget "SynKitTVSelectionViewControllersDemoTests" */;
+			buildPhases = (
+				4268B5A01B24541200781C20 /* Sources */,
+				4268B5A11B24541200781C20 /* Frameworks */,
+				4268B5A21B24541200781C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4268B5A61B24541200781C20 /* PBXTargetDependency */,
+			);
+			name = SynKitTVSelectionViewControllersDemoTests;
+			productName = SynKitTVSelectionViewControllersDemoTests;
+			productReference = 4268B5A41B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4268B5801B24541200781C20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "BBC RD";
+				TargetAttributes = {
+					4268B5871B24541200781C20 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 869YXPEF4W;
+					};
+					4268B5A31B24541200781C20 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 4268B5871B24541200781C20;
+					};
+				};
+			};
+			buildConfigurationList = 4268B5831B24541200781C20 /* Build configuration list for PBXProject "SynKitTVSelectionViewControllersDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4268B57F1B24541200781C20;
+			productRefGroup = 4268B5891B24541200781C20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4268B5871B24541200781C20 /* SynKitTVSelectionViewControllersDemo */,
+				4268B5A31B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4268B5861B24541200781C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42395BFF1DC38E48009A6E4E /* DIALTV_UI_ResourceBundle.bundle in Resources */,
+				4268B59A1B24541200781C20 /* Main.storyboard in Resources */,
+				4268B59F1B24541200781C20 /* LaunchScreen.xib in Resources */,
+				4268B59C1B24541200781C20 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4268B5A21B24541200781C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4268B5841B24541200781C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4268B5911B24541200781C20 /* AppDelegate.m in Sources */,
+				4268B5941B24541200781C20 /* SynKitTVSelectionViewControllersDemo.xcdatamodeld in Sources */,
+				4268B58E1B24541200781C20 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4268B5A01B24541200781C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4268B5AB1B24541200781C20 /* SynKitTVSelectionViewControllersDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4268B5A61B24541200781C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4268B5871B24541200781C20 /* SynKitTVSelectionViewControllersDemo */;
+			targetProxy = 4268B5A51B24541200781C20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4268B5981B24541200781C20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4268B5991B24541200781C20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4268B59D1B24541200781C20 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4268B59E1B24541200781C20 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4268B5AC1B24541200781C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4268B5AD1B24541200781C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4268B5AF1B24541200781C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DeviceDiscovery-eotvssrtfwutructohzkiqqefzbs/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = SynKitTVSelectionViewControllersDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4268B5B01B24541200781C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DeviceDiscovery-eotvssrtfwutructohzkiqqefzbs/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = SynKitTVSelectionViewControllersDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4268B5B21B24541200781C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SynKitTVSelectionViewControllersDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SynKitTVSelectionViewControllersDemo.app/SynKitTVSelectionViewControllersDemo";
+			};
+			name = Debug;
+		};
+		4268B5B31B24541200781C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SynKitTVSelectionViewControllersDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SynKitTVSelectionViewControllersDemo.app/SynKitTVSelectionViewControllersDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4268B5831B24541200781C20 /* Build configuration list for PBXProject "SynKitTVSelectionViewControllersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4268B5AC1B24541200781C20 /* Debug */,
+				4268B5AD1B24541200781C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4268B5AE1B24541200781C20 /* Build configuration list for PBXNativeTarget "SynKitTVSelectionViewControllersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4268B5AF1B24541200781C20 /* Debug */,
+				4268B5B01B24541200781C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4268B5B11B24541200781C20 /* Build configuration list for PBXNativeTarget "SynKitTVSelectionViewControllersDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4268B5B21B24541200781C20 /* Debug */,
+				4268B5B31B24541200781C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4268B5921B24541200781C20 /* SynKitTVSelectionViewControllersDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4268B5931B24541200781C20 /* SynKitTVSelectionViewControllersDemo.xcdatamodel */,
+			);
+			currentVersion = 4268B5931B24541200781C20 /* SynKitTVSelectionViewControllersDemo.xcdatamodel */;
+			path = SynKitTVSelectionViewControllersDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4268B5801B24541200781C20 /* Project object */;
+}

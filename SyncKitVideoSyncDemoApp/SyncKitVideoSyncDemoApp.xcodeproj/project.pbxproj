@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		42122D8A1DC36F1D002B9C38 /* DIALTV_UI_ResourceBundle.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 42122D891DC36F1D002B9C38 /* DIALTV_UI_ResourceBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		42122D8B1DC36F2A002B9C38 /* DIALTV_UI_ResourceBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42122D891DC36F1D002B9C38 /* DIALTV_UI_ResourceBundle.bundle */; };
-		4268105B1DDC892500619C7C /* video_a.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 426810571DDC892500619C7C /* video_a.mp4 */; };
-		4268105C1DDC892500619C7C /* video_b.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 426810581DDC892500619C7C /* video_b.mp4 */; };
-		4268105D1DDC892500619C7C /* audio_c.aac in Resources */ = {isa = PBXBuildFile; fileRef = 426810591DDC892500619C7C /* audio_c.aac */; };
-		4268105E1DDC892500619C7C /* video_c.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4268105A1DDC892500619C7C /* video_c.mp4 */; };
 		429A6CD91DABA93E001BD8CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 429A6CD81DABA93E001BD8CC /* main.m */; };
 		429A6CDC1DABA93E001BD8CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 429A6CDB1DABA93E001BD8CC /* AppDelegate.m */; };
 		429A6CDF1DABA93E001BD8CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 429A6CDE1DABA93E001BD8CC /* ViewController.m */; };
@@ -121,10 +117,6 @@
 
 /* Begin PBXFileReference section */
 		42122D891DC36F1D002B9C38 /* DIALTV_UI_ResourceBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = DIALTV_UI_ResourceBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		426810571DDC892500619C7C /* video_a.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_a.mp4; sourceTree = "<group>"; };
-		426810581DDC892500619C7C /* video_b.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_b.mp4; sourceTree = "<group>"; };
-		426810591DDC892500619C7C /* audio_c.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio_c.aac; sourceTree = "<group>"; };
-		4268105A1DDC892500619C7C /* video_c.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video_c.mp4; sourceTree = "<group>"; };
 		429A6CD41DABA93E001BD8CC /* SyncKitVideoSyncDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncKitVideoSyncDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		429A6CD81DABA93E001BD8CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		429A6CDA1DABA93E001BD8CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -248,10 +240,6 @@
 		429A6CD71DABA93E001BD8CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				426810571DDC892500619C7C /* video_a.mp4 */,
-				426810581DDC892500619C7C /* video_b.mp4 */,
-				426810591DDC892500619C7C /* audio_c.aac */,
-				4268105A1DDC892500619C7C /* video_c.mp4 */,
 				429A6CD81DABA93E001BD8CC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -408,11 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4268105D1DDC892500619C7C /* audio_c.aac in Resources */,
 				42122D8B1DC36F2A002B9C38 /* DIALTV_UI_ResourceBundle.bundle in Resources */,
-				4268105B1DDC892500619C7C /* video_a.mp4 in Resources */,
-				4268105E1DDC892500619C7C /* video_c.mp4 in Resources */,
-				4268105C1DDC892500619C7C /* video_b.mp4 in Resources */,
 				429A6CE71DABA93E001BD8CC /* LaunchScreen.storyboard in Resources */,
 				429A6CE41DABA93E001BD8CC /* Assets.xcassets in Resources */,
 				429A6CE21DABA93E001BD8CC /* Main.storyboard in Resources */,

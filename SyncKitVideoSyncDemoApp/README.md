@@ -1,28 +1,53 @@
 # A Video Stream Synchronisation Demo App using SyncKit's Synchroniser object
 
-This example app demonstrates the use of the SyncKit library's Synchroniser. This example shows how to use the
-Synchroniser object to synchronise an HLS stream to a TV. The example app assumes that the TV is playing the `channel_B_video.mp4` MP4 video file.
+This demo app demonstrates the synchronisation of companion videos to a broadcast stream that embeds a TEMI timeline.
 
-The HLS stream and other test assets can be downloaded from: https://hbbtv-2-0-testing-1.virt.ch.bbc.co.uk/downloads/simple-free-sync-seq-1.zip
+It provides an example of how to the use of the SyncKit library's Synchroniser object. It shows how in response to a change of contentId signalled by the TV, the companion screen app can load a relevant media object and register it with a Synchroniser object for synchronisation.
+
+To run the demo app, follow these steps
+
+### Step 1: Open the demo app
+
+This demo app is part of the [dvbcss-synckit-ios](../) distribution. After you have cloned the repository, open the workspace `synckit.xcworkspace` in XCode.
+
+The code for the demo app is in the `SyncKitVideoSyncDemoApp` project.
+
+### Step 2:  Get the TV and companion Content
+
+The example app assumes that the TV is playing the **"mux.ts.24mbit.with_temi.ts"** broadcast transport stream. This transport stream has both PTS and TEMI timelines signalled in it. The demo companion app uses the TEMI timeline for synchronisation (switching to PTS timeline is trivial).
+
+The broadcast transport stream and companion content for each of the channels it contains are available from this site: https://hbbtv-2-0-testing-1.virt.ch.bbc.co.uk/downloads/simple-free-sync-seq-1.zip
+
+Download this zipped file and extract it into a known location on your build device.
+
+Rename the following files as suggested:
+1. `channel_a.companion/video.mp4` file to `channel_a.companion/video_a.mp4`
+1. `channel_b.companion/video.mp4` file to `channel_b.companion/video_b.mp4`
+1. `channel_c.companion/video.mp4` file to `channel_c.companion/video_c.mp4`
+
+### Step 3: Add the companion content to the demo app
+
+In the `SyncKitVideoSyncDemoApp` project, right-click on the `Supporting Files` folder and select the `Add files to SyncKitVideoSyncDemoApp ..` option.
+
+In the dialog that follows, select these files from the location where you originally downloaded them and add them to `SyncKitVideoSyncDemoApp` project:
+1. `channel_a.companion/video_a.mp4`
+1. `channel_b.companion/video_b.mp4`
+1. `channel_c.companion/video_c.mp4`
+
+### Step 4: Build the demo app
+
+In XCode, select the `SyncKitVideoSyncDemoApp` build scheme and launch the build process to deploy the app into a selected target iOS device (or iOS simulator).   
+
+The 
 
 
-In the demo app project, you will need to specify the following constants:
-
-```objective-c
-// the URL of the companion asset to play (can be an HLS stream or a video file)
-NSString* const kCompanionVideoURL = @"http://192.168.1.106/~rajivr/video/channelB/index.m3u8";
-// the contentId reported by the TV
-NSString* const kContentId_ChannelB = @"http://127.0.0.1:8123/channel_B_video.mp4";
 
 
-```
-If you would like to synchronise a local video file, then add the file to the project and update ```NSString* const kCompanionVideoURL``` with the file path.
-Note: An implementation of the TV is not included.
 
-##ContentId and Available Timelines for Sync
+## ContentId and Available Timelines for Sync
 Assuming you have an HbbTV2.0 compliant TV/device on the network, or a DVB-CSS TV emulator, it is possible to discover its current content identifier and the timelines the device exposes for synchronisation.
 
-To do this , you may use a CII client to connect to your TV. One is available within the [pydvbcss](https://github.com/bbc/pydvbcss) distribution. 
+To do this , you may use a CII client to connect to your TV. One is available within the [pydvbcss](https://github.com/bbc/pydvbcss) distribution.
 
 Run a CII protocol python client as follows:
 
@@ -70,7 +95,7 @@ In ```- (void) viewDidLoad``` method,  a Synchroniser object is created using th
 The DIALDeviceDiscovery component provides a list of ```DIALDevice``` objects, each representing an HbbTV device discovered on the network.
 A DIALDevice object will contain information such as ```HbbTV_InterDevSyncURL``` and ```HbbTV_App2AppURL```.
 
-The Synchroniser using the `enableSynchronisation` method 
+The Synchroniser using the `enableSynchronisation` method
 
 ```objective-c
         // get the environment's Synchroniser and intialise it

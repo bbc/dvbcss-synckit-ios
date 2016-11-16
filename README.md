@@ -119,7 +119,7 @@ A demo iOS application ([SyncKitVideoSyncDemoApp](SyncKitVideoSyncDemoApp/)) tha
 
 This demo assumes that a DVB-CSS- or HbbTV 2 compliant TV/STB or emulator is being used to play a video stream. The application when deployed on an iOS device will then synchronise against that video stream.
 
-For details on how it works and how to run it, see [the SyncKitVideoSyncDemoApp README](https://github.com/bbc/dvbcss-synckit-ios/blob/master/SyncKitVideoSyncDemoApp/README.md).
+For details on how it works and how to run it, see [the SyncKitVideoSyncDemoApp README](SyncKitVideoSyncDemoApp/README.md).
 
 **Make sure you add the required companion media files before trying to build and run it.**
 

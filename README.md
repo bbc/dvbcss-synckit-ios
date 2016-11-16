@@ -37,8 +37,7 @@ The first step is to clone this repository, or use one of the release tarballs.
 
 ### 2. Build the frameworks
 
-To use these frameworks in your own applications, or to use the example app provided,
-you must build and import the frameworks into your project.
+To use these frameworks in your own applications, you must build and import the frameworks into your project.
 
 #### EITHER: Use XCode to build
 
@@ -60,18 +59,18 @@ After a successful build, the dynamic libraries will be in the workspace's folde
 
 ### 3. Import frameworks into the project
 
-In your own project (or the project for the example app `SyncKitVideoSyncDemoApp`), you need to import the iOS frameworks.
+In your own project, you need to import the iOS frameworks.
 
 You will find them in their build location in the workspace's folder in `DerivedData/synckit/Build/Products/Release-iphoneos/`.
 
 To import them, select your project's main target and go to the project's settings:
-    
+
 ![XCode settings](img/xcode_settings_1.png)
-    
+
 Next, in the General tab, go to the Embedded Binaries and click on the [+] button to add the frameworks. In the dialog that follows, click on the *'Add Other...'* button:
 
 ![XCode settings](img/xcode_settings_2.png)
-    
+
 Now add these frameworks from this folder in the workspace folder: `DerivedData/synckit/Build/Products/Release-iphoneos/`:
 
 * `AsyncSocket.framework`
@@ -92,9 +91,9 @@ Now add these frameworks from this folder in the workspace folder: `DerivedData/
 * `UDPMessaging.framework`
 * `VideoPlayer.framework`
 * `WallClockClient.framework`
-    
+
 You can omit libraries you do not need. However, ensure that the dependencies of your libraries are always satisfied. Please refer to the table below for dependency information:
-    
+
 | iOS Framework | Depends on (requires) |
 | --- | --- |
 |`CIIProtocolClient.framework`|*`SimpleLogger.framework`*<br>*`SocketRocketiOS.framework`*<br>*`SyncKitCollections.framework`*<br>*`SyncKitConfiguration.framework`*|
@@ -118,13 +117,11 @@ Your project can now utilise these libraries.
 
 A demo iOS application ([SyncKitVideoSyncDemoApp](SyncKitVideoSyncDemoApp/)) that uses SyncKit to discover a TV on the network and synchronise a video is included.
 
-**Make sure you complete the *Getting Started* steps above to import the libraries into the demo application before trying to build and run it.**
-
 This demo assumes that a DVB-CSS- or HbbTV 2 compliant TV/STB or emulator is being used to play a video stream. The application when deployed on an iOS device will then synchronise against that video stream.
 
-For details on how it works and how to use it, see [the SyncKitVideoSyncDemoApp README](SyncKitVideoSyncDemoApp/readme.md).
+For details on how it works and how to run it, see [the SyncKitVideoSyncDemoApp README](SyncKitVideoSyncDemoApp/readme.md).
 
-
+**Make sure you add the required companion media files before trying to build and run it.**
 
 ## Read the documentation
 

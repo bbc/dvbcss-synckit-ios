@@ -84,12 +84,13 @@ INFO:CIIClient:CII is now: CII(presentationStatus=[u'okay'], protocolVersion=u'1
 * The contentId in this example is **"http://127.0.0.1:8123/channel_B_video.mp4"**
 * Available timelines are given by the **timelines** field.
 
-### Step 2:
+### Step 2: Select an available timeline e.g. PTS
 You can use one of the listed timelines for synchronisation.
 
 For example, to make the demo app use the PTS TV timeline for synchronisation, you will need to do the following:
 
-1. Initialise the Synchroniser object to use the PTS timeline.
+#### Initialise the Synchroniser object to use the PTS timeline.
+
 In the `viewDidLoad()` method in the ViewController class (`ViewController.m` file), specify the PTS timeline in the initialisation routine:
 
 ```objective-c
@@ -102,7 +103,8 @@ In the `viewDidLoad()` method in the ViewController class (`ViewController.m` fi
 
 `pts_timeline` is an object that describes a PTS timeline.
 
-2. For each media object representing a specific companion content, change  its correlation to refer to the PTS timeline.
+#### Modify media object correlations to refer to the PTS timeline
+For each media object representing a specific companion content, change  its correlation to refer to the PTS timeline.
 
 The correlation is a pair of timestamps representing a time on the TV timeline and the corresponding time on the companion content's timeline.
 

@@ -4,6 +4,7 @@ This demo app demonstrates the synchronisation of companion videos to a broadcas
 
 It provides an example of how to the use of the SyncKit library's Synchroniser object. It shows how in response to a change of contentId signalled by the TV, the companion screen app can load a relevant media object and register it with a Synchroniser object for synchronisation.
 
+## Running the demo app
 To run the demo app, follow these steps
 
 ### Step 1: Open the demo app
@@ -21,6 +22,7 @@ The broadcast transport stream and companion content for each of the channels it
 Download this zipped file and extract it into a known location on your build device.
 
 Rename the following files as suggested:
+
 1. `channel_a.companion/video.mp4` file to `channel_a.companion/video_a.mp4`
 1. `channel_b.companion/video.mp4` file to `channel_b.companion/video_b.mp4`
 1. `channel_c.companion/video.mp4` file to `channel_c.companion/video_c.mp4`
@@ -30,33 +32,40 @@ Rename the following files as suggested:
 In the `SyncKitVideoSyncDemoApp` project, right-click on the `Supporting Files` folder and select the `Add files to SyncKitVideoSyncDemoApp ..` option.
 
 In the dialog that follows, select these files from the location where you originally downloaded them and add them to `SyncKitVideoSyncDemoApp` project:
+
 1. `channel_a.companion/video_a.mp4`
 1. `channel_b.companion/video_b.mp4`
 1. `channel_c.companion/video_c.mp4`
 
-### Step 4: Build the demo app
+### Step 4: Build and run the demo app
 
 In XCode, select the `SyncKitVideoSyncDemoApp` build scheme and launch the build process to deploy the app into a selected target iOS device (or iOS simulator).   
 
-The 
+** Make sure that the TV and the companion device are on the same network**
+
+The first screen shows TV devices discovered via DIAL on the local network.
 
 
+<img src="../img/screen1.png" width="350">
 
 
+## Using Alternative Timelines for Sync in the demo app
 
-## ContentId and Available Timelines for Sync
 Assuming you have an HbbTV2.0 compliant TV/device on the network, or a DVB-CSS TV emulator, it is possible to discover its current content identifier and the timelines the device exposes for synchronisation.
 
-To do this , you may use a CII client to connect to your TV. One is available within the [pydvbcss](https://github.com/bbc/pydvbcss) distribution.
+### Step 1: Discover available timelines
 
-Run a CII protocol python client as follows:
+To discover available timelines, you may use a CII client to connect to your TV's CSS-CII protocol server endpoint. A CII client can be obtained from the [pydvbcss](https://github.com/bbc/pydvbcss) distribution.
+
+You can run the `pydvbcss` CII protocol python client as follows:
 
 ```bash
 $ python examples/CIIClient.py ws:/<TV_IP_ADDRESS>:7681/cii
 
 ```
 
-What the received CII info may look like:
+A sample output of the tool looks like this:
+
 ```bash
 
 RD000400:pydvbcss rajivr$ python examples/CIIClient.py ws://10.5.11.163:7681/cii
@@ -75,40 +84,55 @@ INFO:CIIClient:CII is now: CII(presentationStatus=[u'okay'], protocolVersion=u'1
 * The contentId in this example is **"http://127.0.0.1:8123/channel_B_video.mp4"**
 * Available timelines are given by the **timelines** field.
 
-## Using a timeline for sync
-You can use one of the listed timelines for synchronisation. For example, in [SyncKitVideoSyncDemoApp/ViewController.m](SyncKitVideoSyncDemoApp/ViewController.m) create a timeline selector object of type TimelineOption
+### Step 2:
+You can use one of the listed timelines for synchronisation.
+
+For example, to make the demo app use the PTS TV timeline for synchronisation, you will need to do the following:
+
+1. Initialise the Synchroniser object to use the PTS timeline.
+In the `viewDidLoad()` method in the ViewController class (`ViewController.m` file), specify the PTS timeline in the initialisation routine:
+
+```objective-c
+[self.mediaSynchroniser initWithInterDeviceSyncURL:device.HbbTV_InterDevSyncURL
+                                                                         App2AppURL:device.HbbTV_App2AppURL
+                                                                       MediaObjects:nil
+                                                                   TimelineSelector:pts_timeline
+                                                                           Delegate:self];
+```
+
+`pts_timeline` is an object that describes a PTS timeline.
+
+2. For each media object representing a specific companion content, change  its correlation to refer to the PTS timeline.
+
+The correlation is a pair of timestamps representing a time on the TV timeline and the corresponding time on the companion content's timeline.
+
+For example, for companion video A, the media object's correlation is modified as follows:
 
 ```objective-c
 
-NSString* const SET_TimelineSelector = @"tag:rd.bbc.co.uk,2015-12-08:dvb:css:timeline:simple-elapsed-time:1000";
-int const SET_UnitsPerTick = 1;
-int const SET_UnitsPerSecond = 1000;
+- (void) Synchroniser: (Synchroniser*) synchroniser NewContentInfoAvailable:(CII*) cii ChangeMask:(CIIChangeStatus) cii_change_mask
+{
+  // ...
+  Correlation PTS_Timeline_corel = [CorrelationFactory create:A_PTS_Timeline_Start_Pos Correlation: Video_A_Timeline_Start_Pos];
 
-timelineOpt = [TimelineOption TimelineOptionWithSelector:SET_TimelineSelector
-                                               UnitsPerTick:SET_UnitsPerTick
-                                             UnitsPerSecond:SET_UnitsPerSecond
-                                                   Accuracy:0];
+  mediaObj.correlation = PTS_Timeline_corel;
+  mediaObj.mediaTitle = @"companion video A";
+  mediaObj.mediaMIMEType = @"video/mp4";
+  mediaObj.priority = [NSNumber numberWithInt:1];
+  // ...
+}
+
 ```
 
-In ```- (void) viewDidLoad``` method,  a Synchroniser object is created using the ```HbbTV_InterDevSyncURL``` and ```HbbTV_App2AppURL``` values reported from the DIAL client.
 
-The DIALDeviceDiscovery component provides a list of ```DIALDevice``` objects, each representing an HbbTV device discovered on the network.
-A DIALDevice object will contain information such as ```HbbTV_InterDevSyncURL``` and ```HbbTV_App2AppURL```.
-
-The Synchroniser using the `enableSynchronisation` method
+The values for the correlation's parent timeline timestamp are already defined as constants in `ViewController.m`.
 
 ```objective-c
-        // get the environment's Synchroniser and intialise it
-        Synchroniser mediaSynchroniser = [Synchroniser getInstance];
-        [mediaSynchroniser initWithInterDeviceSyncURL:device.HbbTV_InterDevSyncURL
-                                                                            App2AppURL:device.HbbTV_App2AppURL
-                                                                          MediaObjects:nil
-                                                                      TimelineSelector:timelineOpt
-                                                                              Delegate:self];
-        /// Start the Synchroniser                                                  
-        [mediaSynchroniser enableSynchronisation:kSyncAccuracyThreshold
-                                                   Error:nil];
+int const A_PTS_Timeline_Start_Pos = 900000;
+int const A_TEMI_Timeline_Start_Pos = 0;
+int const A_SET_Timeline_Start_Pos = 0;
 ```
+
 
 ## Contact
 

@@ -55,7 +55,9 @@ When the TV's TEMI timeline is available (i.e. the companion starts receiving ti
 
 The companion video is synchronised to within a frame with the TV.
 
-<img src="../img/2screens_i.png" width="400">  <img src="../img/2screens.png" width="400">
+<img src="../img/2screens_i.png" width="500">
+
+<img src="../img/2screens.png" width="500">
 
 
 ## Using Alternative Timelines for Sync in the demo app

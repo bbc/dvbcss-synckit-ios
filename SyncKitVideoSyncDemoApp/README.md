@@ -104,7 +104,7 @@ You can use one of the listed timelines for synchronisation.
 
 For example, to make the demo app use the PTS TV timeline for synchronisation, you will need to do the following:
 
-#### Initialise the Synchroniser object to use the PTS timeline.
+#### Step2a: Initialise the Synchroniser object to use the PTS timeline.
 
 In the `viewDidLoad()` method in the ViewController class (`ViewController.m` file), specify the PTS timeline in the initialisation routine:
 
@@ -118,7 +118,7 @@ In the `viewDidLoad()` method in the ViewController class (`ViewController.m` fi
 
 `pts_timeline` is an object that describes a PTS timeline.
 
-#### Modify media object correlations to refer to the PTS timeline
+#### Step2b: Modify media object correlations to refer to the PTS timeline
 For each media object representing a specific companion content, change  its correlation to refer to the PTS timeline.
 
 The correlation is a pair of timestamps representing a time on the TV timeline and the corresponding time on the companion content's timeline.

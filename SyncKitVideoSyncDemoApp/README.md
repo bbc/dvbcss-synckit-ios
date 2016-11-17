@@ -116,7 +116,23 @@ In the `viewDidLoad()` method in the ViewController class (`ViewController.m` fi
                                                                            Delegate:self];
 ```
 
-`pts_timeline` is an object that describes a PTS timeline.
+where `pts_timeline` is an object that describes a PTS timeline. It is already defined in the ViewController class (`ViewController.m` file) as follows:
+
+```objective-c
+// ...
+NSString* const kPTS_TimelineSelector = @"urn:dvb:css:timeline:pts";
+int const kPTS_UnitsPerTick = 1;
+int const kPTS_UnitsPerSecond = 90000;
+
+// ...
+
+pts_timeline = [TimelineOption TimelineOptionWithSelector:kPTS_TimelineSelector
+                                                 UnitsPerTick:kPTS_UnitsPerTick
+                                               UnitsPerSecond:kPTS_UnitsPerSecond
+                                                     Accuracy:0];
+```
+
+
 
 #### Step2b: Modify media object correlations to refer to the PTS timeline
 For each media object representing a specific companion content, change  its correlation to refer to the PTS timeline.

@@ -34,6 +34,8 @@ Requirements:
 
 The first step is to clone this repository, or use one of the release tarballs.
 
+If you only want run the demo app ([SyncKitVideoSyncDemoApp](SyncKitVideoSyncDemoApp/)), then skip the remainder of the steps and follow the instructions in the [the SyncKitVideoSyncDemoApp README](SyncKitVideoSyncDemoApp/README.md).
+
 
 ### 2. Build the frameworks
 

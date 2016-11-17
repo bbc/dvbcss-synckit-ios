@@ -1,0 +1,7 @@
+module: SyncKitCollections
+module_version: 1.0.0
+umbrella_header: SyncKitCollections/SyncKitCollections.h
+framework_root: .
+output: ./../build-docs/SyncKitCollections
+
+# Remaining config comes from when concatenated with common jazzy config in repository root

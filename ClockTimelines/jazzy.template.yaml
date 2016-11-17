@@ -1,0 +1,7 @@
+module: ClockTimelines
+module_version: 1.0.0
+umbrella_header: ClockTimelines/ClockTimelines.h
+framework_root: .
+output: ./../build-docs/ClockTimelines
+
+# Remaining config comes from when concatenated with common jazzy config in repository root

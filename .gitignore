@@ -6,6 +6,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+*~
 
 # Xcode
 .DS_Store
@@ -30,3 +31,7 @@ ModuleCache
 *.ts
 
 *.tgz
+
+# Docs
+build-docs
+**/jazzy.merged.yaml

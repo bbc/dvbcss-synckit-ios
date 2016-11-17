@@ -1,0 +1,7 @@
+module: TimelineSync
+module_version: 1.0.0
+umbrella_header: TimelineSync/TimelineSync.h
+framework_root: .
+output: ./../../build-docs/TimelineSync
+
+# Remaining config comes from when concatenated with common jazzy config in repository root

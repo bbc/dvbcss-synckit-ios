@@ -1,0 +1,7 @@
+module: UDPMessaging
+module_version: 1.0.0
+umbrella_header: UDPMessaging/UDPMessaging.h
+framework_root: .
+output: ./../build-docs/UDPMessaging
+
+# Remaining config comes from when concatenated with common jazzy config in repository root

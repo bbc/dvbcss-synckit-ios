@@ -1,0 +1,7 @@
+module: WallClockClient
+module_version: 1.0.0
+umbrella_header: WallClockClient/WallClockClient.h
+framework_root: .
+output: ./../../build-docs/WallClockClient
+
+# Remaining config comes from when concatenated with common jazzy config in repository root

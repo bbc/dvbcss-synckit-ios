@@ -60,7 +60,7 @@ The companion video is synchronised to within a frame with the TV.
 <img src="../img/2screens.png" width="500">
 
 
-## Using Alternative Timelines for Sync in the demo app
+## Using other timelines for sync in the demo app
 
 Assuming you have an HbbTV2.0 compliant TV/device on the network, or a DVB-CSS TV emulator, it is possible to discover its current content identifier and the timelines the device exposes for synchronisation.
 

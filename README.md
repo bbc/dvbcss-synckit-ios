@@ -2,7 +2,7 @@
 
 **`dvbcss-synckit-ios` is a collection of iOS dynamic libraries ("Frameworks") for building media-based Companion screen applications that are synchronised frame-accurately to a TV.**
 
-<img src="../img/2screens.png" width="400">
+<img src="img/2screens.png" width="400">
 
 It provides iOS implementations of the client side of the [DVB CSS](https://www.dvb.org/standards/dvb_css) media-synchronisation protocols as used in [HbbTV 2](http://hbbtv.org/resource-library/#specifications) compliant connected TVs. It also includes useful building blocks such as native media players, device discovery components, loggers, WebSockets- and UDP- based messaging, JSON to Objective-C deserialisation etc.
 

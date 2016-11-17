@@ -41,12 +41,21 @@ In the dialog that follows, select these files from the location where you origi
 
 In XCode, select the `SyncKitVideoSyncDemoApp` build scheme and launch the build process to deploy the app into a selected target iOS device (or iOS simulator).   
 
-** Make sure that the TV and the companion device are on the same network**
+**Make sure that the TV and the companion device are on the same network**
 
-The first screen shows TV devices discovered via DIAL on the local network.
-
+When the demo app starts, the first screen on the companion app shows TV devices discovered via DIAL on the local network.
 
 <img src="../img/screen1.png" width="350">
+
+
+After the TV is selected, the demo app connects to the TV's  CSS-CII protocol endpoint. Upon receiving a CII message, the demo app creates a Synchroniser object to synchronise the companion content (the Synchroniser is initialised to use the TEMI timeline). It also loads the relevant companion video but does not start it.
+When the TV's TEMI timeline is available (i.e. the companion starts receiving timeline updates via the CSS-TS protocol), the companion app's Synchroniser object adjusts the video playback to cause it to be in sync.
+
+<img src="../img/screen2.png" width="350">
+
+The companion video is synchronised to within a frame with the TV.
+
+<img src="../img/2screens_i.png" width="400">  <img src="../img/2screens.png" width="400">
 
 
 ## Using Alternative Timelines for Sync in the demo app
@@ -68,21 +77,25 @@ A sample output of the tool looks like this:
 
 ```bash
 
-RD000400:pydvbcss rajivr$ python examples/CIIClient.py ws://10.5.11.163:7681/cii
+$ python examples/CIIClient.py ws://192.168.1.102:7681/cii
 INFO:CIIClient:connected
 INFO:CIIClient:change to presentationStatus property. Value is now: [u'okay']
 INFO:CIIClient:change to protocolVersion property. Value is now: 1.1
 INFO:CIIClient:change to mrsUrl property. Value is now: None
-INFO:CIIClient:change to timelines property. Value is now: [TimelineOption(timelineSelector="tag:rd.bbc.co.uk,2015-12-08:dvb:css:timeline:simple-elapsed-time:5000", unitsPertick=1, unitsPerSecond=5000, accuracy=OMIT private=OMIT), TimelineOption(timelineSelector="tag:rd.bbc.co.uk,2015-12-08:dvb:css:timeline:simple-elapsed-time:1000", unitsPertick=1, unitsPerSecond=1000, accuracy=OMIT private=OMIT)]
-INFO:CIIClient:change to tsUrl property. Value is now: ws://10.5.11.163:7681/ts
-INFO:CIIClient:change to wcUrl property. Value is now: udp://10.5.11.163:6677
+INFO:CIIClient:change to timelines property. Value is now: [TimelineOption(timelineSelector="urn:dvb:css:timeline:pts", unitsPertick=1, unitsPerSecond=90000, accuracy=OMIT private=OMIT), TimelineOption(timelineSelector="urn:dvb:css:timeline:temi:1:128", unitsPertick=1, unitsPerSecond=1000, accuracy=OMIT private=OMIT)]
+INFO:CIIClient:change to tsUrl property. Value is now: ws://192.168.1.102:7682
+INFO:CIIClient:change to wcUrl property. Value is now: udp://192.168.1.102:6677
 INFO:CIIClient:change to contentIdStatus property. Value is now: final
-INFO:CIIClient:change to contentId property. Value is now: http://127.0.0.1:8123/channel_B_video.mp4
-INFO:CIIClient:CII is now: CII(presentationStatus=[u'okay'], protocolVersion=u'1.1', mrsUrl=None, timelines=[TimelineOption(timelineSelector="tag:rd.bbc.co.uk,2015-12-08:dvb:css:timeline:simple-elapsed-time:5000", unitsPertick=1, unitsPerSecond=5000, accuracy=OMIT private=OMIT), TimelineOption(timelineSelector="tag:rd.bbc.co.uk,2015-12-08:dvb:css:timeline:simple-elapsed-time:1000", unitsPertick=1, unitsPerSecond=1000, accuracy=OMIT private=OMIT)], tsUrl=u'ws://10.5.11.163:7681/ts', wcUrl=u'udp://10.5.11.163:6677', contentIdStatus=u'final', contentId=u'http://127.0.0.1:8123/channel_B_video.mp4')
+INFO:CIIClient:change to contentId property. Value is now: dvb://ffff.fffe.044f;0bb9~20150331T1500Z--PT00H15M
+INFO:CIIClient:CII is now: CII(presentationStatus=[u'okay'], protocolVersion=u'1.1', mrsUrl=None, timelines=[TimelineOption(timelineSelector="urn:dvb:css:timeline:pts", unitsPertick=1, unitsPerSecond=90000, accuracy=OMIT private=OMIT), TimelineOption(timelineSelector="urn:dvb:css:timeline:temi:1:128", unitsPertick=1, unitsPerSecond=1000, accuracy=OMIT private=OMIT)], tsUrl=u'ws://192.168.1.102:7682', wcUrl=u'udp://192.168.1.102:6677', contentIdStatus=u'final', contentId=u'dvb://ffff.fffe.044f;0bb9~20150331T1500Z--PT00H15M')
 
 ```
-* The contentId in this example is **"http://127.0.0.1:8123/channel_B_video.mp4"**
-* Available timelines are given by the **timelines** field.
+* The contentId in this example is `dvb://ffff.fffe.044f;0bb9~20150331T1500Z--PT00H15M`
+* Available timelines are given by the **timelines** field:
+
+```objective-c
+timelines=[TimelineOption(timelineSelector="urn:dvb:css:timeline:pts", unitsPertick=1, unitsPerSecond=90000, accuracy=OMIT private=OMIT), TimelineOption(timelineSelector="urn:dvb:css:timeline:temi:1:128", unitsPertick=1, unitsPerSecond=1000, accuracy=OMIT private=OMIT)]
+```
 
 ### Step 2: Select an available timeline e.g. PTS
 You can use one of the listed timelines for synchronisation.

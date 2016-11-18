@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Synchronised Video Demo App  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    <div style="margin:0; width: 100%; padding: 8px 0 0 8px;" class="header">
+    <a href="../index.html" style="margin: 0; padding: 0 8px; font-weight: bold; color:white;">
+        dvbcss-synckit-ios
+    </a>
+</div>
+
+  </head>
+  <body>
+
+
+    <a title="Simple Synchronised Video Demo App  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          Simple Synchronised Video Demo App Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">Simple Synchronised Video Demo App Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Simple Synchronised Video Demo App  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <a href='#small-dvbcss-synckit-ios-small-br-a-simple-synchronised-video-demo-companion-app' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='small-dvbcss-synckit-ios-small-br-a-simple-synchronised-video-demo-companion-app'><small>dvbcss-synckit-ios</small><br/>A simple synchronised video demo companion app</h1>
+
+<p>This demo app demonstrates the synchronisation of companion videos to a broadcast stream that embeds a TEMI timeline using SyncKit&rsquo;s <a href="../CSASynchroniser/index.html">CSASynchroniser framework</a>.</p>
+
+<p>It provides an example of how to the use of the SyncKit library&rsquo;s Synchroniser object. It shows how in response to a change of contentId signalled by the TV, the companion screen app can load a relevant media object and register it with a Synchroniser object for synchronisation.</p>
+<a href='#running-the-demo-app' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='running-the-demo-app'>Running the demo app</h2>
+
+<p>To run the demo app, follow these steps</p>
+<a href='#step-1-open-the-demo-app' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='step-1-open-the-demo-app'>Step 1: Open the demo app</h3>
+
+<p>This demo app is part of the <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/SyncKitVideoSyncDemoApp/../">dvbcss-synckit-ios</a> distribution. After you have cloned the repository, open the workspace <code>synckit.xcworkspace</code> in XCode.</p>
+
+<p>The code for the demo app is in the <code>SyncKitVideoSyncDemoApp</code> project.</p>
+<a href='#step-2-get-the-tv-and-companion-content' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='step-2-get-the-tv-and-companion-content'>Step 2:  Get the TV and companion Content</h3>
+
+<p>The example app assumes that the TV is playing the <strong><q>mux.ts.24mbit.with_temi.ts</q></strong> broadcast transport stream. This transport stream has both PTS and TEMI timelines signalled in it. The demo companion app uses the TEMI timeline for synchronisation (switching to PTS timeline is trivial).</p>
+
+<p>The broadcast transport stream and companion content for each of the channels it contains are available from this site: <a href="https://hbbtv-2-0-testing-1.virt.ch.bbc.co.uk/downloads/simple-free-sync-seq-1.zip">https://hbbtv-2-0-testing-1.virt.ch.bbc.co.uk/downloads/simple-free-sync-seq-1.zip</a></p>
+
+<p>Download this zipped file and extract it into a known location on your build device.</p>
+
+<p>Rename the following files as suggested:</p>
+
+<ol>
+<li><code>channel_a.companion/video.mp4</code> file to <code>channel_a.companion/video_a.mp4</code></li>
+<li><code>channel_b.companion/video.mp4</code> file to <code>channel_b.companion/video_b.mp4</code></li>
+<li><code>channel_c.companion/video.mp4</code> file to <code>channel_c.companion/video_c.mp4</code></li>
+</ol>
+<a href='#step-3-add-the-companion-content-to-the-demo-app' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='step-3-add-the-companion-content-to-the-demo-app'>Step 3: Add the companion content to the demo app</h3>
+
+<p>In the <code>SyncKitVideoSyncDemoApp</code> project, right-click on the <code>Supporting Files</code> folder and select the <code>Add files to SyncKitVideoSyncDemoApp ..</code> option.</p>
+
+<p>In the dialog that follows, select these files from the location where you originally downloaded them and add them to <code>SyncKitVideoSyncDemoApp</code> project:</p>
+
+<ol>
+<li><code>channel_a.companion/video_a.mp4</code></li>
+<li><code>channel_b.companion/video_b.mp4</code></li>
+<li><code>channel_c.companion/video_c.mp4</code></li>
+</ol>
+<a href='#step-4-build-and-run-the-demo-app' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='step-4-build-and-run-the-demo-app'>Step 4: Build and run the demo app</h3>
+
+<p>In XCode, select the <code>SyncKitVideoSyncDemoApp</code> build scheme and launch the build process to deploy the app into a selected target iOS device (or iOS simulator).   </p>
+
+<p><strong>Make sure that the TV and the companion device are on the same network</strong></p>
+
+<p>When the demo app starts, the first screen on the companion app shows TV devices discovered via DIAL on the local network.</p>
+
+<p><img src="../img/screen1.png" width="350"></p>
+
+<p>After the TV is selected, the demo app connects to the TV&rsquo;s  CSS-CII protocol endpoint. Upon receiving a CII message, the demo app creates a Synchroniser object to synchronise the companion content (the Synchroniser is initialised to use the TEMI timeline). It also loads the relevant companion video but does not start it.
+When the TV&rsquo;s TEMI timeline is available (i.e. the companion starts receiving timeline updates via the CSS-TS protocol), the companion app&rsquo;s Synchroniser object adjusts the video playback to cause it to be in sync.</p>
+
+<p><img src="../img/screen2.png" width="350"></p>
+
+<p>The companion video is synchronised to within a frame with the TV.</p>
+
+<p><img src="../img/2screens_i.png" width="500"></p>
+
+<p><img src="../img/2screens.png" width="500"></p>
+<a href='#using-other-timelines-for-sync-in-the-demo-app' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='using-other-timelines-for-sync-in-the-demo-app'>Using other timelines for sync in the demo app</h2>
+
+<p>Assuming you have an HbbTV2.0 compliant TV/device on the network, or a DVB-CSS TV emulator, it is possible to discover its current content identifier and the timelines the device exposes for synchronisation.</p>
+<a href='#step-1-discover-available-timelines' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='step-1-discover-available-timelines'>Step 1: Discover available timelines</h3>
+
+<p>To discover available timelines, you may use a CII client to connect to your TV&rsquo;s CSS-CII protocol server endpoint. A CII client can be obtained from the <a href="https://github.com/bbc/pydvbcss">pydvbcss</a> distribution.</p>
+
+<p>You can run the <code>pydvbcss</code> CII protocol python client as follows:</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>python examples/CIIClient.py ws:/&lt;TV_IP_ADDRESS&gt;:7681/cii
+
+</code></pre>
+
+<p>A sample output of the tool looks like this:</p>
+<pre class="highlight shell"><code>
+<span class="gp">$ </span>python examples/CIIClient.py ws://192.168.1.102:7681/cii
+INFO:CIIClient:connected
+INFO:CIIClient:change to presentationStatus property. Value is now: <span class="o">[</span>u<span class="s1">'okay'</span><span class="o">]</span>
+INFO:CIIClient:change to protocolVersion property. Value is now: 1.1
+INFO:CIIClient:change to mrsUrl property. Value is now: None
+INFO:CIIClient:change to timelines property. Value is now: <span class="o">[</span>TimelineOption<span class="o">(</span><span class="nv">timelineSelector</span><span class="o">=</span><span class="s2">"urn:dvb:css:timeline:pts"</span>, <span class="nv">unitsPertick</span><span class="o">=</span>1, <span class="nv">unitsPerSecond</span><span class="o">=</span>90000, <span class="nv">accuracy</span><span class="o">=</span>OMIT <span class="nv">private</span><span class="o">=</span>OMIT<span class="o">)</span>, TimelineOption<span class="o">(</span><span class="nv">timelineSelector</span><span class="o">=</span><span class="s2">"urn:dvb:css:timeline:temi:1:128"</span>, <span class="nv">unitsPertick</span><span class="o">=</span>1, <span class="nv">unitsPerSecond</span><span class="o">=</span>1000, <span class="nv">accuracy</span><span class="o">=</span>OMIT <span class="nv">private</span><span class="o">=</span>OMIT<span class="o">)]</span>
+INFO:CIIClient:change to tsUrl property. Value is now: ws://192.168.1.102:7682
+INFO:CIIClient:change to wcUrl property. Value is now: udp://192.168.1.102:6677
+INFO:CIIClient:change to contentIdStatus property. Value is now: final
+INFO:CIIClient:change to contentId property. Value is now: dvb://ffff.fffe.044f;0bb9~20150331T1500Z--PT00H15M
+INFO:CIIClient:CII is now: CII<span class="o">(</span><span class="nv">presentationStatus</span><span class="o">=[</span>u<span class="s1">'okay'</span><span class="o">]</span>, <span class="nv">protocolVersion</span><span class="o">=</span>u<span class="s1">'1.1'</span>, <span class="nv">mrsUrl</span><span class="o">=</span>None, <span class="nv">timelines</span><span class="o">=[</span>TimelineOption<span class="o">(</span><span class="nv">timelineSelector</span><span class="o">=</span><span class="s2">"urn:dvb:css:timeline:pts"</span>, <span class="nv">unitsPertick</span><span class="o">=</span>1, <span class="nv">unitsPerSecond</span><span class="o">=</span>90000, <span class="nv">accuracy</span><span class="o">=</span>OMIT <span class="nv">private</span><span class="o">=</span>OMIT<span class="o">)</span>, TimelineOption<span class="o">(</span><span class="nv">timelineSelector</span><span class="o">=</span><span class="s2">"urn:dvb:css:timeline:temi:1:128"</span>, <span class="nv">unitsPertick</span><span class="o">=</span>1, <span class="nv">unitsPerSecond</span><span class="o">=</span>1000, <span class="nv">accuracy</span><span class="o">=</span>OMIT <span class="nv">private</span><span class="o">=</span>OMIT<span class="o">)]</span>, <span class="nv">tsUrl</span><span class="o">=</span>u<span class="s1">'ws://192.168.1.102:7682'</span>, <span class="nv">wcUrl</span><span class="o">=</span>u<span class="s1">'udp://192.168.1.102:6677'</span>, <span class="nv">contentIdStatus</span><span class="o">=</span>u<span class="s1">'final'</span>, <span class="nv">contentId</span><span class="o">=</span>u<span class="s1">'dvb://ffff.fffe.044f;0bb9~20150331T1500Z--PT00H15M'</span><span class="o">)</span>
+
+</code></pre>
+
+<ul>
+<li>The contentId in this example is <code>dvb://ffff.fffe.044f;0bb9~20150331T1500Z--PT00H15M</code></li>
+<li>Available timelines are given by the <strong>timelines</strong> field:</li>
+</ul>
+<pre class="highlight plaintext"><code>timelines=[TimelineOption(timelineSelector="urn:dvb:css:timeline:pts", unitsPertick=1, unitsPerSecond=90000, accuracy=OMIT private=OMIT), TimelineOption(timelineSelector="urn:dvb:css:timeline:temi:1:128", unitsPertick=1, unitsPerSecond=1000, accuracy=OMIT private=OMIT)]
+</code></pre>
+<a href='#step-2-select-an-available-timeline-e-g-pts' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='step-2-select-an-available-timeline-e-g-pts'>Step 2: Select an available timeline e.g. PTS</h3>
+
+<p>You can use one of the listed timelines for synchronisation.</p>
+
+<p>For example, to make the demo app use the PTS TV timeline for synchronisation, you will need to do the following:</p>
+<a href='#step2a-initialise-the-synchroniser-object-to-use-the-pts-timeline' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='step2a-initialise-the-synchroniser-object-to-use-the-pts-timeline'>Step2a: Initialise the Synchroniser object to use the PTS timeline.</h4>
+
+<p>In the <code>viewDidLoad()</code> method in the ViewController class (<code>ViewController.m</code> file), specify the PTS timeline in the initialisation routine:</p>
+<pre class="highlight plaintext"><code>[self.mediaSynchroniser initWithInterDeviceSyncURL:device.HbbTV_InterDevSyncURL
+                                                                         App2AppURL:device.HbbTV_App2AppURL
+                                                                       MediaObjects:nil
+                                                                   TimelineSelector:pts_timeline
+                                                                           Delegate:self];
+</code></pre>
+
+<p>where <code>pts_timeline</code> is an object that describes a PTS timeline. It is already defined in the ViewController class (<code>ViewController.m</code> file) as follows:</p>
+<pre class="highlight plaintext"><code>// ...
+NSString* const kPTS_TimelineSelector = @"urn:dvb:css:timeline:pts";
+int const kPTS_UnitsPerTick = 1;
+int const kPTS_UnitsPerSecond = 90000;
+
+// ...
+
+pts_timeline = [TimelineOption TimelineOptionWithSelector:kPTS_TimelineSelector
+                                                 UnitsPerTick:kPTS_UnitsPerTick
+                                               UnitsPerSecond:kPTS_UnitsPerSecond
+                                                     Accuracy:0];
+</code></pre>
+<a href='#step2b-modify-media-object-correlations-to-refer-to-the-pts-timeline' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='step2b-modify-media-object-correlations-to-refer-to-the-pts-timeline'>Step2b: Modify media object correlations to refer to the PTS timeline</h4>
+
+<p>For each media object representing a specific companion content, change  its correlation to refer to the PTS timeline.</p>
+
+<p>The correlation is a pair of timestamps representing a time on the TV timeline and the corresponding time on the companion content&rsquo;s timeline.</p>
+
+<p>For example, for companion video A, the media object&rsquo;s correlation is modified as follows:</p>
+<pre class="highlight plaintext"><code>
+- (void) Synchroniser: (Synchroniser*) synchroniser NewContentInfoAvailable:(CII*) cii ChangeMask:(CIIChangeStatus) cii_change_mask
+{
+  // ...
+  Correlation PTS_Timeline_corel = [CorrelationFactory create:A_PTS_Timeline_Start_Pos Correlation: Video_A_Timeline_Start_Pos];
+
+  mediaObj.correlation = PTS_Timeline_corel;
+  mediaObj.mediaTitle = @"companion video A";
+  mediaObj.mediaMIMEType = @"video/mp4";
+  mediaObj.priority = [NSNumber numberWithInt:1];
+  // ...
+}
+
+</code></pre>
+
+<p>The values for the correlation&rsquo;s parent timeline timestamp are already defined as constants in <code>ViewController.m</code>.</p>
+<pre class="highlight plaintext"><code>int const A_PTS_Timeline_Start_Pos = 900000;
+int const A_TEMI_Timeline_Start_Pos = 0;
+int const A_SET_Timeline_Start_Pos = 0;
+</code></pre>
+<a href='#contact' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='contact'>Contact</h2>
+
+<p>The original author is Rajiv Ramdhany &lsquo;at&rsquo; bbc.co.uk.</p>
+<a href='#licence' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='licence'>Licence</h2>
+
+<p>The CSASynchroniser iOS Framework is developed by BBC R&amp;D and distributed under the Apache License, <a href="http://www.apache.org/licenses/LICENSE-2.0">Version 2.0</a>.</p>
+
+<p>© Copyright 2016 BBC R&amp;D. All Rights Reserved</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; British Broadcasting Corporation, under <a class="link" href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="external">Apache 2.0 open source licence</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

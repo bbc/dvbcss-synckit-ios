@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSASynchroniser  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    <div style="margin:0; width: 100%; padding: 8px 0 0 8px;" class="header">
+    <a href="../index.html" style="margin: 0; padding: 0 8px; font-weight: bold; color:white;">
+        dvbcss-synckit-ios
+    </a>
+</div>
+
+  </head>
+  <body>
+
+
+    <a title="CSASynchroniser  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          CSASynchroniser Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">CSASynchroniser Reference</a>
+      <img class="carat" src="img/carat.png" />
+      CSASynchroniser  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MediaPlayerObject.html">MediaPlayerObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Synchroniser.html">Synchroniser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@CSASynchroniserVersionNumber">CSASynchroniserVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@CSASynchroniserVersionString">CSASynchroniserVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kAudioCallibrationOffset">kAudioCallibrationOffset</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kDefaultResyncInterval">kDefaultResyncInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kSynchroniserNewContentIdNotification">kSynchroniserNewContentIdNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kSynchroniserStateNotification">kSynchroniserStateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kSynchroniserSyncAccuracyNotification">kSynchroniserSyncAccuracyNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kSynchroniserSyncTimelinesAvailableNotification">kSynchroniserSyncTimelinesAvailableNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kVideoCallibrationOffset">kVideoCallibrationOffset</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kVideoSoundCallibrationOffset">kVideoSoundCallibrationOffset</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kWebCallibrationOffset">kWebCallibrationOffset</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/SynchroniserState.html">SynchroniserState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/SynchroniserDelegate.html">SynchroniserDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <a href='#small-dvbcss-synckit-ios-small-br-csasynchroniser-framework' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='small-dvbcss-synckit-ios-small-br-csasynchroniser-framework'><small>dvbcss-synckit-ios</small><br/>CSASynchroniser Framework</h1>
+
+<ul>
+<li><strong><a href="#how-to-use">How to use</a></strong></li>
+<li><strong><a href="#read-the-documentation">Read the documentation</a></strong></li>
+<li><strong><a href="#run-the-example-apps">Run the example apps</a></strong></li>
+</ul>
+
+<p>The CSASynchroniser dynamic library provides a Synchroniser object that Companion Screen Applications can use to synchronise a media object to an external timeline source e.g. a TV video broadcast.</p>
+
+<p>This component provides a facade API over the library components; this API simplifies launching a synchronisation process using the DVB-CSS machinery. This API also provides operations to add media objects to be synchronised by the Synchroniser.</p>
+<a href='#code-synchroniser-code' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='code-synchroniser-code'><code>Synchroniser</code></h3>
+
+<p>A singleton of type <code>Synchroniser</code> that enables synchronisation to an external timing source e.g. the timeline of a TV programme. The TV exposes a media timeline for synchronisation using the DVB-CSS protocols. The DVB-CSS protocols enable Companion devices to build an estimayte of this timeline (called <strong>Synchronisation Timeline</strong>) locally and hence know where the TV is at. To use a Synchroniser object, you need to provide these parameters during initialisation</p>
+
+<ul>
+<li><code>InterDeviceSyncURL</code> - the master device&rsquo;s URL for interdevice synchronisation (obtained from discovery of the TV using DIAL, see <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../DIALDeviceDiscovery">DIALDeviceDiscovery</a> sub-project for examples).</li>
+<li><code>App2AppURL</code> - the master device&rsquo;s endpoint for communication between TV apps and companion screen Applications.</li>
+<li><code>TimelineSelector</code> - a <code>TimelineOption</code> object providing a timeline name and other properties (e.g. tick rate, accuracy).</li>
+</ul>
+
+<p>To start the Synchroniser, call the <code>enableSynchronisation</code> method. Add media objects (players of type <code>VideoPlayerViewController</code>, <code>AudioPlayer</code>, <code>AudioStreamPlayer</code>, etc.) to the Synchroniser using the <code>addMediaObject:(MediaPlayerObject*) media_obj</code> method. A <code>MediaPlayerObject</code> contains the media stream URL, the player instance playing it and a Correlation Timestamp mapping the media time to the Synchronisation Timeline time.</p>
+<a href='#properties' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='properties'>Properties</h4>
+
+<p>The Synchroniser has these properties that can be inspected. Updates to these properties are advertised via state changes notifications (<code>SynchroniserStateNotification</code> ) and via callbacks via the <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/CSASynchroniser/docs/Protocols/SynchroniserDelegate.html">SynchroniserDelegate</a> interface.</p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>contentId</code></td>
+<td><code>string</code></td>
+<td>A content identifier for the content currently shown on the master device</td>
+</tr>
+<tr>
+<td><code>contentIdStatus</code></td>
+<td><code>string</code></td>
+<td>A string with value <q>partial</q> or <q>final</q> that provides the status of the current contentId</td>
+</tr>
+<tr>
+<td><code>presentationStatus</code></td>
+<td><code>string</code></td>
+<td>a string value describing the current status of presentation of Timed Content by the TV</td>
+</tr>
+<tr>
+<td><code>availableTimelines</code></td>
+<td><code>array</code></td>
+<td>Media timelines supported by the TV for synchronisation.</td>
+</tr>
+<tr>
+<td><code>MRS_URL</code></td>
+<td><code>object</code></td>
+<td>A <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../ClockTimelines/ClockTimelines/CorrelatedClock.h">CorrelatedClock</a> object representing the internal WallClock. It can be queried for its current time or used to set timers.</td>
+</tr>
+<tr>
+<td><code>WC_URL</code></td>
+<td><code>string</code></td>
+<td>The TV&rsquo;s CSS-WC server endpoint URL received from the TV&rsquo;s CSS-CII protocol endpoint</td>
+</tr>
+<tr>
+<td><code>TS_URL</code></td>
+<td><code>string</code></td>
+<td>The TV&rsquo;s CSS-TS server endpoint URL received from the TV&rsquo;s CSS-CII protocol endpoint</td>
+</tr>
+<tr>
+<td><code>MRS_URL</code></td>
+<td><code>string</code></td>
+<td>The URL for the Material Resolution Service reported by the TV via the  CSS-CII protocol</td>
+</tr>
+<tr>
+<td><code>wallclock</code></td>
+<td><code>object</code></td>
+<td>A <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../ClockTimelines/ClockTimelines/CorrelatedClock.h">CorrelatedClock</a> object representing the internal WallClock. It can be queried for its current time or used to set timers.</td>
+</tr>
+<tr>
+<td><code>syncTimeline</code></td>
+<td><code>object</code></td>
+<td>A <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../ClockTimelines/ClockTimelines/CorrelatedClock.h">CorrelatedClock</a> object representing the Synchronisation Timeline. It can be queried for the current time on the timeline. It also has these properties: timeline selector, unitsPerTick, unitsPerSecond and accuracy.</td>
+</tr>
+<tr>
+<td><code>syncTimelineOffset</code></td>
+<td><code>double</code></td>
+<td>An offset in fractions of a second to add to the Synchronisation Timeline</td>
+</tr>
+<tr>
+<td><code>error</code></td>
+<td><code>double</code></td>
+<td>The current synchronisation error on the timeline synchronisation</td>
+</tr>
+</tbody></table>
+<a href='#event-notifications' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='event-notifications'>Event notifications</h4>
+
+<p>The Synchroniser produces the following event notifications:</p>
+
+<ul>
+<li><code>SynchroniserStateNotification</code> - an NSNotification instance reporting the Synchroniser&rsquo;s current state (a <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/CSASynchroniser/docs/Enums/SynchroniserState.html">SynchroniserState</a> value accessible in a Dictionary using this key: <q>SynchroniserStateNotification</q> )</li>
+<li><code>SynchroniserSyncAccuracyNotification</code> - an NSNotification instance reporting when the synchronisation accuracy threshold has been exceeded</li>
+<li><code>SynchroniserNewContentIdNotification</code> - an NSNotification instance reporting when the TV advertises a new contentId via the CSS-CII protocol. The Dictionary object attached to this event contains a <code>CII</code> object (acessible using the key <q>SynchroniserNewContentIdNotification</q>). The new contentId is included in this CII object. Alternatively, the contentId can be read from the Synchroniser&rsquo;s contentId property.</li>
+<li><code>SynchroniserSyncTimelinesAvailableNotification</code> - an NSNotification instance reporting when the synchronisation timeline has become available. The companion&rsquo;s estimated Synchronisation Timeline can be accessed directly from the Synchroniser&rsquo;s <code>syncTimeline</code> property.</li>
+</ul>
+<a href='#useful-operations' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='useful-operations'>Useful operations</h4>
+<a href='#getinstance' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='getinstance'>getInstance</h5>
+
+<p>Get the <code>Synchroniser</code> instance.</p>
+<a href='#initialisers' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='initialisers'>Initialisers</h5>
+
+<p>To initialise  method <code>initWithInterDeviceSyncURL:App2AppURL:TimelineSelector:Delegate</code></p>
+<a href='#code-enablesynchronisation-code' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='code-enablesynchronisation-code'><code>enableSynchronisation()</code></h5>
+
+<p>Starts the Synchroniser object&rsquo;s sync operation. This will trigger connection requests to be sent to synchronisation services. The availability of the Synchronisation Timeline is signalled to the application via an event/callback..</p>
+<a href='#code-disablesynchronisation-code' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='code-disablesynchronisation-code'><code>disableSynchronisation()</code></h5>
+
+<p>Disables the interdevice/distributed synchronisation running in an application. Closes connections to synchronisation protocol endpoints. The Synchroniser object goes back to the initialized state. The <code>enableSynchronisation()</code> method can be called to enable sync again.</p>
+<a href='#dependencies' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='dependencies'>Dependencies</h3>
+
+<p>The CSASynchroniser library requires the following dynamic libraries (iOS frameworks) (found in SyncKit):</p>
+
+<ol>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../SyncKitConfiguration">SyncKitConfiguration</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../SimpleLogger">SimpleLogger</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../VideoPlayer">VideoPlayer</a> -</li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../AudioPlayer">AudioPlayerEngine</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../ClockTimelines">ClockTimelines</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../CIIProtocolClient">CIIProtocolClient</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../SyncController">SyncController</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../TimelineSync">TimelineSync</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../WallClockSync">WallClockClient</a></li>
+</ol>
+<a href='#read-the-documentation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='read-the-documentation'>Read the documentation</h2>
+
+<p>The docs for the library can be read <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/CSASynchroniser/docs/index.html">here</a>.</p>
+<a href='#how-to-use' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='how-to-use'>How to use</h2>
+
+<p>A Cocoa Pod version of this library is not currently available. To use this library, follow these steps</p>
+<a href='#add-the-framework-and-its-dependencies-to-your-project' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='add-the-framework-and-its-dependencies-to-your-project'>Add the framework and its dependencies to your project</h4>
+
+<ol>
+<li><em>Add the required projects to your workspace</em></li>
+</ol>
+
+<p>The easiest way to use the CSASynchroniser framework is to include these Xcode projects to your XCode workspace.</p>
+
+<ol>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../SyncKitConfiguration">SyncKitConfiguration</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../SimpleLogger">SimpleLogger</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../VideoPlayer">VideoPlayer</a> -</li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../AudioPlayer">AudioPlayerEngine</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../ClockTimelines">ClockTimelines</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../CIIProtocolClient">CIIProtocolClient</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../SyncController">SyncController</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../TimelineSync">TimelineSync</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../WallClockSync">WallClockClient</a></li>
+</ol>
+
+<p>Then, after building these projects, go to your project&rsquo;s target window and <em>click on project in Project Navigator, then the project&rsquo;s target on right window in General tab</em>), add these frameworks in the <em>Linked Frameworks and libraries</em> section: <em>SyncKitConfiguration.framework, SimpleLogger.framework, VideoPlayer.framework, AudioPlayerEngine.framework, ClockTimelines.framework, CIIProtocolClient.framework, SyncController.framework, TimelineSync.framework, WallClockClient.framework</em> .</p>
+
+<ol>
+<li><em>Add the dynamic libraries to your project</em></li>
+</ol>
+
+<p>Or alternatively, clone the SyncKit repository, open the main workspace and build all the projects to generate the dynamic libraries.</p>
+
+<p>Then, in your project&rsquo;s target window (<em>click on project in Project Navigator, then the project&rsquo;s target on right window in General tab</em>), add the framework files in the <em>Linked Frameworks and libraries</em> section: <em>SyncKitConfiguration.framework, SimpleLogger.framework, VideoPlayer.framework, AudioPlayerEngine.framework, ClockTimelines.framework, CIIProtocolClient.framework, SyncController.framework, TimelineSync.framework, WallClockClient.framework</em>.
+  If you have two XCode instances running you can drag and drop the framework files from their respective project in SyncKit to your own project.
+  Alternatively, you can include the dynamic libraries from their build locations.</p>
+
+<ol>
+<li><em>Use the Cocoa Pod version</em></li>
+</ol>
+
+<p>Not available yet.</p>
+<a href='#import-the-header-files' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='import-the-header-files'>Import the header files</h4>
+
+<p>Once the library and its dependencies have been added to your project, import this header file in your source file:</p>
+<pre class="highlight plaintext"><code>
+#import &lt;CSASynchroniser/CSASynchroniser.h&gt;
+
+</code></pre>
+<a href='#create-and-configure-a-synchroniser-object' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='create-and-configure-a-synchroniser-object'>Create and configure a Synchroniser object</h4>
+
+<p>Create a timeline selector object of type TimelineOption</p>
+<pre class="highlight plaintext"><code>
+NSString* const SET_TimelineSelector = @"tag:rd.bbc.co.uk,2015-12-08:dvb:css:timeline:simple-elapsed-time:1000";
+int const SET_UnitsPerTick = 1;
+int const SET_UnitsPerSecond = 1000;
+
+timelineOpt = [TimelineOption TimelineOptionWithSelector:SET_TimelineSelector
+                                               UnitsPerTick:SET_UnitsPerTick
+                                             UnitsPerSecond:SET_UnitsPerSecond
+                                                   Accuracy:0];
+</code></pre>
+
+<p>Then, create a Synchroniser object using the <code>HbbTV_InterDevSyncURL</code> and <code>HbbTV_App2AppURL</code> values reported from your DIAL client.
+The DIALDeviceDiscovery component provides a list of <code>DIALDevice</code> objects, each representing an HbbTV device discovered on the network.
+A DIALDevice object will contain information such as <code>HbbTV_InterDevSyncURL</code> and <code>HbbTV_App2AppURL</code>.</p>
+
+<p>Start the Synchroniser using the <code>enableSynchronisation</code> method and specifying a</p>
+<pre class="highlight plaintext"><code>        // get the environment's Synchroniser and intialise it
+        Synchroniser mediaSynchroniser = [Synchroniser getInstance];
+        [mediaSynchroniser initWithInterDeviceSyncURL:device.HbbTV_InterDevSyncURL
+                                                                            App2AppURL:device.HbbTV_App2AppURL
+                                                                          MediaObjects:nil
+                                                                      TimelineSelector:timelineOpt
+                                                                              Delegate:self];
+        /// Start the Synchroniser                                                  
+        [mediaSynchroniser enableSynchronisation:kSyncAccuracyThreshold
+                                                   Error:nil];
+</code></pre>
+<a href='#add-media-objects-to-be-synchronised' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='add-media-objects-to-be-synchronised'>Add media objects to be synchronised</h4>
+
+<p>To synchronise a media player playing a stream, first use the media player to create a <code>MediaPlayerObject</code> instance.  Add a correlation timestamp to the <code>MediaPlayerObject</code> instance. The correlation timestamp is a pair of timestamps mapping a time on the Synchronisation Timeline (the TV timeline) to the media time.</p>
+
+<p>Next, add the media player object to the Synchroniser.</p>
+<pre class="highlight plaintext"><code>
+     // create a video player
+     __weak UIViewController&lt;VideoPlayerDelegate&gt; *weakVideoPlayerDelegate = self;
+     VideoPlayerViewController* videoplayer = [[VideoPlayerViewController alloc] initWithParentView:self.view
+                                                                Delegate:weakVideoPlayerDelegate];
+
+   // create a MediaPlayerObject out of the video player
+    MediaPlayerObject* mediaPlayerObj = [[MediaPlayerObject alloc] init];
+    mediaPlayerObj.mediaURL = @"http://192.168.1.106/~rajivr/video/channelB/index.m3u8";
+
+    // assuming that the companion video starts when the TV programme starts
+    Correlation corel = [CorrelationFactory create:0 Correlation:0];
+    mediaPlayerObj.correlation = corel;
+    mediaPlayerObj.mediaPlayer = videoplayer;
+
+    // Make the video player play the stream
+    videoplayer.videoURL = [NSURL URLWithString:mediaPlayerObj.mediaURL];
+
+    // Add the media object to the Synchroniser to be synchronised.
+    [mediaSynchroniser addMediaObject:self.mediaObject];
+
+</code></pre>
+<a href='#remove-media-objects-when-they-are-no-longer-relevant' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='remove-media-objects-when-they-are-no-longer-relevant'>Remove media objects when they are no longer relevant</h4>
+
+<p>This can be done by simply calling the <code>removeMediaObject</code> method.</p>
+<pre class="highlight plaintext"><code>
+  [mediaSynchroniser removeMediaObject:mediaPlayerObj];
+
+    // clean up video player
+    VideoPlayerViewController *videoPlayer = (VideoPlayerViewController*) _mediaObject.mediaPlayer;
+
+    [videoPlayer stopAndRemoveFromParentView];
+
+    videoPlayer.delegate = nil;
+
+</code></pre>
+<a href='#run-the-example-apps' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='run-the-example-apps'>Run the example apps</h2>
+
+<p>A example app that demonstrates the use of the Synchroniser is included here: <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/MediaSynchroniser/../SyncKitVideoSyncDemoApp">../SyncKitVideoSyncDemoApp</a>. This example shows how to use the
+Synchroniser object to synchronise an HLS stream to a TV. The example app assumes that the TV is playing the <code>channel_B_video.mp4</code> MP4 video file.</p>
+
+<p>The HLS stream and other test assets can be downloaded from: <a href="https://hbbtv-2-0-testing-1.virt.ch.bbc.co.uk/downloads/simple-free-sync-seq-1.zip">https://hbbtv-2-0-testing-1.virt.ch.bbc.co.uk/downloads/simple-free-sync-seq-1.zip</a></p>
+
+<p>An implementation of the TV is not included.</p>
+
+<p>In the demo app project, you will need to specify the following constants:</p>
+<pre class="highlight plaintext"><code>// the URL of the companion asset to play (can be an HLS stream or a video file)
+NSString* const kCompanionVideoURL = @"http://192.168.1.106/~rajivr/video/channelB/index.m3u8";
+// the contentId reported by the TV
+NSString* const kContentId_ChannelB = @"http://127.0.0.1:8123/channel_B_video.mp4";
+
+
+</code></pre>
+
+<p>To discover the contentId and timelines available for synchronisation , you may use a CII client to connect to your TV.</p>
+<pre class="highlight shell"><code><span class="gp">$ </span>python examples/CIIClient.py ws:/&lt;TV_IP_ADDRESS&gt;:7681/cii
+
+</code></pre>
+
+<p>What the received CII info may look like:</p>
+<pre class="highlight shell"><code>
+RD000400:pydvbcss rajivr<span class="nv">$ </span>python examples/CIIClient.py ws://10.5.11.163:7681/cii
+INFO:CIIClient:connected
+INFO:CIIClient:change to presentationStatus property. Value is now: <span class="o">[</span>u<span class="s1">'okay'</span><span class="o">]</span>
+INFO:CIIClient:change to protocolVersion property. Value is now: 1.1
+INFO:CIIClient:change to mrsUrl property. Value is now: None
+INFO:CIIClient:change to timelines property. Value is now: <span class="o">[</span>TimelineOption<span class="o">(</span><span class="nv">timelineSelector</span><span class="o">=</span><span class="s2">"tag:rd.bbc.co.uk,2015-12-08:dvb:css:timeline:simple-elapsed-time:5000"</span>, <span class="nv">unitsPertick</span><span class="o">=</span>1, <span class="nv">unitsPerSecond</span><span class="o">=</span>5000, <span class="nv">accuracy</span><span class="o">=</span>OMIT <span class="nv">private</span><span class="o">=</span>OMIT<span class="o">)</span>, TimelineOption<span class="o">(</span><span class="nv">timelineSelector</span><span class="o">=</span><span class="s2">"tag:rd.bbc.co.uk,2015-12-08:dvb:css:timeline:simple-elapsed-time:1000"</span>, <span class="nv">unitsPertick</span><span class="o">=</span>1, <span class="nv">unitsPerSecond</span><span class="o">=</span>1000, <span class="nv">accuracy</span><span class="o">=</span>OMIT <span class="nv">private</span><span class="o">=</span>OMIT<span class="o">)]</span>
+INFO:CIIClient:change to tsUrl property. Value is now: ws://10.5.11.163:7681/ts
+INFO:CIIClient:change to wcUrl property. Value is now: udp://10.5.11.163:6677
+INFO:CIIClient:change to contentIdStatus property. Value is now: final
+INFO:CIIClient:change to contentId property. Value is now: http://127.0.0.1:8123/channel_B_video.mp4
+INFO:CIIClient:CII is now: CII<span class="o">(</span><span class="nv">presentationStatus</span><span class="o">=[</span>u<span class="s1">'okay'</span><span class="o">]</span>, <span class="nv">protocolVersion</span><span class="o">=</span>u<span class="s1">'1.1'</span>, <span class="nv">mrsUrl</span><span class="o">=</span>None, <span class="nv">timelines</span><span class="o">=[</span>TimelineOption<span class="o">(</span><span class="nv">timelineSelector</span><span class="o">=</span><span class="s2">"tag:rd.bbc.co.uk,2015-12-08:dvb:css:timeline:simple-elapsed-time:5000"</span>, <span class="nv">unitsPertick</span><span class="o">=</span>1, <span class="nv">unitsPerSecond</span><span class="o">=</span>5000, <span class="nv">accuracy</span><span class="o">=</span>OMIT <span class="nv">private</span><span class="o">=</span>OMIT<span class="o">)</span>, TimelineOption<span class="o">(</span><span class="nv">timelineSelector</span><span class="o">=</span><span class="s2">"tag:rd.bbc.co.uk,2015-12-08:dvb:css:timeline:simple-elapsed-time:1000"</span>, <span class="nv">unitsPertick</span><span class="o">=</span>1, <span class="nv">unitsPerSecond</span><span class="o">=</span>1000, <span class="nv">accuracy</span><span class="o">=</span>OMIT <span class="nv">private</span><span class="o">=</span>OMIT<span class="o">)]</span>, <span class="nv">tsUrl</span><span class="o">=</span>u<span class="s1">'ws://10.5.11.163:7681/ts'</span>, <span class="nv">wcUrl</span><span class="o">=</span>u<span class="s1">'udp://10.5.11.163:6677'</span>, <span class="nv">contentIdStatus</span><span class="o">=</span>u<span class="s1">'final'</span>, <span class="nv">contentId</span><span class="o">=</span>u<span class="s1">'http://127.0.0.1:8123/channel_B_video.mp4'</span><span class="o">)</span>
+
+</code></pre>
+
+<ul>
+<li>The contentId in this example is <strong><q>http://127.0.0.1:8123/channel_B_video.mp4</q></strong></li>
+<li>Available timelines are given by the <strong>timelines</strong> field,</li>
+</ul>
+<a href='#contact' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='contact'>Contact</h2>
+
+<p>The original author is Rajiv Ramdhany &lsquo;at&rsquo; bbc.co.uk.</p>
+<a href='#licence' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='licence'>Licence</h2>
+
+<p>The CSASynchroniser iOS Framework is developed by BBC R&amp;D and distributed under Licensed under the Apache License, <a href="http://www.apache.org/licenses/LICENSE-2.0">Version 2.0</a>.</p>
+
+<p>© Copyright 2016 BBC R&amp;D. All Rights Reserved</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; British Broadcasting Corporation, under <a class="link" href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="external">Apache 2.0 open source licence</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

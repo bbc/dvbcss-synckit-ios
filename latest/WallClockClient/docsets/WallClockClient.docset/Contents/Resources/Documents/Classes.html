@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classes  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    <div style="margin:0; width: 100%; padding: 8px 0 0 8px;" class="header">
+    <a href="../index.html" style="margin: 0; padding: 0 8px; font-weight: bold; color:white;">
+        dvbcss-synckit-ios
+    </a>
+</div>
+
+  </head>
+  <body>
+
+
+    <a title="Classes  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          WallClockClient Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">WallClockClient Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Classes  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Candidate.html">Candidate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CandidateSink.html">CandidateSink</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/LowestDispersionAlgorithm.html">LowestDispersionAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/LowestDispersionFilter.html">LowestDispersionFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/RTTThresholdFilter.html">RTTThresholdFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/WCProtocolClient.html">WCProtocolClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/WCSyncMessage.html">WCSyncMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/WallClockSynchroniser.html">WallClockSynchroniser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@WallClockClientVersionNumber">WallClockClientVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@WallClockClientVersionString">WallClockClientVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ICandidateHandler.html">ICandidateHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/IFilter.html">IFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/IWCAlgo.html">IWCAlgo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Type Definitions/WCSyncMessagePkt.html">WCSyncMessagePkt</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Type Definitions/WCTimeValue.html">WCTimeValue</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>Classes</h1>
+            <p>The following classes are available globally.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Candidate"></a>
+                    <a name="//apple_ref/objc/Class/Candidate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Candidate">Candidate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A class for candidate measurement objects. Each candidate has a
+dispersion associated with it. This dispersion increases with time.
+If at a particular time T, the candidate&rsquo;s dispersion &gt; MAX_TOLERABLE_DISPERSION, then the candidate is no longer useful
+and should be filtered out.</p>
+
+                        <a href="Classes/Candidate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">Candidate</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">Candidate</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)CandidateSink"></a>
+                    <a name="//apple_ref/objc/Class/CandidateSink" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)CandidateSink">CandidateSink</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This class implements the WallClock protocol&rsquo;s Candidate measurement processing functionality.
+Candidate mesaurements received by the WCClient object are enqueued in the CandidateSink
+object for processing. A thread in this class services this queue; it takes a Candidate
+measurement, passes it through a number of filters (See IFilter.h) and if the measurement
+survives the filtering process, it then submit it to a WC algorithm object (See IWCAlgo.h)
+for WC offset and dispersion calculation.</p>
+
+                        <a href="Classes/CandidateSink.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">CandidateSink</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/ICandidateHandler.html">ICandidateHandler</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">CandidateSink</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/ICandidateHandler.html">ICandidateHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)LowestDispersionAlgorithm"></a>
+                    <a name="//apple_ref/objc/Class/LowestDispersionAlgorithm" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)LowestDispersionAlgorithm">LowestDispersionAlgorithm</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Algorithm that selects the candidate (request-response measurement result) with the lowest
+  dispersion.</p>
+
+<p>Dispersion is a formal measure of the error bounds of the Wall Clock estimate. This value is the 
+  sum of possible error due to:</p>
+
+<pre class="highlight plaintext"><code>  - measurement precision limitations (at both client and server)
+  - round-trip time
+  - maximum potential for oscillator frequency error at the client and at the server server
+</code></pre>
+
+<p>This grows as the candidate (that was used to most recently adjust the clock) ages.</p>
+
+<p>Note: The Clock object must be the same one that is provided to the WallClockClient,
+  otherwise this algorithm will not synchronise correctly.</p>
+
+<p>The tick rate of the Clock can be any tick rate (it does not have to be one tick per
+  nanosecond), but too low a tick rate will limit clock synchronisation precision.</p>
+
+                        <a href="Classes/LowestDispersionAlgorithm.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">LowestDispersionAlgorithm</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/IWCAlgo.html">IWCAlgo</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">LowestDispersionAlgorithm</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/IWCAlgo.html">IWCAlgo</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)LowestDispersionFilter"></a>
+                    <a name="//apple_ref/objc/Class/LowestDispersionFilter" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)LowestDispersionFilter">LowestDispersionFilter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Simple filter that will reject a candidate unless its dispersion is lower than any candidate seen  previously.</p>
+
+                        <a href="Classes/LowestDispersionFilter.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">LowestDispersionFilter</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/IFilter.html">IFilter</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">LowestDispersionFilter</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/IFilter.html">IFilter</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RTTThresholdFilter"></a>
+                    <a name="//apple_ref/objc/Class/RTTThresholdFilter" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RTTThresholdFilter">RTTThresholdFilter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Simple filter that rejects all candidates where round trip time exceeds a specified threshold.</p>
+
+                        <a href="Classes/RTTThresholdFilter.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">RTTThresholdFilter</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="Protocols/IFilter.html">IFilter</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">RTTThresholdFilter</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/IFilter.html">IFilter</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)WCProtocolClient"></a>
+                    <a name="//apple_ref/objc/Class/WCProtocolClient" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)WCProtocolClient">WCProtocolClient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A class implementing the client-side (Companion app) functionality of the DVB-CSS WallClock protocol. 
+  This client reads time values from the wall clock and uses it to initialise a WallClock protocol request
+  message before sending the message to the WallClock server. Upon reception
+  of the WallClock response, it creates a Candidate measurement object which is then passed on to the CandidateSink
+  object for further processing.</p>
+
+<p>The CandidateSink object reads candidate measurements, calculate the wallclock offset (between the protocol 
+  client&rsquo;s wallclock and the protocol server&rsquo;s wallclock) and readjusts the local wallclock with the offset.
+  With this approach, the WallClockClient component, uses a feedback loop to submit new originate_timevalue
+  timestamps, calculate the wallclock offset and readjust the WallClock time based on this offset.</p>
+
+                        <a href="Classes/WCProtocolClient.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">WCProtocolClient</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">WCProtocolClient</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)WCSyncMessage"></a>
+                    <a name="//apple_ref/objc/Class/WCSyncMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)WCSyncMessage">WCSyncMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A class that provides helper functions to build and parse Wall Clock protocol request/response
+messages</p>
+
+                        <a href="Classes/WCSyncMessage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">WCSyncMessage</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">WCSyncMessage</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)WallClockSynchroniser"></a>
+                    <a name="//apple_ref/objc/Class/WallClockSynchroniser" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)WallClockSynchroniser">WallClockSynchroniser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A configurator component to setup all the sub-components for a WallClock time synchronisation.</p>
+
+<p>To perform WallClock time synchronisation, the following components are required:</p>
+
+<ol>
+<li><p>A WallClock server&rsquo;s host address and port number</p></li>
+<li><p>A local WallClock that will be synchronised.In this implementation, the same WallClock in used to timestamp WC protocol
+ messages.</p></li>
+<li><p>A WC protocol client (WCProtocolClient object) to send WC requests and receive WC responses.
+ On reception of WC response messages, the WCProtocolClient object creates a Candidate 
+ measurement object and submits it to a CandidateSink object for further proccesing.</p></li>
+<li><p>A Candidate measurement handler object of the type CandidateSink.</p></li>
+<li><p>An algorithm object to process Candidates and readjust the local WallClock&rsquo;s offset. WC
+ algorithms must conform to the IWCAlgo protocol.</p></li>
+<li><p>A list of filters (IFilter-conforming instances) to reject unsuitable Candidates e.g. a
+ candidates with an RTT that exceeds a specified threshold.</p></li>
+</ol>
+
+<p>The WCProtocolClient and CandidateSink components are loaded by the configurator. The algorithm 
+  and filter list have to be specified by the user when the configurator WallClockClientComponent 
+  is initialised.</p>
+
+                        <a href="Classes/WallClockSynchroniser.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">WallClockSynchroniser</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">WallClockSynchroniser</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; British Broadcasting Corporation, under <a class="link" href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="external">Apache 2.0 open source licence</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

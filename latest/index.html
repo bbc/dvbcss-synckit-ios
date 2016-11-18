@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>dvbcss-synckit-ios  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+
+    <a title="dvbcss-synckit-ios  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          dvbcss-synckit-ios Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">dvbcss-synckit-ios Reference</a>
+      <img class="carat" src="img/carat.png" />
+      dvbcss-synckit-ios  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Example apps.html">Example apps</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="synchronised-video-demo-app.html">Synchronised video demo app</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Frameworks.html">Frameworks</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="audioplayerengine.html">AudioPlayerEngine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="ciiprotocolclient.html">CIIProtocolClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="clocktimelines.html">ClockTimelines</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="csasynchroniser.html">CSASynchroniser</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="dialdevicediscovery.html">DIALDeviceDiscovery</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="simplelogger.html">SimpleLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="synccontroller.html">SyncController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="synckitcollections.html">SyncKitCollections</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="synckitconfiguration.html">SyncKitConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="synckitdelegate.html">SyncKitDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="timelinesync.html">TimelineSync</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="udpmessaging.html">UDPMessaging</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="videoplayer.html">VideoPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="wallclockclient.html">WallClockClient</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Internal frameworks.html">Internal frameworks</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="asyncsocket.html">AsyncSocket</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="3rd party internal frameworks.html">3rd party internal frameworks</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="jsonmodelframework.html">JSONModelFramework</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="socketrocket.html">SocketRocket</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <a href='#synckit-ios-companion-screen-dvb-css-synchronisation-library' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='synckit-ios-companion-screen-dvb-css-synchronisation-library'>SyncKit iOS Companion Screen DVB-CSS Synchronisation Library</h1>
+
+<p><strong><code>dvbcss-synckit-ios</code> is a collection of iOS dynamic libraries (<q>Frameworks</q>) for building media-based Companion screen applications that are synchronised frame-accurately to a TV.</strong></p>
+
+<p>It provides iOS implementations of the client side of the <a href="https://www.dvb.org/standards/dvb_css">DVB CSS</a> media-synchronisation protocols as used in <a href="http://hbbtv.org/resource-library/#specifications">HbbTV 2</a> compliant connected TVs. It also includes useful building blocks such as native media players, device discovery components, loggers, WebSockets- and UDP- based messaging, JSON to Objective-C deserialisation etc.</p>
+
+<ul>
+<li><strong><a href="#getting-started">Getting Started</a></strong></li>
+<li><strong><a href="#run-the-example-app">Run the example app</a></strong></li>
+<li><strong><a href="#read-the-documentation">Read the documentation</a></strong></li>
+<li><strong><a href="#overview-of-ios-frameworks-provided">Overview of iOS Frameworks provided</a></strong>
+
+<ul>
+<li><a href="#media-players">Media Players</a></li>
+<li><a href="#device-discovery">Device Discovery</a></li>
+<li><a href="#clocks-and-media-timelines">Clocks and Media Timelines</a></li>
+<li><a href="#wallclock-synchronisation">WallClock Synchronisation</a></li>
+<li><a href="#content-identification">Content Identification</a></li>
+<li><a href="#yimeline-synchronisation">Timeline Synchronisation</a></li>
+<li><a href="#synccontroller-objects">SyncController Objects</a></li>
+<li><a href="#mediasynchroniser">MediaSynchroniser</a></li>
+<li><a href="#other-frameworks">Other useful frameworks</a></li>
+</ul></li>
+<li><strong><a href="#contact">Contact</a></strong></li>
+<li><strong><a href="#licence">Licence</a></strong></li>
+</ul>
+<a href='#getting-started' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='getting-started'>Getting Started</h2>
+
+<p>When developing applications with the <strong>SyncKit</strong> framework, either use the lower-level components e.g. the DVB-CSS protocol clients or use the higher-level abstractions that the library provides e.g. timeline synchronisers, sync controllers and the Synchroniser singleton.</p>
+
+<p>Requirements:
+* XCode 7 or higher
+* iOS 9.3 SDK or higher</p>
+<a href='#1-clone-the-repository' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='1-clone-the-repository'>1. Clone the repository</h3>
+
+<p>The first step is to clone this repository, or use one of the release tarballs.</p>
+
+<p>If you only want run the demo app (<a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncKitVideoSyncDemoApp/">SyncKitVideoSyncDemoApp</a>), then skip the remainder of the steps and follow the instructions in the <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncKitVideoSyncDemoApp/README.md">the SyncKitVideoSyncDemoApp README</a>.</p>
+<a href='#2-build-the-frameworks' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='2-build-the-frameworks'>2. Build the frameworks</h3>
+
+<p>To use these frameworks in your own applications, you must build and import the frameworks into your project.</p>
+<a href='#either-use-xcode-to-build' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='either-use-xcode-to-build'>EITHER: Use XCode to build</h4>
+
+<p>To build using XCode 7 or higher, simply open the workspace in Xcode, select the <code>SyncKit</code> scheme and build the workspace <code>synckit.xcworkspace</code>.</p>
+<a href='#or-use-command-line-tools-to-build' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='or-use-command-line-tools-to-build'>OR: Use command-line tools to build</h4>
+
+<p>To use the XCode command-line tool to build all the dynamic libraries: In the terminal, enter the following command whilst ensuring that you have replaced the code signing identity and keychain with your own:</p>
+<pre class="highlight plaintext"><code>$ xcodebuild \
+    -workspace synckit.xcworkspace \
+    -scheme SyncKit \
+    -sdk "iphoneos" \
+    -configuration Release \
+    CODE_SIGN_IDENTITY="iPhone Developer: John Smith(4176XXXX9)" \
+    OTHER_CODE_SIGN_FLAGS="--keychain /Users/jsmith/Library/Keychains/login.keychain"
+</code></pre>
+
+<p>After a successful build, the dynamic libraries will be in the workspace&rsquo;s folder in  <code>DerivedData/synckit/Build/Products/Release-iphoneos/</code>. The ios frameworks are universal binaries; they are fit for iPhone and iPad architectures, as well as the iOS simulator.</p>
+<a href='#3-import-frameworks-into-the-project' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='3-import-frameworks-into-the-project'>3. Import frameworks into the project</h3>
+
+<p>In your own project, you need to import the iOS frameworks.</p>
+
+<p>You will find them in their build location in the workspace&rsquo;s folder in <code>DerivedData/synckit/Build/Products/Release-iphoneos/</code>.</p>
+
+<p>To import them, select your project&rsquo;s main target and go to the project&rsquo;s settings:</p>
+
+<p><img src="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./img/xcode_settings_1.png" alt="XCode settings"></p>
+
+<p>Next, in the General tab, go to the Embedded Binaries and click on the [+] button to add the frameworks. In the dialog that follows, click on the <em>&lsquo;Add Other&hellip;&rsquo;</em> button:</p>
+
+<p><img src="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./img/xcode_settings_2.png" alt="XCode settings"></p>
+
+<p>Now add these frameworks from this folder in the workspace folder: <code>DerivedData/synckit/Build/Products/Release-iphoneos/</code>:</p>
+
+<ul>
+<li><code>AsyncSocket.framework</code></li>
+<li><code>AudioPlayerEngine.framework</code></li>
+<li><code>CIIProtocolClient.framework</code></li>
+<li><code>ClockTimelines.framework</code></li>
+<li><code>CSASynchroniser.framework</code></li>
+<li><code>DIALDeviceDiscovery.framework</code> (if needed)</li>
+<li><code>DIALTVSelectionUIViews.framework</code> (if needed)</li>
+<li><code>JSONModelFramework.framework</code></li>
+<li><code>SimpleLogger.framework</code></li>
+<li><code>SocketRocketiOS.framework</code></li>
+<li><code>SyncController.framework</code></li>
+<li><code>SyncKitCollections.framework</code></li>
+<li><code>SyncKitConfiguration.framework</code></li>
+<li><code>SyncKitDelegate.framework</code></li>
+<li><code>TimelineSync.framework</code></li>
+<li><code>UDPMessaging.framework</code></li>
+<li><code>VideoPlayer.framework</code></li>
+<li><code>WallClockClient.framework</code></li>
+</ul>
+
+<p>You can omit libraries you do not need. However, ensure that the dependencies of your libraries are always satisfied. Please refer to the table below for dependency information:</p>
+
+<table><thead>
+<tr>
+<th>iOS Framework</th>
+<th>Depends on (requires)</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>CIIProtocolClient.framework</code></td>
+<td><em><code>SimpleLogger.framework</code></em><br><em><code>SocketRocketiOS.framework</code></em><br><em><code>SyncKitCollections.framework</code></em><br><em><code>SyncKitConfiguration.framework</code></em></td>
+</tr>
+<tr>
+<td><code>CSASynchroniser.framework</code></td>
+<td><em><code>AudioPlayerEngine.framework</code></em><br><em><code>CIIProtocolClient.framework</code></em><br><em><code>ClockTimelines.framework</code></em><br><em><code>SimpleLogger.framework</code></em><br><em><code>SyncController.framework</code></em><br><em><code>SyncKitConfiguration.framework</code></em><br><em><code>TimelineSync.framework</code></em><br><em><code>VideoPlayer.framework</code></em><br><em><code>WallClockClient.framework</code></em></td>
+</tr>
+<tr>
+<td><code>DIALDeviceDiscovery.framework</code></td>
+<td><em><code>AsyncSocket.framework</code></em><br><em><code>SimpleLogger.framework</code></em><br><em><code>SyncKitCollections.framework</code></em><br><em><code>SyncKitConfiguration.framework</code></em></td>
+</tr>
+<tr>
+<td><code>DIALTVSelectionUIViews.framework</code></td>
+<td><em><code>DIALDeviceDiscovery.framework</code></em><br><em><code>SimpleLogger.framework</code></em><br><em><code>SyncKitCollections.framework</code></em><br><em><code>SyncKitConfiguration.framework</code></em><br><em><code>SyncKitDelegate.framework</code></em></td>
+</tr>
+<tr>
+<td><code>SyncKitCollections.framework</code></td>
+<td><em><code>SimpleLogger.framework</code></em></td>
+</tr>
+<tr>
+<td><code>SyncKitDelegate.framework</code></td>
+<td><em><code>DIALDeviceDiscovery.framework</code></em><br><em><code>SimpleLogger.framework</code></em><br><em><code>SyncKitCollections.framework</code></em><br><em><code>SyncKitConfiguration.framework</code></em></td>
+</tr>
+<tr>
+<td><code>TimelineSync.framework</code></td>
+<td><em><code>ClockTimelines.framework</code></em><br><em><code>JSONModelFramework.framework</code></em><br><em><code>SimpleLogger.framework</code></em><br><em><code>SocketRocketiOS.framework</code></em><br><em><code>SyncKitCollections.framework</code></em><br><em><code>SyncKitConfiguration.framework</code></em></td>
+</tr>
+<tr>
+<td><code>UDPMessaging.framework</code></td>
+<td><em><code>SimpleLogger.framework</code></em></td>
+</tr>
+<tr>
+<td><code>WallClockClient.framework</code></td>
+<td><em><code>ClockTimelines.framework</code></em><br><em><code>SimpleLogger.framework</code></em><br><em><code>SyncKitCollections.framework</code></em><br><em><code>UDPMessaging.framework</code></em></td>
+</tr>
+</tbody></table>
+
+<p><strong>Make sure that the &#39;Copy Items if needed&rsquo; option is selected.</strong> Once the iOS frameworks have been added, they will be shown in your project settings and copied to your project:</p>
+
+<p><img src="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./img/xcode_settings_3.png" alt="XCode settings"></p>
+
+<p>Your project can now utilise these libraries.</p>
+<a href='#run-the-example-app' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='run-the-example-app'>Run the example app</h2>
+
+<p>A demo iOS application (<a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncKitVideoSyncDemoApp/">SyncKitVideoSyncDemoApp</a>) that uses SyncKit to discover a TV on the network and synchronise a video is included.</p>
+
+<p>This demo assumes that a DVB-CSS- or HbbTV 2 compliant TV/STB or emulator is being used to play a video stream. The application when deployed on an iOS device will then synchronise against that video stream.</p>
+
+<p>For details on how it works and how to run it, see <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncKitVideoSyncDemoApp/README.md">the SyncKitVideoSyncDemoApp README</a>.</p>
+
+<p><strong>Make sure you add the required companion media files before trying to build and run it.</strong></p>
+<a href='#read-the-documentation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='read-the-documentation'>Read the documentation</h2>
+
+<p>Each iOS framework in SyncKit has accompanying documentation and where applicable, example apps that demonstrate usage of the framework.</p>
+
+<p>The documentation is found each framework directory in a <code>docs</code> sub-folder.</p>
+<a href='#overview-of-ios-frameworks-provided' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='overview-of-ios-frameworks-provided'>Overview of iOS Frameworks provided</h2>
+<a href='#media-players' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='media-players'>Media Players</h3>
+
+<p><code>AudioPlayerEngine.framework</code><br/>
+<code>VideoPlayer.framework</code></p>
+
+<p>These are file/stream -based media players with enhanced playback control capability. They provide the capability to adapt the way the media is being played:
+* change playback position,
+* change the playback speed
+* query the buffered time range
+* adjust the playback by an offset
+* change the alignment of video and audio tracks for a video stream</p>
+
+<p>The following media players are included within <strong>dvbcss-synckit-ios</strong>.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./AudioPlayer/">AudioPlayerEngine</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h">AudioPlayer</a></td>
+<td>A Core Audio SDK based player for audio files (e.g. mp3, wav, aifc, aiff, m4a, mp4, caf, aac files) and audio processing via units in an audio filter graph.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./AudioPlayer/">AudioPlayerEngine</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h">AudioStreamPlayer</a></td>
+<td>A Core Audio SDK based player for audio streams. It uses Apple&rsquo;s Audio Queue Services and AudioFileStream to handle audio buffers and audio streaming</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./AudioPlayer/">AudioPlayerEngine</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayerViewController.h">AudioPlayerViewController</a></td>
+<td>a UIViewController that uses a CoreGraphics-based audio plotting UIView to show a waveform representation of the audio data in the buffer for an AudioPlayer</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./VideoPlayer/">VideoPlayer</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./VideoPlayer/VideoPlayer/VideoPlayer/VideoPlayerViewController.h">VideoPlayerViewController</a></td>
+<td>A player for video files (e.g. MP4, QuickTime) and adaptive HTTP-based streams (e.g. HLS)</td>
+</tr>
+</tbody></table>
+
+<p>Each player uses the delegate pattern to report progress information about the media playback. Callbacks will report about:
+* player&rsquo;s state (initialised, paused, playing, ready to play, seeking)
+* current playback time (periodically called)
+* end of asset reached
+* media properties such as media format, duration, available tracks
+* buffered media time ranges</p>
+<a href='#device-discovery' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='device-discovery'>Device Discovery</h3>
+
+<p><code>DIALDeviceDiscovery.framework</code></p>
+
+<p>The <strong>DIALDeviceDiscovery</strong> framework provides APIs for the discovery of services via SSDP and the discovery of devices via DIAL. It allows HbbTV terminals existing on the same network to be discovered by the Companion Screen Application.
+Using the DIAL protocol, the Companion Screen Application can launch an HbbTV application on the television.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./DIALDeviceDiscovery/">DIALDeviceDiscovery</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./DIALDeviceDiscovery/DIALDeviceDiscovery/SSDPServiceDiscovery.h">SSDPServiceDiscovery</a></td>
+<td>Discovery of UPnP devices advertising a type of service type</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./DIALDeviceDiscovery/">DIALDeviceDiscovery</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./DIALDeviceDiscovery/DIALDeviceDiscovery/SSDPServiceDiscovery.h">DIALServiceDiscovery</a></td>
+<td>Discovery of devices on the network running a DIAL server and web applications such an HbbTV</td>
+</tr>
+</tbody></table>
+<a href='#clocks-and-media-timelines' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='clocks-and-media-timelines'>Clocks and Media Timelines</h3>
+
+<p><code>ClockTimelines.framework</code></p>
+
+<p>The <strong>ClockTimelines</strong> framework provides software clock classes to represent timelines (of clocks and media assets). A timeline is represented by a clock object. Clock objects also allow relationships between timelines to be expressed using parent-child mapping relationships.</p>
+
+<p>These clock objects work in the same way as the ones in the <a href="https://github.com/bbc/pydvbcss">pydvbcss</a> python library (documented <a href="http://pydvbcss.readthedocs.io/en/latest/clock.html">here</a>).</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./ClockTimelines/">ClockTimelines</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./ClockTimelines/ClockTimelines/SystemClock.h">SystemClock</a></td>
+<td>A root clock class that is based on monotonic time as the underlying time source</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./ClockTimelines/">ClockTimelines</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./ClockTimelines/ClockTimelines/CorrelatedClock.h">CorrelatedClock</a></td>
+<td>A clock represent a timeline&rsquo;s relationship with a parent timeline as a correlation</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./ClockTimelines/">ClockTimelines</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./ClockTimelines/ClockTimelines/TunableClock.h">TunableClock</a></td>
+<td>A clock for a timeline with a correlation mapping to a parent clock, but with  adjustible tick offset and speed.</td>
+</tr>
+</tbody></table>
+<a href='#wallclock-synchronisation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='wallclock-synchronisation'>WallClock Synchronisation</h3>
+
+<p><code>WallClockClient.framework</code></p>
+
+<p>The WallClockClient framework provides an API to synchronise a WallClock with another device (e.g. an HbbTV) using the DVB-CSS WallClock Synchronisation protocol (CSS-WC). It uses UDP as the transport for CSS-WC messages. The framework allows different filters to be plugged in to exclude time offset measurements. Also, different algorithms can be plugged in to
+to process the measurements and update the WallClock.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./WallClockSync/">WallClockClient</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./WallClockSync/WallClockClient/WallClockClient/WallClockSynchroniser.h">WallClockSynchroniser</a></td>
+<td>WallClock synchroniser using RTT Threshold filter and Lowest Dispersion algorithm</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./WallClockSync/">WallClockClient</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./WallClockSync/WallClockClient/WallClockClient/WCProtocolClient.h">WCProtocolClient</a></td>
+<td>A CSS-WC protocol client</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./WallClockSync/">WallClockClient</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./WallClockSync/WallClockClient/WallClockClient/LowestDispersionAlgorithm.h">LowestDispersionAlgorithm</a></td>
+<td>Measurement-processing algo based on lowest dispersion for best-candidate selection</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./WallClockSync/">WallClockClient</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./WallClockSync/WallClockClient/WallClockClient/LowestDispersionFilter.h">LowestDispersionFilter</a>,  <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./WallClockSync/WallClockClient/WallClockClient/RTTThresholdFilter.h">RTTThresholdFilter</a></td>
+<td>Candidate measurement filters</td>
+</tr>
+</tbody></table>
+<a href='#content-identification' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='content-identification'>Content Identification</h3>
+
+<p><code>CIIProtocolClient.framework</code></p>
+
+<p>The CIIProtocolClient framework allows a Companion Screen Application to receive updates about the current TV content&rsquo;s identifier and other service endpoints (e.g.  timeline synchronisation, material resolution (MRS), etc.). Also reported are timelines made available by the TV for synchronisation. Uses WebSockets for CSS-CII protocol.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./CIIProtocolClient/">CIIProtocolClient</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./CIIProtocolClient/CIIProtocolClient/CIIClient.h">CIIClient</a></td>
+<td>A CSS-CII protocol client</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./CIIProtocolClient/">CIIProtocolClient</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./CIIProtocolClient/CIIProtocolClient/TimelineOption.h">TimelineOption</a></td>
+<td>A timeline description object.</td>
+</tr>
+</tbody></table>
+<a href='#timeline-synchronisation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='timeline-synchronisation'>Timeline Synchronisation</h3>
+
+<p><code>TimelineSync.framework</code></p>
+
+<p>The TimelineSync framework provides an API to synchronise a timeline to the timeline exported by the TV for synchronisation (called the Synchronisation Timeline). The local estimate of the Synchronisation Timeline is represented by a CorrelatedClock object. Uses WebSockets.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./TimelineSync/">TimelineSync</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./TimelineSync/TimelineSync/TimelineSync/TSClient.h">TSClient</a></td>
+<td>A CSS-TS protocol client. Receives Control Timestamps from the TV.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./TimelineSync/">TimelineSync</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./TimelineSync/TimelineSync/TimelineSync/TimelineSynchroniser.h">TimelineSynchroniser</a></td>
+<td>A wrapper object that synchronises a CorrelatedClock object based on Synchronisation Timeline updates received from the TV via a TSClient</td>
+</tr>
+</tbody></table>
+<a href='#synccontroller-objects' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='synccontroller-objects'>SyncController Objects</h3>
+
+<p><code>SyncController.framework</code></p>
+
+<p>The SyncController framework provides  sync controller objects that can be used to synchronise a native media player to a given timeline. The SyncController object use a particular strategy to adapt the media player&rsquo;s playback (change speed of play, seek, or both) to ensure that it adheres to the given timeline.</p>
+
+<p>It uses a <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./ClockTimelines/ClockTimelines/CorrelatedClock.h">Correlation</a> and a <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./ClockTimelines/ClockTimelines/CorrelatedClock.h">CorrelatedClock</a> object to synthesise the expected timeline for the media player. The Correlation gives a mapping (a pair of timestamps) between the Synchronisation Timeline and the media asset&rsquo;s timeline.</p>
+
+<p>For web views, it provides a JS framework (ios_sync.js) to register the web page for current-time updates on the TV&rsquo;s timeline. The framework includes example apps to demonstrate usage of the sync controller objects.</p>
+
+<p><em>Currently, a SyncController class is provided for each media player/web kit.</em></p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncController/">SyncController</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncController/SyncController/SyncController/VideoPlayerSyncController.h">VideoPlayerSyncController</a></td>
+<td>Synchronises a video player (VideoPlayerViewController) to an expected timeline</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncController/">SyncController</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncController/SyncController/SyncController/AudioSyncController.h">AudioSyncController</a></td>
+<td>Synchronises an audio player (AudioPlayer, AudioStreamPlayer or AudioPlayerViewController) to an expected timeline</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncController/">SyncController</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncController/SyncController/SyncController/WebViewSyncController.h">WebViewSyncController</a></td>
+<td>A SyncController to send timestamps reporting progress of a TV programme to a web view</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncController/">SyncController</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncController/SyncController/SyncController/www/ios_sync.js">ios_sync.js</a></td>
+<td>JS library to register for register the web page for current-time updates on the TV&rsquo;s timeline. To be used in tandem with a <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncController/SyncController/SyncController/WebViewSyncController.h">WebViewSyncController</a> on the native side. See <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncController/WebViewSyncDemoApp/">WebViewSyncDemoApp</a> for usage example.</td>
+</tr>
+</tbody></table>
+<a href='#mediasynchroniser' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='mediasynchroniser'>MediaSynchroniser</h3>
+
+<p><code>CSASynchroniser.framework</code></p>
+
+<p>The CSASynchroniser (also called MediaSynchroniser) dynamic framework provides a high-level Synchroniser object for media sync. It is a singleton that Companion Screen Applications can use to synchronise a media object to an external timeline source e.g. a TV video broadcast. It simplifies launching a synchronisation process using the DVB-CSS machinery. With the Synchroniser API, media objects only need to be registered with the Synchroniser to be synchronised.</p>
+
+<p>To use the Synchroniser singletob, you need to initialise it with these parameters</p>
+
+<ul>
+<li><code>InterDeviceSyncURL</code> - the master device&rsquo;s URL for interdevice synchronisation (obtained from discovery of the TV using DIAL, see <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./../DIALDeviceDiscovery">DIALDeviceDiscovery</a> sub-project for examples).</li>
+<li><code>App2AppURL</code> - the master device&rsquo;s endpoint for communication between TV apps and companion screen Applications.</li>
+<li><code>TimelineSelector</code> - a <code>TimelineOption</code> object providing a timeline name and other properties (e.g. tick rate, accuracy).</li>
+</ul>
+
+<p>Media players are registered with the Synchroniser by adding MediaPlayerObject objects.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./MediaSynchroniser/">CSASynchroniser</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/.//MediaSynchroniser/CSASynchroniser/CSASynchroniser/MediaPlayerObject.h">MediaPlayerObject</a></td>
+<td>An object encapsulating a media player instance, the media URL and a correlation for mapping the Synchronisation Timeline to the media timeline</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./MediaSynchroniser/">CSASynchroniser</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./MediaSynchroniser/CSASynchroniser/CSASynchroniser/Synchroniser.h">Synchroniser</a></td>
+<td>A singleton that accepts  MediaPlayerObject instances (each playing a media object) or web views to synchronise against a  TV</td>
+</tr>
+</tbody></table>
+<a href='#other-frameworks' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='other-frameworks'>Other Frameworks</h3>
+
+<p><strong>dvbcss-synckit-ios</strong> also includes a number of useful fine-grain dynamic libraries.</p>
+<a href='#ui-components' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='ui-components'>UI Components</h5>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./DIALDeviceDiscovery/DIALTVSelectionUIViews/">DIALTVSelectionUIViews</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALDeviceCollectionViewController.h">DIALDeviceCollectionViewController</a></td>
+<td>A ViewController which displays devices discovered by the DIALDeviceDiscovery framework as a collection (UICollectionView)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./DIALDeviceDiscovery/DIALTVSelectionUIViews/">DIALTVSelectionUIViews</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALDeviceSelectorViewController.h">DIALDeviceSelectorViewController</a></td>
+<td>A ViewController which displays devices discovered by the DIALDeviceDiscovery framework as a list (UITableView)</td>
+</tr>
+</tbody></table>
+<a href='#communications' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='communications'>Communications</h5>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./AsyncSocket/AsyncSocket/">AsyncSocket</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./AsyncSocket/AsyncSocket/AsyncSocket/GCDAsyncUdpSocket.h">GCDAsyncUdpSocket</a></td>
+<td>A UDP/IP socket networking framework built atop Grand Central Dispatch.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./UDPMessaging/UDPMessaging/">UDPMessaging</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./UDPMessaging/UDPMessaging/UDPEndpoint.h">UDPEndpoint</a></td>
+<td>A class representing a UDP socket endpoint (server- or client-mode)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./WebSocket/SocketRocket/">SocketRocket</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./WebSocket/SocketRocket/SocketRocket/SRWebSocket.h">SRWebSocket</a></td>
+<td>Facebook&rsquo;s <a href="https://github.com/facebook/SocketRocket">SRWebSocket</a> framework (available under a BSD-licence) re-packaged as an iOS framework</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./JSONModelFramework/">JSONModelFramework</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./JSONModelFramework/JSONModelFramework/">SRWebSocket</a></td>
+<td>Framework for serialising Objective C objects into JSON and deserialise JSON back to Objective C. A repackaging of the open-source <a href="https://github.com/jsonmodel/jsonmodel">JSONModel</a> library as an iOS framework</td>
+</tr>
+</tbody></table>
+<a href='#logging-configuration-and-other-utilities' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='logging-configuration-and-other-utilities'>Logging, Configuration and other utilities</h5>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SimpleLogger/">SimpleLogger</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SimpleLogger/SimpleLogger/MWLogging.h">SimpleLogger</a></td>
+<td>Simple wrapper macros/functions around ASL (Apple System Log)</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncKitConfiguration/">SyncKitConfiguration</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncKitConfiguration/SyncKitConfiguration/ConfigReader.h">ConfigReader</a></td>
+<td>A library to read configuration key-value pairs from a config file and make them globally available.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncKitCollections/">SyncKitCollections</a></td>
+<td><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/./SyncKitCollections/SyncKitCollections/">SyncKitCollections</a></td>
+<td>A collection of data structures and utility classes.</td>
+</tr>
+</tbody></table>
+<a href='#contact' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='contact'>Contact</h2>
+
+<p>The original author is Rajiv Ramdhany &#39;at&rsquo; bbc.co.uk.</p>
+<a href='#licence' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='licence'>Licence</h2>
+
+<p>The <strong>dvbcss-synckit-ios</strong>  iOS library is developed by BBC R&amp;D and distributed under the Apache License, <a href="http://www.apache.org/licenses/LICENSE-2.0">Version 2.0</a>.</p>
+
+<p>© Copyright 2016 BBC R&amp;D. All Rights Reserved</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; British Broadcasting Corporation, under <a class="link" href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="external">Apache 2.0 open source licence</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

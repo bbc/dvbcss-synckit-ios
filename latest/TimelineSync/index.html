@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TimelineSync  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    <div style="margin:0; width: 100%; padding: 8px 0 0 8px;" class="header">
+    <a href="../index.html" style="margin: 0; padding: 0 8px; font-weight: bold; color:white;">
+        dvbcss-synckit-ios
+    </a>
+</div>
+
+  </head>
+  <body>
+
+
+    <a title="TimelineSync  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          TimelineSync Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">TimelineSync Reference</a>
+      <img class="carat" src="img/carat.png" />
+      TimelineSync  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ControlTimestamp.html">ControlTimestamp</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/TSClient.html">TSClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/TSSetupMsg.html">TSSetupMsg</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/TimelineSynchroniser.html">TimelineSynchroniser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@TimelineSyncVersionNumber">TimelineSyncVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@TimelineSyncVersionString">TimelineSyncVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kCrtlTimestampContentTime">kCrtlTimestampContentTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kCrtlTimestampTimelineSpeedMultiplier">kCrtlTimestampTimelineSpeedMultiplier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kCrtlTimestampWallClockTime">kCrtlTimestampWallClockTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kTSClientStateChangeNotification">kTSClientStateChangeNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kTSNewCRTLTimestampNotification">kTSNewCRTLTimestampNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@kTSStateChangeNotification">kTSStateChangeNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/TSClientState.html">TSClientState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/TSState.html">TSState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/TSClientDelegate.html">TSClientDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/TimelineSynchroniserDelegate.html">TimelineSynchroniserDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <a href='#small-dvbcss-synckit-ios-small-br-timelinesync-framework' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='small-dvbcss-synckit-ios-small-br-timelinesync-framework'><small>dvbcss-synckit-ios</small><br/>TimelineSync Framework</h1>
+
+<ul>
+<li><strong><a href="#how-to-use">How to use</a></strong></li>
+<li><strong><a href="#read-the-documentation">Read the documentation</a></strong></li>
+<li><strong><a href="#run-the-example-app">Run the example app</a></strong></li>
+</ul>
+
+<p>A Timeline Synchroniser based on the CSS-TS protocol specified in the <a href="https://www.dvb.org/resources/public/standards/a167-2_dvb-css_part_2_content-ID-and-media-sync_June2016.pdf">DVB-CSS</a> and <a href="http://www.etsi.org/deliver/etsi_ts%5C102700_102799%5C102796%5C01.03.01_60%5Cts_102796v010301p.pdf">HbbTV2.0</a> specifications . It is used by Companion Screen applications to synchronise their local estimate of a timeline to an external source of time e.g. the timeline of a media stream played by a TV.</p>
+
+<p>Given a CSS-TS WebSocket address and a CorrelatedClock object for the Synchronisation Timeline, the TimelineSync library will broker a connection with the Timeline Synchronisation server to receive Control Timestamps on a particular timeline. A TV broadcast stream may have many timelines signalled within it. In the setup phase, the TimelineSync library passes a timeline selector string to the CSS-TS server to specify the timeline to choose as the Synchronisation Timeline.</p>
+
+<p>Hints about timeline available for synchronisation may be received via the CSS-CII protocol. The timeline selector string can be chosen from the list of available timelines advertised by the TV via the CSS-CII protocol.  The <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../CIIProtocolClient">CIIProtocolClient</a> component is responsible for reporting CII state information.</p>
+
+<p><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/TimelineSync/TimelineSynchroniser.h">TimelineSynchroniser</a> is the main class in this library. It will create a TSClient instance (a client of the CSS-TS protocol) and register for Control Timestamps delivery notifications. The TSClient class is responsible of setting up the connection to the CSS-TS server and receive protocol messages which contain a Control Timestamp.</p>
+
+<p>The TimelineSynchroniser, on receiving a Control Timestamp, updates the Synchronisation Timeline CorrelatedClock object. On the first update, this clock&rsquo;s availability changes to true and observers notified about this change in status.</p>
+<a href='#dependencies' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='dependencies'>Dependencies</h3>
+
+<p>The TimelineSync library requires the following dynamic libraries (iOS frameworks) (these are found in SyncKit):</p>
+
+<ol>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../SyncKitConfiguration">SyncKitConfiguration</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../SimpleLogger">SimpleLogger</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../SocketRocket">SocketRocket</a> - the SocketRocket web socket library</li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../SyncKitCollections">SyncKitCollections</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../JSONModelFramework">JSONModelFramework</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../ClockTimelines">ClockTimelines</a></li>
+</ol>
+<a href='#read-the-documentation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='read-the-documentation'>Read the documentation</h2>
+
+<p>The docs for the library can be read <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/TimelineSync/docs/index.html">here</a>.</p>
+<a href='#how-to-use' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='how-to-use'>How to use</h2>
+
+<p>A Cocoa Pod version of this library is not currently available. To use this library, follow these steps</p>
+<a href='#add-the-framework-and-its-dependencies-to-your-project' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='add-the-framework-and-its-dependencies-to-your-project'>Add the framework and its dependencies to your project</h4>
+
+<ol>
+<li><em>Add the required projects to your workspace</em></li>
+</ol>
+
+<p>The easiest way to use the TimelineSync framework is to include these Xcode projects to your XCode workspace.</p>
+
+<ol>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../SyncKitConfiguration">SyncKitConfiguration</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../SimpleLogger">SimpleLogger</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../SocketRocket">SocketRocket</a> - the SocketRocket web socket library</li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../SyncKitCollections">SyncKitCollections</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../JSONModelFramework">JSONModelFramework</a></li>
+<li><a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/../ClockTimelines">ClockTimelines</a></li>
+<li><a href="">TimelineSync</a></li>
+</ol>
+
+<p>Then, after building these projects, go to your project&rsquo;s target window and <em>click on project in Project Navigator, then the project&rsquo;s target on right window in General tab</em>), add these frameworks in the <em>Linked Frameworks and libraries</em> section: <em>SyncKitConfiguration.framework, SimpleLogger.framework, SocketRocketiOS.framework, SyncKitCollections.framework, JSONModelFramework.framework, ClockTimelines.framework, TimelineSync.framework</em>.</p>
+
+<ol>
+<li><em>Add the dynamic libraries to your project</em></li>
+</ol>
+
+<p>Or alternatively, clone the SyncKit repository, open the main workspace and build all the projects.</p>
+
+<p>Then, in your project&rsquo;s target window (<em>click on project in Project Navigator, then the project&rsquo;s target on right window in General tab</em>), add the framework files in the <em>Linked Frameworks and libraries</em> section:  <em>SyncKitConfiguration.framework, SimpleLogger.framework, SocketRocketiOS.framework, SyncKitCollections.framework, JSONModelFramework.framework, ClockTimelines.framework, TimelineSync.framework</em>.
+  If you have two XCode instances running you can drag and drop the framework files from their respective project in SyncKit to your own project.</p>
+
+<ol>
+<li><em>Use the Cocoa Pod version</em></li>
+</ol>
+
+<p>Not available yet.</p>
+<a href='#import-the-header-files' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='import-the-header-files'>Import the header files</h4>
+
+<p>Once the library and its dependencies have been added to your project, import this header file in your source file:</p>
+<pre class="highlight plaintext"><code>
+  #import &lt;TimelineSync/TimelineSync.h&gt;
+
+</code></pre>
+<a href='#create-and-configure-a-timelinesynchroniser-object' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='create-and-configure-a-timelinesynchroniser-object'>Create and configure a TimelineSynchroniser object</h4>
+
+<p>Create and start a TimelineSynchroniser when the WallClock becomes available. Use iOS&rsquo;s Key-Value-Observation mechanism to observe
+the WallClock&rsquo;s <code>kAvailableKey</code> (i.e. its Available property).</p>
+<pre class="highlight plaintext"><code>
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary&lt;NSString *,id&gt; *)change context:(void *)context
+{
+    if (context == WallClockContext) {
+        if ([keyPath isEqualToString:kAvailableKey])
+        {
+            NSNumber *newAvailability = [change objectForKey:@"new"];
+
+            // only start timeline sync when wallclock is in sync
+            if (([newAvailability boolValue] == YES) &amp;&amp; (tvPTSTimelineSyncer==nil)){
+                [self startTimelineSync];
+            }
+        }
+    }
+
+</code></pre>
+
+<p>This is how the TimelineSynchroniser is started.</p>
+<pre class="highlight plaintext"><code>- (void)startTimelineSync {
+    // -- start Timeline Sync ----
+    // create a timeline object to synchronise
+    Correlation corel = [CorrelationFactory create:0 Correlation:0];
+    tvPTSTimeline = [[CorrelatedClock alloc] initWithParentClock:wallclock
+                                                        TickRate:90000
+                                                     Correlation:&amp;corel]; // timeline created but unavailable
+
+    tvPTSTimelineSyncer = [TimelineSynchroniser TimelineSynchroniserWithTimeline:tvPTSTimeline
+                                                                TimelineSelector:timelineSelector
+                                                                         Content:contentId
+                                                                             URL:tsEndpointURL];
+    assert(tvPTSTimelineSyncer!=nil);
+
+    tvPTSTimelineSyncer.delegate = self;
+
+    [tvPTSTimeline addObserver:self context:TVTimelineContext];
+
+
+    [tvPTSTimelineSyncer start];
+
+}
+
+</code></pre>
+<a href='#register-for-callbacks-when-the-synchronisation-timeline-39-s-availability-changes' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='register-for-callbacks-when-the-synchronisation-timeline-39-s-availability-changes'>Register for callbacks when the Synchronisation Timeline&rsquo;s availability changes</h4>
+<pre class="highlight plaintext"><code>
+  [tvPTSTimeline addObserver:self context:TVTimelineContext];
+
+
+</code></pre>
+<a href='#run-the-example-app' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='run-the-example-app'>Run the example app</h2>
+
+<p>A demo app called <a href="https://github.com/bbc/dvbcss-synckit-ios/tree/master/TimelineSync/TimelineSyncDemoApp/">TimelineSyncDemoApp</a> is included with this framework. To run the demo, open the <em>TimelineSyncWorkSp.xcworkspace</em> workspace in XCode. Choose the TimelineSyncDemoApp target, build it and deploy the app on your iOS device or run it in the simulator.</p>
+
+<p>The CSS-TS URL is hardcoded in <code>ViewController.m</code>. Change these addresses to fit your setup.</p>
+<pre class="highlight plaintext"><code>NSString *serverAddress     = @"192.168.0.13";
+NSString *contentId         = @"dvb://233A.4084.0001";
+NSString *timelineSelector  = @"urn:dvb:css:timeline:pts";
+NSString *tsEndpointURL     = @"ws://192.168.0.13:7682";
+</code></pre>
+
+<p>Replace the URL with your own CSS-TS server instance URL</p>
+
+<p>On the server side, if you need an example implementation of a CSS-TS server, then clone the following library:
+[<a href="https://github.com/bbc/pydvbcss">https://github.com/bbc/pydvbcss</a>]. The <code>examples</code> folder has a server implementation: <code>TSServer.py</code></p>
+<pre class="highlight plaintext"><code>$ python examples/TSServer.py
+</code></pre>
+
+<p>The server does not play any media, but instead serves an imaginary set of timelines including a PTS timeline (<em>“urn:dvb:css:timeline:pts”</em>).
+This server serves at 127.0.0.1 on port 7681 and provides a CSS-TS service at the URL <em>ws://127.0.0.1:7681/ts</em>. It also provides a wall clock server bound to <em>0.0.0.0</em> on UDP port <em>6677</em>.</p>
+<a href='#licence' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='licence'>Licence</h2>
+
+<p><strong>Author</strong>: Rajiv Ramdhany</p>
+
+<p>The TimelineSync iOS Framework is developed by BBC R&amp;D and distributed under Licensed under the Apache License, <a href="http://www.apache.org/licenses/LICENSE-2.0">Version 2.0</a>.</p>
+
+<p>© Copyright 2016 BBC R&amp;D. All Rights Reserved</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; British Broadcasting Corporation, under <a class="link" href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="external">Apache 2.0 open source licence</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

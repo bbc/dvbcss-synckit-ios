@@ -1,0 +1,138 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/BlockingQ.h",
+      "line": 29,
+      "symbol": "BlockingQ.lock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/BlockingQ.h",
+      "line": 30,
+      "symbol": "BlockingQ.notEmpty",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/BlockingQ.h",
+      "line": 31,
+      "symbol": "BlockingQ.first",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/BlockingQ.h",
+      "line": 31,
+      "symbol": "BlockingQ.last",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/DataNode.h",
+      "line": 28,
+      "symbol": "DataNode.data",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/NSStack.h",
+      "line": 30,
+      "symbol": "NSStack.count",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/NSStack.h",
+      "line": 32,
+      "symbol": "NSStack.-initWithArray:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/NSStack.h",
+      "line": 34,
+      "symbol": "NSStack.-pushObject:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/NSStack.h",
+      "line": 35,
+      "symbol": "NSStack.-pushObjects:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/NSStack.h",
+      "line": 36,
+      "symbol": "NSStack.-popObject",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/NSStack.h",
+      "line": 37,
+      "symbol": "NSStack.-peekObject",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/Node.h",
+      "line": 25,
+      "symbol": "Node",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/Node.h",
+      "line": 26,
+      "symbol": "Node.next",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/Queue.h",
+      "line": 30,
+      "symbol": "Queue.first",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/Queue.h",
+      "line": 30,
+      "symbol": "Queue.last",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/SimpleAverager.h",
+      "line": 24,
+      "symbol": "OffsetAverager",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/SimpleAverager.h",
+      "line": 37,
+      "symbol": "OffsetAverager.-initWithCapacity:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/SyncKitCollections.h",
+      "line": 26,
+      "symbol": "SyncKitCollectionsVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections/SyncKitCollections/SyncKitCollections.h",
+      "line": 29,
+      "symbol": "SyncKitCollectionsVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitCollections"
+}

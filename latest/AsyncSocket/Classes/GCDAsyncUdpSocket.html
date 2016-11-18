@@ -1,0 +1,3521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GCDAsyncUdpSocket Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <div style="margin:0; width: 100%; padding: 8px 0 0 8px;" class="header">
+    <a href="../index.html" style="margin: 0; padding: 0 8px; font-weight: bold; color:white;">
+        dvbcss-synckit-ios
+    </a>
+</div>
+
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/GCDAsyncUdpSocket" class="dashAnchor"></a>
+
+    <a title="GCDAsyncUdpSocket Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          AsyncSocket Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">AsyncSocket Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      GCDAsyncUdpSocket Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GCDAsyncUdpSocket.html">GCDAsyncUdpSocket</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AsyncSocketVersionNumber">AsyncSocketVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@AsyncSocketVersionString">AsyncSocketVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@GCDAsyncUdpSocketErrorDomain">GCDAsyncUdpSocketErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@GCDAsyncUdpSocketException">GCDAsyncUdpSocketException</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@GCDAsyncUdpSocketQueueName">GCDAsyncUdpSocketQueueName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@GCDAsyncUdpSocketThreadName">GCDAsyncUdpSocketThreadName</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GCDAsyncUdpSocketError.html">GCDAsyncUdpSocketError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GCDAsyncUdpSocketDelegate.html">GCDAsyncUdpSocketDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions.html#/c:GCDAsyncUdpSocket.h@T@GCDAsyncUdpSocketReceiveFilterBlock">GCDAsyncUdpSocketReceiveFilterBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Type Definitions.html#/c:GCDAsyncUdpSocket.h@T@GCDAsyncUdpSocketSendFilterBlock">GCDAsyncUdpSocketSendFilterBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>GCDAsyncUdpSocket</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>GCDAsyncUdpSocket uses the standard delegate paradigm,
+ but executes all delegate callbacks on a given delegate dispatch queue.
+ This allows for maximum concurrency, while at the same time providing easy thread safety.</p>
+
+<p>You MUST set a delegate AND delegate dispatch queue before attempting to
+ use the socket, or you will get an error.</p>
+
+<p>The socket queue is optional.
+ If you pass NULL, GCDAsyncSocket will automatically create its own socket queue.
+ If you choose to provide a socket queue, the socket queue must not be a concurrent queue,
+ then please see the discussion for the method markSocketQueueTargetQueue.</p>
+
+<p>The delegate queue and socket queue can optionally be the same.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)init"></a>
+                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)init">-init</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)initWithSocketQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithSocketQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)initWithSocketQueue:">-initWithSocketQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)initWithDelegate:delegateQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithDelegate:delegateQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)initWithDelegate:delegateQueue:">-initWithDelegate:delegateQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)initWithDelegate:delegateQueue:socketQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithDelegate:delegateQueue:socketQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)initWithDelegate:delegateQueue:socketQueue:">-initWithDelegate:delegateQueue:socketQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Configuration"></a>
+                <a name="//apple_ref/objc/Section/Configuration" class="dashAnchor"></a>
+                <a href="#/Configuration">
+                  <h3 class="section-name">Configuration</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)delegate"></a>
+                    <a name="//apple_ref/objc/Method/-delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)delegate">-delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/-setDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setDelegate:">-setDelegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)synchronouslySetDelegate:"></a>
+                    <a name="//apple_ref/objc/Method/-synchronouslySetDelegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)synchronouslySetDelegate:">-synchronouslySetDelegate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)delegateQueue"></a>
+                    <a name="//apple_ref/objc/Method/-delegateQueue" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)delegateQueue">-delegateQueue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setDelegateQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-setDelegateQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setDelegateQueue:">-setDelegateQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)synchronouslySetDelegateQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-synchronouslySetDelegateQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)synchronouslySetDelegateQueue:">-synchronouslySetDelegateQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)getDelegate:delegateQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-getDelegate:delegateQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)getDelegate:delegateQueue:">-getDelegate:delegateQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setDelegate:delegateQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-setDelegate:delegateQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setDelegate:delegateQueue:">-setDelegate:delegateQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)synchronouslySetDelegate:delegateQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-synchronouslySetDelegate:delegateQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)synchronouslySetDelegate:delegateQueue:">-synchronouslySetDelegate:delegateQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)isIPv4Enabled"></a>
+                    <a name="//apple_ref/objc/Method/-isIPv4Enabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)isIPv4Enabled">-isIPv4Enabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>By default, both IPv4 and IPv6 are enabled.</p>
+
+<p>This means GCDAsyncUdpSocket automatically supports both protocols,
+ and can send to IPv4 or IPv6 addresses,
+ as well as receive over IPv4 and IPv6.</p>
+
+<p>For operations that require DNS resolution, GCDAsyncUdpSocket supports both IPv4 and IPv6.
+ If a DNS lookup returns only IPv4 results, GCDAsyncUdpSocket will automatically use IPv4.
+ If a DNS lookup returns only IPv6 results, GCDAsyncUdpSocket will automatically use IPv6.
+ If a DNS lookup returns both IPv4 and IPv6 results, then the protocol used depends on the configured preference.
+ If IPv4 is preferred, then IPv4 is used.
+ If IPv6 is preferred, then IPv6 is used.
+ If neutral, then the first IP version in the resolved array will be used.</p>
+
+<p>Starting with Mac OS X 10.7 Lion and iOS 5, the default IP preference is neutral.
+ On prior systems the default IP preference is IPv4.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isIPv4Enabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">isIPv4Enabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setIPv4Enabled:"></a>
+                    <a name="//apple_ref/objc/Method/-setIPv4Enabled:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setIPv4Enabled:">-setIPv4Enabled:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)isIPv6Enabled"></a>
+                    <a name="//apple_ref/objc/Method/-isIPv6Enabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)isIPv6Enabled">-isIPv6Enabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setIPv6Enabled:"></a>
+                    <a name="//apple_ref/objc/Method/-setIPv6Enabled:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setIPv6Enabled:">-setIPv6Enabled:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)isIPv4Preferred"></a>
+                    <a name="//apple_ref/objc/Method/-isIPv4Preferred" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)isIPv4Preferred">-isIPv4Preferred</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)isIPv6Preferred"></a>
+                    <a name="//apple_ref/objc/Method/-isIPv6Preferred" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)isIPv6Preferred">-isIPv6Preferred</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)isIPVersionNeutral"></a>
+                    <a name="//apple_ref/objc/Method/-isIPVersionNeutral" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)isIPVersionNeutral">-isIPVersionNeutral</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setPreferIPv4"></a>
+                    <a name="//apple_ref/objc/Method/-setPreferIPv4" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setPreferIPv4">-setPreferIPv4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setPreferIPv6"></a>
+                    <a name="//apple_ref/objc/Method/-setPreferIPv6" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setPreferIPv6">-setPreferIPv6</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setIPVersionNeutral"></a>
+                    <a name="//apple_ref/objc/Method/-setIPVersionNeutral" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setIPVersionNeutral">-setIPVersionNeutral</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)maxReceiveIPv4BufferSize"></a>
+                    <a name="//apple_ref/objc/Method/-maxReceiveIPv4BufferSize" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)maxReceiveIPv4BufferSize">-maxReceiveIPv4BufferSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><li>Gets/Sets the maximum size of the buffer that will be allocated for receive operations.</li>
+<li>The default maximum size is 9216 bytes.</li>
+<li></li>
+<li>The theoretical maximum size of any IPv4 UDP packet is UINT16_MAX = 65535.</li>
+<li>The theoretical maximum size of any IPv6 UDP packet is UINT32_MAX = 4294967295.</li>
+<li></li>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since the OS/GCD notifies us of the size of each received UDP packet,</p>
+
+<p></div>
+<li>the actual allocated buffer size for each packet is exact.</li>
+<li>And in practice the size of UDP packets is generally much smaller than the max.</li>
+<li>Indeed most protocols will send and receive packets of only a few bytes,</li>
+<li>or will set a limit on the size of packets to prevent fragmentation in the IP layer.</li>
+<li></li>
+<li>If you set the buffer size too small, the sockets API in the OS will silently discard</li>
+<li>any extra data, and you will not be notified of the error.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">uint16_t</span><span class="p">)</span><span class="n">maxReceiveIPv4BufferSize</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">maxReceiveIPv4BufferSize</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt16</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setMaxReceiveIPv4BufferSize:"></a>
+                    <a name="//apple_ref/objc/Method/-setMaxReceiveIPv4BufferSize:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setMaxReceiveIPv4BufferSize:">-setMaxReceiveIPv4BufferSize:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)maxReceiveIPv6BufferSize"></a>
+                    <a name="//apple_ref/objc/Method/-maxReceiveIPv6BufferSize" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)maxReceiveIPv6BufferSize">-maxReceiveIPv6BufferSize</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setMaxReceiveIPv6BufferSize:"></a>
+                    <a name="//apple_ref/objc/Method/-setMaxReceiveIPv6BufferSize:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setMaxReceiveIPv6BufferSize:">-setMaxReceiveIPv6BufferSize:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)userData"></a>
+                    <a name="//apple_ref/objc/Method/-userData" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)userData">-userData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>User data allows you to associate arbitrary information with the socket.</li>
+<li>This data is not used internally in any way.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="n">userData</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">userData</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setUserData:"></a>
+                    <a name="//apple_ref/objc/Method/-setUserData:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setUserData:">-setUserData:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Diagnostics"></a>
+                <a name="//apple_ref/objc/Section/Diagnostics" class="dashAnchor"></a>
+                <a href="#/Diagnostics">
+                  <h3 class="section-name">Diagnostics</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)localAddress"></a>
+                    <a name="//apple_ref/objc/Method/-localAddress" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)localAddress">-localAddress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    Returns the local address info for the socket.
+
+</div>
+
+<p><li></li>
+<li>The localAddress method returns a sockaddr structure wrapped in a NSData object.</li>
+<li>The localHost method returns the human readable IP address as a string.</li>
+<li></li>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Address info may not be available until after the socket has been binded, connected</p>
+
+<p></div>
+<li>or until after data has been sent.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="n">localAddress</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">localAddress</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)localHost"></a>
+                    <a name="//apple_ref/objc/Method/-localHost" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)localHost">-localHost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)localPort"></a>
+                    <a name="//apple_ref/objc/Method/-localPort" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)localPort">-localPort</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)localAddress_IPv4"></a>
+                    <a name="//apple_ref/objc/Method/-localAddress_IPv4" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)localAddress_IPv4">-localAddress_IPv4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)localHost_IPv4"></a>
+                    <a name="//apple_ref/objc/Method/-localHost_IPv4" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)localHost_IPv4">-localHost_IPv4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)localPort_IPv4"></a>
+                    <a name="//apple_ref/objc/Method/-localPort_IPv4" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)localPort_IPv4">-localPort_IPv4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)localAddress_IPv6"></a>
+                    <a name="//apple_ref/objc/Method/-localAddress_IPv6" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)localAddress_IPv6">-localAddress_IPv6</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)localHost_IPv6"></a>
+                    <a name="//apple_ref/objc/Method/-localHost_IPv6" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)localHost_IPv6">-localHost_IPv6</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)localPort_IPv6"></a>
+                    <a name="//apple_ref/objc/Method/-localPort_IPv6" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)localPort_IPv6">-localPort_IPv6</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)connectedAddress"></a>
+                    <a name="//apple_ref/objc/Method/-connectedAddress" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)connectedAddress">-connectedAddress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    Returns the remote address info for the socket.
+
+</div>
+
+<p><li></li>
+<li>The connectedAddress method returns a sockaddr structure wrapped in a NSData object.</li>
+<li>The connectedHost method returns the human readable IP address as a string.</li>
+<li></li>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Since UDP is connectionless by design, connected address info</p>
+
+<p></div>
+<li>will not be available unless the socket is explicitly connected to a remote host/port.</li>
+<li>If the socket is not connected, these methods will return nil / 0.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="n">connectedAddress</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">connectedAddress</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)connectedHost"></a>
+                    <a name="//apple_ref/objc/Method/-connectedHost" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)connectedHost">-connectedHost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)connectedPort"></a>
+                    <a name="//apple_ref/objc/Method/-connectedPort" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)connectedPort">-connectedPort</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)isConnected"></a>
+                    <a name="//apple_ref/objc/Method/-isConnected" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)isConnected">-isConnected</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    Returns whether or not this socket has been connected to a single host.
+
+</div>
+
+<p><li>By design, UDP is a connectionless protocol, and connecting is not needed.</li>
+<li>If connected, the socket will only be able to send/receive data to/from the connected host.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isConnected</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">isConnected</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)isClosed"></a>
+                    <a name="//apple_ref/objc/Method/-isClosed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)isClosed">-isClosed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    Returns whether or not this socket has been closed.
+
+</div>
+
+<p><li>The only way a socket can be closed is if you explicitly call one of the close methods.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isClosed</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">isClosed</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)isIPv4"></a>
+                    <a name="//apple_ref/objc/Method/-isIPv4" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)isIPv4">-isIPv4</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    Returns whether or not this socket is IPv4.
+
+</div>
+
+<p><li></li>
+<li>By default this will be true, unless:</li>
+<li>- IPv4 is disabled (via setIPv4Enabled:)</li>
+<li>- The socket is explicitly bound to an IPv6 address</li>
+<li>- The socket is connected to an IPv6 address</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isIPv4</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">isIPv4</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)isIPv6"></a>
+                    <a name="//apple_ref/objc/Method/-isIPv6" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)isIPv6">-isIPv6</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    Returns whether or not this socket is IPv6.
+
+</div>
+
+<p><li></li>
+<li>By default this will be true, unless:</li>
+<li>- IPv6 is disabled (via setIPv6Enabled:)</li>
+<li>- The socket is explicitly bound to an IPv4 address</li>
+<li>_ The socket is connected to an IPv4 address</li>
+<li></li>
+<li>This method will also return false on platforms that do not support IPv6.</li>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The iPhone does not currently support IPv6.</p>
+
+<p></div></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">isIPv6</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">isIPv6</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Binding"></a>
+                <a name="//apple_ref/objc/Section/Binding" class="dashAnchor"></a>
+                <a href="#/Binding">
+                  <h3 class="section-name">Binding</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)bindToPort:error:"></a>
+                    <a name="//apple_ref/objc/Method/-bindToPort:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)bindToPort:error:">-bindToPort:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Binds the UDP socket to the given port.</li>
+<li>Binding should be done for server sockets that receive data prior to sending it.</li>
+<li>Client sockets can skip binding,</li>
+<li>as the OS will automatically assign the socket an available port when it starts sending data.</li>
+<li></li>
+<li>You may optionally pass a port number of zero to immediately bind the socket,</li>
+<li>yet still allow the OS to automatically assign an available port.</li>
+<li></li>
+<li>You cannot bind a socket after its been connected.</li>
+<li>You can only bind a socket once.</li>
+<li>You can still connect a socket (if desired) after binding.</li>
+<li></li>
+<li>On success, returns YES.</li>
+<li>Otherwise returns NO, and sets errPtr. If you don&rsquo;t care about the error, you can pass NULL for errPtr.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">bindToPort</span><span class="p">:(</span><span class="kt">uint16_t</span><span class="p">)</span><span class="nv">port</span> <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">errPtr</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">bind</span><span class="p">(</span><span class="n">toPort</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">UInt16</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)bindToPort:interface:error:"></a>
+                    <a name="//apple_ref/objc/Method/-bindToPort:interface:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)bindToPort:interface:error:">-bindToPort:interface:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Binds the UDP socket to the given port and optional interface.</li>
+<li>Binding should be done for server sockets that receive data prior to sending it.</li>
+<li>Client sockets can skip binding,</li>
+<li>as the OS will automatically assign the socket an available port when it starts sending data.</li>
+<li></li>
+<li>You may optionally pass a port number of zero to immediately bind the socket,</li>
+<li>yet still allow the OS to automatically assign an available port.</li>
+<li></li>
+<li>The interface may be a name (e.g. <q>en1</q> or <q>lo0</q>) or the corresponding IP address (e.g. <q>192.168.4.35</q>).</li>
+<li>You may also use the special strings <q>localhost</q> or <q>loopback</q> to specify that</li>
+<li>the socket only accept packets from the local machine.</li>
+<li></li>
+<li>You cannot bind a socket after its been connected.</li>
+<li>You can only bind a socket once.</li>
+<li>You can still connect a socket (if desired) after binding.</li>
+<li></li>
+<li>On success, returns YES.</li>
+<li>Otherwise returns NO, and sets errPtr. If you don&rsquo;t care about the error, you can pass NULL for errPtr.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span> <span class="nf">bindToPort</span><span class="p">:(</span><span class="kt">uint16_t</span><span class="p">)</span><span class="nv">port</span> <span class="nf">interface</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">interface</span> <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">errPtr</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">bind</span><span class="p">(</span><span class="n">toPort</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">UInt16</span><span class="p">,</span> <span class="nv">interface</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)bindToAddress:error:"></a>
+                    <a name="//apple_ref/objc/Method/-bindToAddress:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)bindToAddress:error:">-bindToAddress:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Binds the UDP socket to the given address, specified as a sockaddr structure wrapped in a NSData object.</li>
+<li></li>
+<li>If you have an existing struct sockaddr you can convert it to a NSData object like so:</li>
+<li>struct sockaddr sa  -&gt; NSData *dsa = [NSData dataWithBytes:&amp;remoteAddr length:remoteAddr.sa_len];</li>
+<li>struct sockaddr *sa -&gt; NSData *dsa = [NSData dataWithBytes:remoteAddr length:remoteAddr-&gt;sa_len];</li>
+<li></li>
+<li>Binding should be done for server sockets that receive data prior to sending it.</li>
+<li>Client sockets can skip binding,</li>
+<li>as the OS will automatically assign the socket an available port when it starts sending data.</li>
+<li></li>
+<li>You cannot bind a socket after its been connected.</li>
+<li>You can only bind a socket once.</li>
+<li>You can still connect a socket (if desired) after binding.</li>
+<li></li>
+<li>On success, returns YES.</li>
+<li>Otherwise returns NO, and sets errPtr. If you don&rsquo;t care about the error, you can pass NULL for errPtr.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">bindToAddress</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">localAddr</span> <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">errPtr</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">bind</span><span class="p">(</span><span class="n">toAddress</span> <span class="nv">localAddr</span><span class="p">:</span> <span class="kt">Data</span><span class="o">!</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Connecting"></a>
+                <a name="//apple_ref/objc/Section/Connecting" class="dashAnchor"></a>
+                <a href="#/Connecting">
+                  <h3 class="section-name">Connecting</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)connectToHost:onPort:error:"></a>
+                    <a name="//apple_ref/objc/Method/-connectToHost:onPort:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)connectToHost:onPort:error:">-connectToHost:onPort:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connects the UDP socket to the given host and port.
+ By design, UDP is a connectionless protocol, and connecting is not needed.</p>
+
+<p>Choosing to connect to a specific host/port has the following effect:
+ - You will only be able to send data to the connected host/port.
+ - You will only be able to receive data from the connected host/port.
+ - You will receive ICMP messages that come from the connected host/port, such as <q>connection refused</q>.</p>
+
+<p>The actual process of connecting a UDP socket does not result in any communication on the socket.
+ It simply changes the internal state of the socket.</p>
+
+<p>You cannot bind a socket after it has been connected.
+ You can only connect a socket once.</p>
+
+<p>The host may be a domain name (e.g. <q>deusty.com</q>) or an IP address string (e.g. <q>192.168.0.2</q>).</p>
+
+<p>This method is asynchronous as it requires a DNS lookup to resolve the given host name.
+ If an obvious error is detected, this method immediately returns NO and sets errPtr.
+ If you don&rsquo;t care about the error, you can pass nil for errPtr.
+ Otherwise, this method returns YES and begins the asynchronous connection process.
+ The result of the asynchronous connection process will be reported via the delegate methods.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">connectToHost</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">host</span>
+               <span class="nf">onPort</span><span class="p">:(</span><span class="kt">uint16_t</span><span class="p">)</span><span class="nv">port</span>
+                <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">errPtr</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">connect</span><span class="p">(</span><span class="n">toHost</span> <span class="nv">host</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">onPort</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">UInt16</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)connectToAddress:error:"></a>
+                    <a name="//apple_ref/objc/Method/-connectToAddress:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)connectToAddress:error:">-connectToAddress:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><li>Connects the UDP socket to the given address, specified as a sockaddr structure wrapped in a NSData object.</li>
+<li></li>
+<li>If you have an existing struct sockaddr you can convert it to a NSData object like so:</li>
+<li>struct sockaddr sa  -&gt; NSData *dsa = [NSData dataWithBytes:&amp;remoteAddr length:remoteAddr.sa_len];</li>
+<li>struct sockaddr *sa -&gt; NSData *dsa = [NSData dataWithBytes:remoteAddr length:remoteAddr-&gt;sa_len];</li>
+<li></li>
+<li>By design, UDP is a connectionless protocol, and connecting is not needed.</li>
+<li></li>
+<li>Choosing to connect to a specific address has the following effect:</li>
+<li>- You will only be able to send data to the connected address.</li>
+<li>- You will only be able to receive data from the connected address.</li>
+<li>- You will receive ICMP messages that come from the connected address, such as <q>connection refused</q>.</li>
+<li></li>
+<li>Connecting a UDP socket does not result in any communication on the socket.</li>
+<li>It simply changes the internal state of the socket.</li>
+<li></li>
+<li>You cannot bind a socket after its been connected.</li>
+<li>You can only connect a socket once.</li>
+<li></li>
+<li>On success, returns YES.</li>
+<li>Otherwise returns NO, and sets errPtr. If you don&rsquo;t care about the error, you can pass nil for errPtr.</li>
+<li></li>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Unlike the connectToHost:onPort:error: method, this method does not require a DNS lookup.</p>
+
+<p></div>
+<li>Thus when this method returns, the connection has either failed or fully completed.</li>
+<li>In other words, this method is synchronous, unlike the asynchronous connectToHost::: method.</li>
+<li>However, for compatibility and simplification of delegate code, if this method returns YES</li>
+<li>then the corresponding delegate method (udpSocket:didConnectToHost:port:) is still invoked.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">connectToAddress</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">remoteAddr</span> <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">errPtr</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">connect</span><span class="p">(</span><span class="n">toAddress</span> <span class="nv">remoteAddr</span><span class="p">:</span> <span class="kt">Data</span><span class="o">!</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Multicast"></a>
+                <a name="//apple_ref/objc/Section/Multicast" class="dashAnchor"></a>
+                <a href="#/Multicast">
+                  <h3 class="section-name">Multicast</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)joinMulticastGroup:error:"></a>
+                    <a name="//apple_ref/objc/Method/-joinMulticastGroup:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)joinMulticastGroup:error:">-joinMulticastGroup:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Join multicast group.</li>
+<li>Group should be an IP address (eg @<q>225.228.0.1</q>).</li>
+<li></li>
+<li>On success, returns YES.</li>
+<li>Otherwise returns NO, and sets errPtr. If you don&rsquo;t care about the error, you can pass nil for errPtr.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">joinMulticastGroup</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">group</span> <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">errPtr</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">joinMulticastGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)joinMulticastGroup:onInterface:error:"></a>
+                    <a name="//apple_ref/objc/Method/-joinMulticastGroup:onInterface:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)joinMulticastGroup:onInterface:error:">-joinMulticastGroup:onInterface:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Join multicast group.</li>
+<li>Group should be an IP address (eg @<q>225.228.0.1</q>).</li>
+<li>The interface may be a name (e.g. <q>en1</q> or <q>lo0</q>) or the corresponding IP address (e.g. <q>192.168.4.35</q>).</li>
+<li></li>
+<li>On success, returns YES.</li>
+<li>Otherwise returns NO, and sets errPtr. If you don&rsquo;t care about the error, you can pass nil for errPtr.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span> <span class="nf">joinMulticastGroup</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">group</span> <span class="nf">onInterface</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">interface</span> <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">errPtr</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">joinMulticastGroup</span><span class="p">(</span><span class="n">_</span> <span class="nv">group</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="n">onInterface</span> <span class="nv">interface</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)leaveMulticastGroup:error:"></a>
+                    <a name="//apple_ref/objc/Method/-leaveMulticastGroup:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)leaveMulticastGroup:error:">-leaveMulticastGroup:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)leaveMulticastGroup:onInterface:error:"></a>
+                    <a name="//apple_ref/objc/Method/-leaveMulticastGroup:onInterface:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)leaveMulticastGroup:onInterface:error:">-leaveMulticastGroup:onInterface:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Broadcast"></a>
+                <a name="//apple_ref/objc/Section/Broadcast" class="dashAnchor"></a>
+                <a href="#/Broadcast">
+                  <h3 class="section-name">Broadcast</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)enableBroadcast:error:"></a>
+                    <a name="//apple_ref/objc/Method/-enableBroadcast:error:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)enableBroadcast:error:">-enableBroadcast:error:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>By default, the underlying socket in the OS will not allow you to send broadcast messages.</li>
+<li>In order to send broadcast messages, you need to enable this functionality in the socket.</li>
+<li></li>
+<li>A broadcast is a UDP message to addresses like <q>192.168.255.255</q> or <q>255.255.255.255</q> that is</li>
+<li>delivered to every host on the network.</li>
+<li>The reason this is generally disabled by default (by the OS) is to prevent</li>
+<li>accidental broadcast messages from flooding the network.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">enableBroadcast</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">flag</span> <span class="nf">error</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">errPtr</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">enableBroadcast</span><span class="p">(</span><span class="n">_</span> <span class="nv">flag</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Sending"></a>
+                <a name="//apple_ref/objc/Section/Sending" class="dashAnchor"></a>
+                <a href="#/Sending">
+                  <h3 class="section-name">Sending</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)sendData:withTimeout:tag:"></a>
+                    <a name="//apple_ref/objc/Method/-sendData:withTimeout:tag:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)sendData:withTimeout:tag:">-sendData:withTimeout:tag:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Asynchronously sends the given data, with the given timeout and tag.</li>
+<li></li>
+<li>This method may only be used with a connected socket.</li>
+<li>Recall that connecting is optional for a UDP socket.</li>
+<li>For connected sockets, data can only be sent to the connected address.</li>
+<li>For non-connected sockets, the remote destination is specified for each packet.</li>
+<li>For more information about optionally connecting udp sockets, see the documentation for the connect methods above.</li>
+<li></li>
+<li>- parameter: data</li>
+<li>The data to send.</li>
+<li>If data is nil or zero-length, this method does nothing.</li>
+<li>If passing NSMutableData, please read the thread-safety notice below.</li>
+<li></li>
+<li>- parameter: timeout</li>
+<li>The timeout for the send opeartion.</li>
+<li>If the timeout value is negative, the send operation will not use a timeout.</li>
+<li></li>
+<li>- parameter: tag</li>
+<li>The tag is for your convenience.</li>
+<li>It is not sent or received over the socket in any manner what-so-ever.</li>
+<li>It is reported back as a parameter in the udpSocket:didSendDataWithTag:</li>
+<li>or udpSocket:didNotSendDataWithTag:dueToError: methods.</li>
+<li>You can use it as an array index, state id, type constant, etc.</li>
+<li></li>
+<li></li>
+<li>Thread-Safety Note:</li>
+<li>If the given data parameter is mutable (NSMutableData) then you MUST NOT alter the data while</li>
+<li>the socket is sending it. In other words, it&rsquo;s not safe to alter the data until after the delegate method</li>
+<li>udpSocket:didSendDataWithTag: or udpSocket:didNotSendDataWithTag:dueToError: is invoked signifying</li>
+<li>that this particular send operation has completed.</li>
+<li>This is due to the fact that GCDAsyncUdpSocket does NOT copy the data.</li>
+<li>It simply retains it for performance reasons.</li>
+<li>Often times, if NSMutableData is passed, it is because a request/response was built up in memory.</li>
+<li>Copying this data adds an unwanted/unneeded overhead.</li>
+<li>If you need to write data from an immutable buffer, and you need to alter the buffer before the socket</li>
+<li>completes sending the bytes (which is NOT immediately after this method returns, but rather at a later time</li>
+<li>when the delegate method notifies you), then you should first copy the bytes, and pass the copy to this method.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sendData</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">data</span>
+     <span class="nf">withTimeout</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">timeout</span>
+             <span class="nf">tag</span><span class="p">:(</span><span class="kt">long</span><span class="p">)</span><span class="nv">tag</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="o">!</span><span class="p">,</span> <span class="n">withTimeout</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The data to send.
+If data is nil or zero-length, this method does nothing.
+If passing NSMutableData, please read the thread-safety notice below.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The timeout for the send opeartion.
+If the timeout value is negative, the send operation will not use a timeout.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The tag is for your convenience.
+It is not sent or received over the socket in any manner what-so-ever.
+It is reported back as a parameter in the udpSocket:didSendDataWithTag:
+or udpSocket:didNotSendDataWithTag:dueToError: methods.
+You can use it as an array index, state id, type constant, etc.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)sendData:toHost:port:withTimeout:tag:"></a>
+                    <a name="//apple_ref/objc/Method/-sendData:toHost:port:withTimeout:tag:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)sendData:toHost:port:withTimeout:tag:">-sendData:toHost:port:withTimeout:tag:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Asynchronously sends the given data, with the given timeout and tag, to the given host and port.</li>
+<li></li>
+<li>This method cannot be used with a connected socket.</li>
+<li>Recall that connecting is optional for a UDP socket.</li>
+<li>For connected sockets, data can only be sent to the connected address.</li>
+<li>For non-connected sockets, the remote destination is specified for each packet.</li>
+<li>For more information about optionally connecting udp sockets, see the documentation for the connect methods above.</li>
+<li></li>
+<li>- parameter: data</li>
+<li>The data to send.</li>
+<li>If data is nil or zero-length, this method does nothing.</li>
+<li>If passing NSMutableData, please read the thread-safety notice below.</li>
+<li></li>
+<li>- parameter: host</li>
+<li>The destination to send the udp packet to.</li>
+<li>May be specified as a domain name (e.g. <q>deusty.com</q>) or an IP address string (e.g. <q>192.168.0.2</q>).</li>
+<li>You may also use the convenience strings of <q>loopback</q> or <q>localhost</q>.</li>
+<li></li>
+<li>- parameter: port</li>
+<li>The port of the host to send to.</li>
+<li></li>
+<li>- parameter: timeout</li>
+<li>The timeout for the send opeartion.</li>
+<li>If the timeout value is negative, the send operation will not use a timeout.</li>
+<li></li>
+<li>- parameter: tag</li>
+<li>The tag is for your convenience.</li>
+<li>It is not sent or received over the socket in any manner what-so-ever.</li>
+<li>It is reported back as a parameter in the udpSocket:didSendDataWithTag:</li>
+<li>or udpSocket:didNotSendDataWithTag:dueToError: methods.</li>
+<li>You can use it as an array index, state id, type constant, etc.</li>
+<li></li>
+<li></li>
+<li>Thread-Safety Note:</li>
+<li>If the given data parameter is mutable (NSMutableData) then you MUST NOT alter the data while</li>
+<li>the socket is sending it. In other words, it&rsquo;s not safe to alter the data until after the delegate method</li>
+<li>udpSocket:didSendDataWithTag: or udpSocket:didNotSendDataWithTag:dueToError: is invoked signifying</li>
+<li>that this particular send operation has completed.</li>
+<li>This is due to the fact that GCDAsyncUdpSocket does NOT copy the data.</li>
+<li>It simply retains it for performance reasons.</li>
+<li>Often times, if NSMutableData is passed, it is because a request/response was built up in memory.</li>
+<li>Copying this data adds an unwanted/unneeded overhead.</li>
+<li>If you need to write data from an immutable buffer, and you need to alter the buffer before the socket</li>
+<li>completes sending the bytes (which is NOT immediately after this method returns, but rather at a later time</li>
+<li>when the delegate method notifies you), then you should first copy the bytes, and pass the copy to this method.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sendData</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">data</span>
+          <span class="nf">toHost</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">host</span>
+            <span class="nf">port</span><span class="p">:(</span><span class="kt">uint16_t</span><span class="p">)</span><span class="nv">port</span>
+     <span class="nf">withTimeout</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">timeout</span>
+             <span class="nf">tag</span><span class="p">:(</span><span class="kt">long</span><span class="p">)</span><span class="nv">tag</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="o">!</span><span class="p">,</span> <span class="n">toHost</span> <span class="nv">host</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">UInt16</span><span class="p">,</span> <span class="n">withTimeout</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The data to send.
+If data is nil or zero-length, this method does nothing.
+If passing NSMutableData, please read the thread-safety notice below.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>host</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The destination to send the udp packet to.
+May be specified as a domain name (e.g. <q>deusty.com</q>) or an IP address string (e.g. <q>192.168.0.2</q>).
+You may also use the convenience strings of <q>loopback</q> or <q>localhost</q>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>port</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The port of the host to send to.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The timeout for the send opeartion.
+If the timeout value is negative, the send operation will not use a timeout.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The tag is for your convenience.
+It is not sent or received over the socket in any manner what-so-ever.
+It is reported back as a parameter in the udpSocket:didSendDataWithTag:
+or udpSocket:didNotSendDataWithTag:dueToError: methods.
+You can use it as an array index, state id, type constant, etc.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)sendData:toAddress:withTimeout:tag:"></a>
+                    <a name="//apple_ref/objc/Method/-sendData:toAddress:withTimeout:tag:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)sendData:toAddress:withTimeout:tag:">-sendData:toAddress:withTimeout:tag:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Asynchronously sends the given data, with the given timeout and tag, to the given address.</li>
+<li></li>
+<li>This method cannot be used with a connected socket.</li>
+<li>Recall that connecting is optional for a UDP socket.</li>
+<li>For connected sockets, data can only be sent to the connected address.</li>
+<li>For non-connected sockets, the remote destination is specified for each packet.</li>
+<li>For more information about optionally connecting udp sockets, see the documentation for the connect methods above.</li>
+<li></li>
+<li>- parameter: data</li>
+<li>The data to send.</li>
+<li>If data is nil or zero-length, this method does nothing.</li>
+<li>If passing NSMutableData, please read the thread-safety notice below.</li>
+<li></li>
+<li>- parameter: remoteAddr</li>
+<li>The address to send the data to (specified as a sockaddr structure wrapped in a NSData object).</li>
+<li></li>
+<li>- parameter: timeout</li>
+<li>The timeout for the send opeartion.</li>
+<li>If the timeout value is negative, the send operation will not use a timeout.</li>
+<li></li>
+<li>- parameter: tag</li>
+<li>The tag is for your convenience.</li>
+<li>It is not sent or received over the socket in any manner what-so-ever.</li>
+<li>It is reported back as a parameter in the udpSocket:didSendDataWithTag:</li>
+<li>or udpSocket:didNotSendDataWithTag:dueToError: methods.</li>
+<li>You can use it as an array index, state id, type constant, etc.</li>
+<li></li>
+<li></li>
+<li>Thread-Safety Note:</li>
+<li>If the given data parameter is mutable (NSMutableData) then you MUST NOT alter the data while</li>
+<li>the socket is sending it. In other words, it&rsquo;s not safe to alter the data until after the delegate method</li>
+<li>udpSocket:didSendDataWithTag: or udpSocket:didNotSendDataWithTag:dueToError: is invoked signifying</li>
+<li>that this particular send operation has completed.</li>
+<li>This is due to the fact that GCDAsyncUdpSocket does NOT copy the data.</li>
+<li>It simply retains it for performance reasons.</li>
+<li>Often times, if NSMutableData is passed, it is because a request/response was built up in memory.</li>
+<li>Copying this data adds an unwanted/unneeded overhead.</li>
+<li>If you need to write data from an immutable buffer, and you need to alter the buffer before the socket</li>
+<li>completes sending the bytes (which is NOT immediately after this method returns, but rather at a later time</li>
+<li>when the delegate method notifies you), then you should first copy the bytes, and pass the copy to this method.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sendData</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">data</span>
+       <span class="nf">toAddress</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">remoteAddr</span>
+     <span class="nf">withTimeout</span><span class="p">:(</span><span class="n">NSTimeInterval</span><span class="p">)</span><span class="nv">timeout</span>
+             <span class="nf">tag</span><span class="p">:(</span><span class="kt">long</span><span class="p">)</span><span class="nv">tag</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="o">!</span><span class="p">,</span> <span class="n">toAddress</span> <span class="nv">remoteAddr</span><span class="p">:</span> <span class="kt">Data</span><span class="o">!</span><span class="p">,</span> <span class="n">withTimeout</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The data to send.
+If data is nil or zero-length, this method does nothing.
+If passing NSMutableData, please read the thread-safety notice below.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>remoteAddr</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The address to send the data to (specified as a sockaddr structure wrapped in a NSData object).</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The timeout for the send opeartion.
+If the timeout value is negative, the send operation will not use a timeout.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The tag is for your convenience.
+It is not sent or received over the socket in any manner what-so-ever.
+It is reported back as a parameter in the udpSocket:didSendDataWithTag:
+or udpSocket:didNotSendDataWithTag:dueToError: methods.
+You can use it as an array index, state id, type constant, etc.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setSendFilter:withQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-setSendFilter:withQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setSendFilter:withQueue:">-setSendFilter:withQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><li>You may optionally set a send filter for the socket.</li>
+<li>A filter can provide several interesting possibilities:</li>
+<li></li>
+<li>1. Optional caching of resolved addresses for domain names.</li>
+<li>The cache could later be consulted, resulting in fewer system calls to getaddrinfo.</li>
+<li></li>
+<li>2. Reusable modules of code for bandwidth monitoring.</li>
+<li></li>
+<li>3. Sometimes traffic shapers are needed to simulate real world environments.</li>
+<li>A filter allows you to write custom code to simulate such environments.</li>
+<li>The ability to code this yourself is especially helpful when your simulated environment</li>
+<li>is more complicated than simple traffic shaping (e.g. simulating a cone port restricted router),</li>
+<li>or the system tools to handle this aren&rsquo;t available (e.g. on a mobile device).</li>
+<li></li>
+<li>For more information about GCDAsyncUdpSocketSendFilterBlock, see the documentation for its typedef.</li>
+<li>To remove a previously set filter, invoke this method and pass a nil filterBlock and NULL filterQueue.</li>
+<li></li>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This method invokes setSendFilter:withQueue:isAsynchronous: (documented below),</p>
+
+<p></div>
+<li>passing YES for the isAsynchronous parameter.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setSendFilter</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:GCDAsyncUdpSocket.h@T@GCDAsyncUdpSocketSendFilterBlock">GCDAsyncUdpSocketSendFilterBlock</a></span><span class="p">)</span><span class="nv">filterBlock</span>
+            <span class="nf">withQueue</span><span class="p">:(</span><span class="n">dispatch_queue_t</span><span class="p">)</span><span class="nv">filterQueue</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setSendFilter</span><span class="p">(</span><span class="n">_</span> <span class="nv">filterBlock</span><span class="p">:</span> <span class="kt"><a href="../Type Definitions.html#/c:GCDAsyncUdpSocket.h@T@GCDAsyncUdpSocketSendFilterBlock">GCDAsyncUdpSocketSendFilterBlock</a></span><span class="o">!</span><span class="p">,</span> <span class="n">with</span> <span class="nv">filterQueue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setSendFilter:withQueue:isAsynchronous:"></a>
+                    <a name="//apple_ref/objc/Method/-setSendFilter:withQueue:isAsynchronous:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setSendFilter:withQueue:isAsynchronous:">-setSendFilter:withQueue:isAsynchronous:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><li>The receive filter can be run via dispatch_async or dispatch_sync.</li>
+<li>Most typical situations call for asynchronous operation.</li>
+<li></li>
+<li>However, there are a few situations in which synchronous operation is preferred.</li>
+<li>Such is the case when the filter is extremely minimal and fast.</li>
+<li>This is because dispatch_sync is faster than dispatch_async.</li>
+<li></li>
+<li>If you choose synchronous operation, be aware of possible deadlock conditions.</li>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since the socket queue is executing your block via dispatch_sync,</p>
+
+<p></div>
+<li>then you cannot perform any tasks which may invoke dispatch_sync on the socket queue.</li>
+<li>For example, you can&rsquo;t query properties on the socket.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setSendFilter</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:GCDAsyncUdpSocket.h@T@GCDAsyncUdpSocketSendFilterBlock">GCDAsyncUdpSocketSendFilterBlock</a></span><span class="p">)</span><span class="nv">filterBlock</span>
+            <span class="nf">withQueue</span><span class="p">:(</span><span class="n">dispatch_queue_t</span><span class="p">)</span><span class="nv">filterQueue</span>
+       <span class="nf">isAsynchronous</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isAsynchronous</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setSendFilter</span><span class="p">(</span><span class="n">_</span> <span class="nv">filterBlock</span><span class="p">:</span> <span class="kt"><a href="../Type Definitions.html#/c:GCDAsyncUdpSocket.h@T@GCDAsyncUdpSocketSendFilterBlock">GCDAsyncUdpSocketSendFilterBlock</a></span><span class="o">!</span><span class="p">,</span> <span class="n">with</span> <span class="nv">filterQueue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="o">!</span><span class="p">,</span> <span class="nv">isAsynchronous</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Receiving"></a>
+                <a name="//apple_ref/objc/Section/Receiving" class="dashAnchor"></a>
+                <a href="#/Receiving">
+                  <h3 class="section-name">Receiving</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)receiveOnce:"></a>
+                    <a name="//apple_ref/objc/Method/-receiveOnce:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)receiveOnce:">-receiveOnce:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>There are two modes of operation for receiving packets: one-at-a-time &amp; continuous.</li>
+<li></li>
+<li>In one-at-a-time mode, you call receiveOnce everytime your delegate is ready to process an incoming udp packet.</li>
+<li>Receiving packets one-at-a-time may be better suited for implementing certain state machine code,</li>
+<li>where your state machine may not always be ready to process incoming packets.</li>
+<li></li>
+<li>In continuous mode, the delegate is invoked immediately everytime incoming udp packets are received.</li>
+<li>Receiving packets continuously is better suited to real-time streaming applications.</li>
+<li></li>
+<li>You may switch back and forth between one-at-a-time mode and continuous mode.</li>
+<li>If the socket is currently in continuous mode, calling this method will switch it to one-at-a-time mode.</li>
+<li></li>
+<li>When a packet is received (and not filtered by the optional receive filter),</li>
+<li>the delegate method (udpSocket:didReceiveData:fromAddress:withFilterContext:) is invoked.</li>
+<li></li>
+<li>If the socket is able to begin receiving packets, this method returns YES.</li>
+<li>Otherwise it returns NO, and sets the errPtr with appropriate error information.</li>
+<li></li>
+<li>An example error:</li>
+<li>You created a udp socket to act as a server, and immediately called receive.</li>
+<li>You forgot to first bind the socket to a port number, and received a error with a message like:</li>
+<li><q>Must bind socket before you can receive data.</q></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">receiveOnce</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">errPtr</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">receiveOnce</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)beginReceiving:"></a>
+                    <a name="//apple_ref/objc/Method/-beginReceiving:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)beginReceiving:">-beginReceiving:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>There are two modes of operation for receiving packets: one-at-a-time &amp; continuous.</li>
+<li></li>
+<li>In one-at-a-time mode, you call receiveOnce everytime your delegate is ready to process an incoming udp packet.</li>
+<li>Receiving packets one-at-a-time may be better suited for implementing certain state machine code,</li>
+<li>where your state machine may not always be ready to process incoming packets.</li>
+<li></li>
+<li>In continuous mode, the delegate is invoked immediately everytime incoming udp packets are received.</li>
+<li>Receiving packets continuously is better suited to real-time streaming applications.</li>
+<li></li>
+<li>You may switch back and forth between one-at-a-time mode and continuous mode.</li>
+<li>If the socket is currently in one-at-a-time mode, calling this method will switch it to continuous mode.</li>
+<li></li>
+<li>For every received packet (not filtered by the optional receive filter),</li>
+<li>the delegate method (udpSocket:didReceiveData:fromAddress:withFilterContext:) is invoked.</li>
+<li></li>
+<li>If the socket is able to begin receiving packets, this method returns YES.</li>
+<li>Otherwise it returns NO, and sets the errPtr with appropriate error information.</li>
+<li></li>
+<li>An example error:</li>
+<li>You created a udp socket to act as a server, and immediately called receive.</li>
+<li>You forgot to first bind the socket to a port number, and received a error with a message like:</li>
+<li><q>Must bind socket before you can receive data.</q></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">beginReceiving</span><span class="p">:(</span><span class="n">NSError</span> <span class="o">**</span><span class="p">)</span><span class="nv">errPtr</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">beginReceiving</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)pauseReceiving"></a>
+                    <a name="//apple_ref/objc/Method/-pauseReceiving" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)pauseReceiving">-pauseReceiving</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><li>If the socket is currently receiving (beginReceiving has been called), this method pauses the receiving.</li>
+<li>That is, it won&rsquo;t read any more packets from the underlying OS socket until beginReceiving is called again.</li>
+<li></li>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    Important Note:</p>
+
+<p></div>
+<li>GCDAsyncUdpSocket may be running in parallel with your code.</li>
+<li>That is, your delegate is likely running on a separate thread/dispatch_queue.</li>
+<li>When you invoke this method, GCDAsyncUdpSocket may have already dispatched delegate methods to be invoked.</li>
+<li>Thus, if those delegate methods have already been dispatch_async&rsquo;d,</li>
+<li>your didReceive delegate method may still be invoked after this method has been called.</li>
+<li>You should be aware of this, and program defensively.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">pauseReceiving</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">pauseReceiving</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setReceiveFilter:withQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-setReceiveFilter:withQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setReceiveFilter:withQueue:">-setReceiveFilter:withQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><li>You may optionally set a receive filter for the socket.</li>
+<li>This receive filter may be set to run in its own queue (independent of delegate queue).</li>
+<li></li>
+<li>A filter can provide several useful features.</li>
+<li></li>
+<li>1. Many times udp packets need to be parsed.</li>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+       Since the filter can run in its own independent queue, you can parallelize this parsing quite easily.</p>
+
+<p></div>
+<li>The end result is a parallel socket io, datagram parsing, and packet processing.</li>
+<li></li>
+<li>2. Many times udp packets are discarded because they are duplicate/unneeded/unsolicited.</li>
+<li>The filter can prevent such packets from arriving at the delegate.</li>
+<li>And because the filter can run in its own independent queue, this doesn&rsquo;t slow down the delegate.</li>
+<li></li>
+<li>- Since the udp protocol does not guarantee delivery, udp packets may be lost.</li>
+<li>Many protocols built atop udp thus provide various resend/re-request algorithms.</li>
+<li>This sometimes results in duplicate packets arriving.</li>
+<li>A filter may allow you to architect the duplicate detection code to run in parallel to normal processing.</li>
+<li><br></li>
+<li>- Since the udp socket may be connectionless, its possible for unsolicited packets to arrive.</li>
+<li>Such packets need to be ignored.</li>
+<li></li>
+<li>3. Sometimes traffic shapers are needed to simulate real world environments.</li>
+<li>A filter allows you to write custom code to simulate such environments.</li>
+<li>The ability to code this yourself is especially helpful when your simulated environment</li>
+<li>is more complicated than simple traffic shaping (e.g. simulating a cone port restricted router),</li>
+<li>or the system tools to handle this aren&rsquo;t available (e.g. on a mobile device).</li>
+<li></li>
+<li>Example:</li>
+<li></li>
+<li>GCDAsyncUdpSocketReceiveFilterBlock filter = ^BOOL (NSData *data, NSData *address, id *context) {</li>
+<li></li>
+<li>MyProtocolMessage *msg = [MyProtocol parseMessage:data];</li>
+<li><br></li>
+<li>*context = response;</li>
+<li>return (response != nil);</li>
+<li>};</li>
+<li>[udpSocket setReceiveFilter:filter withQueue:myParsingQueue];</li>
+<li></li>
+<li>For more information about GCDAsyncUdpSocketReceiveFilterBlock, see the documentation for its typedef.</li>
+<li>To remove a previously set filter, invoke this method and pass a nil filterBlock and NULL filterQueue.</li>
+<li></li>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This method invokes setReceiveFilter:withQueue:isAsynchronous: (documented below),</p>
+
+<p></div>
+<li>passing YES for the isAsynchronous parameter.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setReceiveFilter</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:GCDAsyncUdpSocket.h@T@GCDAsyncUdpSocketReceiveFilterBlock">GCDAsyncUdpSocketReceiveFilterBlock</a></span><span class="p">)</span><span class="nv">filterBlock</span>
+               <span class="nf">withQueue</span><span class="p">:(</span><span class="n">dispatch_queue_t</span><span class="p">)</span><span class="nv">filterQueue</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setReceiveFilter</span><span class="p">(</span><span class="n">_</span> <span class="nv">filterBlock</span><span class="p">:</span> <span class="kt"><a href="../Type Definitions.html#/c:GCDAsyncUdpSocket.h@T@GCDAsyncUdpSocketReceiveFilterBlock">GCDAsyncUdpSocketReceiveFilterBlock</a></span><span class="o">!</span><span class="p">,</span> <span class="n">with</span> <span class="nv">filterQueue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)setReceiveFilter:withQueue:isAsynchronous:"></a>
+                    <a name="//apple_ref/objc/Method/-setReceiveFilter:withQueue:isAsynchronous:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)setReceiveFilter:withQueue:isAsynchronous:">-setReceiveFilter:withQueue:isAsynchronous:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><li>The receive filter can be run via dispatch_async or dispatch_sync.</li>
+<li>Most typical situations call for asynchronous operation.</li>
+<li></li>
+<li>However, there are a few situations in which synchronous operation is preferred.</li>
+<li>Such is the case when the filter is extremely minimal and fast.</li>
+<li>This is because dispatch_sync is faster than dispatch_async.</li>
+<li></li>
+<li>If you choose synchronous operation, be aware of possible deadlock conditions.</li>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since the socket queue is executing your block via dispatch_sync,</p>
+
+<p></div>
+<li>then you cannot perform any tasks which may invoke dispatch_sync on the socket queue.</li>
+<li>For example, you can&rsquo;t query properties on the socket.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setReceiveFilter</span><span class="p">:(</span><span class="n"><a href="../Type Definitions.html#/c:GCDAsyncUdpSocket.h@T@GCDAsyncUdpSocketReceiveFilterBlock">GCDAsyncUdpSocketReceiveFilterBlock</a></span><span class="p">)</span><span class="nv">filterBlock</span>
+               <span class="nf">withQueue</span><span class="p">:(</span><span class="n">dispatch_queue_t</span><span class="p">)</span><span class="nv">filterQueue</span>
+          <span class="nf">isAsynchronous</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">isAsynchronous</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setReceiveFilter</span><span class="p">(</span><span class="n">_</span> <span class="nv">filterBlock</span><span class="p">:</span> <span class="kt"><a href="../Type Definitions.html#/c:GCDAsyncUdpSocket.h@T@GCDAsyncUdpSocketReceiveFilterBlock">GCDAsyncUdpSocketReceiveFilterBlock</a></span><span class="o">!</span><span class="p">,</span> <span class="n">with</span> <span class="nv">filterQueue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="o">!</span><span class="p">,</span> <span class="nv">isAsynchronous</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Closing"></a>
+                <a name="//apple_ref/objc/Section/Closing" class="dashAnchor"></a>
+                <a href="#/Closing">
+                  <h3 class="section-name">Closing</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)close"></a>
+                    <a name="//apple_ref/objc/Method/-close" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)close">-close</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Immediately closes the underlying socket.</li>
+<li>Any pending send operations are discarded.</li>
+<li></li>
+<li>The GCDAsyncUdpSocket instance may optionally be used again.</li>
+<li>(it will setup/configure/use another unnderlying BSD socket).</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">close</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">close</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)closeAfterSending"></a>
+                    <a name="//apple_ref/objc/Method/-closeAfterSending" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)closeAfterSending">-closeAfterSending</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Closes the underlying socket after all pending send operations have been sent.</li>
+<li></li>
+<li>The GCDAsyncUdpSocket instance may optionally be used again.</li>
+<li>(it will setup/configure/use another unnderlying BSD socket).</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">closeAfterSending</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">closeAfterSending</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Advanced"></a>
+                <a name="//apple_ref/objc/Section/Advanced" class="dashAnchor"></a>
+                <a href="#/Advanced">
+                  <h3 class="section-name">Advanced</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)markSocketQueueTargetQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-markSocketQueueTargetQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)markSocketQueueTargetQueue:">-markSocketQueueTargetQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>GCDAsyncSocket maintains thread safety by using an internal serial dispatch_queue.
+ In most cases, the instance creates this queue itself.
+ However, to allow for maximum flexibility, the internal queue may be passed in the init method.
+ This allows for some advanced options such as controlling socket priority via target queues.
+ However, when one begins to use target queues like this, they open the door to some specific deadlock issues.</p>
+
+<p>For example, imagine there are 2 queues:
+ dispatch_queue_t socketQueue;
+ dispatch_queue_t socketTargetQueue;</p>
+
+<p>If you do this (pseudo-code):
+ socketQueue.targetQueue = socketTargetQueue;</p>
+
+<p>Then all socketQueue operations will actually get run on the given socketTargetQueue.
+ This is fine and works great in most situations.
+ But if you run code directly from within the socketTargetQueue that accesses the socket,
+ you could potentially get deadlock. Imagine the following code:</p>
+
+<ul>
+<li><p>(BOOL)socketHasSomething
+{
+ _<em>block BOOL result = NO;
+ dispatch_block_t block = ^{
+     result = [self someInternalMethodToBeRunOnlyOnSocketQueue];
+ }
+ if (is</em>executing_on_queue(socketQueue))
+     block();
+ else
+     dispatch_sync(socketQueue, block);</p>
+
+<p>return result;
+}</p></li>
+</ul>
+
+<p>What happens if you call this method from the socketTargetQueue? The result is deadlock.
+ This is because the GCD API offers no mechanism to discover a queue&rsquo;s targetQueue.
+ Thus we have no idea if our socketQueue is configured with a targetQueue.
+ If we had this information, we could easily avoid deadlock.
+ But, since these API&rsquo;s are missing or unfeasible, you&rsquo;ll have to explicitly set it.</p>
+
+<p>IF you pass a socketQueue via the init method,
+ AND you&rsquo;ve configured the passed socketQueue with a targetQueue,
+ THEN you should pass the end queue in the target hierarchy.</p>
+
+<p>For example, consider the following queue hierarchy:
+ socketQueue -&gt; ipQueue -&gt; moduleQueue</p>
+
+<p>This example demonstrates priority shaping within some server.
+ All incoming client connections from the same IP address are executed on the same target queue.
+ And all connections for a particular module are executed on the same target queue.
+ Thus, the priority of all networking for the entire module can be changed on the fly.
+ Additionally, networking traffic from a single IP cannot monopolize the module.</p>
+
+<p>Here&rsquo;s how you would accomplish something like that:
+ - (dispatch_queue_t)newSocketQueueForConnectionFromAddress:(NSData *)address onSocket:(GCDAsyncSocket *)sock
+ {
+     dispatch_queue_t socketQueue = dispatch_queue_create(&ldquo;&rdquo;, NULL);
+     dispatch_queue_t ipQueue = [self ipQueueForAddress:address];</p>
+
+<pre class="highlight plaintext"><code> dispatch_set_target_queue(socketQueue, ipQueue);
+ dispatch_set_target_queue(iqQueue, moduleQueue);
+
+ return socketQueue;
+</code></pre>
+
+<p>}
+ - (void)socket:(GCDAsyncSocket *)sock didAcceptNewSocket:(GCDAsyncSocket *)newSocket
+ {
+     [clientConnections addObject:newSocket];
+     [newSocket markSocketQueueTargetQueue:moduleQueue];
+ }</p>
+
+<p>Note: This workaround is ONLY needed if you intend to execute code directly on the ipQueue or moduleQueue.
+ This is often NOT the case, as such queues are used solely for execution shaping.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">markSocketQueueTargetQueue</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">dispatch_queue_t</span><span class="p">)</span><span class="nv">socketQueuesPreConfiguredTargetQueue</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">markQueueTargetQueue</span><span class="p">(</span><span class="n">_</span> <span class="nv">socketQueuesPreConfiguredTargetQueue</span><span class="p">:</span> <span class="kt">DispatchQueue</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)unmarkSocketQueueTargetQueue:"></a>
+                    <a name="//apple_ref/objc/Method/-unmarkSocketQueueTargetQueue:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)unmarkSocketQueueTargetQueue:">-unmarkSocketQueueTargetQueue:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)performBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-performBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)performBlock:">-performBlock:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>It&rsquo;s not thread-safe to access certain variables from outside the socket&rsquo;s internal queue.</li>
+<li></li>
+<li>For example, the socket file descriptor.</li>
+<li>File descriptors are simply integers which reference an index in the per-process file table.</li>
+<li>However, when one requests a new file descriptor (by opening a file or socket),</li>
+<li>the file descriptor returned is guaranteed to be the lowest numbered unused descriptor.</li>
+<li>So if we&rsquo;re not careful, the following could be possible:</li>
+<li></li>
+<li>- Thread A invokes a method which returns the socket&rsquo;s file descriptor.</li>
+<li>- The socket is closed via the socket&rsquo;s internal queue on thread B.</li>
+<li>- Thread C opens a file, and subsequently receives the file descriptor that was previously the socket&rsquo;s FD.</li>
+<li>- Thread A is now accessing/altering the file instead of the socket.</li>
+<li></li>
+<li>In addition to this, other variables are not actually objects,</li>
+<li>and thus cannot be retained/released or even autoreleased.</li>
+<li>An example is the sslContext, of type SSLContextRef, which is actually a malloc&rsquo;d struct.</li>
+<li></li>
+<li>Although there are internal variables that make it difficult to maintain thread-safety,</li>
+<li>it is important to provide access to these variables</li>
+<li>to ensure this class can be used in a wide array of environments.</li>
+<li>This method helps to accomplish this by invoking the current block on the socket&rsquo;s internal queue.</li>
+<li>The methods below can be invoked from within the block to access</li>
+<li>those generally thread-unsafe internal variables in a thread-safe manner.</li>
+<li>The given block will be invoked synchronously on the socket&rsquo;s internal queue.</li>
+<li></li>
+<li>If you save references to any protected variables and use them outside the block, you do so at your own peril.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">performBlock</span><span class="p">:(</span><span class="n">dispatch_block_t</span><span class="p">)</span><span class="nv">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">perform</span><span class="p">(</span><span class="n">_</span> <span class="nv">block</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)socketFD"></a>
+                    <a name="//apple_ref/objc/Method/-socketFD" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)socketFD">-socketFD</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><li>These methods are only available from within the context of a performBlock: invocation.</li>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    See the documentation for the performBlock: method above.</p>
+
+<p></div>
+<li></li>
+<li>Provides access to the socket&rsquo;s file descriptor(s).</li>
+<li>If the socket isn&rsquo;t connected, or explicity bound to a particular interface,</li>
+<li>it might actually have multiple internal socket file descriptors - one for IPv4 and one for IPv6.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">socketFD</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">socketFD</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)socket4FD"></a>
+                    <a name="//apple_ref/objc/Method/-socket4FD" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)socket4FD">-socket4FD</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)socket6FD"></a>
+                    <a name="//apple_ref/objc/Method/-socket6FD" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)socket6FD">-socket6FD</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)readStream"></a>
+                    <a name="//apple_ref/objc/Method/-readStream" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)readStream">-readStream</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><li>These methods are only available from within the context of a performBlock: invocation.</li>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    See the documentation for the performBlock: method above.</p>
+
+<p></div>
+<li></li>
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    Returns (creating if necessary) a CFReadStream/CFWriteStream for the internal socket.</p>
+
+<p></div>
+<li></li>
+<li>Generally GCDAsyncUdpSocket doesn&rsquo;t use CFStream. (It uses the faster GCD API&rsquo;s.)</li>
+<li>However, if you need one for any reason,</li>
+<li>these methods are a convenient way to get access to a safe instance of one.</li></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">CFReadStreamRef</span><span class="p">)</span><span class="n">readStream</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(im)writeStream"></a>
+                    <a name="//apple_ref/objc/Method/-writeStream" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(im)writeStream">-writeStream</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Utilities"></a>
+                <a name="//apple_ref/objc/Section/Utilities" class="dashAnchor"></a>
+                <a href="#/Utilities">
+                  <h3 class="section-name">Utilities</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(cm)hostFromAddress:"></a>
+                    <a name="//apple_ref/objc/Method/+hostFromAddress:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(cm)hostFromAddress:">+hostFromAddress:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <ul>
+<li>Extracting host/port/family information from raw address data.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">hostFromAddress</span><span class="p">:(</span><span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">address</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">host</span><span class="p">(</span><span class="n">fromAddress</span> <span class="nv">address</span><span class="p">:</span> <span class="kt">Data</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(cm)portFromAddress:"></a>
+                    <a name="//apple_ref/objc/Method/+portFromAddress:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(cm)portFromAddress:">+portFromAddress:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(cm)familyFromAddress:"></a>
+                    <a name="//apple_ref/objc/Method/+familyFromAddress:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(cm)familyFromAddress:">+familyFromAddress:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(cm)isIPv4Address:"></a>
+                    <a name="//apple_ref/objc/Method/+isIPv4Address:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(cm)isIPv4Address:">+isIPv4Address:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(cm)isIPv6Address:"></a>
+                    <a name="//apple_ref/objc/Method/+isIPv6Address:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(cm)isIPv6Address:">+isIPv6Address:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(cm)getHost:port:fromAddress:"></a>
+                    <a name="//apple_ref/objc/Method/+getHost:port:fromAddress:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(cm)getHost:port:fromAddress:">+getHost:port:fromAddress:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)GCDAsyncUdpSocket(cm)getHost:port:family:fromAddress:"></a>
+                    <a name="//apple_ref/objc/Method/+getHost:port:family:fromAddress:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)GCDAsyncUdpSocket(cm)getHost:port:family:fromAddress:">+getHost:port:family:fromAddress:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">GCDAsyncUdpSocket</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; British Broadcasting Corporation, under <a class="link" href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="external">Apache 2.0 open source licence</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

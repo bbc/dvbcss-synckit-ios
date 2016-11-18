@@ -1,0 +1,292 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 16,
+      "symbol": "kprotocolVersion",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 17,
+      "symbol": "kMRSUrl",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 18,
+      "symbol": "kcontentId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 19,
+      "symbol": "kcontentIdStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 20,
+      "symbol": "kpresentationStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 21,
+      "symbol": "kwcUrl",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 22,
+      "symbol": "ktsUrl",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 23,
+      "symbol": "ktimelines",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 24,
+      "symbol": "ktimelineSelector",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 25,
+      "symbol": "ktimelineProperties",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 26,
+      "symbol": "kunitsPerTick",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 27,
+      "symbol": "kunitsPerSecond",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CII.h",
+      "line": 28,
+      "symbol": "kaccuracy",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 32,
+      "symbol": "CIIChangeStatus",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 34,
+      "symbol": "CIIChangeStatus.CIIChangeStatus.NewCIIReceived",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 34,
+      "symbol": "CIIChangeStatus.NewCIIReceived",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 35,
+      "symbol": "CIIChangeStatus.CIIChangeStatus.MRSUrlChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 35,
+      "symbol": "CIIChangeStatus.MRSUrlChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 36,
+      "symbol": "CIIChangeStatus.CIIChangeStatus.ContentIdChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 36,
+      "symbol": "CIIChangeStatus.ContentIdChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 37,
+      "symbol": "CIIChangeStatus.CIIChangeStatus.ContentIdStatusChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 37,
+      "symbol": "CIIChangeStatus.ContentIdStatusChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 38,
+      "symbol": "CIIChangeStatus.CIIChangeStatus.PresentationStatusChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 38,
+      "symbol": "CIIChangeStatus.PresentationStatusChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 39,
+      "symbol": "CIIChangeStatus.CIIChangeStatus.WCSUrlChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 39,
+      "symbol": "CIIChangeStatus.WCSUrlChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 40,
+      "symbol": "CIIChangeStatus.CIIChangeStatus.TSSUrlChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 40,
+      "symbol": "CIIChangeStatus.TSSUrlChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 41,
+      "symbol": "CIIChangeStatus.CIIChangeStatus.TimelineSelectorChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 41,
+      "symbol": "CIIChangeStatus.TimelineSelectorChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 42,
+      "symbol": "CIIChangeStatus.CIIChangeStatus.TimelinesChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 42,
+      "symbol": "CIIChangeStatus.TimelinesChanged",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 49,
+      "symbol": "kCIIConnectionFailure",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 50,
+      "symbol": "kCIIDidChange",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIClient.h",
+      "line": 55,
+      "symbol": "kCIIChangeStatusMask",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIProtocolClient.h",
+      "line": 24,
+      "symbol": "CIIProtocolClientVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/CIIProtocolClient.h",
+      "line": 27,
+      "symbol": "CIIProtocolClientVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/TimelineOption.h",
+      "line": 67,
+      "symbol": "TimelineOption.-isEqual:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/TimelineProperties.h",
+      "line": 17,
+      "symbol": "TimelineProperties.unitsPerTick",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/TimelineProperties.h",
+      "line": 18,
+      "symbol": "TimelineProperties.unitsPerSecond",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient/CIIProtocolClient/TimelineProperties.h",
+      "line": 19,
+      "symbol": "TimelineProperties.accuracy",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/CIIProtocolClient"
+}

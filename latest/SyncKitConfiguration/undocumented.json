@@ -1,0 +1,173 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/ConfigReader.h",
+      "line": 38,
+      "symbol": "ConfigReader.+getInstanceWithConfigFile:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitConfiguration.h",
+      "line": 25,
+      "symbol": "SyncKitConfigurationVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitConfiguration.h",
+      "line": 28,
+      "symbol": "SyncKitConfigurationVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 30,
+      "symbol": "SyncKitGlobals.ClientWCPrecisionInNanos",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 31,
+      "symbol": "SyncKitGlobals.ClientWCFrequencyError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 32,
+      "symbol": "SyncKitGlobals.CachedWCREQTimeOutUSecs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 33,
+      "symbol": "SyncKitGlobals.CachedWCRESPTimeOutUSecs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 34,
+      "symbol": "SyncKitGlobals.WCREQSendPeriodUSecs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 35,
+      "symbol": "SyncKitGlobals.SyncAccuracyTargetMilliSecs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 40,
+      "symbol": "SyncKitGlobals.ServerWCPrecisionInNanos",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 41,
+      "symbol": "SyncKitGlobals.ServerWCFrequencyError",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 43,
+      "symbol": "SyncKitGlobals.SocketSelectTimeOutUSecs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 46,
+      "symbol": "SyncKitGlobals.ciiURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 47,
+      "symbol": "SyncKitGlobals.mrsURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 48,
+      "symbol": "SyncKitGlobals.wcURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 49,
+      "symbol": "SyncKitGlobals.tsURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 50,
+      "symbol": "SyncKitGlobals.teURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 51,
+      "symbol": "SyncKitGlobals.tweetURL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 52,
+      "symbol": "SyncKitGlobals.serviceTimeOutSecs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 54,
+      "symbol": "SyncKitGlobals.DIAL_AppDiscoveryTimeoutSecs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 55,
+      "symbol": "SyncKitGlobals.ServiceCacheRefreshIntervalSecs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 56,
+      "symbol": "SyncKitGlobals.ServiceSearchIntervalSecs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 57,
+      "symbol": "SyncKitGlobals.WCRTTThresholdMSecs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration/SyncKitConfiguration/SyncKitGlobals.h",
+      "line": 59,
+      "symbol": "SyncKitGlobals.+getInstance",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitConfiguration"
+}

@@ -12,7 +12,6 @@ custom_categories:
       - Synchronised video demo app
     - name: Frameworks
       children:
-      - AsyncSocket
       - AudioPlayerEngine
       - CIIProtocolClient
       - ClockTimelines
@@ -27,6 +26,13 @@ custom_categories:
       - UDPMessaging
       - VideoPlayer
       - WallClockClient
+    - name: Internal frameworks
+      children:
+      - AsyncSocket
+    - name: 3rd party internal frameworks
+      children:
+      - JSONModelFramework
+      - SocketRocket
       
     
 # Remaining config comes from when concatenated with common jazzy config in repository root

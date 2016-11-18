@@ -1,4 +1,4 @@
-# SyncKitConfiguration Framework
+# <small>dvbcss-synckit-ios</small><br/>SyncKitConfiguration Framework
 
 An optional configurator component whose role is to load all components required to enable
 TV discovery, wallclock synchronisation, content identification and timeline synchronisation.

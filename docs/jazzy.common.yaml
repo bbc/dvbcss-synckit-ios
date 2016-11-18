@@ -8,10 +8,4 @@ copyright: '&copy; British Broadcasting Corporation, under [Apache 2.0 open sour
 github_url: https://github.com/bbc/dvbcss-synckit-ios
 sdk: iphonesimulator
 theme: fullwidth
-head: >
-    <div style="margin:0; width: 100%; padding: 8px 0 0 8px;" class="header">
-        <a href="../index.html" style="margin: 0; padding: 0 8px; font-weight: bold; color:white;">
-            dvbcss-synckit-ios
-        </a>
-    </div>
-
+hide_documentation_coverage: true

@@ -1,6 +1,6 @@
-# A Video Stream Synchronisation Demo App using SyncKit's Synchroniser object
+# <small>dvbcss-synckit-ios</small><br/>A simple synchronised video demo companion app
 
-This demo app demonstrates the synchronisation of companion videos to a broadcast stream that embeds a TEMI timeline.
+This demo app demonstrates the synchronisation of companion videos to a broadcast stream that embeds a TEMI timeline using SyncKit's [CSASynchroniser framework](http://bbc.github.io/dvbcss-synckit-ios/latest/CSASynchroniser/index.html).
 
 It provides an example of how to the use of the SyncKit library's Synchroniser object. It shows how in response to a change of contentId signalled by the TV, the companion screen app can load a relevant media object and register it with a Synchroniser object for synchronisation.
 

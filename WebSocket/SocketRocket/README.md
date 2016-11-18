@@ -4,6 +4,6 @@ A conforming WebSocket (RFC 6455) client library for iOS, macOS and tvOS. This i
 
 ## Licence
 
-The SocketRocket iOS Framework is included as part of the Synckit Librart which is distributed under Licensed under the Apache License, [Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+The SocketRocket iOS Framework is included as part of dvbcss-synckit-ios which is distributed under Licensed under the Apache License, [Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
-© Copyright 2016 BBC R&D. All Rights Reserved
+See [LICENSE](LICENSE) for original licence.

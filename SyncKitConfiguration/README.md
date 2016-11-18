@@ -1,4 +1,4 @@
-# SyncKitConfiguration Framework
+# <small>dvbcss-synckit-ios</small><br/>SyncKitConfiguration Framework
 
 
 A library to read configuration key-value pairs from a config file and make them globally available. The ConfigReader class provides the functionality to read values from a specified config file and convert them to the appropriate type. SyncKitGlobals is a convenience class to load known config constants for the SyncKit library.

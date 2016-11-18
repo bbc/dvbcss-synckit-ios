@@ -1,4 +1,4 @@
-# Video Player
+# <small>dvbcss-synckit-ios</small><br/>VideoPlayer Framework
 
 * **[How to use](#how-to-use)**
 [](---START EXCLUDE FROM DOC BUILD---)

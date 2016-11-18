@@ -1,4 +1,4 @@
-# TimelineSync iOS Framework Library
+# <small>dvbcss-synckit-ios</small><br/>TimelineSync Framework
 
 * **[How to use](#how-to-use)**
 * **[Read the documentation](#read-the-documentation)**

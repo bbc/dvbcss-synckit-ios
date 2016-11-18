@@ -1,4 +1,4 @@
-# SimpleLogger Framework
+# <small>dvbcss-synckit-ios</small><br/>SimpleLogger Framework
 
 
 Simple wrapper macros/functions around ASL (Apple System

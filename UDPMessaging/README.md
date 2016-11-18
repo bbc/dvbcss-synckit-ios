@@ -1,4 +1,4 @@
-# UDPMessaging Library
+# <small>dvbcss-synckit-ios</small><br/>UDPMessaging Framework
 
 * **[How to use](#how-to-use)**
 * **[Read the documentation](#read-the-documentation)**

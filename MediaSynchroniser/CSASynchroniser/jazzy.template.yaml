@@ -1,7 +1,0 @@
-module: CSASynchroniser
-module_version: 1.0.0
-umbrella_header: CSASynchroniser/CSASynchroniser.h
-framework_root: .
-output: ./../../docs/build/CSASynchroniser
-
-# Remaining config comes from when concatenated with common jazzy config in repository root

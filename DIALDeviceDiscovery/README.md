@@ -1,4 +1,4 @@
-# DIALDeviceDiscovery iOS Framework Library
+# <small>dvbcss-synckit-ios</small><br/>DIALDeviceDiscovery Framework
 
 
 

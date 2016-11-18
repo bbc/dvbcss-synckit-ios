@@ -1,19 +1,25 @@
 # Video Player
 
 * **[How to use](#how-to-use)**
+[](---START EXCLUDE FROM DOC BUILD---)
 * **[Read the documentation](#read-the-documentation)**
+[](---END EXCLUDE FROM DOC BUILD---)
 * **[Run the example app](#run-the-example-app)**
 
 The VideoPlayer is designed to play a video file (e.g. an H264-encoded video) or HLS stream and to provide advanced playback adjustment operations. With the playback adaptation features it offers, it is possible to synchronise  video playback to an external timing source.
 
-The main class for the video player is the [VideoPlayerViewController](VideoPlayer/docs/Classes/VideoPlayerViewController.html); it is a UIViewController that encapsulates an AVPlayer and embeds it within a supplied UIView instance. It utilises the AVPlayer object to play a video asset and allows playback to be adapted by skipping frames, changing the speed or changing the (media-timeline, host clock) relationship.
+The main class for the video player is the [VideoPlayerViewController](http://bbc.github.io/dvbcss-synckit-ios/latest/VideoPlayer/Classes/VideoPlayerViewController.html); it is a UIViewController that encapsulates an AVPlayer and embeds it within a supplied UIView instance. It utilises the AVPlayer object to play a video asset and allows playback to be adapted by skipping frames, changing the speed or changing the (media-timeline, host clock) relationship.
 
 The **VideoPlayerViewController** object allows other components to monitor the progress of the video playback. As the video is loaded and the media-processing pipeline primed, it reports changes to particular video player properties (e.g. asset playable, tracks, duration, loaded time range, current media time) to interested observers via callbacks or notifications.
 
-An object wishing to receive callbacks from the video player must implement the [VideoPlayerDelegate](VideoPlayer/docs/Protocols/VideoPlayerDelegate.html) protocol and register itself as a delegate with the **VideoPlayerViewController** object.
+An object wishing to receive callbacks from the video player must implement the [VideoPlayerDelegate](http://bbc.github.io/dvbcss-synckit-ios/latest/VideoPlayer/Protocols/VideoPlayerDelegate.html) protocol and register itself as a delegate with the **VideoPlayerViewController** object.
+
+[](---START EXCLUDE FROM DOC BUILD---)
 
 ## Read the documentation
-The docs for the library can be read [here](VideoPlayer/docs/index.html).
+The docs for the library can be read [here](http://bbc.github.io/dvbcss-synckit-ios/latest/VideoPlayer/index.html).
+
+[](---END EXCLUDE FROM DOC BUILD---)
 
 ## How to use
 * Download the project and build it in Xcode. Add the VideoPlayer.framework library file (found in the build folder) to your own project.

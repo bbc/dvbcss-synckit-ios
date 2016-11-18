@@ -35,3 +35,4 @@ ModuleCache
 # Docs
 build-docs
 **/jazzy.merged.yaml
+**/doc-build-README.md

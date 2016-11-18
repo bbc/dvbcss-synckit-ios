@@ -2,6 +2,6 @@ module: SyncController
 module_version: 1.0.0
 umbrella_header: SyncController/SyncController/SyncController.h
 framework_root: SyncController
-output: ./../build-docs/SyncController
+output: ./../docs/build/SyncController
 
 # Remaining config comes from when concatenated with common jazzy config in repository root

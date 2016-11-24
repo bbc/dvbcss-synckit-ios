@@ -1,0 +1,1468 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 40,
+      "symbol": "AudioPlayerState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 40,
+      "symbol": "AudioPlayerState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 42,
+      "symbol": "AudioPlayerState.AudioPlayerStateInitialised",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 43,
+      "symbol": "AudioPlayerState.AudioPlayerStateStartingFileThread",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 44,
+      "symbol": "AudioPlayerState.AudioPlayerStateWaitingForData",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 45,
+      "symbol": "AudioPlayerState.AudioPlayerStateFlushingEoF",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 46,
+      "symbol": "AudioPlayerState.AudioPlayerStateWaitingForQueueStart",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 47,
+      "symbol": "AudioPlayerState.AudioPlayerStateEndOfFile",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 48,
+      "symbol": "AudioPlayerState.AudioPlayerStatePaused",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 49,
+      "symbol": "AudioPlayerState.AudioPlayerStateBuffering",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 50,
+      "symbol": "AudioPlayerState.AudioPlayerStatePlaying",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 51,
+      "symbol": "AudioPlayerState.AudioPlayerStateStopping",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 52,
+      "symbol": "AudioPlayerState.AudioPlayerStateStopped",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 53,
+      "symbol": "AudioPlayerState.AudioPlayerStateReadyToPlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 54,
+      "symbol": "AudioPlayerState.AudioPlayerStateSeeking",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h",
+      "line": 55,
+      "symbol": "AudioPlayerState.AudioPlayerStateUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayerEngine.h",
+      "line": 26,
+      "symbol": "AudioPlayerEngineVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayerEngine.h",
+      "line": 29,
+      "symbol": "AudioPlayerEngineVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 84,
+      "symbol": "AudioStreamPlayerState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 86,
+      "symbol": "AudioStreamPlayerState.AS_INITIALIZED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 86,
+      "symbol": "AudioStreamPlayerState.AudioStreamPlayerState.AS_INITIALIZED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 87,
+      "symbol": "AudioStreamPlayerState.AS_STARTING_FILE_THREAD",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 87,
+      "symbol": "AudioStreamPlayerState.AudioStreamPlayerState.AS_STARTING_FILE_THREAD",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 88,
+      "symbol": "AudioStreamPlayerState.AS_WAITING_FOR_DATA",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 88,
+      "symbol": "AudioStreamPlayerState.AudioStreamPlayerState.AS_WAITING_FOR_DATA",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 89,
+      "symbol": "AudioStreamPlayerState.AS_FLUSHING_EOF",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 89,
+      "symbol": "AudioStreamPlayerState.AudioStreamPlayerState.AS_FLUSHING_EOF",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 90,
+      "symbol": "AudioStreamPlayerState.AS_WAITING_FOR_QUEUE_TO_START",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 90,
+      "symbol": "AudioStreamPlayerState.AudioStreamPlayerState.AS_WAITING_FOR_QUEUE_TO_START",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 91,
+      "symbol": "AudioStreamPlayerState.AS_PLAYING",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 91,
+      "symbol": "AudioStreamPlayerState.AudioStreamPlayerState.AS_PLAYING",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 92,
+      "symbol": "AudioStreamPlayerState.AS_BUFFERING",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 92,
+      "symbol": "AudioStreamPlayerState.AudioStreamPlayerState.AS_BUFFERING",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 93,
+      "symbol": "AudioStreamPlayerState.AS_STOPPING",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 93,
+      "symbol": "AudioStreamPlayerState.AudioStreamPlayerState.AS_STOPPING",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 94,
+      "symbol": "AudioStreamPlayerState.AS_STOPPED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 94,
+      "symbol": "AudioStreamPlayerState.AudioStreamPlayerState.AS_STOPPED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 95,
+      "symbol": "AudioStreamPlayerState.AS_PAUSED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 95,
+      "symbol": "AudioStreamPlayerState.AudioStreamPlayerState.AS_PAUSED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 103,
+      "symbol": "AudioStreamPlayerStopReason",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 105,
+      "symbol": "AudioStreamPlayerStopReason.AS_NO_STOP",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 105,
+      "symbol": "AudioStreamPlayerStopReason.AudioStreamPlayerStopReason.AS_NO_STOP",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 106,
+      "symbol": "AudioStreamPlayerStopReason.AS_STOPPING_EOF",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 106,
+      "symbol": "AudioStreamPlayerStopReason.AudioStreamPlayerStopReason.AS_STOPPING_EOF",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 107,
+      "symbol": "AudioStreamPlayerStopReason.AS_STOPPING_USER_ACTION",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 107,
+      "symbol": "AudioStreamPlayerStopReason.AudioStreamPlayerStopReason.AS_STOPPING_USER_ACTION",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 108,
+      "symbol": "AudioStreamPlayerStopReason.AS_STOPPING_ERROR",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 108,
+      "symbol": "AudioStreamPlayerStopReason.AudioStreamPlayerStopReason.AS_STOPPING_ERROR",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 109,
+      "symbol": "AudioStreamPlayerStopReason.AS_STOPPING_TEMPORARILY",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 109,
+      "symbol": "AudioStreamPlayerStopReason.AudioStreamPlayerStopReason.AS_STOPPING_TEMPORARILY",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 117,
+      "symbol": "AudioStreamPlayerErrorCode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 119,
+      "symbol": "AudioStreamPlayerErrorCode.AS_NO_ERROR",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 119,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_NO_ERROR",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 120,
+      "symbol": "AudioStreamPlayerErrorCode.AS_NETWORK_CONNECTION_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 120,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_NETWORK_CONNECTION_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 121,
+      "symbol": "AudioStreamPlayerErrorCode.AS_FILE_STREAM_GET_PROPERTY_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 121,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_FILE_STREAM_GET_PROPERTY_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 122,
+      "symbol": "AudioStreamPlayerErrorCode.AS_FILE_STREAM_SET_PROPERTY_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 122,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_FILE_STREAM_SET_PROPERTY_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 123,
+      "symbol": "AudioStreamPlayerErrorCode.AS_FILE_STREAM_SEEK_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 123,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_FILE_STREAM_SEEK_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 124,
+      "symbol": "AudioStreamPlayerErrorCode.AS_FILE_STREAM_PARSE_BYTES_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 124,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_FILE_STREAM_PARSE_BYTES_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 125,
+      "symbol": "AudioStreamPlayerErrorCode.AS_FILE_STREAM_OPEN_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 125,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_FILE_STREAM_OPEN_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 126,
+      "symbol": "AudioStreamPlayerErrorCode.AS_FILE_STREAM_CLOSE_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 126,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_FILE_STREAM_CLOSE_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 127,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_DATA_NOT_FOUND",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 127,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_DATA_NOT_FOUND",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 128,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_CREATION_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 128,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_CREATION_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 129,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_BUFFER_ALLOCATION_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 129,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_BUFFER_ALLOCATION_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 130,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_ENQUEUE_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 130,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_ENQUEUE_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 131,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_ADD_LISTENER_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 131,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_ADD_LISTENER_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 132,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_REMOVE_LISTENER_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 132,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_REMOVE_LISTENER_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 133,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_START_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 133,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_START_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 134,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_PAUSE_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 134,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_PAUSE_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 135,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_BUFFER_MISMATCH",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 135,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_BUFFER_MISMATCH",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 136,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_DISPOSE_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 136,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_DISPOSE_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 137,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_STOP_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 137,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_STOP_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 138,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_FLUSH_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 138,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_QUEUE_FLUSH_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 139,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_STREAMER_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 139,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_STREAMER_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 140,
+      "symbol": "AudioStreamPlayerErrorCode.AS_GET_AUDIO_TIME_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 140,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_GET_AUDIO_TIME_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 141,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_BUFFER_TOO_SMALL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 141,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_BUFFER_TOO_SMALL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 142,
+      "symbol": "AudioStreamPlayerErrorCode.AS_AUDIO_SESSION_SETUP_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 142,
+      "symbol": "AudioStreamPlayerErrorCode.AudioStreamPlayerErrorCode.AS_AUDIO_SESSION_SETUP_FAILED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 149,
+      "symbol": "ASStatusChangedNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 212,
+      "symbol": "AudioStreamPlayer.packetBufferSize",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 229,
+      "symbol": "AudioStreamPlayer.buffersUsed",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 230,
+      "symbol": "AudioStreamPlayer.httpHeaders",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 231,
+      "symbol": "AudioStreamPlayer.fileExtension",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 233,
+      "symbol": "AudioStreamPlayer.state",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 234,
+      "symbol": "AudioStreamPlayer.laststate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 235,
+      "symbol": "AudioStreamPlayer.stopReason",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 236,
+      "symbol": "AudioStreamPlayer.errorCode",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 237,
+      "symbol": "AudioStreamPlayer.err",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 254,
+      "symbol": "AudioStreamPlayer.stream",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 255,
+      "symbol": "AudioStreamPlayer.notificationCenter",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 294,
+      "symbol": "AudioStreamPlayer.seekTime",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 295,
+      "symbol": "AudioStreamPlayer.seekWasRequested",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 296,
+      "symbol": "AudioStreamPlayer.requestedSeekTime",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 316,
+      "symbol": "AudioStreamPlayer.pausedByInterruption",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h",
+      "line": 324,
+      "symbol": "AudioStreamPlayer.offset",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudio.h",
+      "line": 29,
+      "symbol": "EZAudioVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudio.h",
+      "line": 32,
+      "symbol": "EZAudioVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFile.h",
+      "line": 240,
+      "symbol": "EZAudioFile.-seekToTime:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatConverter.h",
+      "line": 33,
+      "symbol": "EZAudioFloatConverterDefaultPacketSize",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatConverter.h",
+      "line": 39,
+      "symbol": "EZAudioFloatConverter",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatConverter.h",
+      "line": 45,
+      "symbol": "EZAudioFloatConverter.+converterWithInputFormat:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatConverter.h",
+      "line": 51,
+      "symbol": "EZAudioFloatConverter.inputFormat",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatConverter.h",
+      "line": 52,
+      "symbol": "EZAudioFloatConverter.floatFormat",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatConverter.h",
+      "line": 58,
+      "symbol": "EZAudioFloatConverter.-initWithInputFormat:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatConverter.h",
+      "line": 62,
+      "symbol": "EZAudioFloatConverter.-convertDataFromAudioBufferList:withNumberOfFrames:toFloatBuffers:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatConverter.h",
+      "line": 68,
+      "symbol": "EZAudioFloatConverter.-convertDataFromAudioBufferList:withNumberOfFrames:toFloatBuffers:packetDescriptions:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatData.h",
+      "line": 32,
+      "symbol": "EZAudioFloatData",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatData.h",
+      "line": 36,
+      "symbol": "EZAudioFloatData.+dataWithNumberOfChannels:buffers:bufferSize:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatData.h",
+      "line": 42,
+      "symbol": "EZAudioFloatData.numberOfChannels",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatData.h",
+      "line": 43,
+      "symbol": "EZAudioFloatData.buffers",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatData.h",
+      "line": 44,
+      "symbol": "EZAudioFloatData.bufferSize",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioFloatData.h",
+      "line": 48,
+      "symbol": "EZAudioFloatData.-bufferForChannel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlayer.h",
+      "line": 37,
+      "symbol": "EZAudioPlayerState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlayer.h",
+      "line": 37,
+      "symbol": "EZAudioPlayerState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlayer.h",
+      "line": 39,
+      "symbol": "EZAudioPlayerState.EZAudioPlayerStateEndOfFile",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlayer.h",
+      "line": 40,
+      "symbol": "EZAudioPlayerState.EZAudioPlayerStatePaused",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlayer.h",
+      "line": 41,
+      "symbol": "EZAudioPlayerState.EZAudioPlayerStatePlaying",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlayer.h",
+      "line": 42,
+      "symbol": "EZAudioPlayerState.EZAudioPlayerStateReadyToPlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlayer.h",
+      "line": 43,
+      "symbol": "EZAudioPlayerState.EZAudioPlayerStateSeeking",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlayer.h",
+      "line": 44,
+      "symbol": "EZAudioPlayerState.EZAudioPlayerStateUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 202,
+      "symbol": "EZAudioPlot()",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 203,
+      "symbol": "EZAudioPlot.displayLink",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 203,
+      "symbol": "EZAudioPlot.displayLink.-displayLink",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 203,
+      "symbol": "EZAudioPlot.displayLink.-setDisplayLink:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 204,
+      "symbol": "EZAudioPlot.historyInfo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 204,
+      "symbol": "EZAudioPlot.historyInfo.-historyInfo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 204,
+      "symbol": "EZAudioPlot.historyInfo.-setHistoryInfo:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 205,
+      "symbol": "EZAudioPlot.points",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 205,
+      "symbol": "EZAudioPlot.points.-points",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 205,
+      "symbol": "EZAudioPlot.points.-setPoints:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 206,
+      "symbol": "EZAudioPlot.pointCount",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 206,
+      "symbol": "EZAudioPlot.pointCount.-pointCount",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlot.h",
+      "line": 206,
+      "symbol": "EZAudioPlot.pointCount.-setPointCount:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlotGL.h",
+      "line": 36,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlotGL.h",
+      "line": 36,
+      "symbol": "EZAudioPlotGLPoint",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlotGL.h",
+      "line": 36,
+      "symbol": "EZAudioPlotGLPoint.",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlotGL.h",
+      "line": 38,
+      "symbol": ".x",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlotGL.h",
+      "line": 38,
+      "symbol": "EZAudioPlotGLPoint..x",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlotGL.h",
+      "line": 39,
+      "symbol": ".y",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlotGL.h",
+      "line": 39,
+      "symbol": "EZAudioPlotGLPoint..y",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlotGL.h",
+      "line": 50,
+      "symbol": "EZAudioPlotGL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlotGL.h",
+      "line": 68,
+      "symbol": "EZAudioPlotGL.backgroundColor",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioPlotGL.h",
+      "line": 79,
+      "symbol": "EZAudioPlotGL.color",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 42,
+      "symbol": "EZPlotHistoryInfo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 44,
+      "symbol": ".buffer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 44,
+      "symbol": "EZPlotHistoryInfo..buffer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 45,
+      "symbol": ".bufferSize",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 45,
+      "symbol": "EZPlotHistoryInfo..bufferSize",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 46,
+      "symbol": ".circularBuffer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 46,
+      "symbol": "EZPlotHistoryInfo..circularBuffer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 54,
+      "symbol": "EZAudioNodeInfo",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 56,
+      "symbol": ".audioUnit",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 56,
+      "symbol": "EZAudioNodeInfo..audioUnit",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 57,
+      "symbol": ".node",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 57,
+      "symbol": "EZAudioNodeInfo..node",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 65,
+      "symbol": "EZRect",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZAudioUtilities.h",
+      "line": 387,
+      "symbol": "EZAudioUtilities.+noteNameStringForFrequency:includeOctave:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZOutput.h",
+      "line": 40,
+      "symbol": "EZOutputMaximumFramesPerSlice",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZOutput.h",
+      "line": 41,
+      "symbol": "EZOutputDefaultSampleRate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZPlot.h",
+      "line": 62,
+      "symbol": "EZPlot",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZPlot.h",
+      "line": 79,
+      "symbol": "EZPlot.backgroundColor",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/EZPlot.h",
+      "line": 88,
+      "symbol": "EZPlot.color",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 53,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 53,
+      "symbol": "TPCircularBuffer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 53,
+      "symbol": "TPCircularBuffer.",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 54,
+      "symbol": ".buffer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 54,
+      "symbol": "TPCircularBuffer..buffer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 55,
+      "symbol": ".length",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 55,
+      "symbol": "TPCircularBuffer..length",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 56,
+      "symbol": ".tail",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 56,
+      "symbol": "TPCircularBuffer..tail",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 57,
+      "symbol": ".head",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 57,
+      "symbol": "TPCircularBuffer..head",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 58,
+      "symbol": ".fillCount",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 58,
+      "symbol": "TPCircularBuffer..fillCount",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 59,
+      "symbol": ".atomic",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 59,
+      "symbol": "TPCircularBuffer..atomic",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.field",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 74,
+      "symbol": "_TPCircularBufferInit",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 81,
+      "symbol": "TPCircularBufferCleanup",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 91,
+      "symbol": "TPCircularBufferClear",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 107,
+      "symbol": "TPCircularBufferSetAtomic",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 121,
+      "symbol": "TPCircularBufferTail",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 135,
+      "symbol": "TPCircularBufferConsume",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 155,
+      "symbol": "TPCircularBufferHead",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 171,
+      "symbol": "TPCircularBufferProduce",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 191,
+      "symbol": "TPCircularBufferProduceBytes",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 203,
+      "symbol": "TPCircularBufferConsumeNoBarrier",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/TPCircularBuffer.h",
+      "line": 213,
+      "symbol": "TPCircularBufferProduceNoBarrier",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.function",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/AudioPlayer"
+}

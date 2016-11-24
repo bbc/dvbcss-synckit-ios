@@ -7,7 +7,16 @@
     <meta charset="utf-8">
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
-    
+    <style type="text/css">
+    body .header {
+        background-color: #005;
+    }
+    body .header .header-col.header-col--primary {
+        background-color: #005;
+        font-weight: bold;
+    }
+</style>
+
   </head>
   <body>
 
@@ -85,9 +94,6 @@
                 <a class="nav-group-task-link" href="timelinesync.html">TimelineSync</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="udpmessaging.html">UDPMessaging</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="videoplayer.html">VideoPlayer</a>
               </li>
               <li class="nav-group-task">
@@ -101,16 +107,14 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="asyncsocket.html">AsyncSocket</a>
               </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a class="nav-group-name-link" href="3rd party internal frameworks.html">3rd party internal frameworks</a>
-            <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="jsonmodelframework.html">JSONModelFramework</a>
+                <a class="nav-group-task-link" href="jsonmodelframework-3rd-party.html">JSONModelFramework (3rd party)</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="socketrocket.html">SocketRocket</a>
+                <a class="nav-group-task-link" href="socketrocket-3rd-party.html">SocketRocket (3rd party)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="udpmessaging.html">UDPMessaging</a>
               </li>
             </ul>
           </li>
@@ -121,7 +125,359 @@
         <section class="section">
           <div class="section-content">
             <h1>Frameworks</h1>
-            <p>This is something about the frameworks here.</p>
+            <p>These are the frameworks in dvbcss-synckit-ios providing the various functions
+needed to build synchronised companion applications.</p>
+<a href='#overview-of-ios-frameworks-provided' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='overview-of-ios-frameworks-provided'>Overview of iOS Frameworks provided</h2>
+
+<ul>
+<li><a href="#clocks-and-media-timelines">Clocks and Media Timelines</a></li>
+<li><a href="#wallclock-synchronisation">WallClock Synchronisation</a></li>
+<li><a href="#content-identification">Content Identification</a></li>
+<li><a href="#timeline-synchronisation">Timeline Synchronisation</a></li>
+<li><a href="#synccontroller-objects">SyncController Objects</a></li>
+<li><a href="#mediasynchroniser">MediaSynchroniser</a></li>
+<li><a href="#other-frameworks">Other useful frameworks</a></li>
+</ul>
+<a href='#media-players' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='media-players'>Media Players</h3>
+
+<p><code>AudioPlayerEngine.framework</code><br/>
+<code>VideoPlayer.framework</code></p>
+
+<p>These are file/stream -based media players with enhanced playback control capability. They provide the capability to adapt the way the media is being played:
+* change playback position,
+* change the playback speed
+* query the buffered time range
+* adjust the playback by an offset
+* change the alignment of video and audio tracks for a video stream</p>
+
+<p>The following media players are included within <strong>dvbcss-synckit-ios</strong>.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="AudioPlayer/">AudioPlayerEngine</a></td>
+<td><a href="AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h">AudioPlayer</a></td>
+<td>A Core Audio SDK based player for audio files (e.g. mp3, wav, aifc, aiff, m4a, mp4, caf, aac files) and audio processing via units in an audio filter graph.</td>
+</tr>
+<tr>
+<td><a href="AudioPlayer/">AudioPlayerEngine</a></td>
+<td><a href="AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h">AudioStreamPlayer</a></td>
+<td>A Core Audio SDK based player for audio streams. It uses Apple&rsquo;s Audio Queue Services and AudioFileStream to handle audio buffers and audio streaming</td>
+</tr>
+<tr>
+<td><a href="AudioPlayer/">AudioPlayerEngine</a></td>
+<td><a href="AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayerViewController.h">AudioPlayerViewController</a></td>
+<td>a UIViewController that uses a CoreGraphics-based audio plotting UIView to show a waveform representation of the audio data in the buffer for an AudioPlayer</td>
+</tr>
+<tr>
+<td><a href="VideoPlayer/">VideoPlayer</a></td>
+<td><a href="VideoPlayer/VideoPlayer/VideoPlayer/VideoPlayerViewController.h">VideoPlayerViewController</a></td>
+<td>A player for video files (e.g. MP4, QuickTime) and adaptive HTTP-based streams (e.g. HLS)</td>
+</tr>
+</tbody></table>
+
+<p>Each player uses the delegate pattern to report progress information about the media playback. Callbacks will report about:
+* player&rsquo;s state (initialised, paused, playing, ready to play, seeking)
+* current playback time (periodically called)
+* end of asset reached
+* media properties such as media format, duration, available tracks
+* buffered media time ranges</p>
+<a href='#device-discovery' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='device-discovery'>Device Discovery</h3>
+
+<p><code>DIALDeviceDiscovery.framework</code></p>
+
+<p>The <strong>DIALDeviceDiscovery</strong> framework provides APIs for the discovery of services via SSDP and the discovery of devices via DIAL. It allows HbbTV terminals existing on the same network to be discovered by the Companion Screen Application.
+Using the DIAL protocol, the Companion Screen Application can launch an HbbTV application on the television.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="DIALDeviceDiscovery/">DIALDeviceDiscovery</a></td>
+<td><a href="DIALDeviceDiscovery/DIALDeviceDiscovery/SSDPServiceDiscovery.h">SSDPServiceDiscovery</a></td>
+<td>Discovery of UPnP devices advertising a type of service type</td>
+</tr>
+<tr>
+<td><a href="DIALDeviceDiscovery/">DIALDeviceDiscovery</a></td>
+<td><a href="DIALDeviceDiscovery/DIALDeviceDiscovery/SSDPServiceDiscovery.h">DIALServiceDiscovery</a></td>
+<td>Discovery of devices on the network running a DIAL server and web applications such an HbbTV</td>
+</tr>
+</tbody></table>
+<a href='#clocks-and-media-timelines' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='clocks-and-media-timelines'>Clocks and Media Timelines</h3>
+
+<p><code>ClockTimelines.framework</code></p>
+
+<p>The <strong>ClockTimelines</strong> framework provides software clock classes to represent timelines (of clocks and media assets). A timeline is represented by a clock object. Clock objects also allow relationships between timelines to be expressed using parent-child mapping relationships.</p>
+
+<p>These clock objects work in the same way as the ones in the <a href="https://github.com/bbc/pydvbcss">pydvbcss</a> python library (documented <a href="http://pydvbcss.readthedocs.io/en/latest/clock.html">here</a>).</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="ClockTimelines/">ClockTimelines</a></td>
+<td><a href="ClockTimelines/ClockTimelines/SystemClock.h">SystemClock</a></td>
+<td>A root clock class that is based on monotonic time as the underlying time source</td>
+</tr>
+<tr>
+<td><a href="ClockTimelines/">ClockTimelines</a></td>
+<td><a href="ClockTimelines/ClockTimelines/CorrelatedClock.h">CorrelatedClock</a></td>
+<td>A clock represent a timeline&rsquo;s relationship with a parent timeline as a correlation</td>
+</tr>
+<tr>
+<td><a href="ClockTimelines/">ClockTimelines</a></td>
+<td><a href="ClockTimelines/ClockTimelines/TunableClock.h">TunableClock</a></td>
+<td>A clock for a timeline with a correlation mapping to a parent clock, but with  adjustible tick offset and speed.</td>
+</tr>
+</tbody></table>
+<a href='#wallclock-synchronisation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='wallclock-synchronisation'>WallClock Synchronisation</h3>
+
+<p><code>WallClockClient.framework</code></p>
+
+<p>The WallClockClient framework provides an API to synchronise a WallClock with another device (e.g. an HbbTV) using the DVB-CSS WallClock Synchronisation protocol (CSS-WC). It uses UDP as the transport for CSS-WC messages. The framework allows different filters to be plugged in to exclude time offset measurements. Also, different algorithms can be plugged in to
+to process the measurements and update the WallClock.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="WallClockSync/">WallClockClient</a></td>
+<td><a href="WallClockSync/WallClockClient/WallClockClient/WallClockSynchroniser.h">WallClockSynchroniser</a></td>
+<td>WallClock synchroniser using RTT Threshold filter and Lowest Dispersion algorithm</td>
+</tr>
+<tr>
+<td><a href="WallClockSync/">WallClockClient</a></td>
+<td><a href="WallClockSync/WallClockClient/WallClockClient/WCProtocolClient.h">WCProtocolClient</a></td>
+<td>A CSS-WC protocol client</td>
+</tr>
+<tr>
+<td><a href="WallClockSync/">WallClockClient</a></td>
+<td><a href="WallClockSync/WallClockClient/WallClockClient/LowestDispersionAlgorithm.h">LowestDispersionAlgorithm</a></td>
+<td>Measurement-processing algo based on lowest dispersion for best-candidate selection</td>
+</tr>
+<tr>
+<td><a href="WallClockSync/">WallClockClient</a></td>
+<td><a href="WallClockSync/WallClockClient/WallClockClient/LowestDispersionFilter.h">LowestDispersionFilter</a>,  <a href="WallClockSync/WallClockClient/WallClockClient/RTTThresholdFilter.h">RTTThresholdFilter</a></td>
+<td>Candidate measurement filters</td>
+</tr>
+</tbody></table>
+<a href='#content-identification' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='content-identification'>Content Identification</h3>
+
+<p><code>CIIProtocolClient.framework</code></p>
+
+<p>The CIIProtocolClient framework allows a Companion Screen Application to receive updates about the current TV content&rsquo;s identifier and other service endpoints (e.g.  timeline synchronisation, material resolution (MRS), etc.). Also reported are timelines made available by the TV for synchronisation. Uses WebSockets for CSS-CII protocol.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="CIIProtocolClient/">CIIProtocolClient</a></td>
+<td><a href="CIIProtocolClient/CIIProtocolClient/CIIClient.h">CIIClient</a></td>
+<td>A CSS-CII protocol client</td>
+</tr>
+<tr>
+<td><a href="CIIProtocolClient/">CIIProtocolClient</a></td>
+<td><a href="CIIProtocolClient/CIIProtocolClient/TimelineOption.h">TimelineOption</a></td>
+<td>A timeline description object.</td>
+</tr>
+</tbody></table>
+<a href='#timeline-synchronisation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='timeline-synchronisation'>Timeline Synchronisation</h3>
+
+<p><code>TimelineSync.framework</code></p>
+
+<p>The TimelineSync framework provides an API to synchronise a timeline to the timeline exported by the TV for synchronisation (called the Synchronisation Timeline). The local estimate of the Synchronisation Timeline is represented by a CorrelatedClock object. Uses WebSockets.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="TimelineSync/">TimelineSync</a></td>
+<td><a href="TimelineSync/TimelineSync/TimelineSync/TSClient.h">TSClient</a></td>
+<td>A CSS-TS protocol client. Receives Control Timestamps from the TV.</td>
+</tr>
+<tr>
+<td><a href="TimelineSync/">TimelineSync</a></td>
+<td><a href="TimelineSync/TimelineSync/TimelineSync/TimelineSynchroniser.h">TimelineSynchroniser</a></td>
+<td>A wrapper object that synchronises a CorrelatedClock object based on Synchronisation Timeline updates received from the TV via a TSClient</td>
+</tr>
+</tbody></table>
+<a href='#synccontroller-objects' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='synccontroller-objects'>SyncController Objects</h3>
+
+<p><code>SyncController.framework</code></p>
+
+<p>The SyncController framework provides  sync controller objects that can be used to synchronise a native media player to a given timeline. The SyncController object use a particular strategy to adapt the media player&rsquo;s playback (change speed of play, seek, or both) to ensure that it adheres to the given timeline.</p>
+
+<p>It uses a <a href="ClockTimelines/ClockTimelines/CorrelatedClock.h">Correlation</a> and a <a href="ClockTimelines/ClockTimelines/CorrelatedClock.h">CorrelatedClock</a> object to synthesise the expected timeline for the media player. The Correlation gives a mapping (a pair of timestamps) between the Synchronisation Timeline and the media asset&rsquo;s timeline.</p>
+
+<p>For web views, it provides a JS framework (ios_sync.js) to register the web page for current-time updates on the TV&rsquo;s timeline. The framework includes example apps to demonstrate usage of the sync controller objects.</p>
+
+<p><em>Currently, a SyncController class is provided for each media player/web kit.</em></p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="SyncController/">SyncController</a></td>
+<td><a href="SyncController/SyncController/SyncController/VideoPlayerSyncController.h">VideoPlayerSyncController</a></td>
+<td>Synchronises a video player (VideoPlayerViewController) to an expected timeline</td>
+</tr>
+<tr>
+<td><a href="SyncController/">SyncController</a></td>
+<td><a href="SyncController/SyncController/SyncController/AudioSyncController.h">AudioSyncController</a></td>
+<td>Synchronises an audio player (AudioPlayer, AudioStreamPlayer or AudioPlayerViewController) to an expected timeline</td>
+</tr>
+<tr>
+<td><a href="SyncController/">SyncController</a></td>
+<td><a href="SyncController/SyncController/SyncController/WebViewSyncController.h">WebViewSyncController</a></td>
+<td>A SyncController to send timestamps reporting progress of a TV programme to a web view</td>
+</tr>
+<tr>
+<td><a href="SyncController/">SyncController</a></td>
+<td><a href="SyncController/SyncController/SyncController/www/ios_sync.js">ios_sync.js</a></td>
+<td>JS library to register for register the web page for current-time updates on the TV&rsquo;s timeline. To be used in tandem with a <a href="SyncController/SyncController/SyncController/WebViewSyncController.h">WebViewSyncController</a> on the native side. See <a href="SyncController/WebViewSyncDemoApp/">WebViewSyncDemoApp</a> for usage example.</td>
+</tr>
+</tbody></table>
+<a href='#mediasynchroniser' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='mediasynchroniser'>MediaSynchroniser</h3>
+
+<p><code>CSASynchroniser.framework</code></p>
+
+<p>The CSASynchroniser (also called MediaSynchroniser) dynamic framework provides a high-level Synchroniser object for media sync. It is a singleton that Companion Screen Applications can use to synchronise a media object to an external timeline source e.g. a TV video broadcast. It simplifies launching a synchronisation process using the DVB-CSS machinery. With the Synchroniser API, media objects only need to be registered with the Synchroniser to be synchronised.</p>
+
+<p>To use the Synchroniser singletob, you need to initialise it with these parameters</p>
+
+<ul>
+<li><code>InterDeviceSyncURL</code> - the master device&rsquo;s URL for interdevice synchronisation (obtained from discovery of the TV using DIAL, see <a href="../DIALDeviceDiscovery">DIALDeviceDiscovery</a> sub-project for examples).</li>
+<li><code>App2AppURL</code> - the master device&rsquo;s endpoint for communication between TV apps and companion screen Applications.</li>
+<li><code>TimelineSelector</code> - a <code>TimelineOption</code> object providing a timeline name and other properties (e.g. tick rate, accuracy).</li>
+</ul>
+
+<p>Media players are registered with the Synchroniser by adding MediaPlayerObject objects.</p>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="MediaSynchroniser/">CSASynchroniser</a></td>
+<td><a href="/MediaSynchroniser/CSASynchroniser/CSASynchroniser/MediaPlayerObject.h">MediaPlayerObject</a></td>
+<td>An object encapsulating a media player instance, the media URL and a correlation for mapping the Synchronisation Timeline to the media timeline</td>
+</tr>
+<tr>
+<td><a href="MediaSynchroniser/">CSASynchroniser</a></td>
+<td><a href="MediaSynchroniser/CSASynchroniser/CSASynchroniser/Synchroniser.h">Synchroniser</a></td>
+<td>A singleton that accepts  MediaPlayerObject instances (each playing a media object) or web views to synchronise against a  TV</td>
+</tr>
+</tbody></table>
+<a href='#other-frameworks' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='other-frameworks'>Other Frameworks</h3>
+
+<p><strong>dvbcss-synckit-ios</strong> also includes a number of useful fine-grain dynamic libraries.</p>
+<a href='#ui-components' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='ui-components'>UI Components</h5>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="DIALDeviceDiscovery/DIALTVSelectionUIViews/">DIALTVSelectionUIViews</a></td>
+<td><a href="DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALDeviceCollectionViewController.h">DIALDeviceCollectionViewController</a></td>
+<td>A ViewController which displays devices discovered by the DIALDeviceDiscovery framework as a collection (UICollectionView)</td>
+</tr>
+<tr>
+<td><a href="DIALDeviceDiscovery/DIALTVSelectionUIViews/">DIALTVSelectionUIViews</a></td>
+<td><a href="DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALDeviceSelectorViewController.h">DIALDeviceSelectorViewController</a></td>
+<td>A ViewController which displays devices discovered by the DIALDeviceDiscovery framework as a list (UITableView)</td>
+</tr>
+</tbody></table>
+<a href='#communications' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='communications'>Communications</h5>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="AsyncSocket/AsyncSocket/">AsyncSocket</a></td>
+<td><a href="AsyncSocket/AsyncSocket/AsyncSocket/GCDAsyncUdpSocket.h">GCDAsyncUdpSocket</a></td>
+<td>A UDP/IP socket networking framework built atop Grand Central Dispatch.</td>
+</tr>
+<tr>
+<td><a href="UDPMessaging/UDPMessaging/">UDPMessaging</a></td>
+<td><a href="UDPMessaging/UDPMessaging/UDPEndpoint.h">UDPEndpoint</a></td>
+<td>A class representing a UDP socket endpoint (server- or client-mode)</td>
+</tr>
+<tr>
+<td><a href="WebSocket/SocketRocket/">SocketRocket</a></td>
+<td><a href="WebSocket/SocketRocket/SocketRocket/SRWebSocket.h">SRWebSocket</a></td>
+<td>Facebook&rsquo;s <a href="https://github.com/facebook/SocketRocket">SRWebSocket</a> framework (available under a BSD-licence) re-packaged as an iOS framework</td>
+</tr>
+<tr>
+<td><a href="JSONModelFramework/">JSONModelFramework</a></td>
+<td><a href="JSONModelFramework/JSONModelFramework/">SRWebSocket</a></td>
+<td>Framework for serialising Objective C objects into JSON and deserialise JSON back to Objective C. A repackaging of the open-source <a href="https://github.com/jsonmodel/jsonmodel">JSONModel</a> library as an iOS framework</td>
+</tr>
+</tbody></table>
+<a href='#logging-configuration-and-other-utilities' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='logging-configuration-and-other-utilities'>Logging, Configuration and other utilities</h5>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="SimpleLogger/">SimpleLogger</a></td>
+<td><a href="SimpleLogger/SimpleLogger/MWLogging.h">SimpleLogger</a></td>
+<td>Simple wrapper macros/functions around ASL (Apple System Log)</td>
+</tr>
+<tr>
+<td><a href="SyncKitConfiguration/">SyncKitConfiguration</a></td>
+<td><a href="SyncKitConfiguration/SyncKitConfiguration/ConfigReader.h">ConfigReader</a></td>
+<td>A library to read configuration key-value pairs from a config file and make them globally available.</td>
+</tr>
+<tr>
+<td><a href="SyncKitCollections/">SyncKitCollections</a></td>
+<td><a href="SyncKitCollections/SyncKitCollections/">SyncKitCollections</a></td>
+<td>A collection of data structures and utility classes.</td>
+</tr>
+</tbody></table>
 
           </div>
         </section>

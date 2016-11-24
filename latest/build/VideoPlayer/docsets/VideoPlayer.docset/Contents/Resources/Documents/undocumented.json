@@ -1,0 +1,61 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/VideoPlayer/VideoPlayer/VideoPlayer/VideoPlayer.h",
+      "line": 25,
+      "symbol": "VideoPlayerVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/VideoPlayer/VideoPlayer/VideoPlayer/VideoPlayer.h",
+      "line": 28,
+      "symbol": "VideoPlayerVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/VideoPlayer/VideoPlayer/VideoPlayer/VideoPlayerError.h",
+      "line": 66,
+      "symbol": "kVideoPlayerInvalidAsset",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/VideoPlayer/VideoPlayer/VideoPlayer/VideoPlayerError.h",
+      "line": 67,
+      "symbol": "kVideoPlayerBadServerResponse",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/VideoPlayer/VideoPlayer/VideoPlayer/VideoPlayerError.h",
+      "line": 68,
+      "symbol": "kVideoPlayerBadFormat",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/VideoPlayer/VideoPlayer/VideoPlayer/VideoPlayerError.h",
+      "line": 69,
+      "symbol": "kVideoPlayerMediaKeysNotLoaded",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/VideoPlayer/VideoPlayer/VideoPlayer/VideoPlayerViewController.h",
+      "line": 29,
+      "symbol": "VideoPlayerState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/VideoPlayer/VideoPlayer/VideoPlayer/VideoPlayerViewController.h",
+      "line": 29,
+      "symbol": "VideoPlayerState",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/VideoPlayer"
+}

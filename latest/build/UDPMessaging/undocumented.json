@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/UDPMessaging/UDPMessaging/UDPMessaging.h",
+      "line": 25,
+      "symbol": "UDPMessagingVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/UDPMessaging/UDPMessaging/UDPMessaging.h",
+      "line": 28,
+      "symbol": "UDPMessagingVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/UDPMessaging"
+}

@@ -1,0 +1,33 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitDelegate/SyncKitDelegate/SyncKitConfigurator.h",
+      "line": 37,
+      "symbol": "SynckitConfigurator.-start",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitDelegate/SyncKitDelegate/SyncKitConfigurator.h",
+      "line": 40,
+      "symbol": "SynckitConfigurator.-stop",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitDelegate/SyncKitDelegate/SyncKitDelegate.h",
+      "line": 12,
+      "symbol": "SyncKitDelegateVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitDelegate/SyncKitDelegate/SyncKitDelegate.h",
+      "line": 15,
+      "symbol": "SyncKitDelegateVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/SyncKitDelegate"
+}

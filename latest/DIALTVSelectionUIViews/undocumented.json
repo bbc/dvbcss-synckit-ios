@@ -1,0 +1,47 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALDeviceSelectorViewController.h",
+      "line": 44,
+      "symbol": "DIALDeviceSelectorViewController.segueIdentifier",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALDeviceSelectorViewController.h",
+      "line": 54,
+      "symbol": "DIALDeviceSelectorViewController.-initWithDevicesSource:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALDeviceViewConstants.h",
+      "line": 12,
+      "symbol": "kNewDIAL_HbbTV_ServiceSelected",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALDeviceViewConstants.h",
+      "line": 13,
+      "symbol": "kTestMediaSelectedNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALTVSelectionUIViews.h",
+      "line": 12,
+      "symbol": "DIALTVSelectionUIViewsVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALTVSelectionUIViews.h",
+      "line": 15,
+      "symbol": "DIALTVSelectionUIViewsVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/matteh/Documents/workspace/dvbcss-synckit-ios/DIALDeviceDiscovery/DIALTVSelectionUIViews"
+}

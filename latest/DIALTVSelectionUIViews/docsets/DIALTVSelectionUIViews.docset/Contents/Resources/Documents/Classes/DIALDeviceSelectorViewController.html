@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DIALDeviceSelectorViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <!-- new top header bar across all sub-frameworks --> <div style="margin:0; width: 100%; padding: 8px 0 8px 8px; background-color: #005" class="header">
+    <a href="../../../../../../../index.html" style="margin: 0; padding: 0 8px; font-weight: bold; color:white;">
+        dvbcss-synckit-ios
+    </a>
+</div> <!-- shuffle the "view on github" link up to be on the new top header bar --> <style type="text/css">
+    header .header-col.header-col--secondary a.header-link {
+        position: relative;
+        top: -39px;
+    }
+</style>
+
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/DIALDeviceSelectorViewController" class="dashAnchor"></a>
+
+    <a title="DIALDeviceSelectorViewController Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          DIALTVSelectionUIViews Docs
+        </a>
+        
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/bbc/dvbcss-synckit-ios">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">DIALTVSelectionUIViews Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      DIALDeviceSelectorViewController Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes.html#/c:objc(cs)CollectionViewFlowLargeLayout">CollectionViewFlowLargeLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes.html#/c:objc(cs)CollectionViewFlowSmallLayout">CollectionViewFlowSmallLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DIALDeviceCollectionViewController.html">DIALDeviceCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DIALDeviceSelectorViewController.html">DIALDeviceSelectorViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DeviceCollectionViewCell.html">DeviceCollectionViewCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@DIALTVSelectionUIViewsVersionNumber">DIALTVSelectionUIViewsVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@DIALTVSelectionUIViewsVersionString">DIALTVSelectionUIViewsVersionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kNewDIAL_HbbTV_ServiceSelected">kNewDIAL_HbbTV_ServiceSelected</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Constants.html#/c:@kTestMediaSelectedNotification">kTestMediaSelectedNotification</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>DIALDeviceSelectorViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">DIALDeviceSelectorViewController</span>
+    <span class="p">:</span> <span class="nc">UIViewController</span> <span class="o">&lt;</span><span class="n">UITableViewDataSource</span><span class="p">,</span> <span class="n">UITableViewDelegate</span><span class="p">,</span>
+                        <span class="n">UIAlertViewDelegate</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>A ViewController for diplaying devices that were discovered using the DIAL protocol on the network. It creates a table view within a parent view (it automatically rezises to fit within the bounds of the parent view) and populates it with the discovered devices. It obtains the list of discovered DIAL devices from an instance
+of the DIALServiceDiscovery component. This component is usually created and started in the AppDelegate class.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/objc/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIALDeviceSelectorViewController(py)devicesTableView"></a>
+                    <a name="//apple_ref/objc/Property/devicesTableView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIALDeviceSelectorViewController(py)devicesTableView">devicesTableView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A table view for discovered devices</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UITableView</span> <span class="o">*</span><span class="n">devicesTableView</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIALDeviceSelectorViewController(py)parentView"></a>
+                    <a name="//apple_ref/objc/Property/parentView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIALDeviceSelectorViewController(py)parentView">parentView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The table view&rsquo;s parent view</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UIView</span> <span class="o">*</span><span class="n">parentView</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIALDeviceSelectorViewController(py)tvDiscoveryComponent"></a>
+                    <a name="//apple_ref/objc/Property/tvDiscoveryComponent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIALDeviceSelectorViewController(py)tvDiscoveryComponent">tvDiscoveryComponent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A reference to a DIALServiceDiscovery component</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">weak</span><span class="p">,</span> <span class="n">atomic</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>   <span class="n">DIALServiceDiscovery</span> <span class="o">*</span><span class="n">tvDiscoveryComponent</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIALDeviceSelectorViewController(py)titleString"></a>
+                    <a name="//apple_ref/objc/Property/titleString" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIALDeviceSelectorViewController(py)titleString">titleString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A title for this view</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">setter</span><span class="o">=</span><span class="n">setTitleString</span><span class="o">:</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">NSString</span> <span class="o">*</span><span class="n">titleString</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIALDeviceSelectorViewController(py)segueIdentifier"></a>
+                    <a name="//apple_ref/objc/Property/segueIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIALDeviceSelectorViewController(py)segueIdentifier">segueIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">DIALDeviceSelectorViewController</span>
+    <span class="p">:</span> <span class="nc">UIViewController</span> <span class="o">&lt;</span><span class="n">UITableViewDataSource</span><span class="p">,</span> <span class="n">UITableViewDelegate</span><span class="p">,</span>
+                        <span class="n">UIAlertViewDelegate</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialisers"></a>
+                <a name="//apple_ref/objc/Section/Initialisers" class="dashAnchor"></a>
+                <a href="#/Initialisers">
+                  <h3 class="section-name">Initialisers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIALDeviceSelectorViewController(im)initWithDevicesSource:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithDevicesSource:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIALDeviceSelectorViewController(im)initWithDevicesSource:">-initWithDevicesSource:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">DIALDeviceSelectorViewController</span>
+    <span class="p">:</span> <span class="nc">UIViewController</span> <span class="o">&lt;</span><span class="n">UITableViewDataSource</span><span class="p">,</span> <span class="n">UITableViewDelegate</span><span class="p">,</span>
+                        <span class="n">UIAlertViewDelegate</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; British Broadcasting Corporation, under <a class="link" href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="external">Apache 2.0 open source licence</a></p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

@@ -76,6 +76,9 @@
                 <a class="nav-group-task-link" href="dialdevicediscovery.html">DIALDeviceDiscovery</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="dialtvselectionuiviews.html">DIALTVSelectionUIViews</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="simplelogger.html">SimpleLogger</a>
               </li>
               <li class="nav-group-task">
@@ -136,7 +139,8 @@ needed to build synchronised companion applications.</p>
 <li><a href="#timeline-synchronisation">Timeline Synchronisation</a></li>
 <li><a href="#synccontroller-objects">SyncController Objects</a></li>
 <li><a href="#mediasynchroniser">MediaSynchroniser</a></li>
-<li><a href="#other-frameworks">Other useful frameworks</a></li>
+<li><a href="#ui-components">UI components</a></li>
+<li><a href="#logging-configuration-and-other-utilities">Logging, Configuration and other utilities</a></li>
 </ul>
 <a href='#media-players' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='media-players'>Media Players</h3>
 
@@ -160,23 +164,23 @@ needed to build synchronised companion applications.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td><a href="AudioPlayer/">AudioPlayerEngine</a></td>
-<td><a href="AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayer.h">AudioPlayer</a></td>
+<td><a href="AudioPlayerEngine/">AudioPlayerEngine</a></td>
+<td><a href="AudioPlayerEngine/Classes/AudioPlayer.html">AudioPlayer</a></td>
 <td>A Core Audio SDK based player for audio files (e.g. mp3, wav, aifc, aiff, m4a, mp4, caf, aac files) and audio processing via units in an audio filter graph.</td>
 </tr>
 <tr>
-<td><a href="AudioPlayer/">AudioPlayerEngine</a></td>
-<td><a href="AudioPlayerEngine/AudioPlayerEngine/AudioStreamPlayer.h">AudioStreamPlayer</a></td>
+<td><a href="AudioPlayerEngine/">AudioPlayerEngine</a></td>
+<td><a href="AudioPlayerEngine/Classes/AudioStreamPlayer.html">AudioStreamPlayer</a></td>
 <td>A Core Audio SDK based player for audio streams. It uses Apple&rsquo;s Audio Queue Services and AudioFileStream to handle audio buffers and audio streaming</td>
 </tr>
 <tr>
-<td><a href="AudioPlayer/">AudioPlayerEngine</a></td>
-<td><a href="AudioPlayer/AudioPlayerEngine/AudioPlayerEngine/AudioPlayerViewController.h">AudioPlayerViewController</a></td>
+<td><a href="AudioPlayerEngine/">AudioPlayerEngine</a></td>
+<td><a href="AudioPlayerEngine/Classes/AudioPlayerViewController.html">AudioPlayerViewController</a></td>
 <td>a UIViewController that uses a CoreGraphics-based audio plotting UIView to show a waveform representation of the audio data in the buffer for an AudioPlayer</td>
 </tr>
 <tr>
 <td><a href="VideoPlayer/">VideoPlayer</a></td>
-<td><a href="VideoPlayer/VideoPlayer/VideoPlayer/VideoPlayerViewController.h">VideoPlayerViewController</a></td>
+<td><a href="VideoPlayer/Classes/VideoPlayerViewController.html">VideoPlayerViewController</a></td>
 <td>A player for video files (e.g. MP4, QuickTime) and adaptive HTTP-based streams (e.g. HLS)</td>
 </tr>
 </tbody></table>
@@ -203,12 +207,12 @@ Using the DIAL protocol, the Companion Screen Application can launch an HbbTV ap
 </thead><tbody>
 <tr>
 <td><a href="DIALDeviceDiscovery/">DIALDeviceDiscovery</a></td>
-<td><a href="DIALDeviceDiscovery/DIALDeviceDiscovery/SSDPServiceDiscovery.h">SSDPServiceDiscovery</a></td>
+<td><a href="DIALDeviceDiscovery/Classes/SSDPServiceDiscovery.html">SSDPServiceDiscovery</a></td>
 <td>Discovery of UPnP devices advertising a type of service type</td>
 </tr>
 <tr>
 <td><a href="DIALDeviceDiscovery/">DIALDeviceDiscovery</a></td>
-<td><a href="DIALDeviceDiscovery/DIALDeviceDiscovery/SSDPServiceDiscovery.h">DIALServiceDiscovery</a></td>
+<td><a href="DIALDeviceDiscovery/Classes/DIALServiceDiscovery.html">DIALServiceDiscovery</a></td>
 <td>Discovery of devices on the network running a DIAL server and web applications such an HbbTV</td>
 </tr>
 </tbody></table>
@@ -229,17 +233,17 @@ Using the DIAL protocol, the Companion Screen Application can launch an HbbTV ap
 </thead><tbody>
 <tr>
 <td><a href="ClockTimelines/">ClockTimelines</a></td>
-<td><a href="ClockTimelines/ClockTimelines/SystemClock.h">SystemClock</a></td>
+<td><a href="ClockTimelines/Classes/SystemClock.html">SystemClock</a></td>
 <td>A root clock class that is based on monotonic time as the underlying time source</td>
 </tr>
 <tr>
 <td><a href="ClockTimelines/">ClockTimelines</a></td>
-<td><a href="ClockTimelines/ClockTimelines/CorrelatedClock.h">CorrelatedClock</a></td>
+<td><a href="ClockTimelines/Classes/CorrelatedClock.html">CorrelatedClock</a></td>
 <td>A clock represent a timeline&rsquo;s relationship with a parent timeline as a correlation</td>
 </tr>
 <tr>
 <td><a href="ClockTimelines/">ClockTimelines</a></td>
-<td><a href="ClockTimelines/ClockTimelines/TunableClock.h">TunableClock</a></td>
+<td><a href="ClockTimelines/Classes/TunableClock.html">TunableClock</a></td>
 <td>A clock for a timeline with a correlation mapping to a parent clock, but with  adjustible tick offset and speed.</td>
 </tr>
 </tbody></table>
@@ -258,23 +262,23 @@ to process the measurements and update the WallClock.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td><a href="WallClockSync/">WallClockClient</a></td>
-<td><a href="WallClockSync/WallClockClient/WallClockClient/WallClockSynchroniser.h">WallClockSynchroniser</a></td>
+<td><a href="WallClockClient/">WallClockClient</a></td>
+<td><a href="WallClockClient/Classes/WallClockSynchroniser.html">WallClockSynchroniser</a></td>
 <td>WallClock synchroniser using RTT Threshold filter and Lowest Dispersion algorithm</td>
 </tr>
 <tr>
-<td><a href="WallClockSync/">WallClockClient</a></td>
-<td><a href="WallClockSync/WallClockClient/WallClockClient/WCProtocolClient.h">WCProtocolClient</a></td>
+<td><a href="WallClockClient/">WallClockClient</a></td>
+<td><a href="WallClockClient/Classes/WCProtocolClient.html">WCProtocolClient</a></td>
 <td>A CSS-WC protocol client</td>
 </tr>
 <tr>
-<td><a href="WallClockSync/">WallClockClient</a></td>
-<td><a href="WallClockSync/WallClockClient/WallClockClient/LowestDispersionAlgorithm.h">LowestDispersionAlgorithm</a></td>
+<td><a href="WallClockClient/">WallClockClient</a></td>
+<td><a href="WallClockClient/Classes/LowestDispersionAlgorithm.html">LowestDispersionAlgorithm</a></td>
 <td>Measurement-processing algo based on lowest dispersion for best-candidate selection</td>
 </tr>
 <tr>
-<td><a href="WallClockSync/">WallClockClient</a></td>
-<td><a href="WallClockSync/WallClockClient/WallClockClient/LowestDispersionFilter.h">LowestDispersionFilter</a>,  <a href="WallClockSync/WallClockClient/WallClockClient/RTTThresholdFilter.h">RTTThresholdFilter</a></td>
+<td><a href="WallClockClient/">WallClockClient</a></td>
+<td><a href="WallClockClient/Classes/LowestDispersionFilter.html">LowestDispersionFilter</a>,  <a href="WallClockClient/Classes/RTTThresholdFilter.html">RTTThresholdFilter</a></td>
 <td>Candidate measurement filters</td>
 </tr>
 </tbody></table>
@@ -293,12 +297,12 @@ to process the measurements and update the WallClock.</p>
 </thead><tbody>
 <tr>
 <td><a href="CIIProtocolClient/">CIIProtocolClient</a></td>
-<td><a href="CIIProtocolClient/CIIProtocolClient/CIIClient.h">CIIClient</a></td>
+<td><a href="CIIProtocolClient/Classes/CIIClient.html">CIIClient</a></td>
 <td>A CSS-CII protocol client</td>
 </tr>
 <tr>
 <td><a href="CIIProtocolClient/">CIIProtocolClient</a></td>
-<td><a href="CIIProtocolClient/CIIProtocolClient/TimelineOption.h">TimelineOption</a></td>
+<td><a href="CIIProtocolClient/Classes/TimelineOption.html">TimelineOption</a></td>
 <td>A timeline description object.</td>
 </tr>
 </tbody></table>
@@ -317,12 +321,12 @@ to process the measurements and update the WallClock.</p>
 </thead><tbody>
 <tr>
 <td><a href="TimelineSync/">TimelineSync</a></td>
-<td><a href="TimelineSync/TimelineSync/TimelineSync/TSClient.h">TSClient</a></td>
+<td><a href="TimelineSync/Classes/TSClient.html">TSClient</a></td>
 <td>A CSS-TS protocol client. Receives Control Timestamps from the TV.</td>
 </tr>
 <tr>
 <td><a href="TimelineSync/">TimelineSync</a></td>
-<td><a href="TimelineSync/TimelineSync/TimelineSync/TimelineSynchroniser.h">TimelineSynchroniser</a></td>
+<td><a href="TimelineSync/Classes/TimelineSynchroniser.html">TimelineSynchroniser</a></td>
 <td>A wrapper object that synchronises a CorrelatedClock object based on Synchronisation Timeline updates received from the TV via a TSClient</td>
 </tr>
 </tbody></table>
@@ -332,7 +336,7 @@ to process the measurements and update the WallClock.</p>
 
 <p>The SyncController framework provides  sync controller objects that can be used to synchronise a native media player to a given timeline. The SyncController object use a particular strategy to adapt the media player&rsquo;s playback (change speed of play, seek, or both) to ensure that it adheres to the given timeline.</p>
 
-<p>It uses a <a href="ClockTimelines/ClockTimelines/CorrelatedClock.h">Correlation</a> and a <a href="ClockTimelines/ClockTimelines/CorrelatedClock.h">CorrelatedClock</a> object to synthesise the expected timeline for the media player. The Correlation gives a mapping (a pair of timestamps) between the Synchronisation Timeline and the media asset&rsquo;s timeline.</p>
+<p>It uses a <a href="ClockTimelines/classes/CorrelatedClock.html">Correlation</a> and a <a href="ClockTimelines/Classes/CorrelatedClock.html">CorrelatedClock</a> object to synthesise the expected timeline for the media player. The Correlation gives a mapping (a pair of timestamps) between the Synchronisation Timeline and the media asset&rsquo;s timeline.</p>
 
 <p>For web views, it provides a JS framework (ios_sync.js) to register the web page for current-time updates on the TV&rsquo;s timeline. The framework includes example apps to demonstrate usage of the sync controller objects.</p>
 
@@ -347,23 +351,23 @@ to process the measurements and update the WallClock.</p>
 </thead><tbody>
 <tr>
 <td><a href="SyncController/">SyncController</a></td>
-<td><a href="SyncController/SyncController/SyncController/VideoPlayerSyncController.h">VideoPlayerSyncController</a></td>
+<td><a href="SyncController/Classes/VideoPlayerSyncController.html">VideoPlayerSyncController</a></td>
 <td>Synchronises a video player (VideoPlayerViewController) to an expected timeline</td>
 </tr>
 <tr>
 <td><a href="SyncController/">SyncController</a></td>
-<td><a href="SyncController/SyncController/SyncController/AudioSyncController.h">AudioSyncController</a></td>
+<td><a href="SyncController/Classes/AudioSyncController.html">AudioSyncController</a></td>
 <td>Synchronises an audio player (AudioPlayer, AudioStreamPlayer or AudioPlayerViewController) to an expected timeline</td>
 </tr>
 <tr>
 <td><a href="SyncController/">SyncController</a></td>
-<td><a href="SyncController/SyncController/SyncController/WebViewSyncController.h">WebViewSyncController</a></td>
+<td><a href="SyncController/Classes/WebViewSyncController.html">WebViewSyncController</a></td>
 <td>A SyncController to send timestamps reporting progress of a TV programme to a web view</td>
 </tr>
 <tr>
 <td><a href="SyncController/">SyncController</a></td>
-<td><a href="SyncController/SyncController/SyncController/www/ios_sync.js">ios_sync.js</a></td>
-<td>JS library to register for register the web page for current-time updates on the TV&rsquo;s timeline. To be used in tandem with a <a href="SyncController/SyncController/SyncController/WebViewSyncController.h">WebViewSyncController</a> on the native side. See <a href="SyncController/WebViewSyncDemoApp/">WebViewSyncDemoApp</a> for usage example.</td>
+<td>ios_sync.js</td>
+<td>JS library to register for register the web page for current-time updates on the TV&rsquo;s timeline. To be used in tandem with a <a href="SyncController/Classes/WebViewSyncController.html">WebViewSyncController</a> on the native side.</td>
 </tr>
 </tbody></table>
 <a href='#mediasynchroniser' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='mediasynchroniser'>MediaSynchroniser</h3>
@@ -375,7 +379,7 @@ to process the measurements and update the WallClock.</p>
 <p>To use the Synchroniser singletob, you need to initialise it with these parameters</p>
 
 <ul>
-<li><code>InterDeviceSyncURL</code> - the master device&rsquo;s URL for interdevice synchronisation (obtained from discovery of the TV using DIAL, see <a href="../DIALDeviceDiscovery">DIALDeviceDiscovery</a> sub-project for examples).</li>
+<li><code>InterDeviceSyncURL</code> - the master device&rsquo;s URL for interdevice synchronisation (obtained from discovery of the TV using DIAL, see <a href="DIALDeviceDiscovery/">DIALDeviceDiscovery</a> sub-project for examples).</li>
 <li><code>App2AppURL</code> - the master device&rsquo;s endpoint for communication between TV apps and companion screen Applications.</li>
 <li><code>TimelineSelector</code> - a <code>TimelineOption</code> object providing a timeline name and other properties (e.g. tick rate, accuracy).</li>
 </ul>
@@ -390,20 +394,17 @@ to process the measurements and update the WallClock.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td><a href="MediaSynchroniser/">CSASynchroniser</a></td>
-<td><a href="/MediaSynchroniser/CSASynchroniser/CSASynchroniser/MediaPlayerObject.h">MediaPlayerObject</a></td>
+<td><a href="CSASynchroniser/">CSASynchroniser</a></td>
+<td><a href="CSASynchroniser/Classes/MediaPlayerObject.html">MediaPlayerObject</a></td>
 <td>An object encapsulating a media player instance, the media URL and a correlation for mapping the Synchronisation Timeline to the media timeline</td>
 </tr>
 <tr>
-<td><a href="MediaSynchroniser/">CSASynchroniser</a></td>
-<td><a href="MediaSynchroniser/CSASynchroniser/CSASynchroniser/Synchroniser.h">Synchroniser</a></td>
+<td><a href="CSASynchroniser/">CSASynchroniser</a></td>
+<td><a href="CSASynchroniser/Classes/Synchroniser.html">Synchroniser</a></td>
 <td>A singleton that accepts  MediaPlayerObject instances (each playing a media object) or web views to synchronise against a  TV</td>
 </tr>
 </tbody></table>
-<a href='#other-frameworks' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='other-frameworks'>Other Frameworks</h3>
-
-<p><strong>dvbcss-synckit-ios</strong> also includes a number of useful fine-grain dynamic libraries.</p>
-<a href='#ui-components' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='ui-components'>UI Components</h5>
+<a href='#ui-components' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='ui-components'>UI Components</h2>
 
 <table><thead>
 <tr>
@@ -413,47 +414,17 @@ to process the measurements and update the WallClock.</p>
 </tr>
 </thead><tbody>
 <tr>
-<td><a href="DIALDeviceDiscovery/DIALTVSelectionUIViews/">DIALTVSelectionUIViews</a></td>
-<td><a href="DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALDeviceCollectionViewController.h">DIALDeviceCollectionViewController</a></td>
+<td><a href="DIALTVSelectionUIViews/">DIALTVSelectionUIViews</a></td>
+<td><a href="DIALTVSelectionUIViews/Classes/DIALDeviceCollectionViewController.html">DIALDeviceCollectionViewController</a></td>
 <td>A ViewController which displays devices discovered by the DIALDeviceDiscovery framework as a collection (UICollectionView)</td>
 </tr>
 <tr>
-<td><a href="DIALDeviceDiscovery/DIALTVSelectionUIViews/">DIALTVSelectionUIViews</a></td>
-<td><a href="DIALDeviceDiscovery/DIALTVSelectionUIViews/DIALTVSelectionUIViews/DIALDeviceSelectorViewController.h">DIALDeviceSelectorViewController</a></td>
+<td><a href="DIALTVSelectionUIViews/">DIALTVSelectionUIViews</a></td>
+<td><a href="DIALTVSelectionUIViews/Classes/DIALDeviceSelectorViewController.html">DIALDeviceSelectorViewController</a></td>
 <td>A ViewController which displays devices discovered by the DIALDeviceDiscovery framework as a list (UITableView)</td>
 </tr>
 </tbody></table>
-<a href='#communications' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='communications'>Communications</h5>
-
-<table><thead>
-<tr>
-<th>Framework</th>
-<th>Component</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><a href="AsyncSocket/AsyncSocket/">AsyncSocket</a></td>
-<td><a href="AsyncSocket/AsyncSocket/AsyncSocket/GCDAsyncUdpSocket.h">GCDAsyncUdpSocket</a></td>
-<td>A UDP/IP socket networking framework built atop Grand Central Dispatch.</td>
-</tr>
-<tr>
-<td><a href="UDPMessaging/UDPMessaging/">UDPMessaging</a></td>
-<td><a href="UDPMessaging/UDPMessaging/UDPEndpoint.h">UDPEndpoint</a></td>
-<td>A class representing a UDP socket endpoint (server- or client-mode)</td>
-</tr>
-<tr>
-<td><a href="WebSocket/SocketRocket/">SocketRocket</a></td>
-<td><a href="WebSocket/SocketRocket/SocketRocket/SRWebSocket.h">SRWebSocket</a></td>
-<td>Facebook&rsquo;s <a href="https://github.com/facebook/SocketRocket">SRWebSocket</a> framework (available under a BSD-licence) re-packaged as an iOS framework</td>
-</tr>
-<tr>
-<td><a href="JSONModelFramework/">JSONModelFramework</a></td>
-<td><a href="JSONModelFramework/JSONModelFramework/">SRWebSocket</a></td>
-<td>Framework for serialising Objective C objects into JSON and deserialise JSON back to Objective C. A repackaging of the open-source <a href="https://github.com/jsonmodel/jsonmodel">JSONModel</a> library as an iOS framework</td>
-</tr>
-</tbody></table>
-<a href='#logging-configuration-and-other-utilities' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='logging-configuration-and-other-utilities'>Logging, Configuration and other utilities</h5>
+<a href='#logging-configuration-and-other-utilities' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='logging-configuration-and-other-utilities'>Logging, Configuration and other utilities</h2>
 
 <table><thead>
 <tr>
@@ -464,17 +435,17 @@ to process the measurements and update the WallClock.</p>
 </thead><tbody>
 <tr>
 <td><a href="SimpleLogger/">SimpleLogger</a></td>
-<td><a href="SimpleLogger/SimpleLogger/MWLogging.h">SimpleLogger</a></td>
+<td>SimpleLogger.h</td>
 <td>Simple wrapper macros/functions around ASL (Apple System Log)</td>
 </tr>
 <tr>
 <td><a href="SyncKitConfiguration/">SyncKitConfiguration</a></td>
-<td><a href="SyncKitConfiguration/SyncKitConfiguration/ConfigReader.h">ConfigReader</a></td>
+<td><a href="SyncKitConfiguration/Classes/ConfigReader.html">ConfigReader</a></td>
 <td>A library to read configuration key-value pairs from a config file and make them globally available.</td>
 </tr>
 <tr>
 <td><a href="SyncKitCollections/">SyncKitCollections</a></td>
-<td><a href="SyncKitCollections/SyncKitCollections/">SyncKitCollections</a></td>
+<td>SyncKitCollections.h</td>
 <td>A collection of data structures and utility classes.</td>
 </tr>
 </tbody></table>

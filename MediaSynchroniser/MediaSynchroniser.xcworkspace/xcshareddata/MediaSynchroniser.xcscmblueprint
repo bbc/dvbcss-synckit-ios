@@ -1,0 +1,49 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0F274DC425865CF65DA3BAC306073EB06FE15166+++EE34378",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "2454A7C0A4BC2A09472718EB55354F320600B245+++26C4A44" : {
+
+    },
+    "2454A7C0A4BC2A09472718EB55354F320600B245+++B02E2F8" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2454A7C0A4BC2A09472718EB55354F320600B245+++26C4A44" : 0,
+    "A816FC4ADFC89DA18F558381A469612D3EC0F344+++89FF8AC" : 0,
+    "2454A7C0A4BC2A09472718EB55354F320600B245+++B02E2F8" : 0,
+    "0F274DC425865CF65DA3BAC306073EB06FE15166+++EE34378" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4E0E5323-5E0F-4242-B072-242AC6341923",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2454A7C0A4BC2A09472718EB55354F320600B245+++26C4A44" : "synckit\/JSONModel\/",
+    "A816FC4ADFC89DA18F558381A469612D3EC0F344+++89FF8AC" : "synckit\/",
+    "2454A7C0A4BC2A09472718EB55354F320600B245+++B02E2F8" : "synckit\/JSONModel\/",
+    "0F274DC425865CF65DA3BAC306073EB06FE15166+++EE34378" : "dvbcss-synckit-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MediaSynchroniser",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MediaSynchroniser\/MediaSynchroniser.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bbc\/dvbcss-synckit-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0F274DC425865CF65DA3BAC306073EB06FE15166+++EE34378"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/repo.dev.bbc.co.uk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2454A7C0A4BC2A09472718EB55354F320600B245+++26C4A44"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/icanzilb\/JSONModel",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2454A7C0A4BC2A09472718EB55354F320600B245+++B02E2F8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab-ext.irt.de:2-immerse\/synckit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A816FC4ADFC89DA18F558381A469612D3EC0F344+++89FF8AC"
+    }
+  ]
+}

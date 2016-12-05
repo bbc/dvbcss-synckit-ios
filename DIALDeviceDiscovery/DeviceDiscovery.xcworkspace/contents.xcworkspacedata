@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SynKitTVSelectionViewControllersDemo/SynKitTVSelectionViewControllersDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SyncKitDelegate/SyncKitDelegate.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DIALTVSelectionUIViews/DIALTVSelectionUIViews.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DIALDeviceDiscoveryDemo/DIALDeviceDiscoveryDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SyncKitCollections/SyncKitCollections.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DIALDeviceDiscovery/DIALDeviceDiscovery.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SimpleLogger/SimpleLogger.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SyncKitConfiguration/SyncKitConfiguration.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../AsyncSocket/AsyncSocket/AsyncSocket.xcodeproj">
+   </FileRef>
+</Workspace>

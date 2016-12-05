@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../WallClockSync/WallClockClient/WallClockClient.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../JSONModelFramework/JSONModelFramework.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../AudioPlayer/AudioPlayerEngine/AudioPlayerEngine.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WebViewSyncDemoApp/WebViewSyncDemoApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AudioSyncDemoApp/AudioSyncDemoApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SyncController/SyncController.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:VideoSyncDemoApp/VideoSyncDemoApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../AsyncSocket/AsyncSocket/AsyncSocket.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../ClockTimelines/ClockTimelines.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SimpleLogger/SimpleLogger.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../WebSocket/SocketRocket/SocketRocket.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SyncKitCollections/SyncKitCollections.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../SyncKitConfiguration/SyncKitConfiguration.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../VideoPlayer/TestVideoPlayer/TestVideoPlayer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../TimelineSync/TimelineSync/TimelineSync.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../UDPMessaging/UDPMessaging.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../VideoPlayer/VideoPlayer/VideoPlayer.xcodeproj">
+   </FileRef>
+</Workspace>

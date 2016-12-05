@@ -1,0 +1,28 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99" : 0,
+    "A131014745C021B8E7488CEA7E81DD626B86575C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BCE40772-D947-4391-BAF8-1E21F52D4AB6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99" : "dvbcss-synckit-ios\/",
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "synckit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "src\/synckit.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A131014745C021B8E7488CEA7E81DD626B86575C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bbc\/dvbcss-synckit-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99"
+    }
+  ]
+}

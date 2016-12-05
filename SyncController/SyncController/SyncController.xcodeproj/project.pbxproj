@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4207D3871CEA41F90022EE9E /* SyncControllerError.h in Headers */ = {isa = PBXBuildFile; fileRef = 4207D3831CEA41F90022EE9E /* SyncControllerError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4207D3881CEA41F90022EE9E /* SyncControllerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4207D3841CEA41F90022EE9E /* SyncControllerError.m */; };
+		4207D3891CEA41F90022EE9E /* VideoPlayerSyncController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4207D3851CEA41F90022EE9E /* VideoPlayerSyncController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4207D38A1CEA41F90022EE9E /* VideoPlayerSyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4207D3861CEA41F90022EE9E /* VideoPlayerSyncController.m */; };
+		4207D38D1CEA44DF0022EE9E /* AudioSyncController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4207D38B1CEA44DF0022EE9E /* AudioSyncController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4207D38E1CEA44DF0022EE9E /* AudioSyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4207D38C1CEA44DF0022EE9E /* AudioSyncController.m */; };
+		4270AEBF1CE9C703006F6084 /* SyncController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4270AEBE1CE9C703006F6084 /* SyncController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4270AEC61CE9C703006F6084 /* SyncController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4270AEBB1CE9C703006F6084 /* SyncController.framework */; };
+		4270AECB1CE9C703006F6084 /* SyncControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4270AECA1CE9C703006F6084 /* SyncControllerTests.m */; };
+		42763EFE1DB11D2500CDDC69 /* AudioPlayerEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EF91DB11D2500CDDC69 /* AudioPlayerEngine.framework */; };
+		42763EFF1DB11D2500CDDC69 /* ClockTimelines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EFA1DB11D2500CDDC69 /* ClockTimelines.framework */; };
+		42763F001DB11D2500CDDC69 /* SimpleLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EFB1DB11D2500CDDC69 /* SimpleLogger.framework */; };
+		42763F011DB11D2500CDDC69 /* SyncKitConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EFC1DB11D2500CDDC69 /* SyncKitConfiguration.framework */; };
+		42763F021DB11D2500CDDC69 /* VideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EFD1DB11D2500CDDC69 /* VideoPlayer.framework */; };
+		428D87361CEE341A0047DDBE /* InvocationProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 428D87331CEE341A0047DDBE /* InvocationProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		428D87371CEE341A0047DDBE /* WebViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 428D87341CEE341A0047DDBE /* WebViewProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		428D87381CEE341A0047DDBE /* WebViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 428D87351CEE341A0047DDBE /* WebViewProxy.m */; };
+		42921DBD1CF4FA1A00972726 /* SyncControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 42921DBC1CF4FA1A00972726 /* SyncControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42921DC71CF4FF2300972726 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 42921DC01CF4FF2300972726 /* index.html */; };
+		42921DC81CF4FF2300972726 /* index_old.html in Resources */ = {isa = PBXBuildFile; fileRef = 42921DC11CF4FF2300972726 /* index_old.html */; };
+		42921DC91CF4FF2300972726 /* ios_sync.js in Resources */ = {isa = PBXBuildFile; fileRef = 42921DC21CF4FF2300972726 /* ios_sync.js */; };
+		42921DCA1CF4FF2300972726 /* iosBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 42921DC31CF4FF2300972726 /* iosBridge.js */; };
+		42921DCB1CF4FF2300972726 /* mock_sync.js in Resources */ = {isa = PBXBuildFile; fileRef = 42921DC41CF4FF2300972726 /* mock_sync.js */; };
+		42921DCC1CF4FF2300972726 /* msg.html in Resources */ = {isa = PBXBuildFile; fileRef = 42921DC51CF4FF2300972726 /* msg.html */; };
+		42C959561D05D15700ED9A51 /* WebViewSyncController.h in Headers */ = {isa = PBXBuildFile; fileRef = 42C959541D05D15700ED9A51 /* WebViewSyncController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42C959571D05D15700ED9A51 /* WebViewSyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C959551D05D15700ED9A51 /* WebViewSyncController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4270AEC71CE9C703006F6084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4270AEB21CE9C703006F6084 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4270AEBA1CE9C703006F6084;
+			remoteInfo = SyncController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4207D3831CEA41F90022EE9E /* SyncControllerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncControllerError.h; sourceTree = "<group>"; };
+		4207D3841CEA41F90022EE9E /* SyncControllerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncControllerError.m; sourceTree = "<group>"; };
+		4207D3851CEA41F90022EE9E /* VideoPlayerSyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerSyncController.h; sourceTree = "<group>"; };
+		4207D3861CEA41F90022EE9E /* VideoPlayerSyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerSyncController.m; sourceTree = "<group>"; };
+		4207D38B1CEA44DF0022EE9E /* AudioSyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioSyncController.h; sourceTree = "<group>"; };
+		4207D38C1CEA44DF0022EE9E /* AudioSyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioSyncController.m; sourceTree = "<group>"; };
+		4270AEBB1CE9C703006F6084 /* SyncController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SyncController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4270AEBE1CE9C703006F6084 /* SyncController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncController.h; sourceTree = "<group>"; };
+		4270AEC01CE9C703006F6084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4270AEC51CE9C703006F6084 /* SyncControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyncControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4270AECA1CE9C703006F6084 /* SyncControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncControllerTests.m; sourceTree = "<group>"; };
+		4270AECC1CE9C703006F6084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42763EF91DB11D2500CDDC69 /* AudioPlayerEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioPlayerEngine.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/AudioPlayerEngine.framework"; sourceTree = "<group>"; };
+		42763EFA1DB11D2500CDDC69 /* ClockTimelines.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ClockTimelines.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/ClockTimelines.framework"; sourceTree = "<group>"; };
+		42763EFB1DB11D2500CDDC69 /* SimpleLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleLogger.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/SimpleLogger.framework"; sourceTree = "<group>"; };
+		42763EFC1DB11D2500CDDC69 /* SyncKitConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SyncKitConfiguration.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/SyncKitConfiguration.framework"; sourceTree = "<group>"; };
+		42763EFD1DB11D2500CDDC69 /* VideoPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoPlayer.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/VideoPlayer.framework"; sourceTree = "<group>"; };
+		428D87331CEE341A0047DDBE /* InvocationProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvocationProcessor.h; sourceTree = "<group>"; };
+		428D87341CEE341A0047DDBE /* WebViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewProxy.h; sourceTree = "<group>"; };
+		428D87351CEE341A0047DDBE /* WebViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewProxy.m; sourceTree = "<group>"; };
+		42921DBC1CF4FA1A00972726 /* SyncControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncControllerDelegate.h; sourceTree = "<group>"; };
+		42921DC01CF4FF2300972726 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		42921DC11CF4FF2300972726 /* index_old.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index_old.html; sourceTree = "<group>"; };
+		42921DC21CF4FF2300972726 /* ios_sync.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ios_sync.js; sourceTree = "<group>"; };
+		42921DC31CF4FF2300972726 /* iosBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = iosBridge.js; sourceTree = "<group>"; };
+		42921DC41CF4FF2300972726 /* mock_sync.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mock_sync.js; sourceTree = "<group>"; };
+		42921DC51CF4FF2300972726 /* msg.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = msg.html; sourceTree = "<group>"; };
+		42C959541D05D15700ED9A51 /* WebViewSyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewSyncController.h; sourceTree = "<group>"; };
+		42C959551D05D15700ED9A51 /* WebViewSyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewSyncController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4270AEB71CE9C703006F6084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42763EFE1DB11D2500CDDC69 /* AudioPlayerEngine.framework in Frameworks */,
+				42763EFF1DB11D2500CDDC69 /* ClockTimelines.framework in Frameworks */,
+				42763F001DB11D2500CDDC69 /* SimpleLogger.framework in Frameworks */,
+				42763F011DB11D2500CDDC69 /* SyncKitConfiguration.framework in Frameworks */,
+				42763F021DB11D2500CDDC69 /* VideoPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4270AEC21CE9C703006F6084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4270AEC61CE9C703006F6084 /* SyncController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4270AEB11CE9C703006F6084 = {
+			isa = PBXGroup;
+			children = (
+				42763EF91DB11D2500CDDC69 /* AudioPlayerEngine.framework */,
+				42763EFA1DB11D2500CDDC69 /* ClockTimelines.framework */,
+				42763EFB1DB11D2500CDDC69 /* SimpleLogger.framework */,
+				42763EFC1DB11D2500CDDC69 /* SyncKitConfiguration.framework */,
+				42763EFD1DB11D2500CDDC69 /* VideoPlayer.framework */,
+				4270AEBD1CE9C703006F6084 /* SyncController */,
+				4270AEC91CE9C703006F6084 /* SyncControllerTests */,
+				4270AEBC1CE9C703006F6084 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4270AEBC1CE9C703006F6084 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4270AEBB1CE9C703006F6084 /* SyncController.framework */,
+				4270AEC51CE9C703006F6084 /* SyncControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4270AEBD1CE9C703006F6084 /* SyncController */ = {
+			isa = PBXGroup;
+			children = (
+				42C959541D05D15700ED9A51 /* WebViewSyncController.h */,
+				42C959551D05D15700ED9A51 /* WebViewSyncController.m */,
+				4207D38B1CEA44DF0022EE9E /* AudioSyncController.h */,
+				4207D38C1CEA44DF0022EE9E /* AudioSyncController.m */,
+				4270AEC01CE9C703006F6084 /* Info.plist */,
+				428D87331CEE341A0047DDBE /* InvocationProcessor.h */,
+				4270AEBE1CE9C703006F6084 /* SyncController.h */,
+				42921DBC1CF4FA1A00972726 /* SyncControllerDelegate.h */,
+				4207D3831CEA41F90022EE9E /* SyncControllerError.h */,
+				4207D3841CEA41F90022EE9E /* SyncControllerError.m */,
+				4207D3851CEA41F90022EE9E /* VideoPlayerSyncController.h */,
+				4207D3861CEA41F90022EE9E /* VideoPlayerSyncController.m */,
+				428D87341CEE341A0047DDBE /* WebViewProxy.h */,
+				428D87351CEE341A0047DDBE /* WebViewProxy.m */,
+				42921DBE1CF4FF2300972726 /* www */,
+			);
+			path = SyncController;
+			sourceTree = "<group>";
+		};
+		4270AEC91CE9C703006F6084 /* SyncControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4270AECA1CE9C703006F6084 /* SyncControllerTests.m */,
+				4270AECC1CE9C703006F6084 /* Info.plist */,
+			);
+			path = SyncControllerTests;
+			sourceTree = "<group>";
+		};
+		42921DBE1CF4FF2300972726 /* www */ = {
+			isa = PBXGroup;
+			children = (
+				42921DC01CF4FF2300972726 /* index.html */,
+				42921DC11CF4FF2300972726 /* index_old.html */,
+				42921DC21CF4FF2300972726 /* ios_sync.js */,
+				42921DC31CF4FF2300972726 /* iosBridge.js */,
+				42921DC41CF4FF2300972726 /* mock_sync.js */,
+				42921DC51CF4FF2300972726 /* msg.html */,
+			);
+			path = www;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4270AEB81CE9C703006F6084 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4207D3871CEA41F90022EE9E /* SyncControllerError.h in Headers */,
+				4207D3891CEA41F90022EE9E /* VideoPlayerSyncController.h in Headers */,
+				4207D38D1CEA44DF0022EE9E /* AudioSyncController.h in Headers */,
+				428D87371CEE341A0047DDBE /* WebViewProxy.h in Headers */,
+				428D87361CEE341A0047DDBE /* InvocationProcessor.h in Headers */,
+				42921DBD1CF4FA1A00972726 /* SyncControllerDelegate.h in Headers */,
+				42C959561D05D15700ED9A51 /* WebViewSyncController.h in Headers */,
+				4270AEBF1CE9C703006F6084 /* SyncController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4270AEBA1CE9C703006F6084 /* SyncController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4270AECF1CE9C703006F6084 /* Build configuration list for PBXNativeTarget "SyncController" */;
+			buildPhases = (
+				4270AEB61CE9C703006F6084 /* Sources */,
+				4270AEB71CE9C703006F6084 /* Frameworks */,
+				4270AEB81CE9C703006F6084 /* Headers */,
+				4270AEB91CE9C703006F6084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SyncController;
+			productName = SyncController;
+			productReference = 4270AEBB1CE9C703006F6084 /* SyncController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4270AEC41CE9C703006F6084 /* SyncControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4270AED21CE9C703006F6084 /* Build configuration list for PBXNativeTarget "SyncControllerTests" */;
+			buildPhases = (
+				4270AEC11CE9C703006F6084 /* Sources */,
+				4270AEC21CE9C703006F6084 /* Frameworks */,
+				4270AEC31CE9C703006F6084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4270AEC81CE9C703006F6084 /* PBXTargetDependency */,
+			);
+			name = SyncControllerTests;
+			productName = SyncControllerTests;
+			productReference = 4270AEC51CE9C703006F6084 /* SyncControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4270AEB21CE9C703006F6084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "BBC RD";
+				TargetAttributes = {
+					4270AEBA1CE9C703006F6084 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 869YXPEF4W;
+					};
+					4270AEC41CE9C703006F6084 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4270AEB51CE9C703006F6084 /* Build configuration list for PBXProject "SyncController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4270AEB11CE9C703006F6084;
+			productRefGroup = 4270AEBC1CE9C703006F6084 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4270AEBA1CE9C703006F6084 /* SyncController */,
+				4270AEC41CE9C703006F6084 /* SyncControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4270AEB91CE9C703006F6084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42921DCC1CF4FF2300972726 /* msg.html in Resources */,
+				42921DC81CF4FF2300972726 /* index_old.html in Resources */,
+				42921DC91CF4FF2300972726 /* ios_sync.js in Resources */,
+				42921DCA1CF4FF2300972726 /* iosBridge.js in Resources */,
+				42921DC71CF4FF2300972726 /* index.html in Resources */,
+				42921DCB1CF4FF2300972726 /* mock_sync.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4270AEC31CE9C703006F6084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4270AEB61CE9C703006F6084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428D87381CEE341A0047DDBE /* WebViewProxy.m in Sources */,
+				4207D3881CEA41F90022EE9E /* SyncControllerError.m in Sources */,
+				4207D38A1CEA41F90022EE9E /* VideoPlayerSyncController.m in Sources */,
+				42C959571D05D15700ED9A51 /* WebViewSyncController.m in Sources */,
+				4207D38E1CEA44DF0022EE9E /* AudioSyncController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4270AEC11CE9C703006F6084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4270AECB1CE9C703006F6084 /* SyncControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4270AEC81CE9C703006F6084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4270AEBA1CE9C703006F6084 /* SyncController */;
+			targetProxy = 4270AEC71CE9C703006F6084 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4270AECD1CE9C703006F6084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4270AECE1CE9C703006F6084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4270AED01CE9C703006F6084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SyncController/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.rd.SyncController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4270AED11CE9C703006F6084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SyncController/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.rd.SyncController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4270AED31CE9C703006F6084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SyncControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.rd.SyncControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4270AED41CE9C703006F6084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SyncControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bbc.rd.SyncControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4270AEB51CE9C703006F6084 /* Build configuration list for PBXProject "SyncController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4270AECD1CE9C703006F6084 /* Debug */,
+				4270AECE1CE9C703006F6084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4270AECF1CE9C703006F6084 /* Build configuration list for PBXNativeTarget "SyncController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4270AED01CE9C703006F6084 /* Debug */,
+				4270AED11CE9C703006F6084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4270AED21CE9C703006F6084 /* Build configuration list for PBXNativeTarget "SyncControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4270AED31CE9C703006F6084 /* Debug */,
+				4270AED41CE9C703006F6084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4270AEB21CE9C703006F6084 /* Project object */;
+}

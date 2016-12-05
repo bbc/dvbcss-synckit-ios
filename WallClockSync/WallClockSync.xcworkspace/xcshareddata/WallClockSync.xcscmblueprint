@@ -1,0 +1,40 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2454A7C0A4BC2A09472718EB55354F320600B245",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++4181" : {
+
+    },
+    "2454A7C0A4BC2A09472718EB55354F320600B245" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++4181" : 0,
+    "2454A7C0A4BC2A09472718EB55354F320600B245" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B6552764-D0DF-43B9-93B0-DDD326C73AE0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++4181" : "synckit\/",
+    "2454A7C0A4BC2A09472718EB55354F320600B245" : "synckit\/JSONModel\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WallClockSync",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WallClockClient\/WallClockSync.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/repo.dev.bbc.co.uk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2454A7C0A4BC2A09472718EB55354F320600B245"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/icanzilb\/JSONModel",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2454A7C0A4BC2A09472718EB55354F320600B245"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/repo.dev.bbc.co.uk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++4181"
+    }
+  ]
+}

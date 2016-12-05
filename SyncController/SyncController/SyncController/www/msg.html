@@ -1,0 +1,84 @@
+<html>
+    <head>
+    <script src="ios_sync.js"></script>
+    <script>
+            // message update handler function
+            // function is called from IOS
+            function updateMsg(args)
+            {
+                alert(args);
+                var obj = JSON.parse(args);
+                alert(obj.msg);
+                document.getElementById("msg").innerHTML =  obj.msg;
+            }
+            // Asynchronous function called from IOS to receive TS control timestamps, if registration was successful.
+            //@param contentTime represents time of media playing on IOS device
+            //@param timeSpeedMultiplier - speed of play. It is zero if paused or a double value, +ve for fast forwardingand -ve for slowing playback
+            function updateTimeline(args)
+            {
+                // schedule handler
+                var delay = function() { handlerFunc(args); };
+                setTimeout(delay, 0);
+                // and return immediately;
+                // Adding lengthy processing in this method will delay Companion App main thread.
+            }
+
+            // timeline update handler function
+            function handlerFunc(args)
+            {
+                var obj = JSON.parse(args);
+                
+                // do something with contentTime and timespeedMultiplier
+                // I'm just printing them out
+                document.getElementById("msg").innerHTML = "current content time: " + obj.contentTime + "<br>timespeedMultiplier: " + obj.timespeedMultiplier;
+                
+                //...
+                
+                
+                
+            }
+        </script>
+
+        <style>
+        #container {
+            background: #1d1d1d url("bbc_logo.png") no-repeat center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
+        
+        #container p {
+        position: absolute;
+        font-size: 25px;
+        text-align: center;
+        width: 50%;
+        top: 50%;
+        margin: 0 auto;
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: 40px 0 0 -150px;
+        color: #d4d4d4;
+        font-family: "Helvetica"
+        }
+        
+        
+        </style>
+        
+    </head>
+    <body>
+        <div id="container">
+            <p id="msg">message to appear here</p>
+            <input type='button' value="close" onclick='closeWebViewAndShowExperienceView();'/>
+            <input type='button' value="home" onclick='loadHomePage();'/>
+            <input type='button' value="tweet demo" onclick='loadUrl("http://demo.mobile.kw.bbc.co.uk/tweetdemo/");'/>
+             <input type='button' value="wolfhall" onclick='loadUrl("http://demo.mobile.kw.bbc.co.uk/wolfhall/simple.html");'/>
+        </div>
+        
+        
+    </body>
+</html>

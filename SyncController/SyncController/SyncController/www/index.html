@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <script src="ios_sync.js"></script>
+        <script>
+         // global vars
+         interval_in_ms = 5000; // set update interval
+         adhoc_events = true;   // set 'true' to receive events
+        
+        // initialise web client with CII
+        // Will be called by web view controller from IOS, when page loads
+        function initWithCII(mrsUrl, tsUrl, wcUrl, contentId, contentIdStatus, presentationStatus)
+        {
+            
+            //...
+        }
+        
+        // receive CII update from IOS. channel change on TV will be reported through a different contentid
+        function updateCII(contentId, contentIdStatus, presentationStatus){
+            
+            
+            //...
+            
+        }
+        
+                
+        // Asynchronous function called from IOS to receive TS control timestamps, if registration was successful.
+        //@param contentTime represents time of media playing on IOS device
+        //@param timeSpeedMultiplier - speed of play. It is zero if paused or a double value, +ve for fast forwardingand -ve for slowing playback
+        function updateTimeline(args)
+        {
+            // schedule handler
+           var delay = function() { handlerFunc(args); };
+           setTimeout(delay, 0);
+            // and return immediately;
+            // Adding lengthy processing in this method will delay Companion App main thread.
+        }
+        
+        // timeline update handler function
+        function handlerFunc(args)
+        {
+            var obj = JSON.parse(args);
+            
+            // do something with contentTime and timespeedMultiplier
+            // I'm just printing them out
+            document.getElementById("demo").innerHTML = "current content time: " + obj.contentTime + "<br>timespeedMultiplier: " + obj.timespeedMultiplier;
+            
+            //...
+            
+            
+            
+        }
+        
+        
+        </script>
+    </head>
+    <body>
+       <!--<input type='button' value="register" onclick='onReady();'/>-->
+       <p id="demo"></p>
+    </body>
+</html>

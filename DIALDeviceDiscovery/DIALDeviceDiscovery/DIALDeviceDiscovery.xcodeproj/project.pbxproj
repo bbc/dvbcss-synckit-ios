@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42197DA01CDB8255007A346E /* DeviceDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 42197D9E1CDB8255007A346E /* DeviceDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42197DA11CDB8255007A346E /* DeviceDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 42197D9F1CDB8255007A346E /* DeviceDescription.m */; };
+		42197DA51CDB895D007A346E /* DIALDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 42197DA31CDB895D007A346E /* DIALDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42197DA61CDB895D007A346E /* DIALDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 42197DA41CDB895D007A346E /* DIALDevice.m */; };
+		4268B34C1B2081A600781C20 /* DIALDeviceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4268B34B1B2081A600781C20 /* DIALDeviceDiscovery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4268B3521B2081A600781C20 /* DIALDeviceDiscovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4268B3461B2081A500781C20 /* DIALDeviceDiscovery.framework */; };
+		4268B3591B2081A600781C20 /* DIALDeviceDiscoveryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268B3581B2081A600781C20 /* DIALDeviceDiscoveryTests.m */; };
+		4268B37F1B20893F00781C20 /* DIALServiceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4268B3721B20893F00781C20 /* DIALServiceDiscovery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4268B3801B20893F00781C20 /* DIALServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268B3731B20893F00781C20 /* DIALServiceDiscovery.m */; };
+		4268B3811B20893F00781C20 /* SSDPService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4268B3741B20893F00781C20 /* SSDPService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4268B3821B20893F00781C20 /* SSDPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268B3751B20893F00781C20 /* SSDPService.m */; };
+		4268B3831B20893F00781C20 /* SSDPServiceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 4268B3761B20893F00781C20 /* SSDPServiceDiscovery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4268B3841B20893F00781C20 /* SSDPServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268B3771B20893F00781C20 /* SSDPServiceDiscovery.m */; };
+		4268B3851B20893F00781C20 /* SSDPServiceTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4268B3781B20893F00781C20 /* SSDPServiceTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4268B3861B20893F00781C20 /* SSDPServiceTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268B3791B20893F00781C20 /* SSDPServiceTypes.m */; };
+		42763EAE1DB11A3600CDDC69 /* AsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EAA1DB11A3600CDDC69 /* AsyncSocket.framework */; };
+		42763EAF1DB11A3600CDDC69 /* SimpleLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EAB1DB11A3600CDDC69 /* SimpleLogger.framework */; };
+		42763EB01DB11A3600CDDC69 /* SyncKitCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EAC1DB11A3600CDDC69 /* SyncKitCollections.framework */; };
+		42763EB11DB11A3600CDDC69 /* SyncKitConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EAD1DB11A3600CDDC69 /* SyncKitConfiguration.framework */; };
+		42CC88811D8B04E3005E112C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 42CC88801D8B04E3005E112C /* README.md */; };
+		42F5C3E01CCFDCAF00E529B2 /* DIALDeviceDiscoveryTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F5C3DB1CCFDCAF00E529B2 /* DIALDeviceDiscoveryTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42F5C3E11CCFDCAF00E529B2 /* DIALDeviceDiscoveryTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F5C3DC1CCFDCAF00E529B2 /* DIALDeviceDiscoveryTask.m */; };
+		42F5C3E21CCFDCAF00E529B2 /* DIALDeviceDiscoveryTaskDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 42F5C3DD1CCFDCAF00E529B2 /* DIALDeviceDiscoveryTaskDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4268B3531B2081A600781C20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4268B33D1B2081A500781C20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4268B3451B2081A500781C20;
+			remoteInfo = DIALDeviceDiscovery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42197D9E1CDB8255007A346E /* DeviceDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDescription.h; sourceTree = "<group>"; };
+		42197D9F1CDB8255007A346E /* DeviceDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDescription.m; sourceTree = "<group>"; };
+		42197DA31CDB895D007A346E /* DIALDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIALDevice.h; sourceTree = "<group>"; };
+		42197DA41CDB895D007A346E /* DIALDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIALDevice.m; sourceTree = "<group>"; };
+		4268B3461B2081A500781C20 /* DIALDeviceDiscovery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DIALDeviceDiscovery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4268B34A1B2081A600781C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4268B34B1B2081A600781C20 /* DIALDeviceDiscovery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIALDeviceDiscovery.h; sourceTree = "<group>"; };
+		4268B3511B2081A600781C20 /* DIALDeviceDiscoveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DIALDeviceDiscoveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4268B3571B2081A600781C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4268B3581B2081A600781C20 /* DIALDeviceDiscoveryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIALDeviceDiscoveryTests.m; sourceTree = "<group>"; };
+		4268B3721B20893F00781C20 /* DIALServiceDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIALServiceDiscovery.h; sourceTree = "<group>"; };
+		4268B3731B20893F00781C20 /* DIALServiceDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIALServiceDiscovery.m; sourceTree = "<group>"; };
+		4268B3741B20893F00781C20 /* SSDPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDPService.h; sourceTree = "<group>"; };
+		4268B3751B20893F00781C20 /* SSDPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDPService.m; sourceTree = "<group>"; };
+		4268B3761B20893F00781C20 /* SSDPServiceDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDPServiceDiscovery.h; sourceTree = "<group>"; };
+		4268B3771B20893F00781C20 /* SSDPServiceDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDPServiceDiscovery.m; sourceTree = "<group>"; };
+		4268B3781B20893F00781C20 /* SSDPServiceTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDPServiceTypes.h; sourceTree = "<group>"; };
+		4268B3791B20893F00781C20 /* SSDPServiceTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDPServiceTypes.m; sourceTree = "<group>"; };
+		42763EAA1DB11A3600CDDC69 /* AsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncSocket.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/AsyncSocket.framework"; sourceTree = "<group>"; };
+		42763EAB1DB11A3600CDDC69 /* SimpleLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleLogger.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/SimpleLogger.framework"; sourceTree = "<group>"; };
+		42763EAC1DB11A3600CDDC69 /* SyncKitCollections.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SyncKitCollections.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/SyncKitCollections.framework"; sourceTree = "<group>"; };
+		42763EAD1DB11A3600CDDC69 /* SyncKitConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SyncKitConfiguration.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/SyncKitConfiguration.framework"; sourceTree = "<group>"; };
+		42CC88801D8B04E3005E112C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		42F5C3DB1CCFDCAF00E529B2 /* DIALDeviceDiscoveryTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIALDeviceDiscoveryTask.h; sourceTree = "<group>"; };
+		42F5C3DC1CCFDCAF00E529B2 /* DIALDeviceDiscoveryTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIALDeviceDiscoveryTask.m; sourceTree = "<group>"; };
+		42F5C3DD1CCFDCAF00E529B2 /* DIALDeviceDiscoveryTaskDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIALDeviceDiscoveryTaskDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4268B3421B2081A500781C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42763EAE1DB11A3600CDDC69 /* AsyncSocket.framework in Frameworks */,
+				42763EAF1DB11A3600CDDC69 /* SimpleLogger.framework in Frameworks */,
+				42763EB01DB11A3600CDDC69 /* SyncKitCollections.framework in Frameworks */,
+				42763EB11DB11A3600CDDC69 /* SyncKitConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4268B34E1B2081A600781C20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4268B3521B2081A600781C20 /* DIALDeviceDiscovery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4268B33C1B2081A500781C20 = {
+			isa = PBXGroup;
+			children = (
+				42763EAA1DB11A3600CDDC69 /* AsyncSocket.framework */,
+				42763EAB1DB11A3600CDDC69 /* SimpleLogger.framework */,
+				42763EAC1DB11A3600CDDC69 /* SyncKitCollections.framework */,
+				42763EAD1DB11A3600CDDC69 /* SyncKitConfiguration.framework */,
+				42CC88801D8B04E3005E112C /* README.md */,
+				4268B3481B2081A500781C20 /* DIALDeviceDiscovery */,
+				4268B3551B2081A600781C20 /* DIALDeviceDiscoveryTests */,
+				4268B3471B2081A500781C20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4268B3471B2081A500781C20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4268B3461B2081A500781C20 /* DIALDeviceDiscovery.framework */,
+				4268B3511B2081A600781C20 /* DIALDeviceDiscoveryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4268B3481B2081A500781C20 /* DIALDeviceDiscovery */ = {
+			isa = PBXGroup;
+			children = (
+				42197D9E1CDB8255007A346E /* DeviceDescription.h */,
+				42197D9F1CDB8255007A346E /* DeviceDescription.m */,
+				42197DA31CDB895D007A346E /* DIALDevice.h */,
+				42197DA41CDB895D007A346E /* DIALDevice.m */,
+				4268B34B1B2081A600781C20 /* DIALDeviceDiscovery.h */,
+				42F5C3DB1CCFDCAF00E529B2 /* DIALDeviceDiscoveryTask.h */,
+				42F5C3DC1CCFDCAF00E529B2 /* DIALDeviceDiscoveryTask.m */,
+				42F5C3DD1CCFDCAF00E529B2 /* DIALDeviceDiscoveryTaskDelegate.h */,
+				4268B3721B20893F00781C20 /* DIALServiceDiscovery.h */,
+				4268B3731B20893F00781C20 /* DIALServiceDiscovery.m */,
+				4268B3741B20893F00781C20 /* SSDPService.h */,
+				4268B3751B20893F00781C20 /* SSDPService.m */,
+				4268B3761B20893F00781C20 /* SSDPServiceDiscovery.h */,
+				4268B3771B20893F00781C20 /* SSDPServiceDiscovery.m */,
+				4268B3781B20893F00781C20 /* SSDPServiceTypes.h */,
+				4268B3791B20893F00781C20 /* SSDPServiceTypes.m */,
+				4268B3491B2081A600781C20 /* Supporting Files */,
+			);
+			path = DIALDeviceDiscovery;
+			sourceTree = "<group>";
+		};
+		4268B3491B2081A600781C20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4268B34A1B2081A600781C20 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4268B3551B2081A600781C20 /* DIALDeviceDiscoveryTests */ = {
+			isa = PBXGroup;
+			children = (
+				4268B3581B2081A600781C20 /* DIALDeviceDiscoveryTests.m */,
+				4268B3561B2081A600781C20 /* Supporting Files */,
+			);
+			path = DIALDeviceDiscoveryTests;
+			sourceTree = "<group>";
+		};
+		4268B3561B2081A600781C20 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4268B3571B2081A600781C20 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4268B3431B2081A500781C20 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4268B3811B20893F00781C20 /* SSDPService.h in Headers */,
+				4268B3851B20893F00781C20 /* SSDPServiceTypes.h in Headers */,
+				42197DA51CDB895D007A346E /* DIALDevice.h in Headers */,
+				42197DA01CDB8255007A346E /* DeviceDescription.h in Headers */,
+				4268B3831B20893F00781C20 /* SSDPServiceDiscovery.h in Headers */,
+				4268B37F1B20893F00781C20 /* DIALServiceDiscovery.h in Headers */,
+				42F5C3E01CCFDCAF00E529B2 /* DIALDeviceDiscoveryTask.h in Headers */,
+				42F5C3E21CCFDCAF00E529B2 /* DIALDeviceDiscoveryTaskDelegate.h in Headers */,
+				4268B34C1B2081A600781C20 /* DIALDeviceDiscovery.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4268B3451B2081A500781C20 /* DIALDeviceDiscovery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4268B35C1B2081A600781C20 /* Build configuration list for PBXNativeTarget "DIALDeviceDiscovery" */;
+			buildPhases = (
+				4268B3411B2081A500781C20 /* Sources */,
+				4268B3421B2081A500781C20 /* Frameworks */,
+				4268B3431B2081A500781C20 /* Headers */,
+				4268B3441B2081A500781C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DIALDeviceDiscovery;
+			productName = DIALDeviceDiscovery;
+			productReference = 4268B3461B2081A500781C20 /* DIALDeviceDiscovery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4268B3501B2081A600781C20 /* DIALDeviceDiscoveryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4268B35F1B2081A600781C20 /* Build configuration list for PBXNativeTarget "DIALDeviceDiscoveryTests" */;
+			buildPhases = (
+				4268B34D1B2081A600781C20 /* Sources */,
+				4268B34E1B2081A600781C20 /* Frameworks */,
+				4268B34F1B2081A600781C20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4268B3541B2081A600781C20 /* PBXTargetDependency */,
+			);
+			name = DIALDeviceDiscoveryTests;
+			productName = DIALDeviceDiscoveryTests;
+			productReference = 4268B3511B2081A600781C20 /* DIALDeviceDiscoveryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4268B33D1B2081A500781C20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "BBC RD";
+				TargetAttributes = {
+					4268B3451B2081A500781C20 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 869YXPEF4W;
+					};
+					4268B3501B2081A600781C20 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 4268B3401B2081A500781C20 /* Build configuration list for PBXProject "DIALDeviceDiscovery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4268B33C1B2081A500781C20;
+			productRefGroup = 4268B3471B2081A500781C20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4268B3451B2081A500781C20 /* DIALDeviceDiscovery */,
+				4268B3501B2081A600781C20 /* DIALDeviceDiscoveryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4268B3441B2081A500781C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4268B34F1B2081A600781C20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4268B3411B2081A500781C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4268B3841B20893F00781C20 /* SSDPServiceDiscovery.m in Sources */,
+				42197DA11CDB8255007A346E /* DeviceDescription.m in Sources */,
+				4268B3861B20893F00781C20 /* SSDPServiceTypes.m in Sources */,
+				42197DA61CDB895D007A346E /* DIALDevice.m in Sources */,
+				4268B3801B20893F00781C20 /* DIALServiceDiscovery.m in Sources */,
+				4268B3821B20893F00781C20 /* SSDPService.m in Sources */,
+				42CC88811D8B04E3005E112C /* README.md in Sources */,
+				42F5C3E11CCFDCAF00E529B2 /* DIALDeviceDiscoveryTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4268B34D1B2081A600781C20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4268B3591B2081A600781C20 /* DIALDeviceDiscoveryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4268B3541B2081A600781C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4268B3451B2081A500781C20 /* DIALDeviceDiscovery */;
+			targetProxy = 4268B3531B2081A600781C20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4268B35A1B2081A600781C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4268B35B1B2081A600781C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4268B35D1B2081A600781C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DeviceDiscovery-eotvssrtfwutructohzkiqqefzbs/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = DIALDeviceDiscovery/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4268B35E1B2081A600781C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/DeviceDiscovery-eotvssrtfwutructohzkiqqefzbs/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = DIALDeviceDiscovery/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4268B3601B2081A600781C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DIALDeviceDiscoveryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4268B3611B2081A600781C20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DIALDeviceDiscoveryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4268B3401B2081A500781C20 /* Build configuration list for PBXProject "DIALDeviceDiscovery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4268B35A1B2081A600781C20 /* Debug */,
+				4268B35B1B2081A600781C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4268B35C1B2081A600781C20 /* Build configuration list for PBXNativeTarget "DIALDeviceDiscovery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4268B35D1B2081A600781C20 /* Debug */,
+				4268B35E1B2081A600781C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4268B35F1B2081A600781C20 /* Build configuration list for PBXNativeTarget "DIALDeviceDiscoveryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4268B3601B2081A600781C20 /* Debug */,
+				4268B3611B2081A600781C20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4268B33D1B2081A500781C20 /* Project object */;
+}

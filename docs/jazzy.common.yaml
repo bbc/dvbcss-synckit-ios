@@ -1,0 +1,11 @@
+# common section that is appended to template for each set of documentation
+
+objc: true
+clean: true
+author: RajivRamdhany
+author_url: http://bbc.co.uk/rd
+copyright: '&copy; British Broadcasting Corporation, under [Apache 2.0 open source licence](https://www.apache.org/licenses/LICENSE-2.0)'
+github_url: https://github.com/bbc/dvbcss-synckit-ios
+sdk: iphonesimulator
+theme: fullwidth
+hide_documentation_coverage: true

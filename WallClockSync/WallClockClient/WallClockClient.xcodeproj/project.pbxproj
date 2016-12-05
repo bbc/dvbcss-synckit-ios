@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		420709EA1B31916B0026CFDC /* WCProtocolClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 420709E61B31916B0026CFDC /* WCProtocolClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		420709EB1B31916B0026CFDC /* WCProtocolClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 420709E71B31916B0026CFDC /* WCProtocolClient.m */; };
+		420709EC1B31916B0026CFDC /* WCSyncMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 420709E81B31916B0026CFDC /* WCSyncMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		420709ED1B31916B0026CFDC /* WCSyncMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 420709E91B31916B0026CFDC /* WCSyncMessage.m */; };
+		42763EC01DB11B0200CDDC69 /* ClockTimelines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EBC1DB11B0200CDDC69 /* ClockTimelines.framework */; };
+		42763EC11DB11B0200CDDC69 /* SimpleLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EBD1DB11B0200CDDC69 /* SimpleLogger.framework */; };
+		42763EC21DB11B0200CDDC69 /* SyncKitCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EBE1DB11B0200CDDC69 /* SyncKitCollections.framework */; };
+		42763EC31DB11B0200CDDC69 /* UDPMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42763EBF1DB11B0200CDDC69 /* UDPMessaging.framework */; };
+		427E4AB01B29DE870006F7E1 /* WallClockClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4AAF1B29DE870006F7E1 /* WallClockClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4AB61B29DE870006F7E1 /* WallClockClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427E4AAA1B29DE870006F7E1 /* WallClockClient.framework */; };
+		427E4ABD1B29DE870006F7E1 /* WallClockClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 427E4ABC1B29DE870006F7E1 /* WallClockClientTests.m */; };
+		427E4AD11B29DF780006F7E1 /* WCSyncMessageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 427E4AD01B29DF780006F7E1 /* WCSyncMessageTests.m */; };
+		427E4AD81B29EE0D0006F7E1 /* Candidate.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4AD51B29EE0D0006F7E1 /* Candidate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4AD91B29EE0D0006F7E1 /* Candidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 427E4AD61B29EE0D0006F7E1 /* Candidate.m */; };
+		427E4ADA1B29EE0D0006F7E1 /* ICandidateHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4AD71B29EE0D0006F7E1 /* ICandidateHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4AEB1B2A10FB0006F7E1 /* IFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4AE11B2A10FB0006F7E1 /* IFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4AEC1B2A10FB0006F7E1 /* IWCAlgo.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4AE21B2A10FB0006F7E1 /* IWCAlgo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4AED1B2A10FB0006F7E1 /* LowestDispersionAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4AE31B2A10FB0006F7E1 /* LowestDispersionAlgorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4AEE1B2A10FB0006F7E1 /* LowestDispersionAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 427E4AE41B2A10FB0006F7E1 /* LowestDispersionAlgorithm.m */; };
+		427E4AEF1B2A10FB0006F7E1 /* LowestDispersionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4AE51B2A10FB0006F7E1 /* LowestDispersionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4AF01B2A10FB0006F7E1 /* LowestDispersionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 427E4AE61B2A10FB0006F7E1 /* LowestDispersionFilter.m */; };
+		427E4AF11B2A10FB0006F7E1 /* RTTThresholdFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4AE71B2A10FB0006F7E1 /* RTTThresholdFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4AF21B2A10FB0006F7E1 /* RTTThresholdFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 427E4AE81B2A10FB0006F7E1 /* RTTThresholdFilter.m */; };
+		427E4AF31B2A10FB0006F7E1 /* SendPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4AE91B2A10FB0006F7E1 /* SendPolicy.h */; };
+		427E4AF41B2A10FB0006F7E1 /* SendPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 427E4AEA1B2A10FB0006F7E1 /* SendPolicy.m */; };
+		427E4AF91B2B44E40006F7E1 /* WallClockSynchroniser.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4AF71B2B44E40006F7E1 /* WallClockSynchroniser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4AFA1B2B44E40006F7E1 /* WallClockSynchroniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 427E4AF81B2B44E40006F7E1 /* WallClockSynchroniser.m */; };
+		427E4AFD1B2B470B0006F7E1 /* CandidateSink.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4AFB1B2B470B0006F7E1 /* CandidateSink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4AFE1B2B470B0006F7E1 /* CandidateSink.m in Sources */ = {isa = PBXBuildFile; fileRef = 427E4AFC1B2B470B0006F7E1 /* CandidateSink.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		427E4AB71B29DE870006F7E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427E4AA11B29DE870006F7E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427E4AA91B29DE870006F7E1;
+			remoteInfo = WallClockClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		420709E61B31916B0026CFDC /* WCProtocolClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCProtocolClient.h; sourceTree = "<group>"; };
+		420709E71B31916B0026CFDC /* WCProtocolClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCProtocolClient.m; sourceTree = "<group>"; };
+		420709E81B31916B0026CFDC /* WCSyncMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSyncMessage.h; sourceTree = "<group>"; };
+		420709E91B31916B0026CFDC /* WCSyncMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSyncMessage.m; sourceTree = "<group>"; };
+		42763EBC1DB11B0200CDDC69 /* ClockTimelines.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ClockTimelines.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/ClockTimelines.framework"; sourceTree = "<group>"; };
+		42763EBD1DB11B0200CDDC69 /* SimpleLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleLogger.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/SimpleLogger.framework"; sourceTree = "<group>"; };
+		42763EBE1DB11B0200CDDC69 /* SyncKitCollections.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SyncKitCollections.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/SyncKitCollections.framework"; sourceTree = "<group>"; };
+		42763EBF1DB11B0200CDDC69 /* UDPMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UDPMessaging.framework; path = "../../DerivedData/synckit/Build/Products/Debug-iphoneos/UDPMessaging.framework"; sourceTree = "<group>"; };
+		427E4AAA1B29DE870006F7E1 /* WallClockClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WallClockClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		427E4AAE1B29DE870006F7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		427E4AAF1B29DE870006F7E1 /* WallClockClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WallClockClient.h; sourceTree = "<group>"; };
+		427E4AB51B29DE870006F7E1 /* WallClockClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallClockClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		427E4ABB1B29DE870006F7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		427E4ABC1B29DE870006F7E1 /* WallClockClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WallClockClientTests.m; sourceTree = "<group>"; };
+		427E4AD01B29DF780006F7E1 /* WCSyncMessageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSyncMessageTests.m; sourceTree = "<group>"; };
+		427E4AD51B29EE0D0006F7E1 /* Candidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candidate.h; sourceTree = "<group>"; };
+		427E4AD61B29EE0D0006F7E1 /* Candidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candidate.m; sourceTree = "<group>"; };
+		427E4AD71B29EE0D0006F7E1 /* ICandidateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICandidateHandler.h; sourceTree = "<group>"; };
+		427E4AE11B2A10FB0006F7E1 /* IFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFilter.h; sourceTree = "<group>"; };
+		427E4AE21B2A10FB0006F7E1 /* IWCAlgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWCAlgo.h; sourceTree = "<group>"; };
+		427E4AE31B2A10FB0006F7E1 /* LowestDispersionAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowestDispersionAlgorithm.h; sourceTree = "<group>"; };
+		427E4AE41B2A10FB0006F7E1 /* LowestDispersionAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowestDispersionAlgorithm.m; sourceTree = "<group>"; };
+		427E4AE51B2A10FB0006F7E1 /* LowestDispersionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowestDispersionFilter.h; sourceTree = "<group>"; };
+		427E4AE61B2A10FB0006F7E1 /* LowestDispersionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LowestDispersionFilter.m; sourceTree = "<group>"; };
+		427E4AE71B2A10FB0006F7E1 /* RTTThresholdFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTTThresholdFilter.h; sourceTree = "<group>"; };
+		427E4AE81B2A10FB0006F7E1 /* RTTThresholdFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTTThresholdFilter.m; sourceTree = "<group>"; };
+		427E4AE91B2A10FB0006F7E1 /* SendPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendPolicy.h; sourceTree = "<group>"; };
+		427E4AEA1B2A10FB0006F7E1 /* SendPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendPolicy.m; sourceTree = "<group>"; };
+		427E4AF71B2B44E40006F7E1 /* WallClockSynchroniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallClockSynchroniser.h; sourceTree = "<group>"; };
+		427E4AF81B2B44E40006F7E1 /* WallClockSynchroniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallClockSynchroniser.m; sourceTree = "<group>"; };
+		427E4AFB1B2B470B0006F7E1 /* CandidateSink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandidateSink.h; sourceTree = "<group>"; };
+		427E4AFC1B2B470B0006F7E1 /* CandidateSink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandidateSink.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		427E4AA61B29DE870006F7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42763EC01DB11B0200CDDC69 /* ClockTimelines.framework in Frameworks */,
+				42763EC11DB11B0200CDDC69 /* SimpleLogger.framework in Frameworks */,
+				42763EC21DB11B0200CDDC69 /* SyncKitCollections.framework in Frameworks */,
+				42763EC31DB11B0200CDDC69 /* UDPMessaging.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427E4AB21B29DE870006F7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427E4AB61B29DE870006F7E1 /* WallClockClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		427E4AA01B29DE870006F7E1 = {
+			isa = PBXGroup;
+			children = (
+				42763EBC1DB11B0200CDDC69 /* ClockTimelines.framework */,
+				42763EBD1DB11B0200CDDC69 /* SimpleLogger.framework */,
+				42763EBE1DB11B0200CDDC69 /* SyncKitCollections.framework */,
+				42763EBF1DB11B0200CDDC69 /* UDPMessaging.framework */,
+				427E4AAC1B29DE870006F7E1 /* WallClockClient */,
+				427E4AB91B29DE870006F7E1 /* WallClockClientTests */,
+				427E4AAB1B29DE870006F7E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		427E4AAB1B29DE870006F7E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				427E4AAA1B29DE870006F7E1 /* WallClockClient.framework */,
+				427E4AB51B29DE870006F7E1 /* WallClockClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		427E4AAC1B29DE870006F7E1 /* WallClockClient */ = {
+			isa = PBXGroup;
+			children = (
+				427E4AAF1B29DE870006F7E1 /* WallClockClient.h */,
+				427E4AF71B2B44E40006F7E1 /* WallClockSynchroniser.h */,
+				427E4AF81B2B44E40006F7E1 /* WallClockSynchroniser.m */,
+				420709E61B31916B0026CFDC /* WCProtocolClient.h */,
+				420709E71B31916B0026CFDC /* WCProtocolClient.m */,
+				420709E81B31916B0026CFDC /* WCSyncMessage.h */,
+				420709E91B31916B0026CFDC /* WCSyncMessage.m */,
+				427E4AD51B29EE0D0006F7E1 /* Candidate.h */,
+				427E4AD61B29EE0D0006F7E1 /* Candidate.m */,
+				427E4AD71B29EE0D0006F7E1 /* ICandidateHandler.h */,
+				427E4AFB1B2B470B0006F7E1 /* CandidateSink.h */,
+				427E4AFC1B2B470B0006F7E1 /* CandidateSink.m */,
+				427E4AF61B2A11330006F7E1 /* Filters */,
+				427E4AF51B2A11090006F7E1 /* Algorithms */,
+				427E4AAD1B29DE870006F7E1 /* Supporting Files */,
+			);
+			path = WallClockClient;
+			sourceTree = "<group>";
+		};
+		427E4AAD1B29DE870006F7E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				427E4AAE1B29DE870006F7E1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		427E4AB91B29DE870006F7E1 /* WallClockClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				427E4AD01B29DF780006F7E1 /* WCSyncMessageTests.m */,
+				427E4ABC1B29DE870006F7E1 /* WallClockClientTests.m */,
+				427E4ABA1B29DE870006F7E1 /* Supporting Files */,
+			);
+			path = WallClockClientTests;
+			sourceTree = "<group>";
+		};
+		427E4ABA1B29DE870006F7E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				427E4ABB1B29DE870006F7E1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		427E4AF51B2A11090006F7E1 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				427E4AE91B2A10FB0006F7E1 /* SendPolicy.h */,
+				427E4AEA1B2A10FB0006F7E1 /* SendPolicy.m */,
+				427E4AE21B2A10FB0006F7E1 /* IWCAlgo.h */,
+				427E4AE31B2A10FB0006F7E1 /* LowestDispersionAlgorithm.h */,
+				427E4AE41B2A10FB0006F7E1 /* LowestDispersionAlgorithm.m */,
+			);
+			name = Algorithms;
+			sourceTree = "<group>";
+		};
+		427E4AF61B2A11330006F7E1 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				427E4AE11B2A10FB0006F7E1 /* IFilter.h */,
+				427E4AE51B2A10FB0006F7E1 /* LowestDispersionFilter.h */,
+				427E4AE61B2A10FB0006F7E1 /* LowestDispersionFilter.m */,
+				427E4AE71B2A10FB0006F7E1 /* RTTThresholdFilter.h */,
+				427E4AE81B2A10FB0006F7E1 /* RTTThresholdFilter.m */,
+			);
+			name = Filters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		427E4AA71B29DE870006F7E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427E4AEF1B2A10FB0006F7E1 /* LowestDispersionFilter.h in Headers */,
+				427E4AEC1B2A10FB0006F7E1 /* IWCAlgo.h in Headers */,
+				420709EC1B31916B0026CFDC /* WCSyncMessage.h in Headers */,
+				427E4AFD1B2B470B0006F7E1 /* CandidateSink.h in Headers */,
+				427E4AB01B29DE870006F7E1 /* WallClockClient.h in Headers */,
+				427E4ADA1B29EE0D0006F7E1 /* ICandidateHandler.h in Headers */,
+				427E4AF11B2A10FB0006F7E1 /* RTTThresholdFilter.h in Headers */,
+				420709EA1B31916B0026CFDC /* WCProtocolClient.h in Headers */,
+				427E4AEB1B2A10FB0006F7E1 /* IFilter.h in Headers */,
+				427E4AED1B2A10FB0006F7E1 /* LowestDispersionAlgorithm.h in Headers */,
+				427E4AF91B2B44E40006F7E1 /* WallClockSynchroniser.h in Headers */,
+				427E4AD81B29EE0D0006F7E1 /* Candidate.h in Headers */,
+				427E4AF31B2A10FB0006F7E1 /* SendPolicy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		427E4AA91B29DE870006F7E1 /* WallClockClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427E4AC01B29DE870006F7E1 /* Build configuration list for PBXNativeTarget "WallClockClient" */;
+			buildPhases = (
+				427E4AA51B29DE870006F7E1 /* Sources */,
+				427E4AA61B29DE870006F7E1 /* Frameworks */,
+				427E4AA71B29DE870006F7E1 /* Headers */,
+				427E4AA81B29DE870006F7E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WallClockClient;
+			productName = WallClockClient;
+			productReference = 427E4AAA1B29DE870006F7E1 /* WallClockClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		427E4AB41B29DE870006F7E1 /* WallClockClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427E4AC31B29DE870006F7E1 /* Build configuration list for PBXNativeTarget "WallClockClientTests" */;
+			buildPhases = (
+				427E4AB11B29DE870006F7E1 /* Sources */,
+				427E4AB21B29DE870006F7E1 /* Frameworks */,
+				427E4AB31B29DE870006F7E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				427E4AB81B29DE870006F7E1 /* PBXTargetDependency */,
+			);
+			name = WallClockClientTests;
+			productName = WallClockClientTests;
+			productReference = 427E4AB51B29DE870006F7E1 /* WallClockClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		427E4AA11B29DE870006F7E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "BBC RD";
+				TargetAttributes = {
+					427E4AA91B29DE870006F7E1 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 869YXPEF4W;
+					};
+					427E4AB41B29DE870006F7E1 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 427E4AA41B29DE870006F7E1 /* Build configuration list for PBXProject "WallClockClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 427E4AA01B29DE870006F7E1;
+			productRefGroup = 427E4AAB1B29DE870006F7E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				427E4AA91B29DE870006F7E1 /* WallClockClient */,
+				427E4AB41B29DE870006F7E1 /* WallClockClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		427E4AA81B29DE870006F7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427E4AB31B29DE870006F7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		427E4AA51B29DE870006F7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420709EB1B31916B0026CFDC /* WCProtocolClient.m in Sources */,
+				420709ED1B31916B0026CFDC /* WCSyncMessage.m in Sources */,
+				427E4AF41B2A10FB0006F7E1 /* SendPolicy.m in Sources */,
+				427E4AFA1B2B44E40006F7E1 /* WallClockSynchroniser.m in Sources */,
+				427E4AD91B29EE0D0006F7E1 /* Candidate.m in Sources */,
+				427E4AEE1B2A10FB0006F7E1 /* LowestDispersionAlgorithm.m in Sources */,
+				427E4AFE1B2B470B0006F7E1 /* CandidateSink.m in Sources */,
+				427E4AF21B2A10FB0006F7E1 /* RTTThresholdFilter.m in Sources */,
+				427E4AF01B2A10FB0006F7E1 /* LowestDispersionFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427E4AB11B29DE870006F7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427E4AD11B29DF780006F7E1 /* WCSyncMessageTests.m in Sources */,
+				427E4ABD1B29DE870006F7E1 /* WallClockClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		427E4AB81B29DE870006F7E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427E4AA91B29DE870006F7E1 /* WallClockClient */;
+			targetProxy = 427E4AB71B29DE870006F7E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		427E4ABE1B29DE870006F7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		427E4ABF1B29DE870006F7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		427E4AC11B29DE870006F7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/WallClockSync-grnfehvdeqdpaugfbqnbbhgdsdut/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = WallClockClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		427E4AC21B29DE870006F7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/WallClockSync-grnfehvdeqdpaugfbqnbbhgdsdut/Build/Products/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = WallClockClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		427E4AC41B29DE870006F7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WallClockClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		427E4AC51B29DE870006F7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WallClockClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bbc.rd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		427E4AA41B29DE870006F7E1 /* Build configuration list for PBXProject "WallClockClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427E4ABE1B29DE870006F7E1 /* Debug */,
+				427E4ABF1B29DE870006F7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427E4AC01B29DE870006F7E1 /* Build configuration list for PBXNativeTarget "WallClockClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427E4AC11B29DE870006F7E1 /* Debug */,
+				427E4AC21B29DE870006F7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427E4AC31B29DE870006F7E1 /* Build configuration list for PBXNativeTarget "WallClockClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427E4AC41B29DE870006F7E1 /* Debug */,
+				427E4AC51B29DE870006F7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 427E4AA11B29DE870006F7E1 /* Project object */;
+}

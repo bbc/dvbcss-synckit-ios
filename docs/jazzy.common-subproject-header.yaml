@@ -1,0 +1,17 @@
+# common header used on sub-projects only
+
+head: >
+    <!-- new top header bar across all sub-frameworks -->
+    <div style="margin:0; width: 100%; padding: 8px 0 8px 8px; background-color: #005" class="header">
+        <a href="http://bbc.github.io/dvbcss-synckit-ios/latest/index.html" style="margin: 0; padding: 0 8px; font-weight: bold; color:white;">
+            dvbcss-synckit-ios
+        </a>
+    </div>
+    <!-- shuffle the "view on github" link up to be on the new top header bar -->
+    <style type="text/css">
+        header .header-col.header-col--secondary a.header-link {
+            position: relative;
+            top: -39px;
+        }
+    </style>
+

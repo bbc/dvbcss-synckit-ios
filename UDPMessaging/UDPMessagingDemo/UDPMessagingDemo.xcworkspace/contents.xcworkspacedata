@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../SimpleLogger/SimpleLogger.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UDP_OSX_Server_/UDPMessagingServerDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../UDPMessaging/UDPMessaging.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UDP_iOS_Client/UDPMessagingClientDemo.xcodeproj">
+   </FileRef>
+</Workspace>

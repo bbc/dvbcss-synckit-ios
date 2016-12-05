@@ -1,0 +1,42 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "A816FC4ADFC89DA18F558381A469612D3EC0F344" : {
+
+    },
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++948" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99" : 0,
+    "A816FC4ADFC89DA18F558381A469612D3EC0F344" : 0,
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++948" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "65611593-93AD-4C64-B7FA-B7364D9971A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99" : "dvbcss-synckit-ios\/",
+    "A816FC4ADFC89DA18F558381A469612D3EC0F344" : "synckit\/",
+    "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++948" : "synckit\/AudioPlayer\/AudioStreamPlayerDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AudioPlayer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AudioPlayer\/AudioPlayer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/repo.dev.bbc.co.uk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6500d436-0a25-4ea1-a8e6-63f9231d3e1c++948"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/repo.dev.bbc.co.uk",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A816FC4ADFC89DA18F558381A469612D3EC0F344"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bbc\/dvbcss-synckit-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FAD70BC380FFA1FD1E27EFAB072222E92BEB4A99"
+    }
+  ]
+}

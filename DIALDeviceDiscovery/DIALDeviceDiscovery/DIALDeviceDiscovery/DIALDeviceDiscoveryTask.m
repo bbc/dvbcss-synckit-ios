@@ -292,7 +292,12 @@
     if ((_application_URL) && (!_cancel))
     {
         // get the hbbtv app URL
-        NSString *dial_rest_service = [NSString stringWithFormat:@"%@/%@", _application_URL, _appName];
+        NSString *dial_rest_service;
+        if ([_application_URL hasSuffix:@"/"]) {
+            dial_rest_service = [NSString stringWithFormat:@"%@%@", _application_URL, _appName];
+        } else {
+            dial_rest_service = [NSString stringWithFormat:@"%@/%@", _application_URL, _appName];
+        }
         NSURL *dial_rest_url = [NSURL URLWithString:dial_rest_service];
         
         // get DIAL HbbTV app information XML document.

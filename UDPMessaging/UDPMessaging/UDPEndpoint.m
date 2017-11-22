@@ -25,6 +25,7 @@
 #endif
 #import <SimpleLogger/SimpleLogger.h>
 
+#import <sys/time.h>
 #import <sys/socket.h>
 #import <netinet/in.h>
 #import <fcntl.h>
